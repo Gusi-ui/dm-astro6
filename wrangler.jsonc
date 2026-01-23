@@ -4,13 +4,13 @@
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "pages_build_output_dir": "dist",
   "vars": {
-    "ENVIRONMENT": "production",
+    "ENVIRONMENT": "production"
   },
   "d1_databases": [
     {
       "binding": "DB",
       "database_name": "astro6dm-db",
-      "database_id": "266aa9fa-ce2c-4087-b543-fdea68c66043",
-    },
-  ],
+      "database_id": "266aa9fa-ce2c-4087-b543-fdea68c66043"
+    }
+  ]
 }
