@@ -14,8 +14,21 @@ export default defineConfig({
   integrations: [tailwind()],
   site: 'https://tudominio.com', // Actualizar con tu dominio
   vite: {
+    resolve: {
+      alias: {
+        "fs": "node:fs",
+        "path": "node:path",
+        "os": "node:os",
+        "crypto": "node:crypto",
+        "stream": "node:stream",
+        "events": "node:events",
+        "util": "node:util",
+        "child_process": "node:child_process",
+      },
+    },
     ssr: {
-      external: ['node:util', 'node:stream', 'node:path', 'node:events', 'node:os', 'node:child_process', 'node:crypto', 'fs', 'child_process'],
+      external: ['node:util', 'node:stream', 'node:path', 'node:events', 'node:os', 'node:child_process', 'node:crypto', 'node:fs', 'fs', 'child_process'],
+      noExternal: ['sharp'],
     },
   },
 });
