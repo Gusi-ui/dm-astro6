@@ -9,6 +9,7 @@
 ## Estructura del Proyecto Verificada
 
 ### ✅ Configuración Base
+
 - [x] `package.json` - Dependencias correctas (Astro 6, Cloudflare, Tailwind)
 - [x] `astro.config.mjs` - Configurado con adapter Cloudflare
 - [x] `wrangler.jsonc` - Configuración Cloudflare (pendiente: actualizar database_id)
@@ -16,6 +17,7 @@
 - [x] `tailwind.config.mjs` - Configuración Tailwind presente
 
 ### ✅ Páginas Implementadas
+
 - [x] `src/pages/index.astro` - Landing page principal
 - [x] `src/pages/asociate.astro` - Página de inscripción
 - [x] `src/pages/blog/index.astro` - Lista de posts del blog
@@ -25,6 +27,7 @@
 - [x] `src/pages/api/associate.ts` - API endpoint para formulario
 
 ### ✅ Componentes
+
 - [x] `src/components/sections/Header.astro` - Navegación
 - [x] `src/components/sections/Hero.astro` - Hero section
 - [x] `src/components/sections/About.astro` - Sobre la asociación
@@ -35,25 +38,30 @@
 - [x] `src/components/forms/AssociationForm.astro` - Formulario de inscripción
 
 ### ✅ Base de Datos
+
 - [x] `src/lib/db/client.ts` - Cliente D1 implementado
 - [x] `src/lib/db/schema.sql` - Schema de la base de datos
 - [x] `migrations/0001_initial.sql` - Migración inicial
 
 ### ✅ Blog
+
 - [x] `src/content/config.ts` - Configuración Content Collections
 - [x] `src/content/blog/ejemplo-post.md` - Post de ejemplo
 
 ### ✅ Estilos
+
 - [x] `src/styles/global.css` - Estilos globales con Tailwind
 - [x] `src/layouts/BaseLayout.astro` - Layout base
 
 ### ✅ Archivos Públicos
+
 - [x] `public/favicon.svg` - Favicon
 - [x] `public/robots.txt` - Robots.txt para SEO
 - [x] `public/documents/` - Carpeta para documentos (vacía, lista para usar)
 - [x] `public/images/` - Carpeta para imágenes (vacía, lista para usar)
 
 ### ✅ CI/CD
+
 - [x] `.github/workflows/deploy.yml` - Workflow de GitHub Actions
 
 ## 📋 Próximos Pasos para Continuar
@@ -81,12 +89,14 @@ pnpm wrangler login
 ### 3. Configurar GitHub Secrets
 
 En GitHub → Settings → Secrets and variables → Actions:
+
 - `CLOUDFLARE_API_TOKEN` - Token de API de Cloudflare
 - `CLOUDFLARE_ACCOUNT_ID` - Account ID de Cloudflare
 
 ### 4. Actualizar Dominio
 
 En `astro.config.mjs` y `public/robots.txt`, actualizar:
+
 - `site: 'https://tudominio.com'` → Tu dominio real
 
 ### 5. Probar Localmente
@@ -113,6 +123,7 @@ pnpm preview
 **Todo está correcto y listo para continuar con la configuración de Cloudflare.**
 
 El proyecto está:
+
 - ✅ Sincronizado con GitHub
 - ✅ Estructura completa implementada
 - ✅ Todas las funcionalidades básicas listas

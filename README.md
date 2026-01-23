@@ -20,11 +20,13 @@ Sitio web de la asociación de diversidad funcional en Mataró, construido con A
 ## 🛠️ Instalación
 
 1. Instalar dependencias:
+
 ```bash
 pnpm install
 ```
 
 2. Configurar base de datos D1:
+
 ```bash
 pnpm wrangler d1 create astro6dm-db
 ```
@@ -32,6 +34,7 @@ pnpm wrangler d1 create astro6dm-db
 3. Actualizar `wrangler.jsonc` con el `database_id` obtenido
 
 4. Ejecutar migraciones:
+
 ```bash
 pnpm wrangler d1 migrations apply astro6dm-db
 ```
@@ -53,11 +56,13 @@ pnpm build
 ## 🚢 Deploy
 
 ### Deploy manual:
+
 ```bash
 pnpm wrangler deploy
 ```
 
 ### Deploy automático:
+
 El proyecto está configurado con GitHub Actions para deploy automático en cada push a la rama `main`.
 
 ## 📁 Estructura del Proyecto

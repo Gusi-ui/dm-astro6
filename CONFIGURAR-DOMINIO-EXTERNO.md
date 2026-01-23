@@ -45,6 +45,7 @@ Después del deploy, Cloudflare te dará una URL temporal. Para encontrarla:
 4. Cloudflare te mostrará las instrucciones de configuración DNS
 
 **IMPORTANTE**: Cloudflare te dará un valor específico para el CNAME. Puede ser:
+
 - `tu-proyecto.pages.dev` (directo)
 - O un valor como `cname.cloudflare.com` (si Cloudflare lo requiere)
 
@@ -57,6 +58,7 @@ Ahora necesitas configurar los registros DNS en tu proveedor actual. Los pasos v
 #### Para el dominio raíz (@) o subdominio www:
 
 **Opción A: Si Cloudflare te dio un CNAME directo**
+
 - **Tipo**: CNAME
 - **Nombre/Host**: `@` (para dominio raíz) o `www` (para subdominio)
 - **Valor/Destino**: `tu-proyecto.pages.dev` (el valor que Cloudflare te dio)
@@ -80,6 +82,7 @@ Algunos proveedores no permiten CNAME en el dominio raíz. En ese caso:
 #### Instrucciones por Proveedor Común:
 
 **GoDaddy:**
+
 1. Ve a tu panel → **DNS Management**
 2. Haz clic en **"Add"** para añadir un nuevo registro
 3. Selecciona el tipo (CNAME o A según corresponda)
@@ -87,18 +90,21 @@ Algunos proveedores no permiten CNAME en el dominio raíz. En ese caso:
 5. Guarda los cambios
 
 **Namecheap:**
+
 1. Ve a **Domain List** → Selecciona tu dominio → **Advanced DNS**
 2. Haz clic en **"Add New Record"**
 3. Selecciona el tipo y completa los campos
 4. Guarda con el icono de check ✓
 
 **Google Domains:**
+
 1. Ve a **DNS** → **Custom records**
 2. Haz clic en **"Add custom record"**
 3. Selecciona el tipo y completa los campos
 4. Guarda
 
 **Cloudflare (si tienes el dominio aquí pero quieres usar Pages):**
+
 1. Ve a tu dominio → **DNS** → **Records**
 2. Añade el registro CNAME o A según corresponda
 3. Guarda
@@ -108,6 +114,7 @@ Algunos proveedores no permiten CNAME en el dominio raíz. En ese caso:
 Los cambios DNS pueden tardar desde unos minutos hasta 24 horas en propagarse. Generalmente toma entre 15 minutos y 2 horas.
 
 Puedes verificar la propagación usando:
+
 - https://dnschecker.org/
 - O desde la terminal: `dig tudominio.com` o `nslookup tudominio.com`
 
@@ -132,9 +139,11 @@ export default defineConfig({
 ## ✅ Verificación Final
 
 1. **Verifica que el sitio carga correctamente:**
+
    ```bash
    curl -I https://tudominio.com
    ```
+
    Deberías ver un código de estado `200 OK`
 
 2. **Verifica el SSL:**
@@ -152,6 +161,7 @@ export default defineConfig({
 **Problema**: Cloudflare muestra error de verificación DNS
 
 **Solución**:
+
 - Verifica que el registro DNS esté configurado correctamente
 - Espera más tiempo (hasta 24 horas)
 - Asegúrate de que el valor del CNAME/A sea exactamente el que Cloudflare te indicó
@@ -162,6 +172,7 @@ export default defineConfig({
 **Problema**: El dominio está verificado pero el sitio no carga
 
 **Solución**:
+
 - Verifica que el proyecto esté desplegado correctamente en Cloudflare Pages
 - Revisa los logs en Cloudflare Pages → Deployments
 - Asegúrate de que `astro.config.mjs` tenga el `site` configurado correctamente
@@ -171,6 +182,7 @@ export default defineConfig({
 **Problema**: El sitio carga pero muestra error de certificado
 
 **Solución**:
+
 - Espera unos minutos, Cloudflare configura el SSL automáticamente
 - Si después de 1 hora sigue sin funcionar, verifica que el DNS esté apuntando correctamente
 - Asegúrate de que no haya problemas con la verificación del dominio
@@ -180,6 +192,7 @@ export default defineConfig({
 **Problema**: Tu proveedor no permite CNAME en `@`
 
 **Solución**:
+
 - Usa un registro A o ALIAS en su lugar
 - Cloudflare te dará una IP específica para usar
 - O configura solo `www` con CNAME y redirige el dominio raíz a www

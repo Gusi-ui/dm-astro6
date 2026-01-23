@@ -55,9 +55,9 @@ Ejemplo:
     {
       "binding": "DB",
       "database_name": "astro6dm-db",
-      "database_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890"  // ← Tu ID aquí
-    }
-  ]
+      "database_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890", // ← Tu ID aquí
+    },
+  ],
 }
 ```
 
@@ -98,7 +98,6 @@ Esto creará las tablas `members` y `blog_views` en tu base de datos.
 2. Ve a **Settings** → **Secrets and variables** → **Actions**
 3. Haz clic en **"New repository secret"**
 4. Añade estos dos secrets:
-
    - **Nombre**: `CLOUDFLARE_API_TOKEN`
      **Valor**: El token que copiaste en el Paso 6
 
@@ -138,19 +137,23 @@ pnpm wrangler deploy
 ## 🐛 Solución de Problemas
 
 ### Error: "database_id not found"
+
 - Verifica que hayas actualizado `wrangler.jsonc` con el ID correcto
 - Asegúrate de que el ID no tenga espacios ni caracteres extra
 
 ### Error: "Authentication required"
+
 - Ejecuta `pnpm wrangler login` de nuevo
 - Verifica que tu sesión de Cloudflare no haya expirado
 
 ### Error: "Migration failed"
+
 - Verifica que la base de datos esté creada
 - Asegúrate de que el `database_id` en `wrangler.jsonc` sea correcto
 - Intenta ejecutar la migración de nuevo
 
 ### Error en GitHub Actions
+
 - Verifica que los secrets estén configurados correctamente
 - Asegúrate de que el API token tenga los permisos correctos
 - Revisa los logs de GitHub Actions para más detalles
@@ -183,12 +186,14 @@ Si ya tienes tu dominio registrado en otro proveedor, puedes usarlo sin transfer
 6. **Actualizar `astro.config.mjs`** con tu dominio
 
 **Ventajas:**
+
 - ✅ No necesitas transferir el dominio
 - ✅ Mantienes el control en tu proveedor actual
 - ✅ Funciona perfectamente con Cloudflare Pages
 - ✅ SSL/TLS automático y gratuito
 
 **Limitaciones:**
+
 - ⚠️ No tendrás acceso a todas las características avanzadas de Cloudflare (CDN completo, WAF, etc.)
 - ⚠️ Algunas optimizaciones pueden estar limitadas
 
@@ -243,6 +248,7 @@ export default defineConfig({
 ## 🎉 Siguiente Paso
 
 Una vez configurado Cloudflare, puedes:
+
 1. Probar el formulario de inscripción localmente
 2. Hacer deploy manual para probar
 3. Configurar el dominio personalizado (ver sección arriba)

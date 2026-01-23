@@ -20,12 +20,28 @@ export default defineConfig({
   vite: {
     resolve: {
       alias: {
-        "child_process": path.resolve(__dirname, 'src/lib/node-mock.mjs'),
-        "node:child_process": path.resolve(__dirname, 'src/lib/node-mock.mjs'),
+        child_process: path.resolve(__dirname, 'src/lib/node-mock.mjs'),
+        'node:child_process': path.resolve(__dirname, 'src/lib/node-mock.mjs'),
       },
     },
     ssr: {
-      external: ['node:fs', 'node:path', 'node:os', 'node:crypto', 'node:stream', 'node:events', 'node:util', 'fs', 'path', 'os', 'crypto', 'stream', 'events', 'util', 'sharp'],
+      external: [
+        'node:fs',
+        'node:path',
+        'node:os',
+        'node:crypto',
+        'node:stream',
+        'node:events',
+        'node:util',
+        'fs',
+        'path',
+        'os',
+        'crypto',
+        'stream',
+        'events',
+        'util',
+        'sharp',
+      ],
     },
   },
 });

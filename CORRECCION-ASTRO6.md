@@ -7,6 +7,7 @@ El error `LegacyContentConfigError` se ha corregido actualizando la configuraci�
 ## Cambios Realizados
 
 ### 1. Archivo de Configuración Movido
+
 - ❌ **Antes**: `src/content/config.ts` (legacy)
 - ✅ **Ahora**: `src/content.config.ts` (nuevo formato)
 
@@ -61,6 +62,7 @@ Si ves un error `EPERM: operation not permitted` al iniciar el servidor, es un p
 ## 🎉 Siguiente Paso
 
 Una vez que el servidor inicie correctamente, podrás:
+
 - Ver la landing page en `http://localhost:4321`
 - Probar el formulario de inscripción
 - Ver el blog con el post de ejemplo

@@ -12,7 +12,7 @@ const documentos = [
     category: 'Legal',
     file: '/documents/estatutos.pdf',
     size: '245 KB',
-    date: '2024-01-15'
+    date: '2024-01-15',
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const documentos = [
     category: 'Informes',
     file: '/documents/memoria-2023.pdf',
     size: '1.2 MB',
-    date: '2024-01-10'
+    date: '2024-01-10',
   },
   {
     id: 3,
@@ -30,14 +30,14 @@ const documentos = [
     category: 'Guías',
     file: '/documents/guia-accesibilidad.pdf',
     size: '856 KB',
-    date: '2024-01-05'
-  }
+    date: '2024-01-05',
+  },
 ];
 
 // const categorias = ['Todas', ...new Set(documentos.map(doc => doc.category))]; // Reservado para futuras funcionalidades
 ---
 
-<BaseLayout 
+<BaseLayout
   title="Documentos - Asociación Diversidad Funcional Mataró"
   description="Documentos, informes y guías descargables de nuestra asociación"
 >
@@ -45,57 +45,64 @@ const documentos = [
   <main class="min-h-screen bg-gray-50">
     <section class="py-16 md:py-24">
       <div class="section-container">
-        <h1 class="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-900">
-          Documentos
-        </h1>
-        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto text-lg">
+        <h1 class="mb-4 text-center text-4xl font-bold text-gray-900 md:text-5xl">Documentos</h1>
+        <p class="mx-auto mb-12 max-w-2xl text-center text-lg text-gray-600">
           Descarga documentos, informes y guías sobre nuestras actividades y reivindicaciones
         </p>
 
-        {documentos.length === 0 ? (
-          <div class="text-center py-12">
-            <p class="text-gray-600 text-lg">Próximamente añadiremos documentos aquí.</p>
-          </div>
-        ) : (
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {documentos.map((doc) => (
-              <div class="card">
-                <div class="flex items-start justify-between mb-4">
-                  <div class="flex-1">
-                    <h3 class="text-xl font-semibold mb-2 text-gray-900">{doc.title}</h3>
-                    <p class="text-gray-600 text-sm mb-3">{doc.description}</p>
+        {
+          documentos.length === 0 ? (
+            <div class="py-12 text-center">
+              <p class="text-lg text-gray-600">Próximamente añadiremos documentos aquí.</p>
+            </div>
+          ) : (
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {documentos.map((doc) => (
+                <div class="card">
+                  <div class="mb-4 flex items-start justify-between">
+                    <div class="flex-1">
+                      <h3 class="mb-2 text-xl font-semibold text-gray-900">{doc.title}</h3>
+                      <p class="mb-3 text-sm text-gray-600">{doc.description}</p>
+                    </div>
+                    <svg
+                      class="ml-4 h-8 w-8 flex-shrink-0 text-primary-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+                      />
+                    </svg>
                   </div>
-                  <svg class="w-8 h-8 text-primary-600 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                  </svg>
-                </div>
-                
-                <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
-                  <span class="px-3 py-1 bg-primary-100 text-primary-700 rounded-full">
-                    {doc.category}
-                  </span>
-                  <span>{doc.size}</span>
-                </div>
 
-                <div class="text-xs text-gray-500 mb-4">
-                  Publicado: {new Date(doc.date).toLocaleDateString('es-ES', {
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric'
-                  })}
-                </div>
+                  <div class="mb-4 flex items-center justify-between text-sm text-gray-500">
+                    <span class="rounded-full bg-primary-100 px-3 py-1 text-primary-700">
+                      {doc.category}
+                    </span>
+                    <span>{doc.size}</span>
+                  </div>
 
-                <a
-                  href={doc.file}
-                  download
-                  class="btn-primary w-full text-center"
-                >
-                  Descargar PDF
-                </a>
-              </div>
-            ))}
-          </div>
-        )}
+                  <div class="mb-4 text-xs text-gray-500">
+                    Publicado:{' '}
+                    {new Date(doc.date).toLocaleDateString('es-ES', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric',
+                    })}
+                  </div>
+
+                  <a href={doc.file} download class="btn-primary w-full text-center">
+                    Descargar PDF
+                  </a>
+                </div>
+              ))}
+            </div>
+          )
+        }
       </div>
     </section>
   </main>

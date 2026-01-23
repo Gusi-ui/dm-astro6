@@ -19,9 +19,7 @@ export class Database {
   async createMember(member: Omit<Member, 'id' | 'created_at'>): Promise<Member> {
     // D1 no soporta RETURNING, así que insertamos y luego consultamos
     await this.db
-      .prepare(
-        'INSERT INTO members (name, email, phone, message) VALUES (?, ?, ?, ?)'
-      )
+      .prepare('INSERT INTO members (name, email, phone, message) VALUES (?, ?, ?, ?)')
       .bind(member.name, member.email, member.phone || null, member.message || null)
       .run();
 
@@ -45,15 +43,14 @@ export class Database {
   }
 
   async getAllMembers(): Promise<Member[]> {
-    const result = await this.db.prepare('SELECT * FROM members ORDER BY created_at DESC').all<Member>();
+    const result = await this.db
+      .prepare('SELECT * FROM members ORDER BY created_at DESC')
+      .all<Member>();
     return result.results || [];
   }
 
   async recordBlogView(slug: string): Promise<void> {
-    await this.db
-      .prepare('INSERT INTO blog_views (slug) VALUES (?)')
-      .bind(slug)
-      .run();
+    await this.db.prepare('INSERT INTO blog_views (slug) VALUES (?)').bind(slug).run();
   }
 
   async getBlogViews(slug?: string): Promise<number> {
@@ -65,7 +62,10 @@ export class Database {
       params.push(slug);
     }
 
-    const result = await this.db.prepare(query).bind(...params).first<{ count: number }>();
+    const result = await this.db
+      .prepare(query)
+      .bind(...params)
+      .first<{ count: number }>();
     return result?.count || 0;
   }
 }

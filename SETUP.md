@@ -35,6 +35,7 @@ git push -u origin main
 ### 2. Configurar Cloudflare D1 Database
 
 1. **Crear la base de datos:**
+
 ```bash
 pnpm wrangler d1 create astro6dm-db
 ```
@@ -44,6 +45,7 @@ pnpm wrangler d1 create astro6dm-db
    - Reemplaza `YOUR_DATABASE_ID` con el ID real
 
 3. **Aplicar las migraciones:**
+
 ```bash
 pnpm wrangler d1 migrations apply astro6dm-db
 ```
@@ -51,6 +53,7 @@ pnpm wrangler d1 migrations apply astro6dm-db
 ### 3. Configurar Cloudflare Workers
 
 1. **Iniciar sesión en Cloudflare:**
+
 ```bash
 pnpm wrangler login
 ```
@@ -97,12 +100,14 @@ pnpm preview
 ### 7. Deploy
 
 **Deploy manual:**
+
 ```bash
 pnpm build
 pnpm wrangler deploy
 ```
 
 **Deploy automático:**
+
 - Haz push a la rama `main` y GitHub Actions desplegará automáticamente
 
 ## 📝 Notas Importantes
@@ -115,12 +120,15 @@ pnpm wrangler deploy
 ## 🐛 Solución de Problemas
 
 ### Error: "database_id not found"
+
 - Asegúrate de haber creado la base de datos D1 y actualizado `wrangler.jsonc`
 
 ### Error: "API token invalid"
+
 - Verifica que el token tenga los permisos correctos
 - Regenera el token si es necesario
 
 ### Error en el build
+
 - Verifica que todas las dependencias estén instaladas: `pnpm install`
 - Revisa los logs de error para más detalles

@@ -25,6 +25,7 @@ pnpm wrangler d1 migrations apply astro6dm-db
 ```
 
 **Verificar que funcionó:**
+
 ```bash
 # Consultar las tablas creadas
 pnpm wrangler d1 execute astro6dm-db --command="SELECT name FROM sqlite_master WHERE type='table';"
@@ -54,6 +55,7 @@ pnpm wrangler deploy
 ```
 
 **Verificar:**
+
 - El deploy se completa sin errores
 - Obtienes una URL de Cloudflare (ej: `tu-proyecto.workers.dev`)
 
@@ -74,6 +76,7 @@ pnpm wrangler deploy
    - Verifica que se guarde en la base de datos
 
 **Verificar datos en la base de datos:**
+
 ```bash
 pnpm wrangler d1 execute astro6dm-db --command="SELECT * FROM members;"
 ```
@@ -101,12 +104,15 @@ pnpm wrangler d1 execute astro6dm-db --command="SELECT * FROM members;"
 Si tienes un dominio, configúralo:
 
 **Opción A: Dominio en otro proveedor (Más fácil)**
+
 - Ver guía: `CONFIGURAR-DOMINIO-EXTERNO.md`
 
 **Opción B: Dominio en Cloudflare (Más completo)**
+
 - Ver sección en: `CONFIGURAR-CLOUDFLARE.md`
 
 **Pasos rápidos:**
+
 1. Obtén la URL de tu proyecto en Cloudflare Pages
 2. Configura un registro CNAME en tu proveedor DNS
 3. Añade el dominio en Cloudflare Pages → Custom domains

@@ -4,7 +4,7 @@ import { Database } from '../../lib/db/client';
 export const POST: APIRoute = async ({ request, locals }) => {
   try {
     const db = locals.runtime?.env?.DB;
-    
+
     if (!db) {
       return new Response(
         JSON.stringify({ success: false, error: 'Error de configuración del servidor' }),
@@ -27,10 +27,10 @@ export const POST: APIRoute = async ({ request, locals }) => {
     }
 
     if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      return new Response(
-        JSON.stringify({ success: false, error: 'Email inválido' }),
-        { status: 400, headers: { 'Content-Type': 'application/json' } }
-      );
+      return new Response(JSON.stringify({ success: false, error: 'Email inválido' }), {
+        status: 400,
+        headers: { 'Content-Type': 'application/json' },
+      });
     }
 
     if (message && message.length > 500) {
@@ -69,7 +69,10 @@ export const POST: APIRoute = async ({ request, locals }) => {
   } catch (error) {
     console.error('Error al procesar inscripción:', error);
     return new Response(
-      JSON.stringify({ success: false, error: 'Error al procesar tu solicitud. Por favor, intenta de nuevo.' }),
+      JSON.stringify({
+        success: false,
+        error: 'Error al procesar tu solicitud. Por favor, intenta de nuevo.',
+      }),
       { status: 500, headers: { 'Content-Type': 'application/json' } }
     );
   }

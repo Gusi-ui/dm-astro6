@@ -13,12 +13,14 @@ El sitio estará disponible en: `http://localhost:4321`
 ## ✅ Verificar Funcionalidades
 
 ### 1. Landing Page
+
 - Abre: `http://localhost:4321`
 - Verifica que todas las secciones se muestren correctamente
 - Prueba la navegación (Header)
 - Verifica que los enlaces funcionen
 
 ### 2. Formulario de Inscripción
+
 - Ve a: `http://localhost:4321/asociate`
 - Prueba el formulario:
   - ✅ Validación de campos requeridos
@@ -29,17 +31,20 @@ El sitio estará disponible en: `http://localhost:4321`
 **Nota**: El formulario requiere la base de datos D1 configurada. Si aún no está configurada, verás un error. Esto es normal.
 
 ### 3. Blog
+
 - Ve a: `http://localhost:4321/blog`
 - Verifica que se muestre el post de ejemplo
 - Haz clic en un post para ver el detalle
 - Prueba la navegación "Volver al blog"
 
 ### 4. Documentos
+
 - Ve a: `http://localhost:4321/documentos`
 - Verifica que la página se muestre correctamente
 - Los documentos reales deben estar en `public/documents/`
 
 ### 5. SEO
+
 - Verifica sitemap: `http://localhost:4321/sitemap.xml`
 - Verifica robots.txt: `http://localhost:4321/robots.txt`
 
@@ -85,21 +90,25 @@ Esto iniciará un servidor local con el build de producción.
 ## 🐛 Solución de Problemas
 
 ### Error: "Cannot find module"
+
 ```bash
 # Reinstalar dependencias
 pnpm install
 ```
 
 ### Error: "Database not found"
+
 - Asegúrate de haber creado la base de datos D1
 - Verifica que `wrangler.jsonc` tenga el `database_id` correcto
 - Ejecuta las migraciones: `pnpm db:migrate`
 
 ### Error: "Port already in use"
+
 - Cierra otros servidores que usen el puerto 4321
 - O cambia el puerto en `astro.config.mjs`
 
 ### El formulario no funciona
+
 - Verifica que la base de datos esté configurada
 - Revisa la consola del navegador para errores
 - Revisa los logs del servidor

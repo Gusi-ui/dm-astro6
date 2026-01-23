@@ -1,6 +1,7 @@
 # Instrucciones para hacer Push a GitHub
 
 ## Problema
+
 GitHub está rechazando el push del workflow porque requiere permisos adicionales.
 
 ## Solución Temporal

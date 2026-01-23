@@ -2,60 +2,62 @@
 const currentPath = Astro.url.pathname;
 ---
 
-<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+<header class="sticky top-0 z-50 bg-white/95 shadow-sm backdrop-blur-sm">
   <nav class="section-container py-4" aria-label="Navegación principal">
     <div class="flex items-center justify-between">
       <a href="/" class="text-2xl font-bold text-primary-600 hover:text-primary-700">
         Diversidad Funcional Mataró
       </a>
-      
-      <ul class="hidden md:flex items-center gap-6">
+
+      <ul class="hidden items-center gap-6 md:flex">
         <li>
-          <a 
-            href="/" 
+          <a
+            href="/"
             class={`${currentPath === '/' ? 'text-primary-600 font-semibold' : 'text-gray-700 hover:text-primary-600'}`}
           >
             Inicio
           </a>
         </li>
         <li>
-          <a 
-            href="/blog" 
+          <a
+            href="/blog"
             class={`${currentPath.startsWith('/blog') ? 'text-primary-600 font-semibold' : 'text-gray-700 hover:text-primary-600'}`}
           >
             Blog
           </a>
         </li>
         <li>
-          <a 
-            href="/documentos" 
+          <a
+            href="/documentos"
             class={`${currentPath === '/documentos' ? 'text-primary-600 font-semibold' : 'text-gray-700 hover:text-primary-600'}`}
           >
             Documentos
           </a>
         </li>
         <li>
-          <a href="/asociate" class="btn-primary">
-            Únete
-          </a>
+          <a href="/asociate" class="btn-primary"> Únete </a>
         </li>
       </ul>
 
       <!-- Mobile menu button -->
-      <button 
+      <button
         id="mobile-menu-button"
-        class="md:hidden p-2 text-gray-700 hover:text-primary-600"
+        class="p-2 text-gray-700 hover:text-primary-600 md:hidden"
         aria-label="Menú móvil"
         aria-expanded="false"
       >
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
       </button>
     </div>
 
     <!-- Mobile menu -->
-    <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+    <div id="mobile-menu" class="mt-4 hidden pb-4 md:hidden">
       <ul class="flex flex-col gap-4">
         <li>
           <a href="/" class="block text-gray-700 hover:text-primary-600">Inicio</a>
