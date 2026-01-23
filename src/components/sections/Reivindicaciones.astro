@@ -1,0 +1,55 @@
+---
+const reivindicaciones = [
+  {
+    title: 'Accesibilidad en el Transporte',
+    description: 'Reivindicamos un transporte público 100% accesible para todas las personas, con paradas adaptadas y vehículos con rampas y espacios reservados.',
+    icon: '🚌'
+  },
+  {
+    title: 'Accesibilidad en Espacios Públicos',
+    description: 'Trabajamos para que todos los espacios públicos, parques, plazas y edificios municipales sean completamente accesibles.',
+    icon: '🏛️'
+  },
+  {
+    title: 'Inclusión Laboral',
+    description: 'Promovemos la igualdad de oportunidades en el empleo y la eliminación de barreras en el acceso al trabajo.',
+    icon: '💼'
+  },
+  {
+    title: 'Educación Inclusiva',
+    description: 'Defendemos una educación inclusiva que garantice el acceso y la participación de todos los estudiantes.',
+    icon: '📚'
+  },
+  {
+    title: 'Participación Ciudadana',
+    description: 'Reivindicamos el derecho a participar plenamente en la vida política y social de nuestra ciudad.',
+    icon: '🗳️'
+  },
+  {
+    title: 'Accesibilidad Digital',
+    description: 'Trabajamos para que todos los servicios digitales y plataformas sean accesibles para personas con diversidad funcional.',
+    icon: '💻'
+  }
+];
+---
+
+<section id="reivindicaciones" class="py-16 md:py-24 bg-white">
+  <div class="section-container">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900">
+      Nuestras Reivindicaciones
+    </h2>
+    <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+      Trabajamos en diferentes ámbitos para conseguir una sociedad más accesible e inclusiva
+    </p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {reivindicaciones.map((item) => (
+        <div class="card">
+          <div class="text-4xl mb-4">{item.icon}</div>
+          <h3 class="text-xl font-semibold mb-3 text-gray-900">{item.title}</h3>
+          <p class="text-gray-600">{item.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

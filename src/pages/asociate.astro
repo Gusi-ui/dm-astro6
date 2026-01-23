@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/sections/Header.astro';
+import Footer from '../components/sections/Footer.astro';
+import AssociationForm from '../components/forms/AssociationForm.astro';
+---
+
+<BaseLayout 
+  title="Únete a Nosotros - Asociación Diversidad Funcional Mataró"
+  description="Únete a nuestra asociación de forma gratuita. Trabajamos por una sociedad con accesibilidad universal."
+>
+  <Header />
+  <main class="min-h-screen">
+    <section class="py-16 md:py-24 bg-gradient-to-br from-primary-50 to-accent-50">
+      <div class="section-container">
+        <div class="max-w-2xl mx-auto">
+          <h1 class="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-900">
+            Únete a Nuestra Asociación
+          </h1>
+          <p class="text-center text-gray-600 mb-12 text-lg">
+            Completa el formulario para unirte a nuestra causa. <strong>Es completamente gratuito</strong> y no cobramos ningún tipo de cuota.
+          </p>
+          
+          <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+            <AssociationForm />
+          </div>
+          
+          <div class="mt-8 text-center text-sm text-gray-600">
+            <p>Al unirte, recibirás información sobre nuestras actividades y reivindicaciones.</p>
+            <p class="mt-2">Nuestro principal medio de comunicación es WhatsApp.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>

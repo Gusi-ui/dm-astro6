@@ -1,0 +1,73 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/sections/Header.astro';
+import Footer from '../../components/sections/Footer.astro';
+import { getCollection } from 'astro:content';
+
+const blogPosts = await getCollection('blog', ({ data }) => {
+  return data.pubDate <= new Date();
+});
+
+// Ordenar por fecha más reciente
+const sortedPosts = blogPosts.sort((a, b) => 
+  b.data.pubDate.getTime() - a.data.pubDate.getTime()
+);
+---
+
+<BaseLayout 
+  title="Blog - Asociación Diversidad Funcional Mataró"
+  description="Últimas noticias, logros y reivindicaciones de nuestra asociación"
+>
+  <Header />
+  <main class="min-h-screen bg-gray-50">
+    <section class="py-16 md:py-24">
+      <div class="section-container">
+        <h1 class="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-900">
+          Nuestro Blog
+        </h1>
+        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto text-lg">
+          Conoce nuestros logros, reivindicaciones y el trabajo que realizamos día a día
+        </p>
+
+        {sortedPosts.length === 0 ? (
+          <div class="text-center py-12">
+            <p class="text-gray-600 text-lg">Próximamente publicaremos contenido aquí.</p>
+          </div>
+        ) : (
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {sortedPosts.map((post) => (
+              <a 
+                href={`/blog/${post.slug}`}
+                class="card hover:scale-105 transition-transform duration-200"
+              >
+                {post.data.heroImage && (
+                  <img 
+                    src={post.data.heroImage} 
+                    alt={post.data.title}
+                    class="w-full h-48 object-cover rounded-lg mb-4"
+                    loading="lazy"
+                  />
+                )}
+                <div class="text-sm text-gray-500 mb-2">
+                  {post.data.pubDate.toLocaleDateString('es-ES', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                  })}
+                </div>
+                <h2 class="text-xl font-semibold mb-2 text-gray-900">{post.data.title}</h2>
+                <p class="text-gray-600 line-clamp-3">{post.data.description}</p>
+                {post.data.category && (
+                  <span class="inline-block mt-4 px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm">
+                    {post.data.category}
+                  </span>
+                )}
+              </a>
+            ))}
+          </div>
+        )}
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
