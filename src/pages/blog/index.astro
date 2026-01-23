@@ -4,12 +4,12 @@ import Header from '../../components/sections/Header.astro';
 import Footer from '../../components/sections/Footer.astro';
 import { getCollection } from 'astro:content';
 
-const blogPosts = await getCollection('blog', ({ data }) => {
+const blogPosts = await getCollection('blog', ({ data }: { data: { pubDate: Date } }) => {
   return data.pubDate <= new Date();
 });
 
 // Ordenar por fecha más reciente
-const sortedPosts = blogPosts.sort((a, b) => 
+const sortedPosts = [...blogPosts].sort((a, b) => 
   b.data.pubDate.getTime() - a.data.pubDate.getTime()
 );
 ---
@@ -36,7 +36,7 @@ const sortedPosts = blogPosts.sort((a, b) =>
         ) : (
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {sortedPosts.map((post) => {
-              const slug = post.id || post.slug || post.name || post.path?.split('/').pop()?.replace('.md', '') || 'unknown';
+              const slug = post.id || (post as any).slug || (post as any).name || (post as any).path?.split('/').pop()?.replace('.md', '') || 'unknown';
               return (
               <a 
                 href={`/blog/${slug}`}

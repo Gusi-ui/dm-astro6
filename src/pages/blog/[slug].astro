@@ -7,9 +7,9 @@ import type { GetStaticPaths } from 'astro';
 
 export const getStaticPaths = (async () => {
   const posts = await getCollection('blog');
-  return posts.map((post) => {
+  return posts.map((post: typeof posts[number]) => {
     // En Astro 6, el slug puede venir de diferentes formas
-    const slug = post.id || post.slug || post.name || post.path?.split('/').pop()?.replace('.md', '') || 'unknown';
+    const slug = post.id || (post as any).slug || (post as any).name || (post as any).path?.split('/').pop()?.replace('.md', '') || 'unknown';
     return {
       params: { slug },
       props: { post },
@@ -18,7 +18,7 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths;
 
 interface Props {
-  post: Awaited<ReturnType<typeof getCollection<'blog'>>>[number];
+  post: (await getCollection('blog'))[number];
 }
 
 const { post } = Astro.props;

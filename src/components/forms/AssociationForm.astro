@@ -80,7 +80,7 @@
 <script>
   const form = document.querySelector('form');
   const formMessage = document.getElementById('form-message');
-  const submitButton = document.getElementById('submit-button');
+  const submitButton = document.getElementById('submit-button') as HTMLButtonElement | null;
 
   if (form && formMessage && submitButton) {
     form.addEventListener('submit', async (e) => {
@@ -114,8 +114,10 @@
         formMessage.className = 'p-4 rounded-lg bg-red-50 text-red-800 border border-red-200';
         formMessage.textContent = 'Error de conexión. Por favor, intenta de nuevo.';
       } finally {
-        submitButton.disabled = false;
-        submitButton.textContent = 'Enviar Solicitud';
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.textContent = 'Enviar Solicitud';
+        }
       }
     });
   }

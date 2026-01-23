@@ -13,12 +13,6 @@
       "database_id": "266aa9fa-ce2c-4087-b543-fdea68c66043"
     }
   ],
-  "kv_namespaces": [
-    {
-      "binding": "SESSION",
-      "id": "preview_id"
-    }
-  ],
   "routes": [
     {
       "pattern": "*",

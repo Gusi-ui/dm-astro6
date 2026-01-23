@@ -27,8 +27,8 @@ export const GET: APIRoute = async ({ site }) => {
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  ${blogPosts.map((post) => {
-    const slug = post.id || post.slug || post.name || post.path?.split('/').pop()?.replace('.md', '') || 'unknown';
+  ${blogPosts.map((post: typeof blogPosts[number]) => {
+    const slug = post.id || (post as any).slug || (post as any).name || (post as any).path?.split('/').pop()?.replace('.md', '') || 'unknown';
     return `
   <url>
     <loc>${baseUrl}/blog/${slug}</loc>
