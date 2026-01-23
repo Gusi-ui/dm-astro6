@@ -35,9 +35,11 @@ const sortedPosts = blogPosts.sort((a, b) =>
           </div>
         ) : (
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {sortedPosts.map((post) => (
+            {sortedPosts.map((post) => {
+              const slug = post.id || post.slug || post.name || post.path?.split('/').pop()?.replace('.md', '') || 'unknown';
+              return (
               <a 
-                href={`/blog/${post.slug}`}
+                href={`/blog/${slug}`}
                 class="card hover:scale-105 transition-transform duration-200"
               >
                 {post.data.heroImage && (
@@ -63,7 +65,8 @@ const sortedPosts = blogPosts.sort((a, b) =>
                   </span>
                 )}
               </a>
-            ))}
+              );
+            })}
           </div>
         )}
       </div>

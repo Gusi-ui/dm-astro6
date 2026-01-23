@@ -1,0 +1,12 @@
+# Configuración de desarrollo local para Cloudflare
+# Este archivo se usa para desarrollo local con wrangler dev
+
+name = "astro6dm"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat", "global_fetch_strictly_public"]
+
+[env.development]
+vars = { ENVIRONMENT = "development" }
+
+# Nota: El database_id debe configurarse en wrangler.jsonc
+# Para desarrollo local, wrangler usará la base de datos local automáticamente

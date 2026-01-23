@@ -17,12 +17,16 @@ export class Database {
   }
 
   async createMember(member: Omit<Member, 'id' | 'created_at'>): Promise<Member> {
-    const result = await this.db
+    // D1 no soporta RETURNING, así que insertamos y luego consultamos
+    await this.db
       .prepare(
-        'INSERT INTO members (name, email, phone, message) VALUES (?, ?, ?, ?) RETURNING *'
+        'INSERT INTO members (name, email, phone, message) VALUES (?, ?, ?, ?)'
       )
       .bind(member.name, member.email, member.phone || null, member.message || null)
-      .first<Member>();
+      .run();
+
+    // Obtener el miembro recién creado
+    const result = await this.getMemberByEmail(member.email);
 
     if (!result) {
       throw new Error('Error al crear el miembro');

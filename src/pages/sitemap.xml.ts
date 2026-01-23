@@ -27,13 +27,16 @@ export const GET: APIRoute = async ({ site }) => {
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  ${blogPosts.map((post) => `
+  ${blogPosts.map((post) => {
+    const slug = post.id || post.slug || post.name || post.path?.split('/').pop()?.replace('.md', '') || 'unknown';
+    return `
   <url>
-    <loc>${baseUrl}/blog/${post.slug}</loc>
+    <loc>${baseUrl}/blog/${slug}</loc>
     <lastmod>${post.data.pubDate.toISOString()}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-  </url>`).join('')}
+  </url>`;
+  }).join('')}
 </urlset>`;
 
   return new Response(sitemap, {

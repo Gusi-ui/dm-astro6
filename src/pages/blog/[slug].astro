@@ -7,10 +7,14 @@ import type { GetStaticPaths } from 'astro';
 
 export const getStaticPaths = (async () => {
   const posts = await getCollection('blog');
-  return posts.map((post) => ({
-    params: { slug: post.slug },
-    props: { post },
-  }));
+  return posts.map((post) => {
+    // En Astro 6, el slug puede venir de diferentes formas
+    const slug = post.id || post.slug || post.name || post.path?.split('/').pop()?.replace('.md', '') || 'unknown';
+    return {
+      params: { slug },
+      props: { post },
+    };
+  });
 }) satisfies GetStaticPaths;
 
 interface Props {

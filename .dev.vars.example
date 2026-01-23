@@ -1,0 +1,11 @@
+# Archivo de ejemplo para variables de entorno de desarrollo
+# Copia este archivo a .dev.vars y completa los valores
+# .dev.vars está en .gitignore y no se subirá al repositorio
+
+# Variables de entorno para desarrollo local
+ENVIRONMENT=development
+
+# Si necesitas otras variables, añádelas aquí
+# Por ejemplo:
+# API_KEY=tu_api_key_aqui
+# SECRET_KEY=tu_secret_key_aqui
