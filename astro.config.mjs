@@ -15,9 +15,25 @@ export default defineConfig({
       enabled: true,
     },
   }),
-  integrations: [tailwind()],
+  integrations: [
+    tailwind({
+      applyBaseStyles: true,
+    }),
+  ],
   site: 'https://tudominio.com', // Actualizar con tu dominio
+  build: {
+    inlineStylesheets: 'auto',
+    assets: '_astro',
+  },
   vite: {
+    build: {
+      cssCodeSplit: false,
+      rollupOptions: {
+        output: {
+          assetFileNames: '_astro/[name].[hash][extname]',
+        },
+      },
+    },
     resolve: {
       alias: {
         child_process: path.resolve(__dirname, 'src/lib/node-mock.mjs'),

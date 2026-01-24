@@ -3,7 +3,20 @@ import typography from '@tailwindcss/typography';
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
-  safelist: ['prose', 'prose-lg', 'prose-headings', 'prose-p', 'prose-a', 'prose-img'],
+  safelist: [
+    'prose',
+    'prose-lg',
+    'prose-headings:font-bold',
+    'prose-headings:text-gray-900',
+    'prose-p:text-gray-600',
+    'prose-a:text-primary-600',
+    'hover:prose-a:text-primary-700',
+    'prose-img:rounded-xl',
+    {
+      pattern: /^prose(-\w+)?$/,
+      variants: ['lg', 'xl', '2xl'],
+    },
+  ],
   theme: {
     extend: {
       colors: {

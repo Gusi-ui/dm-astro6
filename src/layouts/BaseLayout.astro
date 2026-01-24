@@ -21,6 +21,99 @@ const {
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <style is:inline>
+      /* Estilos críticos para asegurar que prose funcione en producción */
+      .prose {
+        color: #374151;
+        max-width: 65ch;
+      }
+      .prose :where(p):not(:where([class~='not-prose'] *)) {
+        margin-top: 1.25em;
+        margin-bottom: 1.25em;
+      }
+      .prose :where(h1):not(:where([class~='not-prose'] *)) {
+        color: #111827;
+        font-weight: 800;
+        font-size: 2.25em;
+        margin-top: 0;
+        margin-bottom: 0.8888889em;
+        line-height: 1.1111111;
+      }
+      .prose :where(h2):not(:where([class~='not-prose'] *)) {
+        color: #111827;
+        font-weight: 700;
+        font-size: 1.5em;
+        margin-top: 2em;
+        margin-bottom: 1em;
+        line-height: 1.3333333;
+      }
+      .prose :where(h3):not(:where([class~='not-prose'] *)) {
+        color: #111827;
+        font-weight: 600;
+        font-size: 1.25em;
+        margin-top: 1.6em;
+        margin-bottom: 0.6em;
+        line-height: 1.6;
+      }
+      .prose :where(a):not(:where([class~='not-prose'] *)) {
+        color: #0284c7;
+        text-decoration: underline;
+        font-weight: 500;
+      }
+      .prose :where(a):hover:not(:where([class~='not-prose'] *)) {
+        color: #0369a1;
+      }
+      .prose :where(strong):not(:where([class~='not-prose'] *)) {
+        color: #111827;
+        font-weight: 600;
+      }
+      .prose :where(ul):not(:where([class~='not-prose'] *)) {
+        list-style-type: disc;
+        margin-top: 1.25em;
+        margin-bottom: 1.25em;
+        padding-left: 1.625em;
+      }
+      .prose :where(ol):not(:where([class~='not-prose'] *)) {
+        list-style-type: decimal;
+        margin-top: 1.25em;
+        margin-bottom: 1.25em;
+        padding-left: 1.625em;
+      }
+      .prose :where(li):not(:where([class~='not-prose'] *)) {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+      .prose :where(img):not(:where([class~='not-prose'] *)) {
+        margin-top: 2em;
+        margin-bottom: 2em;
+      }
+      .prose-lg {
+        font-size: 1.125rem;
+        line-height: 1.7777778;
+      }
+      .prose-lg :where(p):not(:where([class~='not-prose'] *)) {
+        margin-top: 1.3333333em;
+        margin-bottom: 1.3333333em;
+      }
+      .prose-lg :where(h1):not(:where([class~='not-prose'] *)) {
+        font-size: 2.6666667em;
+        margin-top: 0;
+        margin-bottom: 0.8333333em;
+        line-height: 1;
+      }
+      .prose-lg :where(h2):not(:where([class~='not-prose'] *)) {
+        font-size: 1.6666667em;
+        margin-top: 1.8666667em;
+        margin-bottom: 1.0666667em;
+        line-height: 1.3333333;
+      }
+      .prose-lg :where(h3):not(:where([class~='not-prose'] *)) {
+        font-size: 1.3333333em;
+        margin-top: 1.6666667em;
+        margin-bottom: 0.6666667em;
+        line-height: 1.5;
+      }
+    </style>
   </head>
   <body>
     <slot />
