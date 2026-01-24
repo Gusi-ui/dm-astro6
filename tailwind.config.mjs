@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+  safelist: ['prose', 'prose-lg', 'prose-headings', 'prose-p', 'prose-a', 'prose-img'],
   theme: {
     extend: {
       colors: {
