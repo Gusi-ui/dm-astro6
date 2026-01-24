@@ -97,6 +97,7 @@ const { Content } = await render(post);
                 src={post.data.heroImage}
                 alt={post.data.title}
                 class="mb-8 h-64 w-full rounded-xl object-cover md:h-96"
+                transition:name={`hero-${post.id || post.slug}`}
               />
             )
           }
@@ -158,31 +159,3 @@ const { Content } = await render(post);
   </main>
   <Footer />
 </BaseLayout>
-
-<style>
-  .prose {
-    @apply text-gray-700;
-  }
-  .prose h2 {
-    @apply mb-4 mt-8 text-2xl font-bold text-gray-900;
-  }
-  .prose h3 {
-    @apply mb-3 mt-6 text-xl font-semibold text-gray-900;
-  }
-  .prose p {
-    @apply mb-4;
-  }
-  .prose ul,
-  .prose ol {
-    @apply mb-4 ml-6;
-  }
-  .prose li {
-    @apply mb-2;
-  }
-  .prose a {
-    @apply text-primary-600 underline hover:text-primary-700;
-  }
-  .prose strong {
-    @apply font-semibold text-gray-900;
-  }
-</style>
