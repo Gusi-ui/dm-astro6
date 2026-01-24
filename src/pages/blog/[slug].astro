@@ -26,6 +26,33 @@ interface Props {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
+
+// Obtener posts relacionados
+const allPosts = await getCollection('blog');
+const currentId = post.id || post.slug;
+
+const relatedPosts = allPosts
+  .filter((p: CollectionEntry<'blog'>) => (p.id || p.slug) !== currentId)
+  .sort((a: CollectionEntry<'blog'>, b: CollectionEntry<'blog'>) => {
+    // Priorizar misma categoría
+    if (
+      post.data.category &&
+      a.data.category === post.data.category &&
+      b.data.category !== post.data.category
+    ) {
+      return -1;
+    }
+    if (
+      post.data.category &&
+      a.data.category !== post.data.category &&
+      b.data.category === post.data.category
+    ) {
+      return 1;
+    }
+    // Luego por fecha
+    return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
+  })
+  .slice(0, 3);
 ---
 
 <BaseLayout
@@ -155,6 +182,40 @@ const { Content } = await render(post);
               </a>
             </div>
           </div>
+
+          {/* Artículos relacionados */}
+          {
+            relatedPosts.length > 0 && (
+              <div class="mt-16 border-t border-gray-200 pt-12">
+                <h2 class="mb-8 text-2xl font-bold text-gray-900">También te puede interesar</h2>
+                <div class="grid gap-8 md:grid-cols-3">
+                  {relatedPosts.map((relatedPost: CollectionEntry<'blog'>) => (
+                    <a href={`/blog/${relatedPost.id || relatedPost.slug}`} class="group block">
+                      <div class="mb-4 aspect-video overflow-hidden rounded-xl bg-gray-100">
+                        {relatedPost.data.heroImage ? (
+                          <img
+                            src={relatedPost.data.heroImage}
+                            alt={relatedPost.data.title}
+                            class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                          />
+                        ) : (
+                          <div class="flex h-full w-full items-center justify-center text-gray-400">
+                            <span class="text-4xl">📄</span>
+                          </div>
+                        )}
+                      </div>
+                      <h3 class="line-clamp-2 text-lg font-semibold text-gray-900 transition-colors group-hover:text-primary-600">
+                        {relatedPost.data.title}
+                      </h3>
+                      <p class="mt-2 line-clamp-2 text-sm text-gray-500">
+                        {relatedPost.data.description}
+                      </p>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )
+          }
         </div>
       </div>
     </article>
