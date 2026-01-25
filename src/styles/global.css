@@ -36,23 +36,117 @@
 }
 
 @layer components {
+  /* Botones */
   .btn {
-    @apply inline-flex items-center justify-center rounded-lg px-6 py-3 font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+    @apply inline-flex transform items-center justify-center rounded-lg px-6 py-3 font-semibold transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2;
   }
 
   .btn-primary {
-    @apply btn bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500;
+    @apply btn bg-gradient-to-r from-primary-600 to-accent-600 text-white shadow-lg hover:from-primary-700 hover:to-accent-700 hover:shadow-xl focus:ring-primary-500;
   }
 
   .btn-secondary {
-    @apply btn bg-gray-200 text-gray-900 hover:bg-gray-300 focus:ring-gray-400;
+    @apply btn border-2 border-white bg-white/90 text-gray-900 shadow-lg backdrop-blur-xl hover:bg-white focus:ring-gray-400;
   }
 
+  /* Contenedores */
   .section-container {
     @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
   }
 
+  /* Tarjetas */
   .card {
-    @apply rounded-xl bg-white p-6 shadow-lg transition-shadow duration-200 hover:shadow-xl;
+    @apply rounded-2xl border-2 border-gray-100 bg-white p-8 shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl;
+  }
+
+  .card-hover-accent {
+    @apply card hover:border-primary-500;
+  }
+
+  /* Badges */
+  .badge {
+    @apply inline-flex items-center rounded-full px-4 py-2 text-sm font-medium;
+  }
+
+  .badge-primary {
+    @apply badge bg-gradient-to-r from-primary-100 to-accent-100 text-primary-700;
+  }
+
+  .badge-glass {
+    @apply badge border border-white/60 bg-white/40 shadow-xl backdrop-blur-xl;
+  }
+}
+
+@layer utilities {
+  /* Glassmorphism */
+  .glass {
+    @apply border border-white/50 bg-white/90 shadow-2xl backdrop-blur-xl;
+  }
+
+  /* Text utilities */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Text shadow para legibilidad */
+  .text-shadow-strong {
+    text-shadow:
+      2px 2px 8px rgba(0, 0, 0, 0.8),
+      0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .text-shadow-soft {
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.9);
+  }
+
+  /* Delays para animaciones */
+  .delay-200 {
+    animation-delay: 0.2s;
+  }
+  .delay-300 {
+    animation-delay: 0.3s;
+  }
+  .delay-400 {
+    animation-delay: 0.4s;
+  }
+  .delay-500 {
+    animation-delay: 0.5s;
+  }
+  .delay-600 {
+    animation-delay: 0.6s;
+  }
+}
+
+/* Better text selection */
+::selection {
+  background-color: #0284c7;
+  color: white;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  * {
+    border-color: currentColor;
   }
 }

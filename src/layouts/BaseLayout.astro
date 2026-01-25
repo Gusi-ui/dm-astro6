@@ -116,6 +116,40 @@ const {
     </style>
   </head>
   <body>
+    <!-- Skip link para accesibilidad -->
+    <a
+      href="#main-content"
+      class="sr-only z-50 rounded-md bg-primary-600 px-4 py-2 text-white focus:not-sr-only focus:absolute focus:left-4 focus:top-4"
+    >
+      Saltar al contenido principal
+    </a>
+
     <slot />
   </body>
 </html>
+
+<style is:global>
+  /* Skip link utility */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .sr-only:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0.5rem;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
+</style>

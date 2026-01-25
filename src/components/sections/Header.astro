@@ -1,48 +1,89 @@
 ---
 const currentPath = Astro.url.pathname;
+
+const navItems = [
+  { href: '/', label: 'Inicio' },
+  { href: '/blog', label: 'Blog', matchPrefix: true },
+  { href: '/documentos', label: 'Documentos' },
+];
 ---
 
-<header class="sticky top-0 z-50 bg-white/95 shadow-sm backdrop-blur-sm">
+<header
+  class="fixed left-0 right-0 top-0 z-50 border-b border-primary-200/20 bg-white/90 shadow-2xl shadow-primary-500/5 backdrop-blur-xl"
+>
+  <!-- Gradiente decorativo superior -->
+  <div
+    class="absolute left-0 right-0 top-0 h-1 bg-gradient-to-r from-primary-500 via-accent-500 to-primary-500 opacity-60"
+  >
+  </div>
+
   <nav class="section-container py-4" aria-label="Navegación principal">
     <div class="flex items-center justify-between">
-      <a href="/" class="text-2xl font-bold text-primary-600 hover:text-primary-700">
-        Diversidad Funcional Mataró
+      <!-- Logo -->
+      <a
+        href="/"
+        class="group relative text-xl font-bold text-primary-600 transition-colors duration-300 hover:text-primary-700 md:text-2xl"
+      >
+        <span class="relative z-10">Diversidad Funcional Mataró</span>
+        <div
+          class="absolute -inset-2 rounded-lg bg-gradient-to-r from-primary-400/20 to-accent-400/20 opacity-0 blur-lg transition-opacity duration-300 group-hover:opacity-100"
+        >
+        </div>
       </a>
 
-      <ul class="hidden items-center gap-6 md:flex">
+      <!-- Desktop Navigation -->
+      <ul class="hidden items-center gap-2 md:flex">
+        {
+          navItems.map(({ href, label, matchPrefix }) => {
+            const isActive = matchPrefix
+              ? currentPath.startsWith(href) && href !== '/'
+              : currentPath === href;
+
+            return (
+              <li>
+                <a href={href} class="group relative" aria-current={isActive ? 'page' : undefined}>
+                  <div class="relative">
+                    {/* Glow effect */}
+                    <div
+                      class={`absolute -inset-2 rounded-xl bg-gradient-to-r from-primary-400 to-accent-400 blur-lg transition-opacity duration-500 ${
+                        isActive ? 'opacity-40' : 'opacity-0 group-hover:opacity-40'
+                      }`}
+                    />
+
+                    {/* Link container */}
+                    <div
+                      class={`relative rounded-xl border px-4 py-2.5 shadow-md transition-all duration-500 group-hover:shadow-xl ${
+                        isActive
+                          ? 'border-primary-400/70 bg-gradient-to-br from-primary-50 to-accent-50 shadow-lg'
+                          : 'border-white/70 bg-gradient-to-br from-white to-primary-50/30'
+                      }`}
+                    >
+                      <span
+                        class={`whitespace-nowrap text-base font-semibold transition-colors duration-300 ${
+                          isActive
+                            ? 'text-primary-600'
+                            : 'text-gray-800 group-hover:text-primary-600'
+                        }`}
+                      >
+                        {label}
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            );
+          })
+        }
+
         <li>
-          <a
-            href="/"
-            class={`${currentPath === '/' ? 'text-primary-600 font-semibold' : 'text-gray-700 hover:text-primary-600'}`}
-          >
-            Inicio
-          </a>
-        </li>
-        <li>
-          <a
-            href="/blog"
-            class={`${currentPath.startsWith('/blog') ? 'text-primary-600 font-semibold' : 'text-gray-700 hover:text-primary-600'}`}
-          >
-            Blog
-          </a>
-        </li>
-        <li>
-          <a
-            href="/documentos"
-            class={`${currentPath === '/documentos' ? 'text-primary-600 font-semibold' : 'text-gray-700 hover:text-primary-600'}`}
-          >
-            Documentos
-          </a>
-        </li>
-        <li>
-          <a href="/asociate" class="btn-primary"> Únete </a>
+          <a href="/asociate" class="btn-primary ml-2"> Únete </a>
         </li>
       </ul>
 
       <!-- Mobile menu button -->
       <button
         id="mobile-menu-button"
-        class="p-2 text-gray-700 hover:text-primary-600 md:hidden"
+        class="rounded-lg p-2 text-gray-700 transition-colors hover:bg-primary-50 hover:text-primary-600 md:hidden"
         aria-label="Menú móvil"
         aria-expanded="false"
       >
@@ -58,18 +99,21 @@ const currentPath = Astro.url.pathname;
 
     <!-- Mobile menu -->
     <div id="mobile-menu" class="mt-4 hidden pb-4 md:hidden">
-      <ul class="flex flex-col gap-4">
+      <ul class="flex flex-col gap-3">
+        {
+          navItems.map(({ href, label }) => (
+            <li>
+              <a
+                href={href}
+                class="block rounded-lg px-4 py-2 text-gray-700 transition-all hover:bg-primary-50 hover:text-primary-600"
+              >
+                {label}
+              </a>
+            </li>
+          ))
+        }
         <li>
-          <a href="/" class="block text-gray-700 hover:text-primary-600">Inicio</a>
-        </li>
-        <li>
-          <a href="/blog" class="block text-gray-700 hover:text-primary-600">Blog</a>
-        </li>
-        <li>
-          <a href="/documentos" class="block text-gray-700 hover:text-primary-600">Documentos</a>
-        </li>
-        <li>
-          <a href="/asociate" class="btn-primary w-full text-center">Únete</a>
+          <a href="/asociate" class="btn-primary w-full text-center"> Únete </a>
         </li>
       </ul>
     </div>
