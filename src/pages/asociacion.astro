@@ -1,0 +1,727 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/sections/Header.astro';
+import CTA from '../components/sections/CTA.astro';
+import Footer from '../components/sections/Footer.astro';
+
+// Datos de la junta directiva
+const juntaDirectiva = [
+  {
+    nombre: 'Presidente',
+    cargo: 'Presidente',
+    descripcion: 'Lidera y representa a la asociación',
+    color: 'from-primary-400 to-cyan-500',
+    shadowColor: 'shadow-primary-500/30',
+    bgColor: 'bg-primary-500',
+  },
+  {
+    nombre: 'Secretario',
+    cargo: 'Secretario/a',
+    descripcion: 'Gestiona documentación y comunicaciones',
+    color: 'from-accent-400 to-pink-500',
+    shadowColor: 'shadow-accent-500/30',
+    bgColor: 'bg-accent-500',
+  },
+  {
+    nombre: 'Portavoz',
+    cargo: 'Portavoz',
+    descripcion: 'Voz pública de la asociación',
+    color: 'from-orange-400 to-amber-500',
+    shadowColor: 'shadow-orange-500/30',
+    bgColor: 'bg-orange-500',
+  },
+  {
+    nombre: 'Vocal+1',
+    cargo: 'Vocal',
+    descripcion: 'Colabora en proyectos y actividades',
+    color: 'from-green-400 to-emerald-500',
+    shadowColor: 'shadow-green-500/30',
+    bgColor: 'bg-green-500',
+  },
+  {
+    nombre: 'Vocal+2',
+    cargo: 'Vocal',
+    descripcion: 'Colabora en proyectos y actividades',
+    color: 'from-violet-400 to-purple-500',
+    shadowColor: 'shadow-violet-500/30',
+    bgColor: 'bg-violet-500',
+  },
+  {
+    nombre: 'Vocal+3',
+    cargo: 'Vocal',
+    descripcion: 'Colabora en proyectos y actividades',
+    color: 'from-rose-400 to-red-500',
+    shadowColor: 'shadow-rose-500/30',
+    bgColor: 'bg-rose-500',
+  },
+];
+
+// Timeline de la historia
+const timeline = [
+  {
+    year: '2019',
+    title: 'Fundación',
+    description:
+      'Nace Diversidad Funcional Mataró con un pequeño grupo de personas comprometidas con la accesibilidad.',
+    icon: 'star',
+    color: 'from-primary-400 to-cyan-500',
+  },
+  {
+    year: '2022',
+    title: 'Primeras victorias',
+    description:
+      'Conseguimos las primeras mejoras de accesibilidad en espacios públicos de Mataró.',
+    icon: 'trophy',
+    color: 'from-orange-400 to-amber-500',
+  },
+  {
+    year: '2024',
+    title: 'Reconocimiento',
+    description:
+      'La asociación es reconocida por el Ayuntamiento como interlocutor en materia de accesibilidad.',
+    icon: 'award',
+    color: 'from-accent-400 to-pink-500',
+  },
+  {
+    year: '2025',
+    title: 'Adaptación digital',
+    description:
+      'Ampliamos nuestra presencia online y comenzamos a denunciar barreras a través de redes sociales.',
+    icon: 'globe',
+    color: 'from-green-400 to-emerald-500',
+  },
+  {
+    year: 'Hoy',
+    title: 'Crecimiento continuo',
+    description:
+      'Seguimos creciendo y luchando por una Mataró 100% accesible para todas las personas.',
+    icon: 'rocket',
+    color: 'from-violet-400 to-purple-500',
+  },
+];
+---
+
+<BaseLayout title="Nuestra Asociación - Diversidad Funcional Mataró">
+  <Header />
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="relative flex min-h-[70vh] items-center justify-center overflow-hidden">
+      <!-- Fondo con gradiente -->
+      <div class="absolute inset-0">
+        <div
+          class="absolute inset-0 bg-cover bg-no-repeat"
+          style="background-image: url('https://res.cloudinary.com/dzs4olh43/image/upload/v1769446107/Ver_vbn638.png'); background-position: center top;"
+        >
+        </div>
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-primary-600/85 via-primary-700/75 to-accent-600/85"
+        >
+        </div>
+      </div>
+
+      <!-- Iconos flotantes decorativos -->
+      <div class="absolute left-10 top-32 z-10 hidden animate-float lg:block">
+        <div
+          class="flex h-16 w-16 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg"
+        >
+          <svg class="h-8 w-8 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+
+      <div class="absolute right-16 top-40 z-10 hidden animate-float-delay lg:block">
+        <div
+          class="flex h-20 w-20 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg"
+        >
+          <svg
+            class="h-10 w-10 text-orange-400"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+
+      <div class="absolute bottom-40 left-1/4 z-10 hidden animate-float lg:block">
+        <div
+          class="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg"
+        >
+          <svg class="h-7 w-7 text-cyan-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Contenido principal -->
+      <div class="section-container relative z-20 py-20">
+        <div class="mx-auto max-w-4xl text-center">
+          <!-- Badge -->
+          <div
+            class="mb-8 inline-flex animate-fade-in items-center rounded-full border border-white/60 bg-white/40 px-4 py-2 shadow-2xl backdrop-blur-xl"
+          >
+            <svg class="mr-2 h-4 w-4 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                fill-rule="evenodd"
+                d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span class="text-sm font-medium text-white drop-shadow-lg">Conócenos</span>
+          </div>
+
+          <!-- Título principal -->
+          <h1
+            class="text-shadow-strong mb-6 animate-fade-in text-4xl font-bold text-white delay-200 sm:text-5xl md:text-7xl"
+          >
+            Nuestra
+            <span class="mt-2 block text-orange-400 drop-shadow-[0_2px_10px_rgba(251,146,60,0.5)]">
+              Asociación
+            </span>
+          </h1>
+
+          <!-- Descripción -->
+          <p
+            class="text-shadow-soft mx-auto mb-10 max-w-3xl animate-fade-in text-lg leading-relaxed text-white/95 delay-300 sm:text-xl md:text-2xl"
+          >
+            Somos una asociación sin ánimo de lucro que lucha por los derechos de las personas con
+            diversidad funcional y por una Mataró accesible para todos.
+          </p>
+
+          <!-- CTA -->
+          <div class="delay-400 flex animate-fade-in justify-center">
+            <a
+              href="#historia"
+              class="group inline-flex transform items-center justify-center rounded-2xl bg-white px-8 py-4 font-bold text-primary-600 shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-primary-50"
+            >
+              <span>Conoce nuestra historia</span>
+              <svg
+                class="ml-3 h-5 w-5 transition-transform group-hover:translate-y-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wave decoration -->
+      <div class="absolute bottom-0 left-0 right-0">
+        <svg
+          class="h-16 w-full fill-gray-50 sm:h-20 md:h-32"
+          viewBox="0 0 1440 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Sección Historia / Timeline -->
+    <section id="historia" class="bg-gray-50 py-20 md:py-28">
+      <div class="section-container">
+        <!-- Encabezado -->
+        <div class="mx-auto mb-16 max-w-3xl text-center">
+          <span
+            class="mb-4 inline-block rounded-full bg-gradient-to-r from-primary-100 to-accent-100 px-4 py-2 text-sm font-semibold text-primary-700"
+          >
+            Nuestra trayectoria
+          </span>
+          <h2 class="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
+            Más de una década
+            <span
+              class="bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent"
+            >
+              luchando
+            </span>
+          </h2>
+          <p class="text-lg text-gray-600 md:text-xl">
+            Desde nuestra fundación, hemos trabajado incansablemente por construir una sociedad más
+            inclusiva y accesible.
+          </p>
+        </div>
+
+        <!-- Timeline -->
+        <div class="relative mx-auto max-w-4xl">
+          <!-- Línea vertical central -->
+          <div
+            class="absolute left-4 top-0 h-full w-1 bg-gradient-to-b from-primary-300 via-accent-300 to-primary-300 md:left-1/2 md:-translate-x-1/2"
+          >
+          </div>
+
+          {
+            timeline.map((item, index) => (
+              <div
+                class={`timeline-item relative mb-12 pl-12 md:mb-16 md:w-1/2 md:pl-0 ${
+                  index % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:ml-auto md:pl-12'
+                }`}
+              >
+                {/* Punto en la línea */}
+                <div
+                  class={`absolute left-0 top-0 flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br ${item.color} shadow-lg md:left-auto ${
+                    index % 2 === 0 ? 'md:-right-4' : 'md:-left-4'
+                  }`}
+                >
+                  {item.icon === 'star' && (
+                    <svg class="h-4 w-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  )}
+                  {item.icon === 'trophy' && (
+                    <svg
+                      class="h-4 w-4 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+                      />
+                    </svg>
+                  )}
+                  {item.icon === 'award' && (
+                    <svg
+                      class="h-4 w-4 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  )}
+                  {item.icon === 'globe' && (
+                    <svg
+                      class="h-4 w-4 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                      />
+                    </svg>
+                  )}
+                  {item.icon === 'rocket' && (
+                    <svg
+                      class="h-4 w-4 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M13 10V3L4 14h7v7l9-11h-7z"
+                      />
+                    </svg>
+                  )}
+                </div>
+
+                {/* Tarjeta de contenido */}
+                <div class="group rounded-2xl border border-gray-100 bg-white p-6 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+                  <span
+                    class={`inline-block rounded-full bg-gradient-to-r ${item.color} mb-3 px-3 py-1 text-sm font-bold text-white`}
+                  >
+                    {item.year}
+                  </span>
+                  <h3 class="mb-2 text-xl font-bold text-gray-900">{item.title}</h3>
+                  <p class="text-gray-600">{item.description}</p>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Junta Directiva -->
+    <section class="relative overflow-hidden bg-white py-20 md:py-28">
+      <!-- Decoración de fondo -->
+      <div
+        class="absolute left-0 top-1/4 h-96 w-96 -translate-x-1/2 rounded-full bg-gradient-to-br from-primary-100/60 to-accent-100/60 blur-3xl"
+      >
+      </div>
+      <div
+        class="absolute bottom-1/4 right-0 h-72 w-72 translate-x-1/2 rounded-full bg-gradient-to-br from-accent-100/60 to-primary-100/60 blur-3xl"
+      >
+      </div>
+
+      <div class="section-container relative">
+        <!-- Encabezado -->
+        <div class="mx-auto mb-16 max-w-3xl text-center">
+          <span
+            class="mb-4 inline-block rounded-full bg-gradient-to-r from-primary-100 to-accent-100 px-4 py-2 text-sm font-semibold text-primary-700"
+          >
+            Nuestro equipo
+          </span>
+          <h2 class="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
+            Nuestra
+            <span
+              class="bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent"
+            >
+              Junta Directiva
+            </span>
+          </h2>
+          <p class="text-lg text-gray-600 md:text-xl">
+            Personas comprometidas que dedican su tiempo de forma voluntaria a mejorar la vida de
+            todos.
+          </p>
+        </div>
+
+        <!-- Grid de miembros -->
+        <div class="mx-auto grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {
+            juntaDirectiva.map((miembro) => (
+              <div class="group relative overflow-hidden rounded-2xl border border-gray-100 bg-white p-6 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                {/* Decoración de fondo en hover */}
+                <div
+                  class={`absolute -right-8 -top-8 h-32 w-32 rounded-full bg-gradient-to-br ${miembro.color} opacity-0 blur-2xl transition-all duration-500 group-hover:opacity-30`}
+                />
+
+                <div class="relative text-center">
+                  {/* Avatar */}
+                  <div class="relative mx-auto mb-4">
+                    <img
+                      src={`https://ui-avatars.com/api/?name=${miembro.nombre}&background=random&color=fff&size=200&bold=true`}
+                      alt={miembro.cargo}
+                      class={`mx-auto h-24 w-24 rounded-full object-cover shadow-lg ring-4 ring-white ${miembro.shadowColor} transition-transform duration-300 group-hover:scale-105`}
+                    />
+                    <div
+                      class={`absolute -bottom-2 left-1/2 -translate-x-1/2 rounded-full ${miembro.bgColor} px-3 py-1 text-xs font-bold text-white shadow-md`}
+                    >
+                      {miembro.cargo}
+                    </div>
+                  </div>
+
+                  <p class="mt-6 text-sm text-gray-600">{miembro.descripcion}</p>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+
+        <p class="mt-8 text-center text-sm text-gray-500">
+          Todos los cargos son voluntarios y no remunerados
+        </p>
+      </div>
+    </section>
+
+    <!-- Sección Valores y Misión -->
+    <section class="bg-primary-50 py-20 md:py-28">
+      <div class="section-container">
+        <div class="mx-auto max-w-4xl">
+          <!-- Encabezado -->
+          <div class="mb-12 text-center">
+            <span
+              class="mb-4 inline-block rounded-full bg-gradient-to-r from-primary-100 to-accent-100 px-4 py-2 text-sm font-semibold text-primary-700"
+            >
+              Lo que nos define
+            </span>
+            <h2 class="text-4xl font-bold text-gray-900 md:text-5xl">
+              Misión y
+              <span
+                class="bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent"
+              >
+                Valores
+              </span>
+            </h2>
+          </div>
+
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <!-- Misión -->
+            <div class="rounded-2xl bg-white p-8 shadow-xl">
+              <div
+                class="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-primary-400 to-cyan-500 shadow-lg shadow-primary-500/30"
+              >
+                <svg
+                  class="h-7 w-7 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <h3 class="mb-4 text-2xl font-bold text-primary-600">Nuestra Misión</h3>
+              <p class="mb-6 text-gray-700">
+                Trabajamos para conseguir una sociedad plenamente inclusiva donde todas las
+                personas, independientemente de sus capacidades, puedan participar en igualdad de
+                condiciones.
+              </p>
+              <ul class="space-y-3 text-gray-700">
+                <li class="flex items-start">
+                  <span
+                    class="mr-3 mt-1 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-primary-100"
+                  >
+                    <svg class="h-3 w-3 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </span>
+                  <span>Conseguir accesibilidad universal en Mataró</span>
+                </li>
+                <li class="flex items-start">
+                  <span
+                    class="mr-3 mt-1 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-primary-100"
+                  >
+                    <svg class="h-3 w-3 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </span>
+                  <span>Defender los derechos de las personas con diversidad funcional</span>
+                </li>
+                <li class="flex items-start">
+                  <span
+                    class="mr-3 mt-1 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-primary-100"
+                  >
+                    <svg class="h-3 w-3 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </span>
+                  <span>Promover la participación ciudadana activa</span>
+                </li>
+                <li class="flex items-start">
+                  <span
+                    class="mr-3 mt-1 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-primary-100"
+                  >
+                    <svg class="h-3 w-3 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </span>
+                  <span>Crear una red de apoyo y solidaridad</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Valores -->
+            <div class="rounded-2xl bg-white p-8 shadow-xl">
+              <div
+                class="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-accent-400 to-pink-500 shadow-lg shadow-accent-500/30"
+              >
+                <svg
+                  class="h-7 w-7 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="mb-4 text-2xl font-bold text-accent-600">Nuestros Valores</h3>
+              <p class="mb-6 text-gray-700">
+                Nos guiamos por principios que nos permiten trabajar de forma transparente,
+                solidaria y comprometida con nuestra comunidad.
+              </p>
+              <ul class="space-y-3 text-gray-700">
+                <li class="flex items-start">
+                  <span
+                    class="mr-3 mt-1 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-accent-100"
+                  >
+                    <svg class="h-3 w-3 text-accent-600" fill="currentColor" viewBox="0 0 20 20">
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </span>
+                  <span>Solidaridad y apoyo mutuo entre todas las personas</span>
+                </li>
+                <li class="flex items-start">
+                  <span
+                    class="mr-3 mt-1 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-accent-100"
+                  >
+                    <svg class="h-3 w-3 text-accent-600" fill="currentColor" viewBox="0 0 20 20">
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </span>
+                  <span>Trabajo voluntario y altruista sin ánimo de lucro</span>
+                </li>
+                <li class="flex items-start">
+                  <span
+                    class="mr-3 mt-1 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-accent-100"
+                  >
+                    <svg class="h-3 w-3 text-accent-600" fill="currentColor" viewBox="0 0 20 20">
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </span>
+                  <span>Transparencia total en nuestras acciones y cuentas</span>
+                </li>
+                <li class="flex items-start">
+                  <span
+                    class="mr-3 mt-1 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-accent-100"
+                  >
+                    <svg class="h-3 w-3 text-accent-600" fill="currentColor" viewBox="0 0 20 20">
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </span>
+                  <span>Compromiso inquebrantable con la inclusión</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Estadísticas/Logros -->
+    <section class="relative overflow-hidden bg-white py-20 md:py-28">
+      <!-- Decoración de fondo -->
+      <div
+        class="absolute left-1/2 top-0 h-96 w-full -translate-x-1/2 bg-gradient-to-b from-primary-50/50 to-transparent"
+      >
+      </div>
+
+      <div class="section-container relative">
+        <!-- Encabezado -->
+        <div class="mx-auto mb-16 max-w-3xl text-center">
+          <span
+            class="mb-4 inline-block rounded-full bg-gradient-to-r from-primary-100 to-accent-100 px-4 py-2 text-sm font-semibold text-primary-700"
+          >
+            Nuestro impacto
+          </span>
+          <h2 class="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
+            Logros en
+            <span
+              class="bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent"
+            >
+              números
+            </span>
+          </h2>
+          <p class="text-lg text-gray-600 md:text-xl">
+            Cada cifra representa un paso más hacia una Mataró más accesible e inclusiva.
+          </p>
+        </div>
+
+        <!-- Grid de estadísticas -->
+        <div class="mx-auto grid max-w-4xl grid-cols-2 gap-4 sm:grid-cols-4 md:gap-8">
+          <div
+            class="rounded-2xl bg-gradient-to-br from-primary-50 to-primary-100/50 p-6 text-center shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl md:p-8"
+          >
+            <div class="text-4xl font-bold text-primary-600 md:text-5xl">+6</div>
+            <div class="mt-2 text-sm text-gray-600 md:text-base">Años de historia</div>
+          </div>
+          <div
+            class="rounded-2xl bg-gradient-to-br from-accent-50 to-accent-100/50 p-6 text-center shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl md:p-8"
+          >
+            <div class="text-4xl font-bold text-accent-600 md:text-5xl">+50</div>
+            <div class="mt-2 text-sm text-gray-600 md:text-base">Logros conseguidos</div>
+          </div>
+          <div
+            class="rounded-2xl bg-gradient-to-br from-orange-50 to-orange-100/50 p-6 text-center shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl md:p-8"
+          >
+            <div class="text-4xl font-bold text-orange-600 md:text-5xl">+100</div>
+            <div class="mt-2 text-sm text-gray-600 md:text-base">Miembros activos</div>
+          </div>
+          <div
+            class="rounded-2xl bg-gradient-to-br from-green-50 to-green-100/50 p-6 text-center shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl md:p-8"
+          >
+            <div class="text-4xl font-bold text-green-600 md:text-5xl">+30</div>
+            <div class="mt-2 text-sm text-gray-600 md:text-base">Proyectos realizados</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <CTA />
+  </main>
+  <Footer />
+</BaseLayout>
+
+<style>
+  /* Animación para elementos del timeline */
+  .timeline-item {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+  }
+
+  .timeline-item:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .timeline-item:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .timeline-item:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  .timeline-item:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  .timeline-item:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>

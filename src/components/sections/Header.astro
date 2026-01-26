@@ -3,8 +3,10 @@ const currentPath = Astro.url.pathname;
 
 const navItems = [
   { href: '/', label: 'Inicio' },
+  { href: '/asociacion', label: 'Asociación' },
   { href: '/blog', label: 'Blog', matchPrefix: true },
   { href: '/documentos', label: 'Documentos' },
+  { href: '/contacto', label: 'Contacto' },
 ];
 ---
 
@@ -20,14 +22,14 @@ const navItems = [
   <nav class="section-container py-4" aria-label="Navegación principal">
     <div class="flex items-center justify-between">
       <!-- Logo -->
-      <a href="/" class="group relative flex items-center gap-3 transition-all duration-300">
+      <a href="/" class="group relative flex flex-col items-start transition-all duration-300">
         <img
           src="/logoDiverMataro.png"
           alt="Logo Diversidad Funcional Mataró"
           class="h-10 w-auto md:h-12"
         />
         <span
-          class="relative z-10 hidden text-lg font-bold text-primary-600 transition-colors duration-300 group-hover:text-primary-700 sm:block md:text-xl lg:text-2xl"
+          class="relative z-10 text-base font-bold text-primary-600 transition-colors duration-300 group-hover:text-primary-700 sm:text-lg"
         >
           Diversidad Funcional Mataró
         </span>
