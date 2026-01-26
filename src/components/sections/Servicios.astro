@@ -1,0 +1,173 @@
+---
+const servicios = [
+  {
+    title: 'Apoyo Personalizado',
+    slug: 'apoyo-personalizado',
+    description:
+      'Acompañamiento individualizado para cada persona, adaptándonos a sus necesidades específicas y objetivos personales.',
+    icon: 'M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z',
+    color: 'from-orange-400 to-amber-500',
+    shadowColor: 'shadow-orange-500/30',
+    hoverBorder: 'group-hover:border-orange-400',
+  },
+  {
+    title: 'Comunidad Inclusiva',
+    slug: 'comunidad-inclusiva',
+    description:
+      'Creamos espacios de encuentro donde todas las personas son bienvenidas, fomentando la diversidad y el respeto mutuo.',
+    icon: 'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z',
+    color: 'from-primary-400 to-cyan-500',
+    shadowColor: 'shadow-primary-500/30',
+    hoverBorder: 'group-hover:border-primary-400',
+  },
+  {
+    title: 'Actos Reivindicativos',
+    slug: 'actos-reivindicativos',
+    description:
+      'Organizamos eventos y campañas para visibilizar nuestras demandas y defender los derechos de las personas con diversidad funcional.',
+    icon: 'M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z',
+    color: 'from-accent-400 to-pink-500',
+    shadowColor: 'shadow-accent-500/30',
+    hoverBorder: 'group-hover:border-accent-400',
+  },
+  {
+    title: 'Reconocimiento Social',
+    slug: 'reconocimiento-social',
+    description:
+      'Trabajamos para cambiar la percepción social, promoviendo una imagen positiva y realista de la diversidad funcional.',
+    icon: 'M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z',
+    color: 'from-yellow-400 to-orange-500',
+    shadowColor: 'shadow-yellow-500/30',
+    hoverBorder: 'group-hover:border-yellow-400',
+  },
+  {
+    title: 'Accesibilidad Universal',
+    slug: 'accesibilidad-universal',
+    description:
+      'Asesoramos y colaboramos con instituciones para eliminar barreras arquitectónicas, digitales y sociales.',
+    icon: 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4',
+    color: 'from-green-400 to-emerald-500',
+    shadowColor: 'shadow-green-500/30',
+    hoverBorder: 'group-hover:border-green-400',
+  },
+  {
+    title: 'Innovación Constante',
+    slug: 'innovacion-constante',
+    description:
+      'Buscamos nuevas formas de mejorar la calidad de vida, adoptando tecnologías y metodologías innovadoras.',
+    icon: 'M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z',
+    color: 'from-violet-400 to-purple-500',
+    shadowColor: 'shadow-violet-500/30',
+    hoverBorder: 'group-hover:border-violet-400',
+  },
+];
+---
+
+<section id="servicios" class="relative overflow-hidden bg-gray-50 py-20 md:py-28">
+  <!-- Decoración de fondo -->
+  <div
+    class="absolute left-0 top-0 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-primary-200/50 to-accent-200/50 blur-3xl"
+  >
+  </div>
+  <div
+    class="absolute bottom-0 right-0 h-96 w-96 translate-x-1/2 translate-y-1/2 rounded-full bg-gradient-to-br from-accent-200/50 to-primary-200/50 blur-3xl"
+  >
+  </div>
+
+  <div class="section-container relative">
+    <!-- Encabezado -->
+    <div class="mx-auto mb-16 max-w-3xl text-center">
+      <span
+        class="mb-4 inline-block rounded-full bg-gradient-to-r from-primary-100 to-accent-100 px-4 py-2 text-sm font-semibold text-primary-700"
+      >
+        Nuestros Servicios
+      </span>
+      <h2 class="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
+        ¿Qué hacemos por la
+        <span class="bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent">
+          inclusión?
+        </span>
+      </h2>
+      <p class="text-lg text-gray-600 md:text-xl">
+        Trabajamos en múltiples frentes para construir una sociedad donde todas las personas puedan
+        participar plenamente.
+      </p>
+    </div>
+
+    <!-- Grid de servicios -->
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+      {
+        servicios.map((servicio, index) => (
+          <a
+            href={`/servicios/${servicio.slug}`}
+            class={`group relative block overflow-hidden rounded-3xl border-2 border-gray-100 bg-white p-6 shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl sm:p-8 ${servicio.hoverBorder}`}
+            style={`animation-delay: ${index * 100}ms`}
+          >
+            {/* Efecto de brillo en hover */}
+            <div class="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-gradient-to-br from-gray-100 to-transparent opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-100" />
+
+            {/* Icono */}
+            <div
+              class={`relative mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br ${servicio.color} shadow-lg ${servicio.shadowColor} transition-all duration-300 group-hover:rotate-3 group-hover:scale-110`}
+            >
+              <svg class="h-8 w-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d={servicio.icon}
+                />
+              </svg>
+            </div>
+
+            {/* Contenido */}
+            <h3 class="relative mb-3 text-xl font-bold text-gray-900 transition-colors duration-300 group-hover:text-primary-600 sm:text-2xl">
+              {servicio.title}
+            </h3>
+            <p class="relative leading-relaxed text-gray-600">{servicio.description}</p>
+
+            {/* Flecha indicadora */}
+            <div class="relative mt-6 flex items-center text-primary-600 opacity-0 transition-all duration-300 group-hover:opacity-100">
+              <span class="text-sm font-semibold">Saber más</span>
+              <svg
+                class="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+
+    <!-- CTA inferior -->
+    <div class="mt-16 text-center">
+      <a
+        href="/asociate"
+        class="group inline-flex items-center rounded-2xl bg-gradient-to-r from-primary-600 to-accent-600 px-8 py-4 font-bold text-white shadow-lg shadow-primary-500/30 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-primary-500/40"
+      >
+        <span>Únete y colabora con nosotros</span>
+        <svg
+          class="ml-3 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>

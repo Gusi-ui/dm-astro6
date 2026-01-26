@@ -1,0 +1,238 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/sections/Header.astro';
+import Footer from '../../components/sections/Footer.astro';
+---
+
+<BaseLayout title="Comunidad Inclusiva - DiverMataró">
+  <Header />
+  <main id="main-content">
+    <!-- Hero de la página -->
+    <section
+      class="relative overflow-hidden bg-gradient-to-br from-primary-600 via-primary-700 to-accent-600 py-20 md:py-28"
+    >
+      <div class="absolute inset-0 bg-black/20"></div>
+      <div class="section-container relative z-10">
+        <div class="mx-auto max-w-4xl text-center">
+          <div
+            class="mb-6 inline-flex items-center rounded-full border border-white/30 bg-white/20 px-4 py-2 backdrop-blur-xl"
+          >
+            <div
+              class="mr-3 flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-primary-400 to-cyan-500"
+            >
+              <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"
+                ></path>
+              </svg>
+            </div>
+            <span class="text-sm font-medium text-white">Nuestros Servicios</span>
+          </div>
+          <h1 class="text-shadow-strong mb-6 text-4xl font-bold text-white md:text-6xl">
+            Comunidad Inclusiva
+          </h1>
+          <p class="text-shadow-soft text-xl text-white/90 md:text-2xl">
+            Espacios de encuentro donde todas las personas son bienvenidas
+          </p>
+        </div>
+      </div>
+      <div class="absolute bottom-0 left-0 right-0">
+        <svg
+          class="h-16 w-full fill-white md:h-24"
+          viewBox="0 0 1440 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L0,120Z"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Contenido principal -->
+    <section class="py-16 md:py-24">
+      <div class="section-container">
+        <div class="mx-auto max-w-4xl">
+          <div class="prose prose-lg max-w-none">
+            <h2 class="text-3xl font-bold text-gray-900">Construyendo una comunidad para todos</h2>
+            <p class="text-lg leading-relaxed text-gray-700">
+              En DiverMataró creemos que la verdadera inclusión se construye desde la comunidad. Por
+              eso, creamos espacios de encuentro donde todas las personas, independientemente de sus
+              capacidades, pueden participar, compartir y crecer juntas.
+            </p>
+
+            <h3 class="mt-10 text-2xl font-bold text-gray-900">Nuestros espacios de encuentro</h3>
+            <div class="mt-6 grid gap-6 md:grid-cols-2">
+              <div class="rounded-2xl border-2 border-gray-100 bg-white p-6 shadow-lg">
+                <div
+                  class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary-400 to-cyan-500"
+                >
+                  <svg
+                    class="h-6 w-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                    ></path>
+                  </svg>
+                </div>
+                <h4 class="text-lg font-bold text-gray-900">Grupos de apoyo mutuo</h4>
+                <p class="text-gray-600">
+                  Reuniones periódicas donde compartir experiencias, dudas y consejos entre personas
+                  que viven situaciones similares.
+                </p>
+              </div>
+              <div class="rounded-2xl border-2 border-gray-100 bg-white p-6 shadow-lg">
+                <div
+                  class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-accent-400 to-pink-500"
+                >
+                  <svg
+                    class="h-6 w-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                </div>
+                <h4 class="text-lg font-bold text-gray-900">Actividades de ocio inclusivo</h4>
+                <p class="text-gray-600">
+                  Excursiones, talleres culturales y actividades recreativas adaptadas para que
+                  todos puedan disfrutar.
+                </p>
+              </div>
+              <div class="rounded-2xl border-2 border-gray-100 bg-white p-6 shadow-lg">
+                <div
+                  class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-orange-400 to-amber-500"
+                >
+                  <svg
+                    class="h-6 w-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                    ></path>
+                  </svg>
+                </div>
+                <h4 class="text-lg font-bold text-gray-900">Formación y talleres</h4>
+                <p class="text-gray-600">
+                  Cursos y talleres sobre derechos, habilidades sociales y desarrollo personal.
+                </p>
+              </div>
+              <div class="rounded-2xl border-2 border-gray-100 bg-white p-6 shadow-lg">
+                <div
+                  class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-green-400 to-emerald-500"
+                >
+                  <svg
+                    class="h-6 w-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                    ></path>
+                  </svg>
+                </div>
+                <h4 class="text-lg font-bold text-gray-900">Red de voluntariado</h4>
+                <p class="text-gray-600">
+                  Conectamos personas que quieren ayudar con aquellas que necesitan apoyo.
+                </p>
+              </div>
+            </div>
+
+            <h3 class="mt-10 text-2xl font-bold text-gray-900">
+              Beneficios de formar parte de nuestra comunidad
+            </h3>
+            <ul class="mt-4 space-y-3">
+              <li class="flex items-start">
+                <span class="mr-3 text-primary-600">✓</span>
+                <span>Romper el aislamiento social y crear vínculos de amistad</span>
+              </li>
+              <li class="flex items-start">
+                <span class="mr-3 text-primary-600">✓</span>
+                <span>Compartir experiencias con personas que entienden tu situación</span>
+              </li>
+              <li class="flex items-start">
+                <span class="mr-3 text-primary-600">✓</span>
+                <span>Acceder a información y recursos de primera mano</span>
+              </li>
+              <li class="flex items-start">
+                <span class="mr-3 text-primary-600">✓</span>
+                <span>Participar activamente en la defensa de tus derechos</span>
+              </li>
+              <li class="flex items-start">
+                <span class="mr-3 text-primary-600">✓</span>
+                <span>Disfrutar de actividades de ocio adaptadas e inclusivas</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- CTA -->
+          <div
+            class="mt-16 rounded-3xl bg-gradient-to-r from-primary-600 to-accent-600 p-8 text-center md:p-12"
+          >
+            <h3 class="mb-4 text-2xl font-bold text-white md:text-3xl">
+              ¿Quieres formar parte de nuestra comunidad?
+            </h3>
+            <p class="mb-8 text-lg text-white/90">
+              Únete a nosotros y descubre el poder de la comunidad inclusiva.
+            </p>
+            <a
+              href="/asociate"
+              class="inline-flex items-center rounded-2xl bg-white px-8 py-4 font-bold text-primary-600 shadow-lg transition-all duration-300 hover:scale-105 hover:bg-primary-50"
+            >
+              <span>Únete ahora</span>
+              <svg class="ml-3 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Volver -->
+          <div class="mt-12 text-center">
+            <a
+              href="/#servicios"
+              class="inline-flex items-center font-semibold text-primary-600 hover:text-primary-700"
+            >
+              <svg class="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"></path>
+              </svg>
+              Volver a servicios
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>

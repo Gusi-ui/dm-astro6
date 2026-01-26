@@ -20,11 +20,17 @@ const navItems = [
   <nav class="section-container py-4" aria-label="Navegación principal">
     <div class="flex items-center justify-between">
       <!-- Logo -->
-      <a
-        href="/"
-        class="group relative text-xl font-bold text-primary-600 transition-colors duration-300 hover:text-primary-700 md:text-2xl"
-      >
-        <span class="relative z-10">Diversidad Funcional Mataró</span>
+      <a href="/" class="group relative flex items-center gap-3 transition-all duration-300">
+        <img
+          src="/logoDiverMataro.png"
+          alt="Logo Diversidad Funcional Mataró"
+          class="h-10 w-auto md:h-12"
+        />
+        <span
+          class="relative z-10 hidden text-lg font-bold text-primary-600 transition-colors duration-300 group-hover:text-primary-700 sm:block md:text-xl lg:text-2xl"
+        >
+          Diversidad Funcional Mataró
+        </span>
         <div
           class="absolute -inset-2 rounded-lg bg-gradient-to-r from-primary-400/20 to-accent-400/20 opacity-0 blur-lg transition-opacity duration-300 group-hover:opacity-100"
         >

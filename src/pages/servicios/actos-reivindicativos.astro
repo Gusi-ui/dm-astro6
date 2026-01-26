@@ -1,0 +1,238 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/sections/Header.astro';
+import Footer from '../../components/sections/Footer.astro';
+---
+
+<BaseLayout title="Actos Reivindicativos - DiverMataró">
+  <Header />
+  <main id="main-content">
+    <!-- Hero de la página -->
+    <section
+      class="relative overflow-hidden bg-gradient-to-br from-primary-600 via-primary-700 to-accent-600 py-20 md:py-28"
+    >
+      <div class="absolute inset-0 bg-black/20"></div>
+      <div class="section-container relative z-10">
+        <div class="mx-auto max-w-4xl text-center">
+          <div
+            class="mb-6 inline-flex items-center rounded-full border border-white/30 bg-white/20 px-4 py-2 backdrop-blur-xl"
+          >
+            <div
+              class="mr-3 flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-accent-400 to-pink-500"
+            >
+              <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"
+                ></path>
+              </svg>
+            </div>
+            <span class="text-sm font-medium text-white">Nuestros Servicios</span>
+          </div>
+          <h1 class="text-shadow-strong mb-6 text-4xl font-bold text-white md:text-6xl">
+            Actos Reivindicativos
+          </h1>
+          <p class="text-shadow-soft text-xl text-white/90 md:text-2xl">
+            Alzamos la voz para defender nuestros derechos
+          </p>
+        </div>
+      </div>
+      <div class="absolute bottom-0 left-0 right-0">
+        <svg
+          class="h-16 w-full fill-white md:h-24"
+          viewBox="0 0 1440 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L0,120Z"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Contenido principal -->
+    <section class="py-16 md:py-24">
+      <div class="section-container">
+        <div class="mx-auto max-w-4xl">
+          <div class="prose prose-lg max-w-none">
+            <h2 class="text-3xl font-bold text-gray-900">Defendiendo nuestros derechos</h2>
+            <p class="text-lg leading-relaxed text-gray-700">
+              Los actos reivindicativos son una herramienta fundamental para visibilizar las
+              demandas de las personas con diversidad funcional. En DiverMataró organizamos y
+              participamos en eventos que buscan concienciar a la sociedad y exigir cambios reales a
+              las instituciones.
+            </p>
+
+            <h3 class="mt-10 text-2xl font-bold text-gray-900">Tipos de acciones que realizamos</h3>
+            <div class="mt-6 grid gap-6 md:grid-cols-2">
+              <div class="rounded-2xl border-2 border-gray-100 bg-white p-6 shadow-lg">
+                <div
+                  class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-accent-400 to-pink-500"
+                >
+                  <svg
+                    class="h-6 w-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
+                    ></path>
+                  </svg>
+                </div>
+                <h4 class="text-lg font-bold text-gray-900">Campañas de sensibilización</h4>
+                <p class="text-gray-600">
+                  Difundimos información sobre las barreras que enfrentamos y proponemos soluciones
+                  concretas.
+                </p>
+              </div>
+              <div class="rounded-2xl border-2 border-gray-100 bg-white p-6 shadow-lg">
+                <div
+                  class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-orange-400 to-amber-500"
+                >
+                  <svg
+                    class="h-6 w-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"
+                    ></path>
+                  </svg>
+                </div>
+                <h4 class="text-lg font-bold text-gray-900">Concentraciones y manifestaciones</h4>
+                <p class="text-gray-600">
+                  Nos unimos para hacer visible nuestra presencia y nuestras demandas en el espacio
+                  público.
+                </p>
+              </div>
+              <div class="rounded-2xl border-2 border-gray-100 bg-white p-6 shadow-lg">
+                <div
+                  class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary-400 to-cyan-500"
+                >
+                  <svg
+                    class="h-6 w-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    ></path>
+                  </svg>
+                </div>
+                <h4 class="text-lg font-bold text-gray-900">Denuncias y propuestas</h4>
+                <p class="text-gray-600">
+                  Presentamos denuncias formales y propuestas de mejora a las administraciones
+                  públicas.
+                </p>
+              </div>
+              <div class="rounded-2xl border-2 border-gray-100 bg-white p-6 shadow-lg">
+                <div
+                  class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-green-400 to-emerald-500"
+                >
+                  <svg
+                    class="h-6 w-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+                    ></path>
+                  </svg>
+                </div>
+                <h4 class="text-lg font-bold text-gray-900">Presencia en medios</h4>
+                <p class="text-gray-600">
+                  Llevamos nuestra voz a los medios de comunicación para amplificar nuestro mensaje.
+                </p>
+              </div>
+            </div>
+
+            <h3 class="mt-10 text-2xl font-bold text-gray-900">Nuestras principales demandas</h3>
+            <ul class="mt-4 space-y-3">
+              <li class="flex items-start">
+                <span class="mr-3 text-primary-600">✓</span>
+                <span>Transporte público 100% accesible en Mataró y comarca</span>
+              </li>
+              <li class="flex items-start">
+                <span class="mr-3 text-primary-600">✓</span>
+                <span>Eliminación de barreras arquitectónicas en espacios públicos</span>
+              </li>
+              <li class="flex items-start">
+                <span class="mr-3 text-primary-600">✓</span>
+                <span>Cumplimiento de la normativa de accesibilidad en comercios y servicios</span>
+              </li>
+              <li class="flex items-start">
+                <span class="mr-3 text-primary-600">✓</span>
+                <span>Mayor inversión en políticas de inclusión laboral</span>
+              </li>
+              <li class="flex items-start">
+                <span class="mr-3 text-primary-600">✓</span>
+                <span>Accesibilidad digital en webs y aplicaciones de servicios públicos</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- CTA -->
+          <div
+            class="mt-16 rounded-3xl bg-gradient-to-r from-primary-600 to-accent-600 p-8 text-center md:p-12"
+          >
+            <h3 class="mb-4 text-2xl font-bold text-white md:text-3xl">
+              ¿Quieres sumarte a nuestras acciones?
+            </h3>
+            <p class="mb-8 text-lg text-white/90">
+              Tu voz cuenta. Juntos somos más fuertes para conseguir cambios reales.
+            </p>
+            <a
+              href="/asociate"
+              class="inline-flex items-center rounded-2xl bg-white px-8 py-4 font-bold text-primary-600 shadow-lg transition-all duration-300 hover:scale-105 hover:bg-primary-50"
+            >
+              <span>Únete a la causa</span>
+              <svg class="ml-3 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Volver -->
+          <div class="mt-12 text-center">
+            <a
+              href="/#servicios"
+              class="inline-flex items-center font-semibold text-primary-600 hover:text-primary-700"
+            >
+              <svg class="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"></path>
+              </svg>
+              Volver a servicios
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>

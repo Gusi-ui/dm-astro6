@@ -111,9 +111,12 @@ const relatedPosts = allPosts
             }
             {
               post.data.category && (
-                <span class="inline-block rounded-full bg-primary-100 px-4 py-2 text-sm font-semibold text-primary-700">
+                <a
+                  href={`/blog/categoria/${post.data.category.toLowerCase()}`}
+                  class="inline-block rounded-full bg-primary-100 px-4 py-2 text-sm font-semibold text-primary-700 transition-all hover:bg-primary-200 hover:shadow-md"
+                >
                   {post.data.category}
-                </span>
+                </a>
               )
             }
           </header>

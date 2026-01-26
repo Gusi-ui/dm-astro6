@@ -2,16 +2,41 @@
 
 ---
 
-<section
-  class="relative flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-br from-primary-600 via-primary-700 to-accent-600"
->
+<section class="relative flex min-h-screen items-center justify-center overflow-hidden">
+  <!-- Fondo de vídeo para escritorio -->
+  <div class="absolute inset-0 hidden lg:block">
+    <video autoplay muted loop playsinline class="hero-video h-full w-full object-cover">
+      <source
+        src="https://res.cloudinary.com/dzs4olh43/video/upload/v1764255480/hero-video_brq5u6.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <!-- Overlay con gradiente para legibilidad -->
+    <div
+      class="absolute inset-0 bg-gradient-to-br from-primary-600/80 via-primary-700/70 to-accent-600/80"
+    >
+    </div>
+  </div>
+
+  <!-- Fondo de imagen para móvil/tablet -->
+  <div
+    class="absolute inset-0 bg-cover bg-center bg-no-repeat lg:hidden"
+    style="background-image: url('https://res.cloudinary.com/dzs4olh43/image/upload/v1769347000/Diversidad_nqwhmc.avif');"
+  >
+    <!-- Overlay con gradiente para legibilidad -->
+    <div
+      class="absolute inset-0 bg-gradient-to-br from-primary-600/85 via-primary-700/75 to-accent-600/85"
+    >
+    </div>
+  </div>
+
   <!-- Iconos flotantes decorativos -->
   <div class="absolute left-10 top-20 z-10 hidden animate-float lg:block">
     <div
       class="flex h-16 w-16 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg"
     >
       <svg
-        class="h-8 w-8 animate-pulse text-primary-300"
+        class="h-8 w-8 animate-pulse text-amber-400"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -31,7 +56,7 @@
       class="flex h-20 w-20 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg"
     >
       <svg
-        class="h-10 w-10 animate-pulse text-accent-300"
+        class="h-10 w-10 animate-pulse text-orange-400"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -51,7 +76,7 @@
       class="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg"
     >
       <svg
-        class="h-7 w-7 animate-pulse text-yellow-300"
+        class="h-7 w-7 animate-pulse text-amber-300"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -85,28 +110,27 @@
 
       <!-- Título principal -->
       <h1
-        class="text-shadow-strong mb-6 animate-fade-in text-5xl font-bold text-white delay-200 md:text-7xl"
+        class="text-shadow-strong mb-6 animate-fade-in text-4xl font-bold text-white delay-200 sm:text-5xl md:text-7xl"
       >
         Por una Sociedad con
-        <span
-          class="mt-2 block bg-gradient-to-r from-yellow-300 to-amber-200 bg-clip-text text-transparent"
-        >
+        <span class="mt-2 block text-orange-400 drop-shadow-[0_2px_10px_rgba(251,146,60,0.5)]">
           Accesibilidad Universal
         </span>
       </h1>
 
       <!-- Descripción -->
       <p
-        class="text-shadow-soft mx-auto mb-10 max-w-3xl animate-fade-in text-xl leading-relaxed text-white/95 delay-300 md:text-2xl"
+        class="text-shadow-soft mx-auto mb-10 max-w-3xl animate-fade-in text-lg leading-relaxed text-white/95 delay-300 sm:text-xl md:text-2xl"
       >
-        Trabajamos por los derechos humanos de las personas con diversidad funcional en Mataró
+        En DiverMataró trabajamos por la plena inclusión de las personas con diversidad funcional,
+        promoviendo la accesibilidad universal y una sociedad sin barreras.
       </p>
 
       <!-- CTAs -->
       <div class="delay-400 flex animate-fade-in flex-col justify-center gap-4 sm:flex-row">
         <a
           href="/asociate"
-          class="group inline-flex transform items-center rounded-2xl bg-white px-8 py-4 font-bold text-primary-600 shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-primary-50"
+          class="group inline-flex transform items-center justify-center rounded-2xl bg-white px-8 py-4 font-bold text-primary-600 shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-primary-50"
         >
           <span>Únete a Nosotros</span>
           <svg
@@ -124,7 +148,7 @@
         </a>
         <a
           href="/blog"
-          class="group inline-flex transform items-center rounded-2xl border-2 border-white bg-white/90 px-8 py-4 font-bold text-primary-700 shadow-2xl backdrop-blur-xl transition-all duration-300 hover:scale-105 hover:bg-white"
+          class="group inline-flex transform items-center justify-center rounded-2xl border-2 border-white bg-white/90 px-8 py-4 font-bold text-primary-700 shadow-2xl backdrop-blur-xl transition-all duration-300 hover:scale-105 hover:bg-white"
         >
           Conoce Nuestro Trabajo
           <svg
@@ -139,127 +163,193 @@
         </a>
       </div>
 
-      <!-- Stats o iconos informativos -->
+      <!-- Los 3 Pilares -->
       <div
-        class="mx-auto mt-16 grid max-w-4xl animate-fade-in grid-cols-2 gap-6 delay-500 md:grid-cols-4"
+        class="mx-auto mt-12 grid max-w-5xl animate-fade-in grid-cols-1 gap-6 delay-500 sm:mt-16 md:grid-cols-3"
       >
-        <a
-          href="/blog"
-          class="group block cursor-pointer rounded-2xl p-4 text-center transition-all duration-300 hover:bg-black/30"
+        <!-- Pilar 1: Accesibilidad -->
+        <div
+          class="group relative overflow-hidden rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl transition-all duration-500 hover:scale-105 hover:bg-white/20 sm:p-8"
         >
           <div
-            class="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-2xl border-2 border-white/50 bg-white/30 shadow-2xl backdrop-blur-xl transition-all duration-300 group-hover:scale-110 group-hover:border-primary-400 group-hover:bg-primary-500"
+            class="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-gradient-to-br from-orange-400/30 to-yellow-400/30 blur-2xl transition-all duration-500 group-hover:scale-150"
           >
-            <svg
-              class="h-10 w-10 text-white transition-colors"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+          </div>
+          <div class="relative">
+            <div
+              class="mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-orange-400 to-amber-500 shadow-lg shadow-orange-500/30 transition-transform duration-300 group-hover:scale-110 sm:h-20 sm:w-20"
             >
-              <path
+              <!-- Icono accesibilidad - Lucide -->
+              <svg
+                class="h-8 w-8 text-white sm:h-10 sm:w-10"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                stroke-width="2"
-                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-              ></path>
-            </svg>
+              >
+                <circle cx="16" cy="4" r="1"></circle>
+                <path d="m18 19 1-7-6 1"></path>
+                <path d="m5 8 3-3 5.5 3-2.36 3.5"></path>
+                <path d="M4.24 14.5a5 5 0 0 0 6.88 6"></path>
+                <path d="M13.76 17.5a5 5 0 0 0-6.88-6"></path>
+              </svg>
+            </div>
+            <h3 class="text-shadow-strong mb-2 text-2xl font-bold text-white sm:text-3xl">
+              Accesibilidad
+            </h3>
+            <p class="text-shadow-soft text-sm leading-relaxed text-white/90 sm:text-base">
+              Luchamos por espacios, transportes y servicios accesibles para todos. Sin barreras
+              físicas ni digitales.
+            </p>
           </div>
-          <div class="text-shadow-strong mb-2 text-2xl font-bold text-white transition-colors">
-            Comunidad
-          </div>
-          <div class="text-shadow-soft text-sm text-white">Unidos por la inclusión</div>
-        </a>
+        </div>
 
-        <a
-          href="/documentos"
-          class="group block cursor-pointer rounded-2xl p-4 text-center transition-all duration-300 hover:bg-black/30"
+        <!-- Pilar 2: Inclusión -->
+        <div
+          class="group relative overflow-hidden rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl transition-all duration-500 hover:scale-105 hover:bg-white/20 sm:p-8"
         >
           <div
-            class="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-2xl border-2 border-white/50 bg-white/30 shadow-2xl backdrop-blur-xl transition-all duration-300 group-hover:scale-110 group-hover:border-accent-400 group-hover:bg-accent-500"
+            class="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-gradient-to-br from-primary-400/30 to-cyan-400/30 blur-2xl transition-all duration-500 group-hover:scale-150"
           >
-            <svg
-              class="h-10 w-10 text-white transition-colors"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+          </div>
+          <div class="relative">
+            <div
+              class="mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-primary-400 to-cyan-500 shadow-lg shadow-primary-500/30 transition-transform duration-300 group-hover:scale-110 sm:h-20 sm:w-20"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-              ></path>
-            </svg>
+              <!-- Icono inclusión - grupo de personas -->
+              <svg
+                class="h-8 w-8 text-white sm:h-10 sm:w-10"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-shadow-strong mb-2 text-2xl font-bold text-white sm:text-3xl">
+              Inclusión
+            </h3>
+            <p class="text-shadow-soft text-sm leading-relaxed text-white/90 sm:text-base">
+              Promovemos la participación plena de todas las personas en la vida social, laboral y
+              cultural.
+            </p>
           </div>
-          <div class="text-shadow-strong mb-2 text-2xl font-bold text-white transition-colors">
-            Recursos
-          </div>
-          <div class="text-shadow-soft text-sm text-white">Información útil</div>
-        </a>
+        </div>
 
-        <a
-          href="/blog"
-          class="group block cursor-pointer rounded-2xl p-4 text-center transition-all duration-300 hover:bg-black/30"
+        <!-- Pilar 3: Integración -->
+        <div
+          class="group relative overflow-hidden rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl transition-all duration-500 hover:scale-105 hover:bg-white/20 sm:p-8"
         >
           <div
-            class="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-2xl border-2 border-white/50 bg-white/30 shadow-2xl backdrop-blur-xl transition-all duration-300 group-hover:scale-110 group-hover:border-yellow-400 group-hover:bg-yellow-500"
+            class="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-gradient-to-br from-accent-400/30 to-pink-400/30 blur-2xl transition-all duration-500 group-hover:scale-150"
           >
-            <svg
-              class="h-10 w-10 text-white transition-colors"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+          </div>
+          <div class="relative">
+            <div
+              class="mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-accent-400 to-pink-500 shadow-lg shadow-accent-500/30 transition-transform duration-300 group-hover:scale-110 sm:h-20 sm:w-20"
             >
-              <path
+              <!-- Icono integración - Lucide user-plus -->
+              <svg
+                class="h-8 w-8 text-white sm:h-10 sm:w-10"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
-              ></path>
-            </svg>
+              >
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <line x1="19" x2="19" y1="8" y2="14"></line>
+                <line x1="22" x2="16" y1="11" y2="11"></line>
+              </svg>
+            </div>
+            <h3 class="text-shadow-strong mb-2 text-2xl font-bold text-white sm:text-3xl">
+              Integración
+            </h3>
+            <p class="text-shadow-soft text-sm leading-relaxed text-white/90 sm:text-base">
+              Construimos comunidad, tejiendo redes de apoyo y solidaridad entre todas las personas.
+            </p>
           </div>
-          <div class="text-shadow-strong mb-2 text-2xl font-bold text-white transition-colors">
-            Blog
-          </div>
-          <div class="text-shadow-soft text-sm text-white">Noticias y artículos</div>
-        </a>
-
-        <a
-          href="/asociate"
-          class="group block cursor-pointer rounded-2xl p-4 text-center transition-all duration-300 hover:bg-black/30"
-        >
-          <div
-            class="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-2xl border-2 border-white/50 bg-white/30 shadow-2xl backdrop-blur-xl transition-all duration-300 group-hover:scale-110 group-hover:border-green-400 group-hover:bg-green-500"
-          >
-            <svg
-              class="h-10 w-10 text-white transition-colors"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-              ></path>
-            </svg>
-          </div>
-          <div class="text-shadow-strong mb-2 text-2xl font-bold text-white transition-colors">
-            Asóciate
-          </div>
-          <div class="text-shadow-soft text-sm text-white">Forma parte</div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
 
   <!-- Wave decoration -->
   <div class="absolute bottom-0 left-0 right-0">
-    <svg class="h-20 w-full fill-white md:h-32" viewBox="0 0 1440 120" preserveAspectRatio="none">
+    <svg
+      class="h-16 w-full fill-white sm:h-20 md:h-32"
+      viewBox="0 0 1440 120"
+      preserveAspectRatio="none"
+    >
       <path
         d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"
       ></path>
     </svg>
   </div>
 </section>
+
+<style>
+  /* Efecto parallax para el vídeo */
+  .hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Efecto parallax suave en scroll */
+  @supports (transform: translateZ(0)) {
+    .hero-video {
+      will-change: transform;
+    }
+  }
+
+  /* Reducir movimiento para accesibilidad */
+  @media (prefers-reduced-motion: reduce) {
+    .hero-video {
+      animation: none;
+    }
+  }
+</style>
+
+<script>
+  // Efecto parallax en scroll para el vídeo
+  const heroVideo = document.querySelector('.hero-video') as HTMLVideoElement | null;
+
+  if (heroVideo && window.matchMedia('(min-width: 1024px)').matches) {
+    let ticking = false;
+
+    const updateParallax = () => {
+      const scrolled = window.pageYOffset;
+      const rate = scrolled * 0.3;
+      heroVideo.style.transform = `translate(-50%, calc(-50% + ${rate}px))`;
+      ticking = false;
+    };
+
+    window.addEventListener(
+      'scroll',
+      () => {
+        if (!ticking) {
+          window.requestAnimationFrame(updateParallax);
+          ticking = true;
+        }
+      },
+      { passive: true }
+    );
+  }
+</script>

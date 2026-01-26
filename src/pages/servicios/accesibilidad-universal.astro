@@ -1,0 +1,237 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/sections/Header.astro';
+import Footer from '../../components/sections/Footer.astro';
+---
+
+<BaseLayout title="Accesibilidad Universal - DiverMataró">
+  <Header />
+  <main id="main-content">
+    <!-- Hero de la página -->
+    <section
+      class="relative overflow-hidden bg-gradient-to-br from-primary-600 via-primary-700 to-accent-600 py-20 md:py-28"
+    >
+      <div class="absolute inset-0 bg-black/20"></div>
+      <div class="section-container relative z-10">
+        <div class="mx-auto max-w-4xl text-center">
+          <div
+            class="mb-6 inline-flex items-center rounded-full border border-white/30 bg-white/20 px-4 py-2 backdrop-blur-xl"
+          >
+            <div
+              class="mr-3 flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-green-400 to-emerald-500"
+            >
+              <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                ></path>
+              </svg>
+            </div>
+            <span class="text-sm font-medium text-white">Nuestros Servicios</span>
+          </div>
+          <h1 class="text-shadow-strong mb-6 text-4xl font-bold text-white md:text-6xl">
+            Accesibilidad Universal
+          </h1>
+          <p class="text-shadow-soft text-xl text-white/90 md:text-2xl">
+            Eliminando barreras para construir un mundo sin obstáculos
+          </p>
+        </div>
+      </div>
+      <div class="absolute bottom-0 left-0 right-0">
+        <svg
+          class="h-16 w-full fill-white md:h-24"
+          viewBox="0 0 1440 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L0,120Z"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Contenido principal -->
+    <section class="py-16 md:py-24">
+      <div class="section-container">
+        <div class="mx-auto max-w-4xl">
+          <div class="prose prose-lg max-w-none">
+            <h2 class="text-3xl font-bold text-gray-900">
+              Un mundo accesible es un mundo mejor para todos
+            </h2>
+            <p class="text-lg leading-relaxed text-gray-700">
+              La accesibilidad universal no es un lujo, es un derecho. En DiverMataró trabajamos
+              para que todos los espacios, servicios y recursos estén diseñados pensando en la
+              diversidad de las personas, eliminando las barreras que impiden la participación plena
+              en la sociedad.
+            </p>
+
+            <h3 class="mt-10 text-2xl font-bold text-gray-900">Ámbitos de actuación</h3>
+            <div class="mt-6 grid gap-6 md:grid-cols-2">
+              <div class="rounded-2xl border-2 border-gray-100 bg-white p-6 shadow-lg">
+                <div
+                  class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-green-400 to-emerald-500"
+                >
+                  <svg
+                    class="h-6 w-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                    ></path>
+                  </svg>
+                </div>
+                <h4 class="text-lg font-bold text-gray-900">Accesibilidad arquitectónica</h4>
+                <p class="text-gray-600">
+                  Edificios, espacios públicos, comercios y viviendas sin barreras físicas.
+                </p>
+              </div>
+              <div class="rounded-2xl border-2 border-gray-100 bg-white p-6 shadow-lg">
+                <div
+                  class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary-400 to-cyan-500"
+                >
+                  <svg
+                    class="h-6 w-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                  </svg>
+                </div>
+                <h4 class="text-lg font-bold text-gray-900">Transporte accesible</h4>
+                <p class="text-gray-600">
+                  Autobuses, trenes, taxis y paradas adaptadas para todas las personas.
+                </p>
+              </div>
+              <div class="rounded-2xl border-2 border-gray-100 bg-white p-6 shadow-lg">
+                <div
+                  class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-violet-400 to-purple-500"
+                >
+                  <svg
+                    class="h-6 w-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    ></path>
+                  </svg>
+                </div>
+                <h4 class="text-lg font-bold text-gray-900">Accesibilidad digital</h4>
+                <p class="text-gray-600">
+                  Webs, apps y servicios digitales utilizables por todas las personas.
+                </p>
+              </div>
+              <div class="rounded-2xl border-2 border-gray-100 bg-white p-6 shadow-lg">
+                <div
+                  class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-orange-400 to-amber-500"
+                >
+                  <svg
+                    class="h-6 w-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                    ></path>
+                  </svg>
+                </div>
+                <h4 class="text-lg font-bold text-gray-900">Comunicación accesible</h4>
+                <p class="text-gray-600">
+                  Información en formatos accesibles: lectura fácil, lengua de signos, braille.
+                </p>
+              </div>
+            </div>
+
+            <h3 class="mt-10 text-2xl font-bold text-gray-900">Nuestras acciones</h3>
+            <ul class="mt-4 space-y-3">
+              <li class="flex items-start">
+                <span class="mr-3 text-primary-600">✓</span>
+                <span>Auditorías de accesibilidad en espacios públicos y privados</span>
+              </li>
+              <li class="flex items-start">
+                <span class="mr-3 text-primary-600">✓</span>
+                <span>Asesoramiento a comercios y empresas para mejorar su accesibilidad</span>
+              </li>
+              <li class="flex items-start">
+                <span class="mr-3 text-primary-600">✓</span>
+                <span>Denuncias de incumplimientos de la normativa de accesibilidad</span>
+              </li>
+              <li class="flex items-start">
+                <span class="mr-3 text-primary-600">✓</span>
+                <span>Colaboración con el Ayuntamiento para mejorar la accesibilidad urbana</span>
+              </li>
+              <li class="flex items-start">
+                <span class="mr-3 text-primary-600">✓</span>
+                <span>Formación sobre diseño universal y accesibilidad</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- CTA -->
+          <div
+            class="mt-16 rounded-3xl bg-gradient-to-r from-primary-600 to-accent-600 p-8 text-center md:p-12"
+          >
+            <h3 class="mb-4 text-2xl font-bold text-white md:text-3xl">
+              ¿Conoces barreras que debamos denunciar?
+            </h3>
+            <p class="mb-8 text-lg text-white/90">
+              Ayúdanos a identificar los obstáculos que impiden la plena participación de las
+              personas.
+            </p>
+            <a
+              href="/asociate"
+              class="inline-flex items-center rounded-2xl bg-white px-8 py-4 font-bold text-primary-600 shadow-lg transition-all duration-300 hover:scale-105 hover:bg-primary-50"
+            >
+              <span>Reportar una barrera</span>
+              <svg class="ml-3 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Volver -->
+          <div class="mt-12 text-center">
+            <a
+              href="/#servicios"
+              class="inline-flex items-center font-semibold text-primary-600 hover:text-primary-700"
+            >
+              <svg class="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"></path>
+              </svg>
+              Volver a servicios
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
