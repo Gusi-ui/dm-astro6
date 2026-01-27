@@ -14,7 +14,7 @@ async function sendNotificationEmail(
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        from: 'DiverMataró Web <onboarding@resend.dev>',
+        from: 'DiverMataró Web <noreply@divermataro.org>',
         to: ['info@divermataro.org'],
         subject: `🎉 Nuevo miembro: ${memberData.name}`,
         html: `

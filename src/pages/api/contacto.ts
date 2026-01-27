@@ -52,7 +52,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        from: 'DiverMataró Web <onboarding@resend.dev>',
+        from: 'DiverMataró Web <noreply@divermataro.org>',
         to: ['info@divermataro.org'],
         reply_to: email,
         subject: `[Web] ${asuntoTexto[asunto] || asunto} - ${nombre}`,
