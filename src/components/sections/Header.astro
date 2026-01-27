@@ -19,20 +19,17 @@ const navItems = [
   >
   </div>
 
-  <nav class="section-container py-4" aria-label="Navegación principal">
+  <nav class="section-container py-3" aria-label="Navegación principal">
     <div class="flex items-center justify-between">
       <!-- Logo -->
-      <a href="/" class="group relative flex flex-col items-start transition-all duration-300">
+      <a href="/" class="group relative flex items-center transition-all duration-300">
         <img
           src="/logoDiverMataro.png"
-          alt="Logo Diversidad Funcional Mataró"
-          class="h-10 w-auto md:h-12"
+          alt="Diversidad Funcional Mataró"
+          class="h-12 w-auto md:h-14"
         />
-        <span
-          class="relative z-10 text-base font-bold text-primary-600 transition-colors duration-300 group-hover:text-primary-700 sm:text-lg"
-        >
-          Diversidad Funcional Mataró
-        </span>
+        <!-- Título oculto visualmente pero presente para SEO -->
+        <span class="sr-only">Diversidad Funcional Mataró</span>
         <div
           class="absolute -inset-2 rounded-lg bg-gradient-to-r from-primary-400/20 to-accent-400/20 opacity-0 blur-lg transition-opacity duration-300 group-hover:opacity-100"
         >
