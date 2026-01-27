@@ -121,13 +121,21 @@ export const POST: APIRoute = async ({ request, locals }) => {
       import.meta.env.RESEND_API_KEY;
 
     if (RESEND_API_KEY) {
-      // Enviar en background para no bloquear la respuesta
-      sendNotificationEmail(RESEND_API_KEY, {
+      const emailPromise = sendNotificationEmail(RESEND_API_KEY, {
         name,
         email,
         phone: phone || undefined,
         message: message || undefined,
       });
+
+      // Usar waitUntil para que Cloudflare no cancele la promesa
+      const ctx = locals.runtime?.ctx;
+      if (ctx?.waitUntil) {
+        ctx.waitUntil(emailPromise);
+      } else {
+        // Fallback: esperar el email si no hay waitUntil
+        await emailPromise;
+      }
     }
 
     return new Response(
