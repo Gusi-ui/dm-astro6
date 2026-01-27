@@ -3,8 +3,11 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Header from '../../../components/sections/Header.astro';
 import Footer from '../../../components/sections/Footer.astro';
 import { getCollection } from 'astro:content';
+import { getRandomHeroImage } from '../../../lib/heroImages';
 
 export const prerender = true;
+
+const heroImage = getRandomHeroImage();
 
 export async function getStaticPaths() {
   const allPosts = await getCollection('blog');
@@ -113,7 +116,7 @@ const colors = categoryColors[categoria] || {
       <!-- Fondo con imagen decorativa -->
       <div
         class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style="background-image: url('https://res.cloudinary.com/dzs4olh43/image/upload/v1769347000/Diversidad_nqwhmc.avif');"
+        style={`background-image: url('${heroImage}'); background-position: center 30%;`}
       >
         <!-- Overlay con gradiente del color de la categoría -->
         <div

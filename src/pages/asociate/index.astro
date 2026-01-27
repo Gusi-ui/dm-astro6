@@ -3,6 +3,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/sections/Header.astro';
 import Footer from '../../components/sections/Footer.astro';
 import AssociationForm from '../../components/forms/AssociationForm.astro';
+import { getRandomHeroImage } from '../../lib/heroImages';
+
+const heroImage = getRandomHeroImage();
 ---
 
 <BaseLayout
@@ -19,7 +22,7 @@ import AssociationForm from '../../components/forms/AssociationForm.astro';
       <div class="absolute inset-0">
         <div
           class="absolute inset-0 bg-cover bg-no-repeat"
-          style="background-image: url('https://res.cloudinary.com/dzs4olh43/image/upload/v1769508835/diverfaceww-minn-min_wvvllt.jpg'); background-position: center 30%;"
+          style={`background-image: url('${heroImage}'); background-position: center 30%;`}
         >
         </div>
         <div
