@@ -7,6 +7,12 @@ export const heroImages = [
   'https://res.cloudinary.com/dzs4olh43/image/upload/v1769508835/diverfaceww-minn-min_wvvllt.jpg',
   'https://res.cloudinary.com/dzs4olh43/image/upload/v1769446107/Ver_vbn638.png',
   'https://res.cloudinary.com/dzs4olh43/image/upload/v1769347000/Diversidad_nqwhmc.avif',
+  'https://res.cloudinary.com/dzs4olh43/image/upload/v1769529141/DSC_3856_befiqf.jpg',
+  'https://res.cloudinary.com/dzs4olh43/image/upload/v1769529141/5_t7vv1w.jpg',
+  'https://res.cloudinary.com/dzs4olh43/image/upload/v1769529140/4_oppb0s.jpg',
+  'https://res.cloudinary.com/dzs4olh43/image/upload/v1769529141/6_b8zngc.jpg',
+  'https://res.cloudinary.com/dzs4olh43/image/upload/v1769529141/16_gac9ev.jpg',
+  'https://res.cloudinary.com/dzs4olh43/image/upload/v1769529141/7_czsdn1.jpg',
   // Añade más imágenes aquí conforme las subas a Cloudinary
 ];
 
