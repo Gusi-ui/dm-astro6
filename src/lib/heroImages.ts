@@ -12,20 +12,24 @@ export interface HeroImage {
   mobilePosition: string;
   /** Transformación de Cloudinary para móvil (opcional, ej: 'g_auto', 'g_face') */
   mobileTransform?: string;
+  /** Escala en móvil: 'cover' (default), 'contain', o porcentaje como '120%' */
+  mobileScale?: string;
 }
 
 export const heroImages: HeroImage[] = [
   {
     url: 'https://res.cloudinary.com/dzs4olh43/image/upload/v1769508835/diverfaceww-minn-min_wvvllt.jpg',
     desktopPosition: 'center 30%',
-    mobilePosition: 'center 40%',
-    mobileTransform: 'g_auto,c_fill',
+    mobilePosition: 'center center',
+    mobileTransform: 'g_auto',
+    mobileScale: 'contain', // Mostrar imagen completa
   },
   {
     url: 'https://res.cloudinary.com/dzs4olh43/image/upload/v1769446107/Ver_vbn638.png',
-    desktopPosition: 'center 30%',
-    mobilePosition: 'center 20%',
-    mobileTransform: 'g_auto,c_fill',
+    desktopPosition: 'center -20%',
+    mobilePosition: 'center center',
+    mobileTransform: 'g_auto',
+    mobileScale: 'contain', // Mostrar pancarta completa
   },
   {
     url: 'https://res.cloudinary.com/dzs4olh43/image/upload/v1769347000/Diversidad_nqwhmc.avif',
@@ -42,14 +46,16 @@ export const heroImages: HeroImage[] = [
   {
     url: 'https://res.cloudinary.com/dzs4olh43/image/upload/v1769529141/5_t7vv1w.jpg',
     desktopPosition: 'center 30%',
-    mobilePosition: 'center 40%',
-    mobileTransform: 'g_auto,c_fill',
+    mobilePosition: 'center center',
+    mobileTransform: 'g_auto',
+    mobileScale: 'contain', // Mostrar las 3 personas
   },
   {
     url: 'https://res.cloudinary.com/dzs4olh43/image/upload/v1769529140/4_oppb0s.jpg',
     desktopPosition: 'center 30%',
-    mobilePosition: 'center 50%',
-    mobileTransform: 'g_auto,c_fill',
+    mobilePosition: 'center center',
+    mobileTransform: 'g_auto',
+    mobileScale: 'contain', // Escalar para ver más
   },
   {
     url: 'https://res.cloudinary.com/dzs4olh43/image/upload/v1769529141/6_b8zngc.jpg',
@@ -65,6 +71,18 @@ export const heroImages: HeroImage[] = [
   },
   {
     url: 'https://res.cloudinary.com/dzs4olh43/image/upload/v1769529141/7_czsdn1.jpg',
+    desktopPosition: 'center 30%',
+    mobilePosition: 'center 40%',
+    mobileTransform: 'g_auto,c_fill',
+  },
+  {
+    url: 'https://res.cloudinary.com/dzs4olh43/image/upload/v1769508835/diverfaceww-minn-min_wvvllt.jpg',
+    desktopPosition: 'center 30%',
+    mobilePosition: 'center 40%',
+    mobileTransform: 'g_auto,c_fill',
+  },
+  {
+    url: 'https://res.cloudinary.com/dzs4olh43/image/upload/v1769528958/common-1300520_hg9hoo.svg',
     desktopPosition: 'center 30%',
     mobilePosition: 'center 40%',
     mobileTransform: 'g_auto,c_fill',

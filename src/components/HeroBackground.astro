@@ -11,12 +11,17 @@ interface Props {
 const { image, gradientClass = 'from-primary-600/85 via-primary-700/75 to-accent-600/85' } =
   Astro.props;
 const styles = getHeroStyles(image);
+
+// Determinar el background-size para móvil
+const mobileScale = image.mobileScale || 'cover';
+const mobileBgSize =
+  mobileScale === 'contain' ? 'contain' : mobileScale === 'cover' ? 'cover' : mobileScale;
 ---
 
 <!-- Fondo para móvil (oculto en desktop) -->
 <div
-  class="hero-bg-mobile absolute inset-0 bg-cover bg-no-repeat md:hidden"
-  style={`background-image: url('${styles.mobileUrl}'); background-position: ${styles.mobilePosition};`}
+  class="hero-bg-mobile absolute inset-0 bg-no-repeat md:hidden"
+  style={`background-image: url('${styles.mobileUrl}'); background-position: ${styles.mobilePosition}; background-size: ${mobileBgSize};`}
 >
 </div>
 
