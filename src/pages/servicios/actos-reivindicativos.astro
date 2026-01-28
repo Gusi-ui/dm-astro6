@@ -2,6 +2,9 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/sections/Header.astro';
 import Footer from '../../components/sections/Footer.astro';
+import { getRandomHeroImage } from '../../lib/heroImages';
+
+const heroImage = getRandomHeroImage();
 ---
 
 <BaseLayout title="Actos Reivindicativos - DiverMataró">
@@ -9,9 +12,20 @@ import Footer from '../../components/sections/Footer.astro';
   <main id="main-content">
     <!-- Hero de la página -->
     <section
-      class="relative overflow-hidden bg-gradient-to-br from-primary-600 via-primary-700 to-accent-600 py-20 md:py-28"
+      class="relative flex min-h-[70vh] items-center justify-center overflow-hidden pt-16 md:min-h-[80vh] md:pt-20"
     >
-      <div class="absolute inset-0 bg-black/20"></div>
+      <!-- Fondo con imagen -->
+      <div class="absolute inset-0">
+        <div
+          class="absolute inset-0 bg-cover bg-no-repeat"
+          style={`background-image: url('${heroImage}'); background-position: center 30%;`}
+        >
+        </div>
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-primary-600/85 via-primary-700/75 to-accent-600/85"
+        >
+        </div>
+      </div>
       <div class="section-container relative z-10">
         <div class="mx-auto max-w-4xl text-center">
           <div
