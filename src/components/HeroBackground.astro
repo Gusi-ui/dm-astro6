@@ -4,12 +4,17 @@ import { getHeroStyles } from '../lib/heroImages';
 
 interface Props {
   image: HeroImage;
-  /** Clase de gradiente personalizado (opcional) */
+  /** Clase de gradiente personalizado con Tailwind (opcional) */
   gradientClass?: string;
+  /** Estilo de gradiente inline para colores dinámicos (opcional, tiene prioridad sobre gradientClass) */
+  gradientStyle?: string;
 }
 
-const { image, gradientClass = 'from-primary-600/85 via-primary-700/75 to-accent-600/85' } =
-  Astro.props;
+const {
+  image,
+  gradientClass = 'from-primary-600/85 via-primary-700/75 to-accent-600/85',
+  gradientStyle,
+} = Astro.props;
 const styles = getHeroStyles(image);
 
 // Determinar el background-size para móvil
@@ -33,4 +38,10 @@ const mobileBgSize =
 </div>
 
 <!-- Overlay con gradiente -->
-<div class={`absolute inset-0 bg-gradient-to-br ${gradientClass}`}></div>
+{
+  gradientStyle ? (
+    <div class="absolute inset-0" style={gradientStyle} />
+  ) : (
+    <div class={`absolute inset-0 bg-gradient-to-br ${gradientClass}`} />
+  )
+}

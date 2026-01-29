@@ -2,6 +2,7 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Header from '../../../components/sections/Header.astro';
 import Footer from '../../../components/sections/Footer.astro';
+import HeroBackground from '../../../components/HeroBackground.astro';
 import { getCollection } from 'astro:content';
 import { getRandomHeroImage } from '../../../lib/heroImages';
 
@@ -113,18 +114,11 @@ const colors = categoryColors[categoria] || {
     <section
       class="relative flex min-h-[70vh] items-center justify-center overflow-hidden pt-16 md:min-h-[80vh] md:pt-20"
     >
-      <!-- Fondo con imagen decorativa -->
-      <div
-        class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={`background-image: url('${heroImage}'); background-position: center 30%;`}
-      >
-        <!-- Overlay con gradiente del color de la categoría -->
-        <div
-          class="absolute inset-0"
-          style={`background: linear-gradient(135deg, ${colors.gradientFrom}e6 0%, ${colors.gradientFrom}cc 25%, ${colors.gradientTo}cc 75%, ${colors.gradientTo}e6 100%);`}
-        >
-        </div>
-      </div>
+      <!-- Fondo con imagen responsive -->
+      <HeroBackground
+        image={heroImage}
+        gradientStyle={`background: linear-gradient(135deg, ${colors.gradientFrom}e6 0%, ${colors.gradientFrom}cc 25%, ${colors.gradientTo}cc 75%, ${colors.gradientTo}e6 100%);`}
+      />
 
       <!-- Elementos flotantes decorativos con glassmorphism -->
       <div class="absolute left-10 top-32 z-10 hidden animate-float lg:block">
