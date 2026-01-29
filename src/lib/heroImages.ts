@@ -23,7 +23,6 @@ export const heroImages: HeroImage[] = [
     mobilePosition: '20% center',
     mobileTransform: 'c_fill,g_center,z_0.7,x_-150',
   },
-
   {
     url: 'https://res.cloudinary.com/dzs4olh43/image/upload/v1769446107/Ver_vbn638.png',
     desktopPosition: 'center -20%',
@@ -80,7 +79,30 @@ export const heroImages: HeroImage[] = [
     mobilePosition: 'center 40%',
     mobileTransform: 'g_auto,c_fill',
   },
-  // Añade más imágenes aquí conforme las subas a Cloudinary
+  {
+    url: 'https://res.cloudinary.com/dzs4olh43/image/upload/v1769699538/Pandilla_y0zliz.jpg',
+    desktopPosition: 'center 30%',
+    mobilePosition: 'center 50%',
+    mobileTransform: 'g_auto,c_fill',
+  },
+  {
+    url: 'https://res.cloudinary.com/dzs4olh43/image/upload/v1769700023/Yono_wgjscb.jpg',
+    desktopPosition: 'center 30%',
+    mobilePosition: 'center 50%',
+    mobileTransform: 'g_auto,c_fill',
+  },
+  {
+    url: 'https://res.cloudinary.com/dzs4olh43/image/upload/v1769700023/Yono_wgjscb.jpg',
+    desktopPosition: 'center 30%',
+    mobilePosition: 'center 50%',
+    mobileTransform: 'g_auto,c_fill',
+  },
+  {
+    url: 'https://res.cloudinary.com/dzs4olh43/image/upload/v1769700023/1_iugyxs.jpg',
+    desktopPosition: 'center 30%',
+    mobilePosition: 'center 50%',
+    mobileTransform: 'g_auto,c_fill',
+  }, // Añade más imágenes aquí conforme las subas a Cloudinary
 ];
 
 /**
