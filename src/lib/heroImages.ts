@@ -20,16 +20,16 @@ export const heroImages: HeroImage[] = [
   {
     url: 'https://res.cloudinary.com/dzs4olh43/image/upload/v1769508835/diverfaceww-minn-min_wvvllt.jpg',
     desktopPosition: 'center 30%',
-    mobilePosition: 'center center',
-    mobileTransform: 'g_auto',
-    mobileScale: 'contain', // Mostrar imagen completa
+    mobilePosition: '20% center',
+    mobileTransform: 'c_fill,g_center,z_0.7,x_-150',
   },
+
   {
     url: 'https://res.cloudinary.com/dzs4olh43/image/upload/v1769446107/Ver_vbn638.png',
     desktopPosition: 'center -20%',
-    mobilePosition: 'center center',
-    mobileTransform: 'g_auto',
-    mobileScale: 'contain', // Mostrar pancarta completa
+    mobilePosition: 'center -200%',
+    mobileTransform: 'g_auto,c_fill,z_0.7', // Zoom 1.5x centrado en área auto-detectada
+    mobileScale: 'cover',
   },
   {
     url: 'https://res.cloudinary.com/dzs4olh43/image/upload/v1769347000/Diversidad_nqwhmc.avif',
@@ -46,16 +46,15 @@ export const heroImages: HeroImage[] = [
   {
     url: 'https://res.cloudinary.com/dzs4olh43/image/upload/v1769529141/5_t7vv1w.jpg',
     desktopPosition: 'center 30%',
-    mobilePosition: 'center center',
+    mobilePosition: '30% center',
     mobileTransform: 'g_auto',
-    mobileScale: 'contain', // Mostrar las 3 personas
+    mobileScale: 'cover',
   },
   {
     url: 'https://res.cloudinary.com/dzs4olh43/image/upload/v1769529140/4_oppb0s.jpg',
     desktopPosition: 'center 30%',
     mobilePosition: 'center center',
     mobileTransform: 'g_auto',
-    mobileScale: 'contain', // Escalar para ver más
   },
   {
     url: 'https://res.cloudinary.com/dzs4olh43/image/upload/v1769529141/6_b8zngc.jpg',
@@ -66,17 +65,11 @@ export const heroImages: HeroImage[] = [
   {
     url: 'https://res.cloudinary.com/dzs4olh43/image/upload/v1769529141/16_gac9ev.jpg',
     desktopPosition: 'center 30%',
-    mobilePosition: 'center 50%',
-    mobileTransform: 'g_face,c_fill',
+    mobilePosition: 'center 55%',
+    mobileTransform: 'g_auto,c_fill,z_0.7',
   },
   {
     url: 'https://res.cloudinary.com/dzs4olh43/image/upload/v1769529141/7_czsdn1.jpg',
-    desktopPosition: 'center 30%',
-    mobilePosition: 'center 40%',
-    mobileTransform: 'g_auto,c_fill',
-  },
-  {
-    url: 'https://res.cloudinary.com/dzs4olh43/image/upload/v1769508835/diverfaceww-minn-min_wvvllt.jpg',
     desktopPosition: 'center 30%',
     mobilePosition: 'center 40%',
     mobileTransform: 'g_auto,c_fill',
