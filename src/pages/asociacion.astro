@@ -17,14 +17,34 @@ const juntaDirectiva = [
     color: 'from-primary-400 to-cyan-500',
     shadowColor: 'shadow-primary-500/30',
     bgColor: 'bg-primary-500',
+    foto: 'https://ui-avatars.com/api/?name=Presidente&background=random&color=fff&size=200&bold=true',
+  },
+  {
+    nombre: 'Vicepresidente',
+    cargo: 'Vicepresidente',
+    descripcion: 'Apoya y sustituye al presidente',
+    color: 'from-blue-400 to-indigo-500',
+    shadowColor: 'shadow-blue-500/30',
+    bgColor: 'bg-blue-500',
+    foto: 'https://ui-avatars.com/api/?name=Vicepresidente&background=random&color=fff&size=200&bold=true',
   },
   {
     nombre: 'Secretario',
-    cargo: 'Secretario/a',
+    cargo: 'Secretario',
     descripcion: 'Gestiona documentación y comunicaciones',
     color: 'from-accent-400 to-pink-500',
     shadowColor: 'shadow-accent-500/30',
     bgColor: 'bg-accent-500',
+    foto: 'https://ui-avatars.com/api/?name=Secretario&background=random&color=fff&size=200&bold=true',
+  },
+  {
+    nombre: 'Tesorera',
+    cargo: 'Tesorera',
+    descripcion: 'Administra recursos económicos',
+    color: 'from-emerald-400 to-teal-500',
+    shadowColor: 'shadow-emerald-500/30',
+    bgColor: 'bg-emerald-500',
+    foto: 'https://ui-avatars.com/api/?name=Tesorera&background=random&color=fff&size=200&bold=true',
   },
   {
     nombre: 'Portavoz',
@@ -33,30 +53,16 @@ const juntaDirectiva = [
     color: 'from-orange-400 to-amber-500',
     shadowColor: 'shadow-orange-500/30',
     bgColor: 'bg-orange-500',
+    foto: 'https://ui-avatars.com/api/?name=Portavoz&background=random&color=fff&size=200&bold=true',
   },
   {
-    nombre: 'Vocal+1',
-    cargo: 'Vocal',
-    descripcion: 'Colabora en proyectos y actividades',
-    color: 'from-green-400 to-emerald-500',
-    shadowColor: 'shadow-green-500/30',
-    bgColor: 'bg-green-500',
-  },
-  {
-    nombre: 'Vocal+2',
+    nombre: 'Vocal',
     cargo: 'Vocal',
     descripcion: 'Colabora en proyectos y actividades',
     color: 'from-violet-400 to-purple-500',
     shadowColor: 'shadow-violet-500/30',
     bgColor: 'bg-violet-500',
-  },
-  {
-    nombre: 'Vocal+3',
-    cargo: 'Vocal',
-    descripcion: 'Colabora en proyectos y actividades',
-    color: 'from-rose-400 to-red-500',
-    shadowColor: 'shadow-rose-500/30',
-    bgColor: 'bg-rose-500',
+    foto: 'https://ui-avatars.com/api/?name=Vocal&background=random&color=fff&size=200&bold=true',
   },
 ];
 
@@ -415,7 +421,7 @@ const timeline = [
                   {/* Avatar */}
                   <div class="relative mx-auto mb-4">
                     <img
-                      src={`https://ui-avatars.com/api/?name=${miembro.nombre}&background=random&color=fff&size=200&bold=true`}
+                      src={miembro.foto}
                       alt={miembro.cargo}
                       class={`mx-auto h-24 w-24 rounded-full object-cover shadow-lg ring-4 ring-white ${miembro.shadowColor} transition-transform duration-300 group-hover:scale-105`}
                     />
