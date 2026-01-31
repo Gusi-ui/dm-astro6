@@ -82,13 +82,13 @@ export const heroImages: HeroImage[] = [
   {
     url: 'https://res.cloudinary.com/dzs4olh43/image/upload/v1769699538/Pandilla_y0zliz.jpg',
     desktopPosition: 'center 30%',
-    mobilePosition: 'center 50%',
-    mobileTransform: 'g_auto,c_fill',
+    mobilePosition: 'center -10%',
+    mobileTransform: 'g_auto,c_fill,z_0.7',
   },
   {
     url: 'https://res.cloudinary.com/dzs4olh43/image/upload/v1769700023/Yono_wgjscb.jpg',
     desktopPosition: 'center 30%',
-    mobilePosition: 'center 50%',
+    mobilePosition: 'center 20%',
     mobileTransform: 'g_auto,c_fill',
   },
   {
