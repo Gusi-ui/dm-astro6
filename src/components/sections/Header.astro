@@ -102,22 +102,75 @@ const navItems = [
       </button>
     </div>
 
-    <!-- Mobile menu -->
-    <div id="mobile-menu" class="mt-4 hidden pb-4 md:hidden">
+    <!-- Mobile menu con animación -->
+    <div id="mobile-menu" class="mobile-menu-container mt-4 hidden pb-4 md:hidden">
       <ul class="flex flex-col gap-3">
         {
-          navItems.map(({ href, label }) => (
-            <li>
-              <a
-                href={href}
-                class="block rounded-lg px-4 py-2 text-gray-700 transition-all hover:bg-primary-50 hover:text-primary-600"
-              >
-                {label}
-              </a>
-            </li>
-          ))
+          (() => {
+            // Colores únicos para cada ítem
+            const itemColors = [
+              {
+                bg: 'from-cyan-500 to-blue-500',
+                border: 'border-cyan-400',
+                shadow: 'shadow-cyan-500/30',
+                hover:
+                  'hover:border-cyan-300 hover:from-cyan-50 hover:to-blue-50 hover:text-cyan-600',
+              },
+              {
+                bg: 'from-orange-500 to-amber-500',
+                border: 'border-orange-400',
+                shadow: 'shadow-orange-500/30',
+                hover:
+                  'hover:border-orange-300 hover:from-orange-50 hover:to-amber-50 hover:text-orange-600',
+              },
+              {
+                bg: 'from-pink-500 to-rose-500',
+                border: 'border-pink-400',
+                shadow: 'shadow-pink-500/30',
+                hover:
+                  'hover:border-pink-300 hover:from-pink-50 hover:to-rose-50 hover:text-pink-600',
+              },
+              {
+                bg: 'from-emerald-500 to-teal-500',
+                border: 'border-emerald-400',
+                shadow: 'shadow-emerald-500/30',
+                hover:
+                  'hover:border-emerald-300 hover:from-emerald-50 hover:to-teal-50 hover:text-emerald-600',
+              },
+              {
+                bg: 'from-violet-500 to-purple-500',
+                border: 'border-violet-400',
+                shadow: 'shadow-violet-500/30',
+                hover:
+                  'hover:border-violet-300 hover:from-violet-50 hover:to-purple-50 hover:text-violet-600',
+              },
+            ];
+
+            return navItems.map(({ href, label, matchPrefix }, index) => {
+              const isActive = matchPrefix
+                ? currentPath.startsWith(href) && href !== '/'
+                : currentPath === href;
+              const color = itemColors[index % itemColors.length];
+
+              return (
+                <li class="mobile-menu-item" style={`--item-delay: ${index * 0.2}s`}>
+                  <a
+                    href={href}
+                    aria-current={isActive ? 'page' : undefined}
+                    class={`block rounded-xl border px-4 py-3 shadow-sm transition-all duration-300 ${
+                      isActive
+                        ? `${color.border} bg-gradient-to-r ${color.bg} font-semibold text-white shadow-lg ${color.shadow}`
+                        : `border-transparent bg-gradient-to-r from-gray-50 to-white text-gray-700 ${color.hover} hover:shadow-md`
+                    }`}
+                  >
+                    {label}
+                  </a>
+                </li>
+              );
+            });
+          })()
         }
-        <li>
+        <li class="mobile-menu-item" style={`--item-delay: ${navItems.length * 0.2}s`}>
           <a href="/asociate" class="btn-primary w-full text-center"> Únete </a>
         </li>
       </ul>
@@ -133,7 +186,65 @@ const navItems = [
     mobileMenuButton.addEventListener('click', () => {
       const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
       mobileMenuButton.setAttribute('aria-expanded', String(!isExpanded));
-      mobileMenu.classList.toggle('hidden');
+
+      if (isExpanded) {
+        // Cerrar menú con animación
+        mobileMenu.classList.add('menu-closing');
+        mobileMenu.classList.remove('menu-open');
+        setTimeout(() => {
+          mobileMenu.classList.add('hidden');
+          mobileMenu.classList.remove('menu-closing');
+        }, 300);
+      } else {
+        // Abrir menú con animación
+        mobileMenu.classList.remove('hidden');
+        // Pequeño delay para que el navegador procese el cambio de display
+        requestAnimationFrame(() => {
+          mobileMenu.classList.add('menu-open');
+        });
+      }
     });
   }
 </script>
+
+<style>
+  /* Animación del contenedor del menú móvil */
+  .mobile-menu-container {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition:
+      opacity 0.3s ease-out,
+      transform 0.3s ease-out;
+  }
+
+  .mobile-menu-container.menu-open {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .mobile-menu-container.menu-closing {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  /* Animación escalonada de los items */
+  .mobile-menu-item {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition:
+      opacity 0.4s ease-out,
+      transform 0.4s ease-out;
+    transition-delay: var(--item-delay, 0s);
+  }
+
+  .menu-open .mobile-menu-item {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .menu-closing .mobile-menu-item {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition-delay: 0s;
+  }
+</style>
