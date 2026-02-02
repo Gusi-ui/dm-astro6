@@ -22,6 +22,22 @@ const {
     <link rel="icon" type="image/png" href="/favicondivermataro.png" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://divermataro.org/" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="https://divermataro.org/images/blog/holamundo.webp" />
+    <meta property="og:site_name" content="Diversidad Funcional Mataró" />
+    <meta property="og:locale" content="es_ES" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://divermataro.org/" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content="https://divermataro.org/images/blog/holamundo.webp" />
     <style is:inline>
       /* Estilos críticos para asegurar que prose funcione en producción */
       .prose {
