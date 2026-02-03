@@ -58,6 +58,10 @@ const reivindicacionesConConteo = reivindicaciones.map((r) => ({
   ...r,
   postCount: countPostsByCategory(r.category),
 }));
+
+// Calcular años desde la fundación de la asociación
+const ANIO_FUNDACION = 2019;
+const aniosLuchando = new Date().getFullYear() - ANIO_FUNDACION;
 ---
 
 <section id="reivindicaciones" class="relative overflow-hidden bg-white py-20 md:py-28">
@@ -200,7 +204,7 @@ const reivindicacionesConConteo = reivindicaciones.map((r) => ({
         <div class="mt-1 text-sm text-gray-600">Artículos publicados</div>
       </div>
       <div class="rounded-2xl bg-gradient-to-br from-orange-50 to-orange-100/50 p-6 text-center">
-        <div class="text-3xl font-bold text-orange-600 md:text-4xl">+10</div>
+        <div class="text-3xl font-bold text-orange-600 md:text-4xl">+{aniosLuchando}</div>
         <div class="mt-1 text-sm text-gray-600">Años luchando</div>
       </div>
       <div class="rounded-2xl bg-gradient-to-br from-green-50 to-green-100/50 p-6 text-center">
