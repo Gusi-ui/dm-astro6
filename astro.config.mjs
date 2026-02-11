@@ -20,7 +20,7 @@ export default defineConfig({
       applyBaseStyles: true,
     }),
   ],
-  site: 'https://tudominio.com', // Actualizar con tu dominio
+  site: 'https://divermataro.org',
   build: {
     inlineStylesheets: 'auto',
     assets: '_astro',

@@ -5,12 +5,21 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
 interface Props {
   title: string;
   description?: string;
+  ogImage?: string;
 }
 
 const {
   title,
   description = 'Asociación de Diversidad Funcional en Mataró. Trabajamos por una sociedad con accesibilidad universal.',
+  ogImage,
 } = Astro.props;
+
+const defaultOgImage =
+  'https://res.cloudinary.com/dzs4olh43/image/upload/v1769508835/diverfaceww-minn-min_wvvllt.jpg';
+const resolvedOgImage = ogImage
+  ? new URL(ogImage, Astro.site || Astro.url.origin).href
+  : defaultOgImage;
+const canonicalUrl = Astro.url.href;
 ---
 
 <!doctype html>
@@ -24,26 +33,20 @@ const {
     <title>{title}</title>
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://divermataro.org/" />
+    <meta property="og:type" content={ogImage ? 'article' : 'website'} />
+    <meta property="og:url" content={canonicalUrl} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta
-      property="og:image"
-      content="https://res.cloudinary.com/dzs4olh43/image/upload/v1769508835/diverfaceww-minn-min_wvvllt.jpg"
-    />
+    <meta property="og:image" content={resolvedOgImage} />
     <meta property="og:site_name" content="Diversidad Funcional Mataró" />
     <meta property="og:locale" content="es_ES" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://divermataro.org/" />
+    <meta name="twitter:url" content={canonicalUrl} />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta
-      name="twitter:image"
-      content="https://res.cloudinary.com/dzs4olh43/image/upload/v1769508835/diverfaceww-minn-min_wvvllt.jpg"
-    />
+    <meta name="twitter:image" content={resolvedOgImage} />
     <style is:inline>
       /* Estilos críticos para asegurar que prose funcione en producción */
       .prose {
