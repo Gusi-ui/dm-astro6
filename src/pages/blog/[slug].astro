@@ -27,9 +27,19 @@ interface Props {
 const { post } = Astro.props;
 const { Content } = await render(post);
 
+const currentId = post.id || post.slug || 'unknown';
+
+// URL canónica para compartir (siempre apunta a producción)
+const canonicalUrl = new URL(`/blog/${currentId}`, Astro.site || 'https://divermataro.org').href;
+
+// Facebook App ID para Share Dialog (mejor experiencia: feed, página, grupo)
+const facebookAppId = import.meta.env.PUBLIC_FACEBOOK_APP_ID as string | undefined;
+const facebookShareUrl = facebookAppId
+  ? `https://www.facebook.com/dialog/share?app_id=${facebookAppId}&display=popup&href=${encodeURIComponent(canonicalUrl)}&redirect_uri=${encodeURIComponent(canonicalUrl)}`
+  : `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(canonicalUrl)}`;
+
 // Obtener posts relacionados
 const allPosts = await getCollection('blog');
-const currentId = post.id || post.slug;
 
 const relatedPosts = allPosts
   .filter((p: CollectionEntry<'blog'>) => (p.id || p.slug) !== currentId)
@@ -143,7 +153,7 @@ const relatedPosts = allPosts
             <h3 class="mb-4 text-lg font-semibold">Comparte este artículo</h3>
             <div class="flex flex-wrap gap-3">
               <a
-                href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.data.title)}&url=${encodeURIComponent(Astro.url.href)}`}
+                href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.data.title)}&url=${encodeURIComponent(canonicalUrl)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 class="inline-flex items-center gap-2 rounded-lg bg-gray-900 px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-gray-800"
@@ -157,7 +167,7 @@ const relatedPosts = allPosts
                 X
               </a>
               <a
-                href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(Astro.url.href)}`}
+                href={facebookShareUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 class="inline-flex items-center gap-2 rounded-lg bg-[#1877F2] px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#166FE5]"
@@ -171,7 +181,7 @@ const relatedPosts = allPosts
                 Facebook
               </a>
               <a
-                href={`https://wa.me/?text=${encodeURIComponent(post.data.title + ' ' + Astro.url.href)}`}
+                href={`https://wa.me/?text=${encodeURIComponent(post.data.title + ' ' + canonicalUrl)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 class="inline-flex items-center gap-2 rounded-lg bg-[#25D366] px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#22C55E]"
