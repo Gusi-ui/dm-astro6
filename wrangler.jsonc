@@ -5,8 +5,7 @@
   "pages_build_output_dir": "dist",
   "vars": {
     "ENVIRONMENT": "production",
-    "NODE_VERSION": "22.13.0",
-    "PUBLIC_FACEBOOK_APP_ID": "1651411082521656"
+    "NODE_VERSION": "22.13.0"
   },
   "d1_databases": [
     {

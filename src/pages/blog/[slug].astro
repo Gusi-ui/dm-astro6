@@ -32,12 +32,6 @@ const currentId = post.id || post.slug || 'unknown';
 // URL canónica para compartir (siempre apunta a producción)
 const canonicalUrl = new URL(`/blog/${currentId}`, Astro.site || 'https://divermataro.org').href;
 
-// Facebook App ID para Share Dialog (mejor experiencia: feed, página, grupo)
-const facebookAppId = import.meta.env.PUBLIC_FACEBOOK_APP_ID as string | undefined;
-const facebookShareUrl = facebookAppId
-  ? `https://www.facebook.com/dialog/share?app_id=${facebookAppId}&display=popup&href=${encodeURIComponent(canonicalUrl)}&redirect_uri=${encodeURIComponent(canonicalUrl)}`
-  : `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(canonicalUrl)}`;
-
 // Obtener posts relacionados
 const allPosts = await getCollection('blog');
 
@@ -167,7 +161,7 @@ const relatedPosts = allPosts
                 X
               </a>
               <a
-                href={facebookShareUrl}
+                href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(canonicalUrl)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 class="inline-flex items-center gap-2 rounded-lg bg-[#1877F2] px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#166FE5]"
@@ -180,6 +174,20 @@ const relatedPosts = allPosts
                 </svg>
                 Facebook
               </a>
+              <button
+                type="button"
+                id="share-fb-group"
+                data-url={canonicalUrl}
+                class="inline-flex items-center gap-2 rounded-lg bg-[#1877F2]/80 px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#1877F2]"
+                aria-label="Compartir en el grupo DiverMataró"
+              >
+                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+                  ></path>
+                </svg>
+                <span id="fb-group-text">Grupo DiverMataró</span>
+              </button>
               <a
                 href={`https://wa.me/?text=${encodeURIComponent(post.data.title + ' ' + canonicalUrl)}`}
                 target="_blank"
@@ -196,6 +204,29 @@ const relatedPosts = allPosts
               </a>
             </div>
           </div>
+
+          <script>
+            const fbGroupBtn = document.getElementById('share-fb-group');
+            const fbGroupText = document.getElementById('fb-group-text');
+            if (fbGroupBtn && fbGroupText) {
+              fbGroupBtn.addEventListener('click', () => {
+                const url = fbGroupBtn.getAttribute('data-url') || window.location.href;
+                // Abrir grupo PRIMERO (sincrónico = no se bloquea como popup)
+                window.open(
+                  'https://www.facebook.com/groups/divermataro/',
+                  '_blank',
+                  'noopener,noreferrer'
+                );
+                // Luego copiar enlace al portapapeles
+                navigator.clipboard.writeText(url).then(() => {
+                  fbGroupText.textContent = 'Enlace copiado';
+                  setTimeout(() => {
+                    fbGroupText.textContent = 'Grupo DiverMataró';
+                  }, 3000);
+                });
+              });
+            }
+          </script>
 
           {/* Artículos relacionados */}
           {
