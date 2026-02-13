@@ -21,15 +21,19 @@ Menors acompanyats d’una persona responsable.
 - **Organitzador:** Ajuntament de Mataró
 - **Contacte:** participacio@ajmataro.cat | 937582692
 
-<div class="my-8 text-center">
-  <a 
-    href="https://forms.office.com/e/pDGJcLAa9P?origin=lprLink" 
-    target="_blank" 
-    class="inline-flex items-center gap-2 rounded-lg bg-primary-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-primary-700 shadow-md"
+<div class="not-prose my-10 text-center">
+  <a
+    href="https://forms.office.com/e/pDGJcLAa9P?origin=lprLink"
+    target="_blank"
+    class="article-cta group"
   >
-    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <span class="article-cta-shimmer"></span>
+    <svg class="h-6 w-6 transition-transform duration-300 group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
     </svg>
-    Inscripcions
+    <span class="relative">Inscripcions</span>
+    <svg class="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+    </svg>
   </a>
 </div>

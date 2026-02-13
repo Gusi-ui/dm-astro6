@@ -14,15 +14,19 @@ Aquest debat té el seu context en les directrius de les polítiques d'Igualtat 
 
 Vols llegir com ha de ser el comerç accessible de la nostra ciutat?
 
-<div class="my-8 text-center">
-  <a 
-    href="/documents/fem_accessible_el_nostre_comerc.pdf" 
-    target="_blank" 
-    class="inline-flex items-center gap-2 rounded-lg bg-primary-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-primary-700 shadow-md"
+<div class="not-prose my-10 text-center">
+  <a
+    href="/documents/fem_accessible_el_nostre_comerc.pdf"
+    target="_blank"
+    class="article-cta group"
   >
-    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <span class="article-cta-shimmer"></span>
+    <svg class="h-6 w-6 transition-transform duration-300 group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
     </svg>
-    Descarregar PDF: Fem accessible el nostre comerç
+    <span class="relative">Descarregar PDF: Fem accessible el nostre comerç</span>
+    <svg class="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+    </svg>
   </a>
 </div>

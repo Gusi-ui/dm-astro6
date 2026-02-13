@@ -127,6 +127,57 @@
   }
 }
 
+/* Botón CTA para artículos del blog */
+.article-cta {
+  @apply relative inline-flex items-center gap-3 overflow-hidden rounded-2xl px-8 py-4 text-lg font-bold text-white shadow-lg transition-all duration-300;
+  background: linear-gradient(135deg, #0284c7 0%, #7c3aed 50%, #c026d3 100%);
+  background-size: 200% 200%;
+  animation: gradient-shift 4s ease infinite;
+}
+.article-cta:hover {
+  @apply -translate-y-1 shadow-2xl;
+  filter: brightness(1.1);
+}
+.article-cta-shimmer {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 40%,
+    rgba(255, 255, 255, 0.25) 45%,
+    rgba(255, 255, 255, 0.35) 50%,
+    rgba(255, 255, 255, 0.25) 55%,
+    transparent 60%
+  );
+  background-size: 250% 100%;
+  animation: shimmer 3s ease-in-out infinite;
+}
+@keyframes gradient-shift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Proteger botones dentro de prose: evitar que prose-a override text-white */
+.prose a[class*='bg-'] {
+  color: inherit;
+}
+.prose a[class*='bg-']:hover {
+  color: inherit;
+}
+
 /* Better text selection */
 ::selection {
   background-color: #0284c7;
