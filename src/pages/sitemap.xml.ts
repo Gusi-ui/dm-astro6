@@ -27,6 +27,16 @@ export const GET: APIRoute = async ({ site }) => {
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>${baseUrl}/privacidad</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/eliminacion-datos</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
   ${blogPosts
     .map((post: (typeof blogPosts)[number]) => {
       const slug =
