@@ -14,8 +14,6 @@ Pero este año hubo algo que marcó una diferencia profunda: la inclusión dejó
 
 Desde **DibeMataró**, asociación de personas con diversidad funcional de la ciudad, hemos vivido esta Rua no solo como público, sino como parte activa de un paso adelante en accesibilidad real.
 
----
-
 ## Un recorrido que volvió a latir
 
 La Rua comenzó a las 18:00 h y atravesó algunos de los principales ejes urbanos hasta llegar al Recinte Firal del Nou Parc Central, donde tuvo lugar el tramo final del desfile y la entrega de premios.
@@ -23,10 +21,6 @@ La Rua comenzó a las 18:00 h y atravesó algunos de los principales ejes urbano
 Las coreografías, los disfraces satíricos y la energía colectiva hicieron vibrar la ciudad. Sin embargo, este 2026 la verdadera novedad no estaba solo en las comparsas, sino en cómo se había pensado el espacio para que todas las personas pudieran disfrutarlo.
 
 <!-- Añadir aquí fotografías del recorrido general -->
-
-<!-- Añadir aquí vídeo del paso de comparsas -->
-
----
 
 ## Una zona exclusiva para movilidad reducida: más que un espacio, un mensaje
 
@@ -46,25 +40,22 @@ Este año, la experiencia fue distinta. Se pudo disfrutar en primera línea, con
 
 La diferencia entre estar y participar es enorme. Y en esta edición, muchas personas pudieron participar plenamente.
 
-<div class="not-prose my-8 grid grid-cols-1 gap-4 md:grid-cols-2">
-  <div class="overflow-hidden rounded-xl">
+<div class="not-prose my-8 grid grid-cols-1 gap-4 md:grid-cols-[3fr_4fr]">
+  <div class="overflow-hidden rounded-xl" style="height: 420px;">
     <img
       src="/images/blog/teresa.avif"
       alt="Persona disfrutando de la Rua desde la zona accesible en primera línea"
-      class="h-auto w-full max-h-64 object-cover rounded-xl"
+      style="width: 100%; height: 100%; object-fit: cover; object-position: top; border-radius: 0.75rem;"
     />
   </div>
-  <div class="overflow-hidden rounded-xl">
-    <!-- Añadir aquí la segunda imagen. Reemplaza este div con:
-    <img src="/images/blog/NOMBRE-archivo.avif" alt="Descripción de la imagen" class="h-auto w-full max-h-64 object-cover rounded-xl" />
-    -->
-    <div class="flex min-h-[200px] items-center justify-center rounded-xl border-2 border-dashed border-gray-200 bg-gray-50 text-gray-500 text-sm">
-      Segunda imagen próximamente
-    </div>
+  <div class="overflow-hidden rounded-xl" style="height: 420px;">
+    <img
+      src="/images/blog/rua.avif"
+      alt="La rúa de carnavales en Mataró, 2026"
+      style="width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 0.75rem;"
+    />
   </div>
 </div>
-
-<!-- Añadir aquí vídeo mostrando la visibilidad desde la zona reservada -->
 
 ---
 
@@ -76,8 +67,6 @@ Porque la diversidad funcional no es uniforme. No todas las barreras son arquite
 
 Cuando una celebración contempla estas realidades, deja de excluir sin darse cuenta.
 
----
-
 ## Compromiso institucional y participación ciudadana
 
 La implicación del Ayuntamiento en la planificación de estos espacios marca un precedente importante. La accesibilidad no puede depender de soluciones improvisadas; requiere organización, diálogo y voluntad.
@@ -85,8 +74,6 @@ La implicación del Ayuntamiento en la planificación de estos espacios marca un
 La zona para 50 sillas de ruedas no es el punto final, sino un paso relevante en el camino hacia unas fiestas verdaderamente inclusivas.
 
 Para DibeMataró, esta experiencia demuestra que cuando las entidades sociales y la administración trabajan en la misma dirección, los resultados son visibles.
-
----
 
 ## Vivir la Rua desde la diversidad
 
@@ -96,6 +83,27 @@ Eso no es un privilegio.
 Es un derecho.
 
 La inclusión real no consiste únicamente en permitir el acceso. Implica diseñar desde el principio pensando en todas las personas.
+
+<div class="not-prose my-8 grid grid-cols-1 gap-6 md:grid-cols-2">
+  <div class="overflow-hidden rounded-xl" style="height: 480px;">
+    <iframe
+      src="https://www.youtube.com/embed/P2tOV1LKhwg"
+      title="Vídeo Short: Rua de Carnestoltes 2026 en Mataró"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      style="width: 100%; height: 100%; border: none; border-radius: 0.75rem;"
+    ></iframe>
+  </div>
+  <div class="overflow-hidden rounded-xl" style="height: 480px;">
+    <iframe
+      src="https://www.youtube.com/embed/ZKtqS9FERCk"
+      title="Vídeo Short: Zona accesible en la Rua de Mataró 2026"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      style="width: 100%; height: 100%; border: none; border-radius: 0.75rem;"
+    ></iframe>
+  </div>
+</div>
 
 ---
 
