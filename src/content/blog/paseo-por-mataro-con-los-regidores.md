@@ -6,7 +6,7 @@ category: 'Activitats'
 heroImage: '/images/blog/silla.webp'
 ---
 
-El día 16 de diciembre de 2022, por fin se llevó a cabo una de las reivindicaciones de la asociación **DiverMataró**. Una idea que teníamos en mente desde que iniciamos nuestra andadura como colectivo de personas con diversidad funcional.
+El día 16 de diciembre de 2022, por fin se llevó a cabo una de las reivindicaciones de la asociación **[DiverMataró](/asociacion)**. Una idea que teníamos en mente desde que iniciamos nuestra andadura como colectivo de personas con diversidad funcional.
 
 Conseguir que los gobernantes, que son quienes al fin y al cabo deciden, construyen y diseñan nuestras ciudades. Puedan conocer lo que conlleva el deambular por ellas en la vida cotidiana con un vehículo para personas con movilidad reducida. Silla de ruedas, Scooters, caminador, o incluso con un cochecito de bebe o un carro de la compra.
 
@@ -25,13 +25,13 @@ En una ciudad diseñada y construida sin tener en cuenta a todos los ciudadanos.
   </div>
 </div>
 
-A nuestro entender es un paradigma del pasado que se debería desterrar. Se tendría que pensar en **accesibilidad universal**, es decir, hay que cambiar la mirada. Imaginar y realizar el diseños para todos los ciudadanos de una sola vez. A modo de ejemplo. Si se está diseñando la construcción de un edificio para el uso publico. Habría que desechar la idea de poner unas bonitas escaleras que luzcan y ocupen casi todo el espacio. Y en un lateral una pequeña rampa para las personas que usen vehículo de movilidad reducida. Sería mejor diseñar una espectacular rampa que puedan usar todos los ciudadanos a la vez.
+A nuestro entender es un paradigma del pasado que se debería desterrar. Se tendría que pensar en **[accesibilidad universal](/servicios/accesibilidad-universal)**, es decir, hay que cambiar la mirada. Imaginar y realizar el diseños para todos los ciudadanos de una sola vez. A modo de ejemplo. Si se está diseñando la construcción de un edificio para el uso publico. Habría que desechar la idea de poner unas bonitas escaleras que luzcan y ocupen casi todo el espacio. Y en un lateral una pequeña rampa para las personas que usen vehículo de movilidad reducida. Sería mejor diseñar una espectacular rampa que puedan usar todos los ciudadanos a la vez.
 
 ## Nuestra vida cotidiana: algunos sitios son intransitables
 
-Las construcciones del pasado evidentemente necesitan adaptaciones para poder ser usadas por todos, pero a partir de ahora, todas las construcciones nuevas se deber pensando con el paradigma de accesibilidad universal para poder ser usadas por cualquier persona en su vida cotidiana.
+Las construcciones del pasado evidentemente necesitan adaptaciones, como denunciamos en el caso de las [viviendas para PMR](/blog/viviendas-pmr), para poder ser usadas por todos, pero a partir de ahora, todas las construcciones nuevas se deber pensando con el paradigma de accesibilidad universal para poder ser usadas por cualquier persona en su vida cotidiana.
 
-Por eso nos parece una buena práctica formativa el hecho de que los agentes que están involucrados, arquitectos, legisladores o constructores, puedan comprobar las sensaciones de las obras bien hechas y las que suponen dificultad para ser usadas si la persona tiene algún tipo de diversidad, y así poder, a partir de ahora, mejorar el futuro de las nuevas generaciones de personas con diversidad funcional.
+Por eso nos parece una buena práctica formativa el hecho de que los agentes que están involucrados, arquitectos, legisladores o constructores, puedan comprobar las sensaciones de las obras bien hechas y las que suponen dificultad para ser usadas si la persona tiene algún tipo de diversidad, y así poder, a partir de ahora, mejorar el futuro de las nuevas generaciones de personas con diversidad funcional, algo que tratamos en profundidad en [nuestro primer artículo](/blog/discapacidad-hola-mundo).
 
 <div class="aspect-w-16 aspect-h-9 my-8" style="min-height: 400px;">
   <iframe 
@@ -46,27 +46,3 @@ Por eso nos parece una buena práctica formativa el hecho de que los agentes que
 </div>
 
 Gracias por su colaboración a los regidores.
-
-<a href="/blog/un-cambio-de-miradas" class="blog-internal-link">
-  <span class="blog-link-label">
-    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101" /><path stroke-linecap="round" stroke-linejoin="round" d="M10.172 13.828a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.102 1.101" /></svg>
-    Artículo relacionado
-  </span>
-  <span class="flex items-center gap-2">
-    <span class="blog-link-title">Un cambio de miradas</span>
-    <svg class="blog-link-arrow h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
-  </span>
-  <span class="blog-link-desc">Reflexión sobre la accesibilidad en nuevos proyectos arquitectónicos y el verdadero cambio de paradigma.</span>
-</a>
-
-<a href="/blog/carnavales-mataro-2026" class="blog-internal-link">
-  <span class="blog-link-label">
-    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101" /><path stroke-linecap="round" stroke-linejoin="round" d="M10.172 13.828a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.102 1.101" /></svg>
-    También te puede interesar
-  </span>
-  <span class="flex items-center gap-2">
-    <span class="blog-link-title">Rua de Carnestoltes 2026: cuando la inclusión ocupa la primera fila</span>
-    <svg class="blog-link-arrow h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
-  </span>
-  <span class="blog-link-desc">Crónica inclusiva de la Rua de Carnestoltes 2026 en Mataró con zona accesible para 50 sillas de ruedas.</span>
-</a>

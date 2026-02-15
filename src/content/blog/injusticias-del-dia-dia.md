@@ -12,11 +12,11 @@ Aconteció un día cualquiera; que personas con pleno derecho en la sociedad acu
 
 **¿Cómo pudo ocurrir esto, cómo hemos llegado a esta situación de injusticia?**
 
-Ante todo; desde DiverMataro mostramos empatía con la situación de injusticia de los trabajadores de esta sucursal; situada en la Plaza Granollers de la ciudad de Mataró; que sufren, al igual que las personas que queremos acceder a ella, una total discriminación y manipulación por parte de la entidad.
+Ante todo; desde [DiverMataro](/asociacion) mostramos empatía con la situación de injusticia de los trabajadores de esta sucursal; situada en la Plaza Granollers de la ciudad de Mataró; que sufren, al igual que las personas que queremos acceder a ella, una total discriminación y manipulación por parte de la entidad.
 
 ## Desarrollo y trama de la situación injusta
 
-Una persona con diversidad funcional; anónima, quiere acceder a la sucursal pública BBVA de Plaza Granollers; en esta sucursal se está discriminando la entrada a personas con diversidad funcional. A la vez que incumpliendo todas las leyes y normas existentes de accesibilidad.
+Una persona con [diversidad funcional](/blog/discapacidad-hola-mundo); anónima, quiere acceder a la sucursal pública BBVA de Plaza Granollers; en esta sucursal se está discriminando la entrada a personas con diversidad funcional. A la vez que incumpliendo todas las leyes y normas existentes de accesibilidad.
 
 En la entrada se encuentra un guardia de seguridad con cara de pocos amigos; la persona con diversidad funcional pide turno en la cola; y solicita que le pongan una rampa provisional para entrar en la sucursal a usar el cajero; todo parece que va bien, sin embargo al ir a colocar la rampa los explotados trabajadores de la sucursal, algo parece que cambia; alguien está haciendo fotos parece ser; con la intención de denunciar esta situación tan injusta; tanto para las personas con diversidad funcional; como para los trabajadores de la entidad BBVA, los trabajadores no quieren aparecer en la foto, están en su derecho de solicitar no aparecer.
 
@@ -51,7 +51,7 @@ Llegados a este punto la persona que está haciendo fotos solicita la solidarida
 
 Por fin, después de esperar un buen rato, entran en escena dos policías locales de nuestra ciudad; y por fin se ha conseguido acceder a la oficina, tomar fotos en la vía publica, que no es ningún delito; usar el cajero por parte de la persona con diversidad funcional que lo necesitaba. También hablar con el director de esa sucursal.
 
-Nos ha expresado sus disculpas sí; pero no nos ha evitado el rato de espera en la calle (por suerte no llovía). Ni tampoco a evitado que los turnos de la cola de entrada se alteraran injustamente por el guardia de seguridad decidido a ser el «mandamas del turno» a su antojo. Repito que desde DiverMataro estamos a favor de los trabajadores de la sucursal, pero muy en contra de la entidad por discriminar a las personas.
+Nos ha expresado sus disculpas sí; pero no nos ha evitado el rato de espera en la calle (por suerte no llovía). Ni tampoco a evitado que los turnos de la cola de entrada se alteraran injustamente por el guardia de seguridad decidido a ser el «mandamas del turno» a su antojo. Repito que desde DiverMataro estamos a favor de los trabajadores de la sucursal, pero muy en contra de la entidad por discriminar a las personas, algo que denunciamos también en otros [casos de falta de accesibilidad](/blog/denuncias-anonimas-de-accesibilidad).
 
 A la vez lamentamos mucho la falta de apoyo de los ciudadanos. Cualquier día pueden verse en la misma situación con esta u otras entidades que aparte de crecer y hacerse poderosos con sus bienes los discriminan.
 
@@ -62,27 +62,3 @@ A qué esperamos tíos, de que vamos… vomitemos todos en la puerta de su local
 Continúan las colas de la vergüenza. Hoy hemos contado 20 clientes esperando. Cuando llueva… pondrán paraguas?
 
 Continuaremos la historia hasta que por fin consigamos acabar con estas injusticias.
-
-<a href="/blog/denuncias-anonimas-de-accesibilidad" class="blog-internal-link">
-  <span class="blog-link-label">
-    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101" /><path stroke-linecap="round" stroke-linejoin="round" d="M10.172 13.828a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.102 1.101" /></svg>
-    Artículo relacionado
-  </span>
-  <span class="flex items-center gap-2">
-    <span class="blog-link-title">Denuncias anónimas de accesibilidad</span>
-    <svg class="blog-link-arrow h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
-  </span>
-  <span class="blog-link-desc">Aparecen símbolos de accesibilidad pintados en zonas inaccesibles de Mataró como protesta anónima.</span>
-</a>
-
-<a href="/blog/opiniones-gratuitas" class="blog-internal-link">
-  <span class="blog-link-label">
-    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101" /><path stroke-linecap="round" stroke-linejoin="round" d="M10.172 13.828a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.102 1.101" /></svg>
-    También te puede interesar
-  </span>
-  <span class="flex items-center gap-2">
-    <span class="blog-link-title">Opiniones gratuitas</span>
-    <svg class="blog-link-arrow h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
-  </span>
-  <span class="blog-link-desc">La importancia de contrastar la información y formar opiniones propias sobre accesibilidad.</span>
-</a>

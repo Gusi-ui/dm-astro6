@@ -12,7 +12,7 @@ La tarde del 14 de febrero de 2026, Mataró volvió a llenarse de música, color
 
 Pero este año hubo algo que marcó una diferencia profunda: la inclusión dejó de ser un detalle secundario para convertirse en parte visible y estructural de la fiesta.
 
-Desde **DibeMataró**, asociación de personas con diversidad funcional de la ciudad, hemos vivido esta Rua no solo como público, sino como parte activa de un paso adelante en accesibilidad real.
+Desde **[DibeMataró](/asociacion)**, asociación de personas con diversidad funcional de la ciudad, hemos vivido esta Rua no solo como público, sino como parte activa de un paso adelante en accesibilidad real.
 
 ## Un recorrido que volvió a latir
 
@@ -34,7 +34,7 @@ No fue simplemente un espacio delimitado. Fue un área planificada con criterios
 - Personal de apoyo.
 - Proximidad a servicios.
 
-Para muchas personas usuarias de silla de ruedas, asistir a eventos multitudinarios supone afrontar barreras físicas y sociales: visibilidad limitada, empujones, improvisación constante o depender de terceros para encontrar un hueco.
+Para muchas personas usuarias de silla de ruedas, asistir a eventos multitudinarios supone afrontar [barreras físicas y sociales](/blog/trampas) que van desde la visibilidad limitada y los empujones hasta la improvisación constante o depender de terceros para encontrar un hueco.
 
 Este año, la experiencia fue distinta. Se pudo disfrutar en primera línea, con autonomía y seguridad.
 
@@ -69,7 +69,7 @@ Cuando una celebración contempla estas realidades, deja de excluir sin darse cu
 
 ## Compromiso institucional y participación ciudadana
 
-La implicación del Ayuntamiento en la planificación de estos espacios marca un precedente importante. La accesibilidad no puede depender de soluciones improvisadas; requiere organización, diálogo y voluntad.
+La implicación del Ayuntamiento en la planificación de estos espacios marca un precedente importante, como ya pudimos comprobar cuando [paseamos con los regidores por la ciudad](/blog/paseo-por-mataro-con-los-regidores). La accesibilidad no puede depender de soluciones improvisadas; requiere organización, diálogo y voluntad.
 
 La zona para 50 sillas de ruedas no es el punto final, sino un paso relevante en el camino hacia unas fiestas verdaderamente inclusivas.
 
@@ -82,7 +82,7 @@ La imagen de este 2026 es clara: cincuenta sillas de ruedas en primera línea, d
 Eso no es un privilegio.  
 Es un derecho.
 
-La inclusión real no consiste únicamente en permitir el acceso. Implica diseñar desde el principio pensando en todas las personas.
+La inclusión real no consiste únicamente en permitir el acceso. Implica diseñar desde el principio pensando en todas las personas, apostando por la [accesibilidad universal](/servicios/accesibilidad-universal).
 
 <div class="not-prose my-8 grid grid-cols-1 gap-6 md:grid-cols-2">
   <div class="overflow-hidden rounded-xl" style="height: 480px;">
@@ -121,27 +121,3 @@ El Carnaval es comunidad, creatividad y expresión colectiva.
 Que también sea accesible no le resta magia; la multiplica.
 
 Porque una ciudad verdaderamente festiva es aquella donde nadie tiene que preguntarse si podrá disfrutarla.
-
-<a href="/blog/paseo-por-mataro-con-los-regidores" class="blog-internal-link">
-  <span class="blog-link-label">
-    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101" /><path stroke-linecap="round" stroke-linejoin="round" d="M10.172 13.828a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.102 1.101" /></svg>
-    Artículo relacionado
-  </span>
-  <span class="flex items-center gap-2">
-    <span class="blog-link-title">Paseando con los regidores</span>
-    <svg class="blog-link-arrow h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
-  </span>
-  <span class="blog-link-desc">Cuando los gobernantes experimentan en primera persona la accesibilidad de la ciudad.</span>
-</a>
-
-<a href="/blog/denuncias-anonimas-de-accesibilidad" class="blog-internal-link">
-  <span class="blog-link-label">
-    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101" /><path stroke-linecap="round" stroke-linejoin="round" d="M10.172 13.828a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.102 1.101" /></svg>
-    También te puede interesar
-  </span>
-  <span class="flex items-center gap-2">
-    <span class="blog-link-title">Denuncias anónimas de accesibilidad</span>
-    <svg class="blog-link-arrow h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
-  </span>
-  <span class="blog-link-desc">Símbolos de accesibilidad aparecen pintados en zonas inaccesibles de Mataró como protesta ciudadana.</span>
-</a>

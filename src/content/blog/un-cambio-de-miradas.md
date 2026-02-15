@@ -6,7 +6,7 @@ category: 'Opinión'
 heroImage: '/images/blog/Miradas.webp'
 ---
 
-Últimamente tenemos un término de moda corriendo mucho por todos los organismos e instituciones. **Cambio de miradas**, nos parece una idea excelente, puesto que, tal y cómo se miraban las cosas hasta ahora, excluía más que incluía a individuos en la sociedad. Hasta ahí todo perfecto, sin embargo, vamos observando que este cambio de miradas, ¿Está siendo realmente realizado desde la perspectiva adecuada? ¿se está teniendo en cuenta y se esta siendo asesorando por las personas realmente implicadas y supuestamente beneficiarias de este cambio de miradas?.
+Últimamente tenemos un término de moda corriendo mucho por todos los organismos e instituciones. **Cambio de miradas**, nos parece una idea excelente, puesto que, tal y cómo se miraban las cosas hasta ahora, excluía más que incluía a individuos en la sociedad. Desde [nuestra asociación](/asociacion) creemos que este cambio es imprescindible. Hasta ahí todo perfecto, sin embargo, vamos observando que este cambio de miradas, ¿Está siendo realmente realizado desde la perspectiva adecuada? ¿se está teniendo en cuenta y se esta siendo asesorando por las personas realmente implicadas y supuestamente beneficiarias de este cambio de miradas?.
 
 Pues bien, llegados a este punto, tenemos que discrepar en algunas cosas, que no en todas. Vamos a ilustrar y argumentar con unos ejemplos extraídos de nuestro día a día cotidiano.
 
@@ -24,7 +24,7 @@ Debería haber un cambio de paradigma planteándose los proyectos de construcci�
 
 Otro sencillo ejemplo; este algo más añejo; y que es una espinita que tenemos clavada por ser uno de nuestros fundadores (siempre presente Juancho) quien estuvo luchando hasta que falleció para solucionar; lamentablemente sin resultados.
 
-Un edificio pensado y diseñado para personas con diversidad funcional y movilidad reducida es inconcebible; hoy y siempre; que se realice con ni siquiera un solo peldaño. Hay un edificio en Mataró muy vanagloriado en su momento como gran novedad para personas con diversidad funcional y movilidad reducida. Cuyo diseño está basado en las escaleras y cuya accesibilidad para las personas con movilidad reducida es un único ascensor. Hemos tratado una y mil veces de hacer entender a los responsables que era algo inaceptable. En todo momento nos han expresado unos porqués que no pueden justificarse de ninguna manera.
+Un edificio pensado y diseñado para personas con diversidad funcional y movilidad reducida es inconcebible; hoy y siempre; que se realice con ni siquiera un solo peldaño. Hay un edificio en Mataró muy vanagloriado en su momento como gran novedad para personas con diversidad funcional y movilidad reducida, como detallamos en [viviendas para PMR](/blog/viviendas-pmr). Cuyo diseño está basado en las escaleras y cuya accesibilidad para las personas con movilidad reducida es un único ascensor. Hemos tratado una y mil veces de hacer entender a los responsables que era algo inaceptable. En todo momento nos han expresado unos porqués que no pueden justificarse de ninguna manera.
 
 Por eso y bastantes cosas más estamos muy de acuerdo con el cambio de miradas como punto de partida de una sociedad mejor; pero si no se toman las medidas oportunas y se corrigen los errores que siguen apuntando a esa mirada del pasado; nunca lograremos avanzar para ser una sociedad más justa; en la que estén incluidos todos sus individuos y no solo algunos.
 
@@ -34,30 +34,6 @@ No queremos ser muy radicales; estamos muy abiertos a los diálogos de todo tipo
 
 No podíamos acabar este artículo sin mencionar la mejor forma de hacer las cosas. Algo muy positivo del edificio de Mataró connecta demostrando la mirada bien dirigida. Cuando se han construido los lavabos del edificio no se ha mirado hacia el pasado y se han construido dos tipos de lavabo; uno accesible y justo al lado, otro inaccesible; éste no es un buen criterio para avanzar. ¿Porque tienen que hacerse dos tipos de lavabo?. Es algo que no comprenderemos jamás. Cambiemos las miradas.
 
-Tomemos siempre el criterio de hacer todos los lavabos accesibles. En **Mataró Connecta** todos los lavabos los pueden utilizar todas las personas. Un buen ejemplo de buena mirada.
+Tomemos siempre el criterio de hacer todos los lavabos accesibles. En **[Mataró Connecta](/blog/mataro-connecta)** todos los lavabos los pueden utilizar todas las personas. Un buen ejemplo de buena mirada.
 
-¿Qué pensáis del cambio de miradas? ¿Quizás deberíamos hablar de accesibilidad universal mejor? ¿O quizás incluso ambos términos pueden coexistir? Coméntanos tu opinión.
-
-<a href="/blog/viviendas-pmr" class="blog-internal-link">
-  <span class="blog-link-label">
-    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101" /><path stroke-linecap="round" stroke-linejoin="round" d="M10.172 13.828a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.102 1.101" /></svg>
-    Artículo relacionado
-  </span>
-  <span class="flex items-center gap-2">
-    <span class="blog-link-title">Viviendas para PMR</span>
-    <svg class="blog-link-arrow h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
-  </span>
-  <span class="blog-link-desc">Análisis crítico sobre la accesibilidad en edificios supuestamente adaptados para personas con movilidad reducida.</span>
-</a>
-
-<a href="/blog/paseo-por-mataro-con-los-regidores" class="blog-internal-link">
-  <span class="blog-link-label">
-    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101" /><path stroke-linecap="round" stroke-linejoin="round" d="M10.172 13.828a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.102 1.101" /></svg>
-    También te puede interesar
-  </span>
-  <span class="flex items-center gap-2">
-    <span class="blog-link-title">Paseando con los regidores</span>
-    <svg class="blog-link-arrow h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
-  </span>
-  <span class="blog-link-desc">Los gobernantes experimentan en primera persona la accesibilidad de la ciudad en silla de ruedas.</span>
-</a>
+¿Qué pensáis del cambio de miradas? ¿Quizás deberíamos hablar de [accesibilidad universal](/servicios/accesibilidad-universal) mejor? ¿O quizás incluso ambos términos pueden coexistir? Coméntanos tu opinión.

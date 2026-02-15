@@ -6,9 +6,9 @@ category: 'Denuncia'
 heroImage: '/images/blog/renfe.webp'
 ---
 
-Recollim la denúncia d'en Jordi Porta, usuari de la línia de **Renfe al Maresme**. Va trigar una hora i mitja a fer un trajecte de 20 minuts perquè va trobar diversos ascensors espatllats i no podia sortir de l'estació.
+Recollim la denúncia d'en Jordi Porta, usuari de la línia de **Renfe al Maresme**. Va trigar una hora i mitja a fer un trajecte de 20 minuts perquè va trobar diversos ascensors espatllats i no podia sortir de l'estació, una problemàtica que afecta al [transport públic adaptat](/blog/transporte-publico-adaptado) en general.
 
-El portaveu de Renfe, Antonio Carmona, demana disculpes i explica que les **avaries als ascensors de les estacions de Renfe** les han causat, en part, el temporal Gloria i la corrosió del mar, i que es tracta de reparacions complexes.
+El portaveu de Renfe, Antonio Carmona, demana disculpes i explica que les **avaries als ascensors de les estacions de Renfe** les han causat, en part, el temporal Gloria i la corrosió del mar, i que es tracta de reparacions complexes. Des de [DiverMataró](/asociacion) seguim de prop aquest tema.
 
 <div class="aspect-w-16 aspect-h-9 my-8" style="min-height: 400px;">
   <iframe 
@@ -21,27 +21,3 @@ El portaveu de Renfe, Antonio Carmona, demana disculpes i explica que les **avar
     style="min-height: 400px;"
   ></iframe>
 </div>
-
-<a href="/blog/transporte-publico-adaptado" class="blog-internal-link">
-  <span class="blog-link-label">
-    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101" /><path stroke-linecap="round" stroke-linejoin="round" d="M10.172 13.828a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.102 1.101" /></svg>
-    Artículo relacionado
-  </span>
-  <span class="flex items-center gap-2">
-    <span class="blog-link-title">Transporte público adaptado</span>
-    <svg class="blog-link-arrow h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
-  </span>
-  <span class="blog-link-desc">La importancia de un transporte público inclusivo: desafíos, soluciones y el compromiso de Mataró Bus.</span>
-</a>
-
-<a href="/blog/moventis-divermataro" class="blog-internal-link">
-  <span class="blog-link-label">
-    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101" /><path stroke-linecap="round" stroke-linejoin="round" d="M10.172 13.828a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.102 1.101" /></svg>
-    También te puede interesar
-  </span>
-  <span class="flex items-center gap-2">
-    <span class="blog-link-title">Moventis y DiverMataró: Un Compromiso Compartido</span>
-    <svg class="blog-link-arrow h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
-  </span>
-  <span class="blog-link-desc">Colaboración para mejorar la accesibilidad en el transporte público de Mataró.</span>
-</a>

@@ -178,32 +178,6 @@
   color: inherit;
 }
 
-/* Enlaces internos del blog */
-.blog-internal-link {
-  @apply not-prose my-8 block rounded-2xl border border-primary-100 bg-gradient-to-r from-primary-50/80 to-accent-50/40 p-5 no-underline transition-all duration-300 hover:-translate-y-0.5 hover:border-primary-300 hover:shadow-lg;
-}
-.blog-internal-link:hover {
-  background: linear-gradient(135deg, rgba(224, 242, 254, 0.9) 0%, rgba(250, 232, 255, 0.6) 100%);
-}
-.blog-internal-link .blog-link-label {
-  @apply mb-1 flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-primary-500;
-}
-.blog-internal-link .blog-link-title {
-  @apply text-base font-bold text-gray-900 transition-colors duration-200;
-}
-.blog-internal-link:hover .blog-link-title {
-  @apply text-primary-700;
-}
-.blog-internal-link .blog-link-desc {
-  @apply mt-1 text-sm text-gray-500;
-}
-.blog-internal-link .blog-link-arrow {
-  @apply ml-auto text-primary-400 transition-transform duration-300;
-}
-.blog-internal-link:hover .blog-link-arrow {
-  @apply translate-x-1 text-primary-600;
-}
-
 /* Better text selection */
 ::selection {
   background-color: #0284c7;

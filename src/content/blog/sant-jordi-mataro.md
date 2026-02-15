@@ -8,7 +8,7 @@ heroImage: '/images/blog/sant-jordi.webp'
 
 El Día de Sant Jordi, celebrado el 23 de abril, es una de las festividades más emblemáticas de Cataluña. Su origen se remonta a una antigua leyenda que ha perdurado a lo largo de los siglos y se ha convertido en parte integral del patrimonio cultural catalán.
 
-Este año **DiverMataró** ha intervenido en dicha celebración, poniendo una parada de rosas en el centro de la ciudad en la plaza de las Teresas. Ha sido una manera más de integrarnos en nuestra ciudad como cualquier ciudadano y así se nos ha acogido. Hemos disfrutado de un día no demasiado bueno por las inclemencias meteorológicas pero estupendo para relacionarnos con la ciudadanía de Mataró. Una experiencia digna de repetir.
+Este año **[DiverMataró](/asociacion)** ha intervenido en dicha celebración, poniendo una parada de rosas en el centro de la ciudad en la plaza de las Teresas. Ha sido una manera más de integrarnos en nuestra ciudad como cualquier ciudadano y así se nos ha acogido. Hemos disfrutado de un día no demasiado bueno por las inclemencias meteorológicas pero estupendo para relacionarnos con la ciudadanía de Mataró. Una experiencia digna de repetir.
 
 ## Leyenda de Sant Jordi: La Rosa y el Dragón
 
@@ -22,7 +22,7 @@ El 23 de abril también es el Día Internacional del Libro, una celebración pro
 
 Durante el Día de Sant Jordi, las calles de Cataluña, y en particular las de Barcelona y sus alrededores como Mataró, se llenan de puestos de libros y rosas. Es una jornada en la que las librerías, floristerías y comercios locales se visten de fiesta para ofrecer una amplia variedad de obras literarias y flores de todos los colores y formas.
 
-Todos los transeúntes que se acercan por alguno de estos puestos, como así ha sucedido con el que ha puesto DiverMataro, donde a última hora de la tarde hemos agotado las existencias de rosas. Y también hemos repartido alguno de nuestros cuentos, donde enseñamos a los más niños de la casa, que la diversidad funcional existe y que no hay que tratarla de una manera diferente, porque son personas con pleno derecho y como cualquier otro ciudadano más.
+Todos los transeúntes que se acercan por alguno de estos puestos, como así ha sucedido con el que ha puesto DiverMataro, donde a última hora de la tarde hemos agotado las existencias de rosas. Y también hemos repartido alguno de nuestros cuentos, donde enseñamos a los más niños de la casa, que la [diversidad funcional](/blog/discapacidad-hola-mundo) existe y que no hay que tratarla de una manera diferente, porque son personas con pleno derecho y como cualquier ciudadano, apostando por la [comunidad inclusiva](/servicios/comunidad-inclusiva).
 
 ## Significado Contemporáneo
 
@@ -39,27 +39,3 @@ El ambiente festivo en Mataró se hace evidente a medida que se acerca el 23 de 
 Uno de los aspectos más característicos de la celebración en Mataró son los numerosos puestos de libros y rosas que se instalan en las plazas y las principales arterias de la ciudad. Librerías locales, asociaciones culturales y floristerías montan coloridos y llamativos stands donde los transeúntes pueden encontrar una amplia selección de libros de todos los géneros y rosas de diversos colores y tamaños.
 
 Además de la venta de libros y rosas, en Mataró se organizan una variedad de eventos culturales y recreativos para celebrar el Día de Sant Jordi. Desde lecturas de poesía y recitales hasta conciertos al aire libre y espectáculos de danza, hay actividades para todos los gustos y edades.
-
-<a href="/blog/carnavales-mataro-2026" class="blog-internal-link">
-  <span class="blog-link-label">
-    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101" /><path stroke-linecap="round" stroke-linejoin="round" d="M10.172 13.828a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.102 1.101" /></svg>
-    Artículo relacionado
-  </span>
-  <span class="flex items-center gap-2">
-    <span class="blog-link-title">Rua de Carnestoltes 2026: cuando la inclusión ocupa la primera fila</span>
-    <svg class="blog-link-arrow h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
-  </span>
-  <span class="blog-link-desc">Otra fiesta inclusiva en Mataró con zona accesible para 50 sillas de ruedas.</span>
-</a>
-
-<a href="/blog/mataro-connecta" class="blog-internal-link">
-  <span class="blog-link-label">
-    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101" /><path stroke-linecap="round" stroke-linejoin="round" d="M10.172 13.828a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.102 1.101" /></svg>
-    También te puede interesar
-  </span>
-  <span class="flex items-center gap-2">
-    <span class="blog-link-title">Mataró connecta</span>
-    <svg class="blog-link-arrow h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
-  </span>
-  <span class="blog-link-desc">Trobada amb entitats per debatre sobre les relacions de consum i la lluita contra les desigualtats.</span>
-</a>

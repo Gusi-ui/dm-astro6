@@ -6,7 +6,7 @@ category: 'Transporte'
 heroImage: '/images/blog/moventis.avif'
 ---
 
-En un mundo cada vez más consciente de la necesidad de inclusión y accesibilidad, el transporte público juega un papel fundamental en garantizar la movilidad de todas las personas, independientemente de sus capacidades. **Moventis**, una de las principales operadoras de transporte en Cataluña, ha demostrado un firme compromiso con la accesibilidad, colaborando estrechamente con entidades como **DiverMataró** para mejorar la experiencia de las personas con diversidad funcional.
+En un mundo cada vez más consciente de la necesidad de inclusión y accesibilidad, el transporte público juega un papel fundamental en garantizar la movilidad de todas las personas, independientemente de sus capacidades. **Moventis**, una de las principales operadoras de transporte en Cataluña, ha demostrado un firme compromiso con la accesibilidad, colaborando estrechamente con entidades como **[DiverMataró](/asociacion)** para mejorar la experiencia de las personas con diversidad funcional.
 
 En una ciudad como Mataró, la movilidad es un derecho fundamental que debe ser accesible para todos. Por ello, Moventis y DiverMataró han unido esfuerzos para mejorar la accesibilidad en el transporte público, garantizando que todas las personas, independientemente de sus capacidades, puedan desplazarse con autonomía y seguridad.
 
@@ -16,7 +16,7 @@ En una ciudad como Mataró, la movilidad es un derecho fundamental que debe ser 
 
 Moventis ha implementado diversas tecnologías para mejorar la accesibilidad en el transporte público. Un ejemplo destacado es la colaboración con el Ayuntamiento de Sant Sadurní d’Anoia para incorporar el sistema **NaviLens** en las paradas de autobús.
 
-Este sistema permite a las personas con discapacidad visual acceder a la información sobre las paradas mediante el escaneo de códigos QR, facilitando su autonomía y seguridad al utilizar el transporte público.
+Este sistema permite a las personas con discapacidad visual acceder a la información sobre las paradas mediante el escaneo de códigos QR, facilitando su autonomía y seguridad al utilizar el transporte público, un paso más hacia la [accesibilidad universal](/servicios/accesibilidad-universal).
 
 ### Formación y Sensibilización del Personal
 
@@ -52,7 +52,7 @@ Hablamos de Moventis, la empresa que gestiona gran parte del transporte público
 
 DiverMataró, por su parte, ha creado una herramienta muy interesante: un **mapa de accesibilidad participativo**. Este mapa permite que cualquier ciudadano o ciudadana de Mataró indique los lugares que considera accesibles… y también los que no lo son. Así se pueden detectar barreras como aceras mal adaptadas, escalones sin rampa o zonas de difícil acceso.
 
-Esta iniciativa no solo ayuda a las personas con movilidad reducida a planificar mejor sus trayectos, sino que también visibiliza los problemas que existen en la ciudad y permite a las autoridades tomar decisiones informadas.
+Esta iniciativa no solo ayuda a las personas con movilidad reducida a planificar mejor sus trayectos, sino que también visibiliza los problemas que existen en la ciudad y permite a las autoridades tomar decisiones informadas. Puedes conocer más sobre estas iniciativas en nuestra página de [servicios de comunidad inclusiva](/servicios/comunidad-inclusiva).
 
 La colaboración entre Moventis y DiverMataró es un ejemplo inspirador de cómo el sector privado y la sociedad civil pueden trabajar juntos para construir un futuro más inclusivo. Gracias a sus esfuerzos, Mataró se está convirtiendo en una ciudad más accesible, donde todas las personas pueden disfrutar de su derecho a la movilidad.
 
@@ -60,28 +60,4 @@ La colaboración entre Moventis y DiverMataró es un ejemplo inspirador de cómo
 
 El camino hacia una accesibilidad plena es largo y requiere el compromiso de todos: empresas, administraciones y ciudadanía. Sin embargo, iniciativas como las de Moventis y DiverMataró demuestran que es posible avanzar y conseguir cambios reales que mejoran la vida de las personas.
 
-Un transporte público accesible no es solo una cuestión técnica; es una cuestión de derechos humanos y de dignidad. Y en Mataró, gracias a esta alianza, estamos un paso más cerca de conseguirlo.
-
-<a href="/blog/transporte-publico-adaptado" class="blog-internal-link">
-  <span class="blog-link-label">
-    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101" /><path stroke-linecap="round" stroke-linejoin="round" d="M10.172 13.828a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.102 1.101" /></svg>
-    Artículo relacionado
-  </span>
-  <span class="flex items-center gap-2">
-    <span class="blog-link-title">Transporte público adaptado</span>
-    <svg class="blog-link-arrow h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
-  </span>
-  <span class="blog-link-desc">La importancia de un transporte público inclusivo: desafíos, soluciones y el compromiso de Mataró Bus.</span>
-</a>
-
-<a href="/blog/estacions-de-renfe" class="blog-internal-link">
-  <span class="blog-link-label">
-    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101" /><path stroke-linecap="round" stroke-linejoin="round" d="M10.172 13.828a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.102 1.101" /></svg>
-    También te puede interesar
-  </span>
-  <span class="flex items-center gap-2">
-    <span class="blog-link-title">Avaries als ascensors de les estacions de Renfe</span>
-    <svg class="blog-link-arrow h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
-  </span>
-  <span class="blog-link-desc">Denúncia sobre el mal estat dels ascensors a les estacions de Rodalies.</span>
-</a>
+Un transporte público accesible, como ya exploramos en nuestro artículo sobre [transporte público adaptado](/blog/transporte-publico-adaptado), no es solo una cuestión técnica; es una cuestión de derechos humanos y de dignidad. Y en Mataró, gracias a esta alianza, estamos un paso más cerca de conseguirlo.
