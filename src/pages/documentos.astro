@@ -48,6 +48,26 @@ const documentos = [
     size: '1.5 MB',
     date: '2025-01-26',
   },
+  {
+    id: 5,
+    title: 'Asistencia Personal VS Ayuda Domiciliaria',
+    description:
+      'Estudio sobre las diferencias y el beneficio de la asistencia personal frente a la ayuda a domicilio',
+    category: 'Servicios',
+    file: '/documents/APvsAD.pdf',
+    size: '466 KB',
+    date: '2026-02-15',
+  },
+  {
+    id: 6,
+    title: 'Asistencia Personal',
+    description:
+      'Una inversión en derechos, Una inversión eficiente en empleo y en bienestar social',
+    category: 'Servicios',
+    file: '/documents/asistencia_personal_empleo_derecho.pdf',
+    size: '435 KB',
+    date: '2026-02-15',
+  },
 ];
 ---
 
@@ -208,7 +228,7 @@ const documentos = [
             </div>
           ) : (
             <div class="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2">
-              {documentos.map((doc) => (
+              {[...documentos].reverse().map((doc) => (
                 <div class="group overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
                   <div class="p-6">
                     <div class="mb-4 flex items-start justify-between">
