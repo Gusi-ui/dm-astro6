@@ -14,7 +14,7 @@ En una ciudad como Mataró, la movilidad es un derecho fundamental que debe ser 
 
 ### Innovaciones Tecnológicas para la Accesibilidad
 
-Moventis ha implementado diversas tecnologías para mejorar la accesibilidad en el transporte público. Un ejemplo destacado es la colaboración con el Ayuntamiento de Sant Sadurní d’Anoia para incorporar el sistema **NaviLens** en las paradas de autobús.
+Moventis ha implementado diversas tecnologías para mejorar la accesibilidad en el transporte público. Un ejemplo destacado es la colaboración con el Ayuntamiento de Sant Sadurní d’Anoia para incorporar el sistema **[NaviLens](https://www.navilens.com)** en las paradas de autobús.
 
 Este sistema permite a las personas con discapacidad visual acceder a la información sobre las paradas mediante el escaneo de códigos QR, facilitando su autonomía y seguridad al utilizar el transporte público, un paso más hacia la [accesibilidad universal](/servicios/accesibilidad-universal).
 
@@ -30,7 +30,7 @@ Estas formaciones no solo enseñan la parte técnica, sino también cómo poners
 
 ### Compromiso Institucional con la Accesibilidad
 
-El compromiso de Moventis con la accesibilidad se refleja en su adhesión al «Manifiesto por un transporte urbano para todas las personas» de Hidral Gobel. Esta iniciativa, respaldada por la Fundación ONCE, busca promover la igualdad de oportunidades en el transporte urbano, garantizando que todas las personas, independientemente de sus capacidades, puedan acceder y utilizar el transporte público de manera segura y eficiente.
+El compromiso de Moventis con la accesibilidad se refleja en su adhesión al «Manifiesto por un transporte urbano para todas las personas» de Hidral Gobel. Esta iniciativa, respaldada por la [Fundación ONCE](https://www.fundaciononce.es), busca promover la igualdad de oportunidades en el transporte urbano, garantizando que todas las personas, independientemente de sus capacidades, puedan acceder y utilizar el transporte público de manera segura y eficiente.
 
 Firmar un manifiesto no es solo un acto simbólico. Representa una promesa pública de seguir trabajando en esa dirección, y Moventis lo ha respaldado con hechos concretos.
 

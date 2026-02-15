@@ -52,7 +52,7 @@ La accesibilidad es un derecho humano fundamental, un pilar de la [accesibilidad
 ### Beneficios de Invertir en Accesibilidad
 
 1. **Inclusión Social:** Mejorar la accesibilidad de los edificios permite que todas las personas, independientemente de sus habilidades físicas, participen activamente en la vida comunitaria. Esto promueve una mayor cohesión social y reduce la discriminación.
-2. **Cumplimiento Normativo:** Muchos países y regiones tienen leyes y regulaciones que exigen que los edificios sean accesibles. Invertir en mejoras de accesibilidad asegura que los edificios cumplan con estas normativas, evitando posibles sanciones y litigios.
+2. **Cumplimiento Normativo:** En España, la [Ley General de derechos de las personas con discapacidad](https://www.boe.es/buscar/act.php?id=BOE-A-2013-12632) exige que los edificios sean accesibles. Invertir en mejoras de accesibilidad asegura que los edificios cumplan con estas normativas, evitando posibles sanciones y litigios.
 3. **Valor Económico:** La accesibilidad puede aumentar el valor de las propiedades y atraer a un mayor número de usuarios y clientes, beneficiando así a los propietarios de edificios y negocios.
 4. **Mejora de la Calidad de Vida:** Adaptar los edificios para que sean accesibles mejora significativamente la calidad de vida de las personas con discapacidades, permitiéndoles vivir de manera más independiente y digna.
 

@@ -16,7 +16,7 @@ Desde **[DibeMataró](/asociacion)**, asociación de personas con diversidad fun
 
 ## Un recorrido que volvió a latir
 
-La Rua comenzó a las 18:00 h y atravesó algunos de los principales ejes urbanos hasta llegar al Recinte Firal del Nou Parc Central, donde tuvo lugar el tramo final del desfile y la entrega de premios.
+La Rua comenzó a las 18:00 h y atravesó algunos de los principales ejes urbanos hasta llegar al Recinte Firal del Nou Parc Central, donde tuvo lugar el tramo final del desfile y la entrega de premios. El [Ajuntament de Mataró](https://www.mataro.cat) impulsó este año un recorrido pensado para la participación de todos.
 
 Las coreografías, los disfraces satíricos y la energía colectiva hicieron vibrar la ciudad. Sin embargo, este 2026 la verdadera novedad no estaba solo en las comparsas, sino en cómo se había pensado el espacio para que todas las personas pudieran disfrutarlo.
 

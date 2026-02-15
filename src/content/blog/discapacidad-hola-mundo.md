@@ -16,7 +16,7 @@ Dando la brasa hasta que consigamos que todas las personas estemos integradas en
 
 ## Entendiendo conceptos: Discapacidad
 
-La Organización Mundial de la Salud (OMS) dice que **la discapacidad** es un término general que abarca las deficiencias, las limitaciones de la actividad y las restricciones de la participación. Por tanto para que exista una discapacidad, tiene que haber una deficiencia.
+La [Organización Mundial de la Salud (OMS)](https://www.who.int/es/health-topics/disability) dice que **la discapacidad** es un término general que abarca las deficiencias, las limitaciones de la actividad y las restricciones de la participación. Por tanto para que exista una discapacidad, tiene que haber una deficiencia.
 
 ### ¿Qué es la Discapacidad?
 

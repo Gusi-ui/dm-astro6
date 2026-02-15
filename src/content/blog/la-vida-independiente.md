@@ -28,7 +28,7 @@ La vida independiente es un concepto fundamental que aboga por la autonomía, la
 
 ### Orígenes y Evolución
 
-El movimiento de vida independiente surge en la década de 1960 y 1970, impulsado por activistas con discapacidad que luchaban por el reconocimiento de sus derechos y la eliminación de barreras sociales, físicas y políticas que limitaban su participación plena en la sociedad.
+El movimiento de vida independiente surge en la década de 1960 y 1970, impulsado por activistas con discapacidad que luchaban por el reconocimiento de sus derechos, tal como recoge hoy la [Ley General de derechos de las personas con discapacidad](https://www.boe.es/buscar/act.php?id=BOE-A-2013-12632), y la eliminación de barreras sociales, físicas y políticas que limitaban su participación plena en la sociedad.
 
 Este movimiento desafió el modelo médico de discapacidad, que veía la discapacidad como una condición individual que requería tratamiento o intervención profesional. En cambio, abogaba por un enfoque social de la discapacidad, que reconoce que las limitaciones de las personas con discapacidad son el resultado de la interacción entre sus características personales y el entorno en el que viven.
 

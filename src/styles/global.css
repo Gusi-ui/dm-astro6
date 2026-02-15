@@ -178,6 +178,60 @@
   color: inherit;
 }
 
+/* Enlaces internos dentro de artículos (prose) */
+.prose a[href^='/'] {
+  color: #0284c7;
+  text-decoration: none;
+  font-weight: 600;
+  background: linear-gradient(120deg, rgba(2, 132, 199, 0.1) 0%, rgba(192, 38, 211, 0.08) 100%);
+  padding: 0.1em 0.35em;
+  border-radius: 0.3em;
+  border-bottom: 2px solid rgba(2, 132, 199, 0.3);
+  transition: all 0.25s ease;
+}
+.prose a[href^='/']:hover {
+  color: #075985;
+  background: linear-gradient(120deg, rgba(2, 132, 199, 0.18) 0%, rgba(192, 38, 211, 0.14) 100%);
+  border-bottom-color: #0284c7;
+  box-shadow: 0 2px 8px rgba(2, 132, 199, 0.15);
+}
+
+/* Enlaces externos dentro de artículos (prose) */
+.prose a[href^='http'] {
+  color: #7c3aed;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 2px dashed rgba(124, 58, 237, 0.35);
+  transition: all 0.25s ease;
+}
+.prose a[href^='http']::after {
+  content: ' ↗';
+  font-size: 0.75em;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+.prose a[href^='http']:hover {
+  color: #6d28d9;
+  border-bottom-color: #7c3aed;
+  border-bottom-style: solid;
+}
+.prose a[href^='http']:hover::after {
+  opacity: 1;
+}
+
+/* No aplicar estilos de enlace a los botones CTA ni a iframes dentro de prose */
+.prose a.article-cta,
+.prose a.article-cta:hover {
+  color: white;
+  background: linear-gradient(135deg, #0284c7 0%, #7c3aed 50%, #c026d3 100%);
+  border-bottom: none;
+  padding: 1rem 2rem;
+  box-shadow: none;
+}
+.prose a.article-cta::after {
+  content: none;
+}
+
 /* Better text selection */
 ::selection {
   background-color: #0284c7;

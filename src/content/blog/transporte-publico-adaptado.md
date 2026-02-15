@@ -54,4 +54,4 @@ Además de estas soluciones, la colaboración entre los gobiernos, las autoridad
 
 Un transporte público adaptado es fundamental para garantizar la movilidad y la inclusión de las personas con diversidad funcional en entornos urbanos. Organizaciones como [DiverMataró](/asociacion) trabajamos cada día para que esto sea una realidad. Al abordar los desafíos de accesibilidad y adoptar soluciones inclusivas, podemos crear entornos de transporte público que sean accesibles, seguros y equitativos para todos los usuarios.
 
-Sin embargo, mejorar la accesibilidad y la inclusión en el transporte público no es solo una cuestión de cumplimiento normativo, sino también de justicia social.
+Sin embargo, mejorar la accesibilidad y la inclusión en el transporte público no es solo una cuestión de cumplimiento normativo, sino también de justicia social, tal como reconoce la [Convención de las Naciones Unidas sobre los Derechos de las Personas con Discapacidad](https://www.un.org/development/desa/disabilities/convention-on-the-rights-of-persons-with-disabilities.html).
