@@ -32,6 +32,11 @@ const currentId = post.id || post.slug || 'unknown';
 // URL canónica para compartir (siempre apunta a producción)
 const canonicalUrl = new URL(`/blog/${currentId}`, Astro.site || 'https://divermataro.org').href;
 
+// Imagen para redes sociales: X/Twitter no soporta AVIF, usar JPG como fallback
+const socialImage = post.data.heroImage?.endsWith('.avif')
+  ? post.data.heroImage.replace(/\.avif$/, '.jpg')
+  : post.data.heroImage;
+
 // Obtener posts relacionados
 const allPosts = await getCollection('blog');
 
@@ -62,7 +67,7 @@ const relatedPosts = allPosts
 <BaseLayout
   title={`${post.data.title} - Blog Asociación Diversidad Funcional`}
   description={post.data.description}
-  ogImage={post.data.heroImage}
+  ogImage={socialImage}
 >
   <Header />
   <main class="min-h-screen bg-white">

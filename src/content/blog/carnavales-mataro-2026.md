@@ -12,7 +12,7 @@ La tarde del 14 de febrero de 2026, Mataró volvió a llenarse de música, color
 
 Pero este año hubo algo que marcó una diferencia profunda: la inclusión dejó de ser un detalle secundario para convertirse en parte visible y estructural de la fiesta.
 
-Desde **[DibeMataró](/asociacion)**, asociación de personas con diversidad funcional de la ciudad, hemos vivido esta Rua no solo como público, sino como parte activa de un paso adelante en accesibilidad real.
+Desde **[DiveMataró](/asociacion)**, asociación de personas con diversidad funcional de la ciudad, hemos vivido esta Rua no solo como público, sino como parte activa de un paso adelante en accesibilidad real.
 
 ## Un recorrido que volvió a latir
 
