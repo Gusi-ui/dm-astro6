@@ -61,3 +61,27 @@ La colaboración entre Moventis y DiverMataró es un ejemplo inspirador de cómo
 El camino hacia una accesibilidad plena es largo y requiere el compromiso de todos: empresas, administraciones y ciudadanía. Sin embargo, iniciativas como las de Moventis y DiverMataró demuestran que es posible avanzar y conseguir cambios reales que mejoran la vida de las personas.
 
 Un transporte público accesible no es solo una cuestión técnica; es una cuestión de derechos humanos y de dignidad. Y en Mataró, gracias a esta alianza, estamos un paso más cerca de conseguirlo.
+
+<a href="/blog/transporte-publico-adaptado" class="blog-internal-link">
+  <span class="blog-link-label">
+    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101" /><path stroke-linecap="round" stroke-linejoin="round" d="M10.172 13.828a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.102 1.101" /></svg>
+    Artículo relacionado
+  </span>
+  <span class="flex items-center gap-2">
+    <span class="blog-link-title">Transporte público adaptado</span>
+    <svg class="blog-link-arrow h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+  </span>
+  <span class="blog-link-desc">La importancia de un transporte público inclusivo: desafíos, soluciones y el compromiso de Mataró Bus.</span>
+</a>
+
+<a href="/blog/estacions-de-renfe" class="blog-internal-link">
+  <span class="blog-link-label">
+    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101" /><path stroke-linecap="round" stroke-linejoin="round" d="M10.172 13.828a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.102 1.101" /></svg>
+    También te puede interesar
+  </span>
+  <span class="flex items-center gap-2">
+    <span class="blog-link-title">Avaries als ascensors de les estacions de Renfe</span>
+    <svg class="blog-link-arrow h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+  </span>
+  <span class="blog-link-desc">Denúncia sobre el mal estat dels ascensors a les estacions de Rodalies.</span>
+</a>

@@ -39,3 +39,27 @@ El ambiente festivo en Mataró se hace evidente a medida que se acerca el 23 de 
 Uno de los aspectos más característicos de la celebración en Mataró son los numerosos puestos de libros y rosas que se instalan en las plazas y las principales arterias de la ciudad. Librerías locales, asociaciones culturales y floristerías montan coloridos y llamativos stands donde los transeúntes pueden encontrar una amplia selección de libros de todos los géneros y rosas de diversos colores y tamaños.
 
 Además de la venta de libros y rosas, en Mataró se organizan una variedad de eventos culturales y recreativos para celebrar el Día de Sant Jordi. Desde lecturas de poesía y recitales hasta conciertos al aire libre y espectáculos de danza, hay actividades para todos los gustos y edades.
+
+<a href="/blog/carnavales-mataro-2026" class="blog-internal-link">
+  <span class="blog-link-label">
+    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101" /><path stroke-linecap="round" stroke-linejoin="round" d="M10.172 13.828a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.102 1.101" /></svg>
+    Artículo relacionado
+  </span>
+  <span class="flex items-center gap-2">
+    <span class="blog-link-title">Rua de Carnestoltes 2026: cuando la inclusión ocupa la primera fila</span>
+    <svg class="blog-link-arrow h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+  </span>
+  <span class="blog-link-desc">Otra fiesta inclusiva en Mataró con zona accesible para 50 sillas de ruedas.</span>
+</a>
+
+<a href="/blog/mataro-connecta" class="blog-internal-link">
+  <span class="blog-link-label">
+    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101" /><path stroke-linecap="round" stroke-linejoin="round" d="M10.172 13.828a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.102 1.101" /></svg>
+    También te puede interesar
+  </span>
+  <span class="flex items-center gap-2">
+    <span class="blog-link-title">Mataró connecta</span>
+    <svg class="blog-link-arrow h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+  </span>
+  <span class="blog-link-desc">Trobada amb entitats per debatre sobre les relacions de consum i la lluita contra les desigualtats.</span>
+</a>

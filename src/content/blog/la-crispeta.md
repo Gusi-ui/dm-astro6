@@ -37,3 +37,27 @@ Menors acompanyats d’una persona responsable.
     </svg>
   </a>
 </div>
+
+<a href="/blog/carnavales-mataro-2026" class="blog-internal-link">
+  <span class="blog-link-label">
+    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101" /><path stroke-linecap="round" stroke-linejoin="round" d="M10.172 13.828a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.102 1.101" /></svg>
+    Artículo relacionado
+  </span>
+  <span class="flex items-center gap-2">
+    <span class="blog-link-title">Rua de Carnestoltes 2026: cuando la inclusión ocupa la primera fila</span>
+    <svg class="blog-link-arrow h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+  </span>
+  <span class="blog-link-desc">Crónica inclusiva de la Rua de Carnestoltes 2026 en Mataró.</span>
+</a>
+
+<a href="/blog/sant-jordi-mataro" class="blog-internal-link">
+  <span class="blog-link-label">
+    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101" /><path stroke-linecap="round" stroke-linejoin="round" d="M10.172 13.828a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.102 1.101" /></svg>
+    También te puede interesar
+  </span>
+  <span class="flex items-center gap-2">
+    <span class="blog-link-title">Orígenes y Significado del Día de Sant Jordi</span>
+    <svg class="blog-link-arrow h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+  </span>
+  <span class="blog-link-desc">La celebración de la cultura, el amor y la inclusión en Mataró.</span>
+</a>

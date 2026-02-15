@@ -121,3 +121,27 @@ El Carnaval es comunidad, creatividad y expresión colectiva.
 Que también sea accesible no le resta magia; la multiplica.
 
 Porque una ciudad verdaderamente festiva es aquella donde nadie tiene que preguntarse si podrá disfrutarla.
+
+<a href="/blog/paseo-por-mataro-con-los-regidores" class="blog-internal-link">
+  <span class="blog-link-label">
+    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101" /><path stroke-linecap="round" stroke-linejoin="round" d="M10.172 13.828a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.102 1.101" /></svg>
+    Artículo relacionado
+  </span>
+  <span class="flex items-center gap-2">
+    <span class="blog-link-title">Paseando con los regidores</span>
+    <svg class="blog-link-arrow h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+  </span>
+  <span class="blog-link-desc">Cuando los gobernantes experimentan en primera persona la accesibilidad de la ciudad.</span>
+</a>
+
+<a href="/blog/denuncias-anonimas-de-accesibilidad" class="blog-internal-link">
+  <span class="blog-link-label">
+    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101" /><path stroke-linecap="round" stroke-linejoin="round" d="M10.172 13.828a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.102 1.101" /></svg>
+    También te puede interesar
+  </span>
+  <span class="flex items-center gap-2">
+    <span class="blog-link-title">Denuncias anónimas de accesibilidad</span>
+    <svg class="blog-link-arrow h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+  </span>
+  <span class="blog-link-desc">Símbolos de accesibilidad aparecen pintados en zonas inaccesibles de Mataró como protesta ciudadana.</span>
+</a>
