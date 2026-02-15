@@ -32,9 +32,9 @@ const currentId = post.id || post.slug || 'unknown';
 // URL canónica para compartir (siempre apunta a producción)
 const canonicalUrl = new URL(`/blog/${currentId}`, Astro.site || 'https://divermataro.org').href;
 
-// Imagen para redes sociales: X/Twitter no soporta AVIF, usar JPG como fallback
+// Imagen para redes sociales: X/Twitter no soporta AVIF, usar WEBP como fallback
 const socialImage = post.data.heroImage?.endsWith('.avif')
-  ? post.data.heroImage.replace(/\.avif$/, '.jpg')
+  ? post.data.heroImage.replace(/\.avif$/, '.webp')
   : post.data.heroImage;
 
 // Obtener posts relacionados
