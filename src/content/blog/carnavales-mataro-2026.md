@@ -60,6 +60,8 @@ En el tramo final del recorrido se habilitó una **zona exclusiva para personas 
   </div>
 </div>
 
+---
+
 No fue simplemente un espacio delimitado. Fue un área planificada con criterios de accesibilidad:
 
 - Acceso señalizado y supervisado.

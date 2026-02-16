@@ -33,3 +33,7 @@ pnpm-debug.log*
 
 # Astro
 .astro/
+
+# AI tools config
+.agents/
+.claude/
