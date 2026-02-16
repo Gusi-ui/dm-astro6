@@ -2,7 +2,7 @@
 title: 'Mataró connecta'
 description: 'Trobada amb entitats per debatre sobre les relacions de consum i la lluita contra les desigualtats.'
 pubDate: 2022-07-05
-category: 'Activitats'
+category: 'Accesibilidad'
 heroImage: '/images/blog/Matarconecta.webp'
 ---
 

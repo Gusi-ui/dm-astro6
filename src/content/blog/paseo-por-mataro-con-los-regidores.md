@@ -2,7 +2,7 @@
 title: 'Paseando con los regidores'
 description: 'Una iniciativa de DiverMataró para que los regidores experimenten en primera persona la accesibilidad de la ciudad.'
 pubDate: 2022-12-16
-category: 'Activitats'
+category: 'Accesibilidad'
 heroImage: '/images/blog/silla.webp'
 ---
 

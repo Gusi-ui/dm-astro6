@@ -2,7 +2,7 @@
 title: 'Discapacidad. Hola mundo!'
 description: 'DiverMataro llega para promover la igualdad y los derechos de las personas con Diversidad Funcional. Entendiendo conceptos clave.'
 pubDate: 2024-02-10
-category: 'Opinión'
+category: 'Denuncia'
 heroImage: '/images/blog/holamundo.webp'
 ---
 

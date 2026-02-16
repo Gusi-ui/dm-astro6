@@ -2,7 +2,7 @@
 title: 'La Vida Independiente'
 description: 'Promoviendo la vida independiente a través de la asistencia personal como alternativa a la institucionalización.'
 pubDate: 2023-11-23
-category: 'Derechos'
+category: 'Denuncia'
 heroImage: '/images/blog/Dependiente.avif'
 ---
 

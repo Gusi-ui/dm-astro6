@@ -2,7 +2,7 @@
 title: 'Opiniones gratuitas'
 description: 'La importancia de contrastar la información y formar opiniones propias sobre la accesibilidad y diversidad funcional.'
 pubDate: 2024-04-05
-category: 'Reflexión'
+category: 'Denuncia'
 heroImage: '/images/blog/Microfono.webp'
 ---
 

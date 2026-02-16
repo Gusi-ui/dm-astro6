@@ -53,11 +53,13 @@ const reivindicaciones = [
   },
 ];
 
-// Añadir conteo de posts a cada reivindicación
-const reivindicacionesConConteo = reivindicaciones.map((r) => ({
-  ...r,
-  postCount: countPostsByCategory(r.category),
-}));
+// Añadir conteo de posts a cada reivindicación y ordenar de mayor a menor
+const reivindicacionesConConteo = reivindicaciones
+  .map((r) => ({
+    ...r,
+    postCount: countPostsByCategory(r.category),
+  }))
+  .sort((a, b) => b.postCount - a.postCount);
 
 // Calcular años desde la fundación de la asociación
 const ANIO_FUNDACION = 2019;
