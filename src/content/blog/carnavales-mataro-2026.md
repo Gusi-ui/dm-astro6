@@ -1,6 +1,6 @@
 ---
 title: 'Rua de Carnestoltes 2026 en Mataró: cuando la inclusión ocupa la primera fila'
-description: 'Crónica inclusiva de la Rua de Carnestoltes 2026 en Mataró desde la mirada de DibeMataró.'
+description: 'Crónica inclusiva de la Rua de Carnestoltes 2026 en Mataró desde la mirada de DiverMataró.'
 pubDate: 2026-02-14
 category: 'Activitats'
 heroImage: '/images/blog/carnavales2026.avif'
@@ -12,7 +12,7 @@ La tarde del 14 de febrero de 2026, Mataró volvió a llenarse de música, color
 
 Pero este año hubo algo que marcó una diferencia profunda: la inclusión dejó de ser un detalle secundario para convertirse en parte visible y estructural de la fiesta.
 
-Desde **[DiveMataró](/asociacion)**, asociación de personas con diversidad funcional de la ciudad, hemos vivido esta Rua no solo como público, sino como parte activa de un paso adelante en accesibilidad real.
+Desde **[DiverMataró](/asociacion)**, asociación de personas con diversidad funcional de la ciudad, hemos vivido esta Rua no solo como público, sino como parte activa de un paso adelante en accesibilidad real.
 
 ## Un recorrido que volvió a latir
 
@@ -20,11 +20,45 @@ La Rua comenzó a las 18:00 h y atravesó algunos de los principales ejes urbano
 
 Las coreografías, los disfraces satíricos y la energía colectiva hicieron vibrar la ciudad. Sin embargo, este 2026 la verdadera novedad no estaba solo en las comparsas, sino en cómo se había pensado el espacio para que todas las personas pudieran disfrutarlo.
 
-<!-- Añadir aquí fotografías del recorrido general -->
+<div class="not-prose my-8 grid grid-cols-1 gap-4 md:grid-cols-[3fr_4fr]">
+  <div class="overflow-hidden rounded-xl" style="height: 420px;">
+    <img
+      src="/images/blog/Carnaval1.avif"
+      alt="Persona disfrutando de la Rua desde la zona accesible en primera línea"
+      style="width: 100%; height: 100%; object-fit: cover; object-position: top; border-radius: 0.75rem;"
+    />
+  </div>
+  <div class="overflow-hidden rounded-xl" style="height: 420px;">
+    <img
+      src="/images/blog/Carnaval2.avif"
+      alt="La rúa de carnavales en Mataró, 2026"
+      style="width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 0.75rem;"
+    />
+  </div>
+</div>
+
+---
 
 ## Una zona exclusiva para movilidad reducida: más que un espacio, un mensaje
 
 En el tramo final del recorrido se habilitó una **zona exclusiva para personas con movilidad reducida**, con capacidad para **hasta 50 sillas de ruedas**.
+
+<div class="not-prose my-8 grid grid-cols-1 gap-4 md:grid-cols-[4fr_4fr]">
+  <div class="overflow-hidden rounded-xl" style="height: 420px;">
+    <img
+      src="/images/blog/Celia.avif"
+      alt="Persona disfrutando de la Rua desde la zona accesible en primera línea"
+      style="width: 100%; height: 100%; object-fit: cover; object-position: top; border-radius: 0.75rem;"
+    />
+  </div>
+  <div class="overflow-hidden rounded-xl" style="height: 420px;">
+    <img
+      src="/images/blog/Espacio1.avif"
+      alt="La rúa de carnavales en Mataró, 2026"
+      style="width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 0.75rem;"
+    />
+  </div>
+</div>
 
 No fue simplemente un espacio delimitado. Fue un área planificada con criterios de accesibilidad:
 
@@ -73,7 +107,7 @@ La implicación del Ayuntamiento en la planificación de estos espacios marca un
 
 La zona para 50 sillas de ruedas no es el punto final, sino un paso relevante en el camino hacia unas fiestas verdaderamente inclusivas.
 
-Para DibeMataró, esta experiencia demuestra que cuando las entidades sociales y la administración trabajan en la misma dirección, los resultados son visibles.
+Para DiverMataró, esta experiencia demuestra que cuando las entidades sociales y la administración trabajan en la misma dirección, los resultados son visibles.
 
 ## Vivir la Rua desde la diversidad
 
