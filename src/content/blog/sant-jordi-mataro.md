@@ -2,7 +2,7 @@
 title: 'Orígenes y Significado del Día de Sant Jordi'
 description: 'La celebración de la cultura, el amor y la inclusión en Mataró durante una de las festividades más emblemáticas.'
 pubDate: 2024-04-23
-category: 'Denuncia'
+category: 'Eventos'
 heroImage: '/images/blog/sant-jordi.webp'
 ---
 

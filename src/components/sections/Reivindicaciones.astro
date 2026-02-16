@@ -1,63 +1,23 @@
 ---
 import { getCollection } from 'astro:content';
+import { reivindicacionesConfig } from '../../lib/reivindicaciones';
 
 // Obtener todos los posts para contar por categoría
 const allPosts = await getCollection('blog');
 
-// Función para contar posts por categoría
-function countPostsByCategory(category: string): number {
-  return allPosts.filter((post) => post.data.category?.toLowerCase() === category.toLowerCase())
-    .length;
+// Función para contar posts que pertenecen a cualquiera de las categorías indicadas
+function countPostsByCategories(categories: string[]): number {
+  const lowerCategories = categories.map((c) => c.toLowerCase());
+  return allPosts.filter((post: { data: { category?: string } }) =>
+    lowerCategories.includes(post.data.category?.toLowerCase() ?? '')
+  ).length;
 }
 
-const reivindicaciones = [
-  {
-    title: 'Accesibilidad en el Transporte',
-    description:
-      'Reivindicamos un transporte público 100% accesible para todas las personas, con paradas adaptadas, vehículos con rampas y espacios reservados. Cada día miles de personas encuentran barreras para moverse por nuestra ciudad.',
-    category: 'Transporte',
-    color: 'bg-primary-500',
-    colorLight: 'bg-primary-50',
-    colorText: 'text-primary-600',
-    hoverBg: 'hover:bg-primary-50',
-  },
-  {
-    title: 'Accesibilidad en Espacios Públicos',
-    description:
-      'Trabajamos para que todos los espacios públicos, parques, plazas y edificios municipales sean completamente accesibles. La ciudad debe ser de todos y para todos, sin barreras arquitectónicas que limiten la participación.',
-    category: 'Accesibilidad',
-    color: 'bg-accent-500',
-    colorLight: 'bg-accent-50',
-    colorText: 'text-accent-600',
-    hoverBg: 'hover:bg-accent-50',
-  },
-  {
-    title: 'Educación Inclusiva',
-    description:
-      'Defendemos una educación inclusiva que garantice el acceso y la participación de todos los estudiantes. Cada niño y niña merece las mismas oportunidades de aprendizaje y desarrollo.',
-    category: 'Social',
-    color: 'bg-green-500',
-    colorLight: 'bg-green-50',
-    colorText: 'text-green-600',
-    hoverBg: 'hover:bg-green-50',
-  },
-  {
-    title: 'Denuncias y Visibilización',
-    description:
-      'Trabajamos para visibilizar las injusticias y barreras que encontramos cada día. Denunciamos públicamente las situaciones de discriminación y falta de accesibilidad.',
-    category: 'Denuncia',
-    color: 'bg-rose-500',
-    colorLight: 'bg-rose-50',
-    colorText: 'text-rose-600',
-    hoverBg: 'hover:bg-rose-50',
-  },
-];
-
 // Añadir conteo de posts a cada reivindicación y ordenar de mayor a menor
-const reivindicacionesConConteo = reivindicaciones
+const reivindicacionesConConteo = reivindicacionesConfig
   .map((r) => ({
     ...r,
-    postCount: countPostsByCategory(r.category),
+    postCount: countPostsByCategories(r.categories),
   }))
   .sort((a, b) => b.postCount - a.postCount);
 
@@ -172,7 +132,7 @@ const aniosLuchando = new Date().getFullYear() - ANIO_FUNDACION;
                     {/* Botón para ver artículos */}
                     {item.postCount > 0 && (
                       <a
-                        href={`/blog/categoria/${item.category.toLowerCase()}`}
+                        href={`/blog/reivindicacion/${item.slug}`}
                         class={`inline-flex items-center justify-center gap-2 rounded-xl ${item.color} flex-shrink-0 px-5 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl`}
                       >
                         <span>Ver artículos</span>

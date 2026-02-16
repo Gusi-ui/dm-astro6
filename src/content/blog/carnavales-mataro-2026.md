@@ -2,7 +2,7 @@
 title: 'Rua de Carnestoltes 2026 en Mataró: cuando la inclusión ocupa la primera fila'
 description: 'Crónica inclusiva de la Rua de Carnestoltes 2026 en Mataró desde la mirada de DiverMataró.'
 pubDate: 2026-02-14
-category: 'Denuncia'
+category: 'Activitats'
 heroImage: '/images/blog/carnavales2026.avif'
 ---
 
