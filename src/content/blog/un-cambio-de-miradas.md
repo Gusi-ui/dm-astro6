@@ -2,7 +2,7 @@
 title: 'Un cambio de miradas'
 description: 'Reflexión sobre el concepto de "cambio de miradas" y la realidad de la accesibilidad en nuevos proyectos arquitectónicos.'
 pubDate: 2022-07-15
-category: 'Opinión'
+category: 'Accesibilidad'
 heroImage: '/images/blog/Miradas.webp'
 ---
 
