@@ -17,8 +17,9 @@
     "db:local": "wrangler d1 execute astro6dm-db --local --file=./migrations/0001_initial.sql",
     "db:remote": "wrangler d1 execute astro6dm-db --remote --file=./migrations/0001_initial.sql",
     "setup:cloudflare": "./scripts/setup-cloudflare.sh",
-    "deploy": "pnpm run deploy:pages",
-    "deploy:pages": "pnpm build && wrangler pages deploy dist",
+    "deploy": "pnpm run deploy:worker",
+    "deploy:worker": "pnpm build && wrangler deploy",
+    "deploy:pages": "pnpm run deploy:worker",
     "prepare": "husky"
   },
   "dependencies": {
