@@ -1,9 +1,11 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, type CollectionEntry } from 'astro:content';
+
+type BlogEntry = CollectionEntry<'blog'>;
 
 // Obtener todos los posts publicados
-const allPosts = await getCollection('blog', ({ data }) => {
-  return data.pubDate <= new Date();
+const allPosts = await getCollection('blog', (entry: BlogEntry) => {
+  return entry.data.pubDate <= new Date();
 });
 
 // Función para mezclar aleatoriamente (Fisher-Yates shuffle)
@@ -17,7 +19,7 @@ function shuffleArray<T>(array: T[]): T[] {
 }
 
 // Obtener 3 posts aleatorios
-const randomPosts = shuffleArray(allPosts).slice(0, 3);
+const randomPosts: BlogEntry[] = shuffleArray(allPosts).slice(0, 3);
 
 // Colores para las tarjetas
 const cardColors = [

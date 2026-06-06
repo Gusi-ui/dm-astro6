@@ -3,8 +3,14 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Header from '../../../components/sections/Header.astro';
 import Footer from '../../../components/sections/Footer.astro';
 import HeroBackground from '../../../components/HeroBackground.astro';
-import { getCollection } from 'astro:content';
+import { getCollection, type CollectionEntry } from 'astro:content';
 import { getRandomHeroImage } from '../../../lib/heroImages';
+
+type BlogEntry = CollectionEntry<'blog'>;
+
+interface Props {
+  categoriaOriginal: string;
+}
 
 export const prerender = true;
 
@@ -14,20 +20,22 @@ export async function getStaticPaths() {
   const allPosts = await getCollection('blog');
 
   // Obtener todas las categorías únicas
-  const categories = [...new Set(allPosts.map((post) => post.data.category).filter(Boolean))];
+  const categories = [
+    ...new Set(allPosts.map((post: BlogEntry) => post.data.category).filter(Boolean)),
+  ] as string[];
 
   return categories.map((categoria) => ({
     params: { categoria: categoria.toLowerCase() },
-    props: { categoriaOriginal: categoria },
+    props: { categoriaOriginal: categoria } satisfies Props,
   }));
 }
 
-const { categoria } = Astro.params;
-const { categoriaOriginal } = Astro.props;
+const { categoria } = Astro.params as { categoria: string };
+const { categoriaOriginal } = Astro.props as Props;
 
 // Obtener posts de esta categoría
-const allPosts = await getCollection('blog', ({ data }) => {
-  return data.category?.toLowerCase() === categoria && data.pubDate <= new Date();
+const allPosts = await getCollection('blog', (entry: BlogEntry) => {
+  return entry.data.category?.toLowerCase() === categoria && entry.data.pubDate <= new Date();
 });
 
 // Ordenar por fecha más reciente

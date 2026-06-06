@@ -1,5 +1,6 @@
 import type { APIRoute } from 'astro';
 import { Database } from '../../lib/db/client';
+import { getD1Database, getResendApiKey, waitUntil } from '../../lib/cloudflare';
 
 const WHATSAPP_GROUP_URL = 'https://chat.whatsapp.com/DRlG1gYTC596ta62wY3uas';
 
@@ -135,7 +136,7 @@ async function sendWelcomeEmail(apiKey: string, memberData: { name: string; emai
 
 export const POST: APIRoute = async ({ request, locals }) => {
   try {
-    const db = locals.runtime?.env?.DB;
+    const db = getD1Database();
 
     if (!db) {
       return new Response(
@@ -192,9 +193,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
     });
 
     // Enviar emails: notificación al admin + bienvenida al usuario
-    const RESEND_API_KEY =
-      (locals.runtime?.env as Record<string, string>)?.RESEND_API_KEY ||
-      import.meta.env.RESEND_API_KEY;
+    const RESEND_API_KEY = getResendApiKey();
 
     if (RESEND_API_KEY) {
       const emailPromises = Promise.all([
@@ -208,13 +207,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
       ]);
 
       // Usar waitUntil para que Cloudflare no cancele las promesas
-      const ctx = locals.runtime?.ctx;
-      if (ctx?.waitUntil) {
-        ctx.waitUntil(emailPromises);
-      } else {
-        // Fallback: esperar los emails si no hay waitUntil
-        await emailPromises;
-      }
+      waitUntil(locals, emailPromises);
     }
 
     return new Response(

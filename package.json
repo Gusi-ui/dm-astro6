@@ -2,6 +2,9 @@
   "name": "astro6dm",
   "type": "module",
   "version": "0.0.1",
+  "engines": {
+    "node": ">=22.13.0"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -19,33 +22,32 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^12.6.12",
-    "@astrojs/tailwind": "^5.1.4",
-    "astro": "^6.0.0-beta.0",
-    "tailwindcss": "^3.4.1",
-    "zod": "^3.23.8"
+    "@astrojs/cloudflare": "^13.6.1",
+    "@astrojs/tailwind": "^6.0.2",
+    "astro": "^6.4.4",
+    "tailwindcss": "^3.4.19"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.3",
-    "@cloudflare/workers-types": "^4.20241106.0",
+    "@astrojs/check": "^0.9.9",
+    "@cloudflare/workers-types": "^4.20260606.1",
     "@tailwindcss/typography": "^0.5.19",
-    "@types/node": "^20.14.0",
-    "@typescript-eslint/eslint-plugin": "^8.53.1",
-    "@typescript-eslint/parser": "^8.53.1",
-    "astro-eslint-parser": "^1.2.2",
-    "eslint": "^9.39.2",
-    "eslint-plugin-astro": "^1.5.0",
+    "@types/node": "^22.19.20",
+    "@typescript-eslint/eslint-plugin": "^8.60.1",
+    "@typescript-eslint/parser": "^8.60.1",
+    "astro-eslint-parser": "^1.4.0",
+    "eslint": "^9.39.4",
+    "eslint-plugin-astro": "^1.7.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-hooks": "^7.1.1",
     "husky": "^9.1.7",
-    "lint-staged": "^16.2.7",
-    "prettier": "^3.8.1",
+    "lint-staged": "^17.0.7",
+    "prettier": "^3.8.3",
     "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-tailwindcss": "^0.7.2",
-    "typescript": "^5.5.0",
-    "typescript-eslint": "^8.53.1",
-    "wrangler": "^4.60.0"
+    "prettier-plugin-tailwindcss": "^0.8.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.60.1",
+    "wrangler": "^4.98.0"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,astro}": [

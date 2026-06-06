@@ -1,8 +1,14 @@
 import type { APIRoute } from 'astro';
+import { getResendApiKey } from '../../lib/cloudflare';
 
-export const POST: APIRoute = async ({ request, locals }) => {
+export const POST: APIRoute = async ({ request }) => {
   try {
-    const data = await request.json();
+    const data = (await request.json()) as {
+      nombre?: string;
+      email?: string;
+      asunto?: string;
+      mensaje?: string;
+    };
     const { nombre, email, asunto, mensaje } = data;
 
     // Validación básica
@@ -23,9 +29,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
     }
 
     // Obtener API key de Resend desde variables de entorno
-    const RESEND_API_KEY =
-      (locals.runtime?.env as Record<string, string>)?.RESEND_API_KEY ||
-      import.meta.env.RESEND_API_KEY;
+    const RESEND_API_KEY = getResendApiKey();
 
     if (!RESEND_API_KEY) {
       console.error('RESEND_API_KEY no configurada');

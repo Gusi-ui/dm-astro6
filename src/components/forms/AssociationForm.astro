@@ -93,7 +93,7 @@
           body: formData,
         });
 
-        const result = await response.json();
+        const result = (await response.json()) as { success?: boolean; error?: string };
 
         formMessage.classList.remove('hidden');
 

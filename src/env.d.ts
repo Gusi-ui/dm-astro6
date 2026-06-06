@@ -1,19 +1,11 @@
-/// <reference types="astro/client" />
+/// <reference types="@cloudflare/workers-types" />
+/// <reference types="@astrojs/cloudflare/types.d.ts" />
 
-interface ImportMetaEnv {
-  readonly DB: D1Database;
-}
-
-interface ImportMeta {
-  readonly env: ImportMetaEnv;
-}
-
-declare namespace App {
-  interface Locals {
-    runtime: {
-      env: {
-        DB: D1Database;
-      };
-    };
+declare namespace Cloudflare {
+  interface Env {
+    DB: D1Database;
+    RESEND_API_KEY?: string;
+    ENVIRONMENT?: string;
+    NODE_VERSION?: string;
   }
 }

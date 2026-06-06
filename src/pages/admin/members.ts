@@ -1,11 +1,12 @@
 import type { APIRoute } from 'astro';
 import { Database } from '../../lib/db/client';
+import { getD1Database } from '../../lib/cloudflare';
 
 // Endpoint para administradores - listar miembros
 // En producción, deberías añadir autenticación aquí
-export const GET: APIRoute = async ({ locals }) => {
+export const GET: APIRoute = async () => {
   try {
-    const db = locals.runtime?.env?.DB;
+    const db = getD1Database();
 
     if (!db) {
       return new Response(
