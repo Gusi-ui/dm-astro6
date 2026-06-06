@@ -17,6 +17,12 @@
       "matchPackageNames": ["@types/node"],
       "allowedVersions": "<23.0.0",
       "description": "El proyecto usa Node.js 22 LTS"
+    },
+    {
+      "matchDatasources": ["node-version"],
+      "matchManagers": ["nvm", "nodenv"],
+      "allowedVersions": "<23.0.0",
+      "description": "Mantener Node.js 22 LTS en .nvmrc y .node-version"
     }
   ]
 }
