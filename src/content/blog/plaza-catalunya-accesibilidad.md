@@ -6,7 +6,7 @@ category: 'Accesibilidad'
 heroImage: '/images/blog/pcb.avif'
 ---
 
-_Las obras que el <a href="https://www.mataro.cat/ca/actualitat/noticies/2026/la-placa-de-catalunya-es-posa-al-dia-amb-la-renovacio-i-millora-dels-elements-d2019accessibilitat-i-seguretat" target="_blank" rel="noopener noreferrer">Ayuntamiento de Mataró</a> ejecuta este verano en la Plaza de Cataluña prometen «accesibilidad y seguridad». Pero ¿accesibilidad para quién? Un análisis de lo que la reforma resuelve, de lo que silencia y del plan —ya en revisión— que todavía marca el rumbo._
+_Las obras que el <a href="https://www.mataro.cat/ca/actualitat/noticies/2026/la-placa-de-catalunya-es-posa-al-dia-amb-la-renovacio-i-millora-dels-elements-d2019accessibilitat-i-seguretat" target="_blank" rel="noopener noreferrer">Ayuntamiento de Mataró ejecuta este verano en la Plaza de Cataluña</a> prometen «accesibilidad y seguridad». Pero ¿accesibilidad para quién? Un análisis de lo que la reforma resuelve, de lo que silencia y del plan —ya en revisión— que todavía marca el rumbo._
 
 ---
 
