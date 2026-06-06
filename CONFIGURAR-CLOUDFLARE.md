@@ -86,11 +86,15 @@ Esto creará las tablas `members` y `blog_views` en tu base de datos.
 
 1. Ve a: https://dash.cloudflare.com/profile/api-tokens
 2. Haz clic en **"Create Token"**
-3. Usa el template **"Edit Cloudflare Workers"** o crea uno personalizado con estos permisos:
-   - **Account**: `Cloudflare Pages:Edit`
+3. Usa el template **"Edit Cloudflare Workers"** (recomendado) o crea uno personalizado con estos permisos mínimos para `wrangler deploy`:
    - **Account**: `Workers Scripts:Edit`
-   - **Zone**: `Zone:Read` (opcional, solo si usas dominio personalizado)
-4. Copia el token generado (solo se muestra una vez)
+   - **Account**: `Workers KV Storage:Edit` (binding SESSION del adapter)
+   - **Account**: `D1:Edit` (base de datos astro6dm-db)
+   - **Account**: `Account Settings:Read`
+   - **User**: `User Details:Read` y `Memberships:Read`
+   - **Zone**: `Workers Routes:Edit` (solo si enlazas dominio personalizado como divermataro.org)
+4. En **Account Resources**, limita el token a tu cuenta de Cloudflare
+5. Copia el token generado (solo se muestra una vez)
 
 ### Paso 7: Configurar GitHub Secrets
 
