@@ -30,8 +30,8 @@ const { Content } = await render(post);
 
 const currentId = post.id || post.slug || 'unknown';
 
-// URL canónica para compartir (siempre apunta a producción)
-const canonicalUrl = new URL(`/blog/${currentId}`, Astro.site || 'https://divermataro.org').href;
+// URL canónica para compartir (coincide con la barra final que usa el servidor)
+const canonicalUrl = new URL(`/blog/${currentId}/`, Astro.site || 'https://divermataro.org').href;
 
 // Imagen para redes sociales: AVIF no es compatible con la mayoría de crawlers OG
 const socialImageMeta = getSocialImageMeta(post.data.heroImage);
@@ -68,6 +68,7 @@ const relatedPosts = allPosts
   description={post.data.description}
   ogImage={socialImageMeta.src}
   ogImageAlt={post.data.title}
+  ogImageType={socialImageMeta.type}
   ogImageWidth={socialImageMeta.width}
   ogImageHeight={socialImageMeta.height}
   canonicalUrl={canonicalUrl}

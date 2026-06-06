@@ -1,14 +1,23 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-const SOCIAL_FALLBACK_EXTENSIONS = ['.webp', '.jpg', '.jpeg', '.png'] as const;
+const SOCIAL_FALLBACK_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.webp'] as const;
 const DEFAULT_OG_WIDTH = 1200;
 const DEFAULT_OG_HEIGHT = 630;
+
+const MIME_BY_EXTENSION: Record<string, string> = {
+  '.jpg': 'image/jpeg',
+  '.jpeg': 'image/jpeg',
+  '.png': 'image/png',
+  '.webp': 'image/webp',
+  '.gif': 'image/gif',
+};
 
 export type SocialImageMeta = {
   src?: string;
   width: number;
   height: number;
+  type?: string;
 };
 
 const getImageDimensions = (filePath: string): { width: number; height: number } | null => {
@@ -92,7 +101,7 @@ const resolveHeroPath = (heroImage: string): string => {
 
 /**
  * Resuelve la imagen Open Graph para un hero en AVIF y sus dimensiones reales.
- * Las redes sociales no suelen soportar AVIF; busca webp/jpg/png en public/.
+ * Prioriza JPG/PNG por compatibilidad con Facebook, WhatsApp y LinkedIn.
  */
 export const getSocialImageMeta = (heroImage?: string): SocialImageMeta => {
   if (!heroImage) {
@@ -102,11 +111,13 @@ export const getSocialImageMeta = (heroImage?: string): SocialImageMeta => {
   const src = resolveHeroPath(heroImage);
   const filePath = path.join(process.cwd(), 'public', src.replace(/^\//, ''));
   const dimensions = fs.existsSync(filePath) ? getImageDimensions(filePath) : null;
+  const extension = path.extname(src).toLowerCase();
 
   return {
     src,
     width: dimensions?.width ?? DEFAULT_OG_WIDTH,
     height: dimensions?.height ?? DEFAULT_OG_HEIGHT,
+    type: MIME_BY_EXTENSION[extension],
   };
 };
 
