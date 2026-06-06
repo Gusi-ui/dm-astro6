@@ -1,0 +1,22 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "labels": ["dependencies"],
+  "packageRules": [
+    {
+      "matchPackageNames": ["tailwindcss"],
+      "allowedVersions": "<4.0.0",
+      "description": "@astrojs/tailwind aún requiere Tailwind CSS v3"
+    },
+    {
+      "matchPackageNames": ["eslint"],
+      "allowedVersions": "<10.0.0",
+      "description": "eslint-plugin-react y eslint-plugin-jsx-a11y aún no soportan ESLint 10"
+    },
+    {
+      "matchPackageNames": ["@types/node"],
+      "allowedVersions": "<23.0.0",
+      "description": "El proyecto usa Node.js 22 LTS"
+    }
+  ]
+}
