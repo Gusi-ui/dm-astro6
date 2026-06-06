@@ -2,7 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/sections/Header.astro';
 import Footer from '../../components/sections/Footer.astro';
-import { getSocialImage } from '../../lib/getSocialImage';
+import { getSocialImageMeta } from '../../lib/getSocialImage';
 import { getCollection, render } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import type { GetStaticPaths } from 'astro';
@@ -34,7 +34,7 @@ const currentId = post.id || post.slug || 'unknown';
 const canonicalUrl = new URL(`/blog/${currentId}`, Astro.site || 'https://divermataro.org').href;
 
 // Imagen para redes sociales: AVIF no es compatible con la mayoría de crawlers OG
-const socialImage = getSocialImage(post.data.heroImage);
+const socialImageMeta = getSocialImageMeta(post.data.heroImage);
 
 // Obtener posts relacionados
 const allPosts = await getCollection('blog');
@@ -66,8 +66,10 @@ const relatedPosts = allPosts
 <BaseLayout
   title={`${post.data.title} - Blog Asociación Diversidad Funcional`}
   description={post.data.description}
-  ogImage={socialImage}
+  ogImage={socialImageMeta.src}
   ogImageAlt={post.data.title}
+  ogImageWidth={socialImageMeta.width}
+  ogImageHeight={socialImageMeta.height}
   canonicalUrl={canonicalUrl}
 >
   <Header />
