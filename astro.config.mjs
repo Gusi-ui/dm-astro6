@@ -3,6 +3,8 @@ import cloudflare from '@astrojs/cloudflare';
 import tailwind from '@astrojs/tailwind';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { remarkCloudinaryImages } from './src/lib/remark-cloudinary-images.ts';
+import { rehypeCloudinaryImages } from './src/lib/rehype-cloudinary-images.ts';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -22,6 +24,10 @@ export default defineConfig({
     }),
   ],
   site: 'https://divermataro.org',
+  markdown: {
+    remarkPlugins: [remarkCloudinaryImages],
+    rehypePlugins: [rehypeCloudinaryImages],
+  },
   build: {
     inlineStylesheets: 'auto',
     assets: '_astro',

@@ -10,6 +10,9 @@ const blog = defineCollection({
     pubDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
     heroImage: z.string().optional(),
+    // Si es true, en móvil la imagen hero se muestra completa (ancho total y alto
+    // automático) sin recortar, manteniendo el encuadre recortado solo en escritorio.
+    heroFullMobile: z.boolean().optional(),
     category: z.string().optional(),
   }),
 });

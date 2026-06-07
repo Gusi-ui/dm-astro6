@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { getOgImageFromCloudinary, isCloudinarySource } from './cloudinary';
 
 const SOCIAL_FALLBACK_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.webp'] as const;
 const DEFAULT_OG_WIDTH = 1200;
@@ -106,6 +107,15 @@ const resolveHeroPath = (heroImage: string): string => {
 export const getSocialImageMeta = (heroImage?: string): SocialImageMeta => {
   if (!heroImage) {
     return { width: DEFAULT_OG_WIDTH, height: DEFAULT_OG_HEIGHT };
+  }
+
+  if (isCloudinarySource(heroImage)) {
+    return {
+      src: getOgImageFromCloudinary(heroImage),
+      width: DEFAULT_OG_WIDTH,
+      height: DEFAULT_OG_HEIGHT,
+      type: 'image/jpeg',
+    };
   }
 
   const src = resolveHeroPath(heroImage);

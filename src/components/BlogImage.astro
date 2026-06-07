@@ -1,0 +1,40 @@
+---
+import { getImageSrcSet, isCloudinarySource, resolveImageSrc } from '../lib/cloudinary';
+
+interface Props {
+  src: string;
+  alt: string;
+  fullOnMobile?: boolean;
+  loading?: 'lazy' | 'eager';
+  transitionName?: string;
+  class?: string;
+}
+
+const {
+  src,
+  alt,
+  fullOnMobile = false,
+  loading = 'eager',
+  transitionName,
+  class: className,
+} = Astro.props;
+
+const resolvedSrc = resolveImageSrc(src, 'f_auto,q_auto,w_1600');
+const srcSet = getImageSrcSet(src);
+const sizes = fullOnMobile ? '(max-width: 768px) 100vw, 896px' : '(max-width: 768px) 100vw, 896px';
+---
+
+<img
+  src={resolvedSrc}
+  srcset={isCloudinarySource(src) ? srcSet : undefined}
+  sizes={isCloudinarySource(src) ? sizes : undefined}
+  alt={alt}
+  loading={loading}
+  decoding="async"
+  class:list={[
+    'w-full rounded-xl object-cover',
+    fullOnMobile ? 'mb-8 h-auto md:h-96' : 'mb-8 h-64 md:h-96',
+    className,
+  ]}
+  transition:name={transitionName}
+/>

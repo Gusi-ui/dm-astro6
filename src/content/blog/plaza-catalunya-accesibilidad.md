@@ -3,7 +3,8 @@ title: 'Una rampa no es una ciudad: la reforma de la Plaza de Cataluña de Matar
 description: 'Las obras en la Plaza de Cataluña prometen accesibilidad y seguridad, pero ¿para quién? Análisis de lo que la reforma resuelve, lo que silencia y el plan municipal en revisión.'
 pubDate: 2026-06-06
 category: 'Accesibilidad'
-heroImage: '/images/blog/pcb.avif'
+heroImage: 'cloudinary:divermataro/blog/plaza-catalunya/pcb'
+heroFullMobile: true
 ---
 
 _Las obras que el <a href="https://www.mataro.cat/ca/actualitat/noticies/2026/la-placa-de-catalunya-es-posa-al-dia-amb-la-renovacio-i-millora-dels-elements-d2019accessibilitat-i-seguretat" target="_blank" rel="noopener noreferrer">Ayuntamiento de Mataró ejecuta este verano en la Plaza de Cataluña</a> prometen «accesibilidad y seguridad». Pero ¿accesibilidad para quién? Un análisis de lo que la reforma resuelve, de lo que silencia y del plan —ya en revisión— que todavía marca el rumbo._
@@ -15,14 +16,6 @@ A principios de junio de 2026, el Ayuntamiento de Mataró anunció el inicio de 
 Pero el periodismo que se toma en serio el derecho a la ciudad no puede quedarse en el titular. Tiene que entrar en la plaza, recorrerla mentalmente con los pies y las ruedas de quienes la usan, y preguntarse una cosa incómoda: ¿estamos ante un paso real hacia la [accesibilidad universal](/servicios/accesibilidad-universal), o ante una operación que cumple expediente sin cambiar de fondo quién puede habitar de verdad el espacio público?
 
 Este artículo defiende una tesis sencilla y exigente a la vez: la reforma de la Plaza de Cataluña es una mejora bienvenida en el terreno de la movilidad física, pero arrastra el mismo punto ciego que el plan municipal que la ampara. Un punto ciego que tiene nombre: la accesibilidad sensorial y cognitiva. Y conviene decirlo desde el principio en clave constructiva, no de reproche: mientras ese punto ciego no se corrija, Mataró seguirá haciendo rampas en lugar de diseñar ciudad para toda la ciudadanía.
-
-<div class="not-prose my-8 overflow-hidden rounded-xl" style="height: 420px;">
-  <img
-    src="/images/blog/pc.avif"
-    alt="Vista general de la Plaza de Cataluña de Mataró durante las obras de mejora"
-    style="width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 0.75rem;"
-  />
-</div>
 
 ---
 
@@ -37,14 +30,14 @@ Cada desnivel sin alternativa accesible, cada muro que obliga a un rodeo, cada c
 <div class="not-prose my-8 grid grid-cols-1 gap-4 md:grid-cols-2">
   <div class="overflow-hidden rounded-xl" style="height: 380px;">
     <img
-      src="/images/blog/pc1.avif"
+      src="cloudinary:divermataro/blog/plaza-catalunya/pc1"
       alt="Desniveles y muros de contención en la Plaza de Cataluña"
       style="width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 0.75rem;"
     />
   </div>
   <div class="overflow-hidden rounded-xl" style="height: 380px;">
     <img
-      src="/images/blog/pc2.avif"
+      src="cloudinary:divermataro/blog/plaza-catalunya/pc2"
       alt="Cambios de cota y barreras arquitectónicas en el espacio público"
       style="width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 0.75rem;"
     />
@@ -84,14 +77,14 @@ Sobre el papel, es la medida más prometedora. Una rampa bien diseñada —con p
 <div class="not-prose my-8 grid grid-cols-1 gap-4 md:grid-cols-2">
   <div class="overflow-hidden rounded-xl" style="height: 380px;">
     <img
-      src="/images/blog/pc3.avif"
+      src="cloudinary:divermataro/blog/plaza-catalunya/pc3"
       alt="Nuevo trazado de la rampa en la reforma de la Plaza de Cataluña"
       style="width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 0.75rem;"
     />
   </div>
   <div class="overflow-hidden rounded-xl" style="height: 380px;">
     <img
-      src="/images/blog/pc4.avif"
+      src="cloudinary:divermataro/blog/plaza-catalunya/pc4"
       alt="Obras de mejora de accesibilidad en la parte suroeste de la plaza"
       style="width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 0.75rem;"
     />
@@ -123,14 +116,14 @@ La conclusión es difícil de esquivar: el plan que guía a Mataró concibe la a
 <div class="not-prose my-8 grid grid-cols-1 gap-4 md:grid-cols-2">
   <div class="overflow-hidden rounded-xl" style="height: 380px;">
     <img
-      src="/images/blog/pc8.avif"
+      src="cloudinary:divermataro/blog/plaza-catalunya/pc8"
       alt="Estado de las obras en la Plaza de Cataluña vinculadas al plan de accesibilidad municipal"
       style="width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 0.75rem;"
     />
   </div>
   <div class="overflow-hidden rounded-xl" style="height: 380px;">
     <img
-      src="/images/blog/pc9.avif"
+      src="cloudinary:divermataro/blog/plaza-catalunya/pc9"
       alt="Intervención parcial en la parte suroeste de la plaza"
       style="width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 0.75rem;"
     />
@@ -173,7 +166,7 @@ Por último, está la diversidad funcional que no se ve: las personas con dolor 
 
 <div class="not-prose my-8 overflow-hidden rounded-xl" style="height: 420px;">
   <img
-    src="/images/blog/pc12.avif"
+    src="cloudinary:divermataro/blog/plaza-catalunya/pc12"
     alt="Detalle del espacio público de la Plaza de Cataluña donde faltan medidas de accesibilidad sensorial y cognitiva"
     style="width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 0.75rem;"
   />
@@ -208,28 +201,28 @@ Y esa actualización no debería redactarse solo en un despacho. El principio qu
 <div class="not-prose my-8 grid grid-cols-1 gap-4 md:grid-cols-2">
   <div class="overflow-hidden rounded-xl" style="height: 380px;">
     <img
-      src="/images/blog/pcp5.avif"
+      src="cloudinary:divermataro/blog/plaza-catalunya/pcp5"
       alt="Regidores de Mataró experimentando la accesibilidad urbana en la ciudad"
       style="width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 0.75rem;"
     />
   </div>
   <div class="overflow-hidden rounded-xl" style="height: 380px;">
     <img
-      src="/images/blog/pcp6.avif"
+      src="cloudinary:divermataro/blog/plaza-catalunya/pcp6"
       alt="Regidores recorriendo Mataró para conocer las barreras de accesibilidad"
       style="width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 0.75rem;"
     />
   </div>
   <div class="overflow-hidden rounded-xl" style="height: 380px;">
     <img
-      src="/images/blog/pcp7.avif"
+      src="cloudinary:divermataro/blog/plaza-catalunya/pcp7"
       alt="Encuentro entre regidores y personas con diversidad funcional en el espacio público"
       style="width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 0.75rem;"
     />
   </div>
   <div class="overflow-hidden rounded-xl" style="height: 380px;">
     <img
-      src="/images/blog/pcp11.avif"
+      src="cloudinary:divermataro/blog/plaza-catalunya/pcp11"
       alt="Regidores de Mataró en una actividad de sensibilización sobre accesibilidad universal"
       style="width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 0.75rem;"
     />
