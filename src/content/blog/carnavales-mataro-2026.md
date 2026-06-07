@@ -6,8 +6,6 @@ category: 'Activitats'
 heroImage: '/images/blog/carnavales2026.avif'
 ---
 
-# Rua de Carnestoltes 2026 en Mataró: cuando la inclusión ocupa la primera fila
-
 La tarde del 14 de febrero de 2026, Mataró volvió a llenarse de música, color y creatividad. Las comparsas avanzaban entre aplausos, las carrozas desfilaban con meses de trabajo detrás y las familias ocupaban cada rincón del recorrido.
 
 Pero este año hubo algo que marcó una diferencia profunda: la inclusión dejó de ser un detalle secundario para convertirse en parte visible y estructural de la fiesta.

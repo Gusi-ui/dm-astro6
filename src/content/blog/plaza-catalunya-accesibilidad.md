@@ -9,13 +9,28 @@ heroFullMobile: true
 
 _Las obras que el <a href="https://www.mataro.cat/ca/actualitat/noticies/2026/la-placa-de-catalunya-es-posa-al-dia-amb-la-renovacio-i-millora-dels-elements-d2019accessibilitat-i-seguretat" target="_blank" rel="noopener noreferrer">Ayuntamiento de Mataró ejecuta este verano en la Plaza de Cataluña</a> prometen «accesibilidad y seguridad». Pero ¿accesibilidad para quién? Un análisis de lo que la reforma resuelve, de lo que silencia y del plan —ya en revisión— que todavía marca el rumbo._
 
----
-
 A principios de junio de 2026, el Ayuntamiento de Mataró anunció el inicio de las obras de mejora de la parte suroeste de la Plaza de Cataluña bajo un titular que prometía mucho: renovación y mejora de los elementos de accesibilidad y seguridad. Para cualquier vecino, y muy especialmente para quien navega la ciudad desde una silla de ruedas, con un bastón blanco o acompañando a una persona mayor, esas dos palabras deberían sonar a buena noticia. Y en parte lo son.
 
 Pero el periodismo que se toma en serio el derecho a la ciudad no puede quedarse en el titular. Tiene que entrar en la plaza, recorrerla mentalmente con los pies y las ruedas de quienes la usan, y preguntarse una cosa incómoda: ¿estamos ante un paso real hacia la [accesibilidad universal](/servicios/accesibilidad-universal), o ante una operación que cumple expediente sin cambiar de fondo quién puede habitar de verdad el espacio público?
 
 Este artículo defiende una tesis sencilla y exigente a la vez: la reforma de la Plaza de Cataluña es una mejora bienvenida en el terreno de la movilidad física, pero arrastra el mismo punto ciego que el plan municipal que la ampara. Un punto ciego que tiene nombre: la accesibilidad sensorial y cognitiva. Y conviene decirlo desde el principio en clave constructiva, no de reproche: mientras ese punto ciego no se corrija, Mataró seguirá haciendo rampas en lugar de diseñar ciudad para toda la ciudadanía.
+
+<div class="not-prose my-8 grid grid-cols-1 gap-4 md:grid-cols-2">
+  <div class="overflow-hidden rounded-xl" style="height: 380px;">
+    <img
+      src="cloudinary:divermataro/blog/plaza-catalunya/fisr"
+      alt="Desniveles y muros de contención en la Plaza de Cataluña"
+      style="width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 0.75rem;"
+    />
+  </div>
+  <div class="overflow-hidden rounded-xl" style="height: 380px;">
+    <img
+      src="cloudinary:divermataro/blog/plaza-catalunya/senso"
+      alt="Cambios de cota y barreras arquitectónicas en el espacio público"
+      style="width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 0.75rem;"
+    />
+  </div>
+</div>
 
 ---
 
@@ -215,7 +230,7 @@ Y esa actualización no debería redactarse solo en un despacho. El principio qu
   </div>
   <div class="overflow-hidden rounded-xl" style="height: 380px;">
     <img
-      src="cloudinary:divermataro/blog/plaza-catalunya/pcp7"
+      src="cloudinary:divermataro/blog/plaza-catalunya/fisr"
       alt="Encuentro entre regidores y personas con diversidad funcional en el espacio público"
       style="width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 0.75rem;"
     />
