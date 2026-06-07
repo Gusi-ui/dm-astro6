@@ -1,11 +1,20 @@
 #!/usr/bin/env node
 /**
- * Sube imágenes del blog a Cloudinary y actualiza el artículo piloto.
+ * Sube las imágenes locales de un artículo a Cloudinary y actualiza su markdown.
  *
  * Uso:
- *   pnpm upload:blog-images plaza-catalunya
+ *   pnpm upload:blog-images <slug-del-articulo>
  *
- * Requiere en .env:
+ * Ejemplo:
+ *   pnpm upload:blog-images plaza-catalunya-accesibilidad
+ *
+ * El script:
+ * 1. Abre src/content/blog/<slug>.md
+ * 2. Detecta rutas /images/blog/... en el archivo
+ * 3. Sube cada imagen a divermataro/blog/<slug>/ en Cloudinary
+ * 4. Sustituye las rutas locales por cloudinary:<public_id>
+ *
+ * Requiere en .env (solo en tu máquina, nunca en git):
  *   CLOUDINARY_CLOUD_NAME=dzs4olh43
  *   CLOUDINARY_API_KEY=...
  *   CLOUDINARY_API_SECRET=...
@@ -18,6 +27,9 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
+const BLOG_CONTENT_DIR = path.join(ROOT, 'src', 'content', 'blog');
+const PUBLIC_BLOG_IMAGES = path.join(ROOT, 'public', 'images', 'blog');
+const LOCAL_IMAGE_REGEX = /\/images\/blog\/([^\s"'`)]+)/g;
 
 const loadEnvFile = () => {
   const envPath = path.join(ROOT, '.env');
@@ -52,38 +64,34 @@ const loadEnvFile = () => {
 
 loadEnvFile();
 
-const ARTICLE_IMAGES = {
-  'plaza-catalunya': {
-    articlePath: 'src/content/blog/plaza-catalunya-accesibilidad.md',
-    folder: 'divermataro/blog/plaza-catalunya',
-    files: [
-      'pcb.avif',
-      'pc1.avif',
-      'pc2.avif',
-      'pc3.avif',
-      'pc4.avif',
-      'pc8.avif',
-      'pc9.avif',
-      'pc12.avif',
-      'pcp5.avif',
-      'pcp6.avif',
-      'pcp7.avif',
-      'pcp11.avif',
-    ],
-  },
-};
+const slug = process.argv[2];
+const isDryRun = process.argv.includes('--dry-run');
+
+if (!slug) {
+  console.error('Uso: pnpm upload:blog-images <slug-del-articulo> [--dry-run]');
+  console.error('');
+  console.error('Ejemplo:');
+  console.error('  pnpm upload:blog-images plaza-catalunya-accesibilidad');
+  console.error('');
+  console.error('Artículos disponibles en src/content/blog/:');
+
+  if (fs.existsSync(BLOG_CONTENT_DIR)) {
+    const articles = fs
+      .readdirSync(BLOG_CONTENT_DIR)
+      .filter((file) => file.endsWith('.md'))
+      .map((file) => file.replace(/\.md$/, ''));
+
+    for (const article of articles) {
+      console.error(`  - ${article}`);
+    }
+  }
+
+  process.exit(1);
+}
 
 const cloudName = process.env.CLOUDINARY_CLOUD_NAME || 'dzs4olh43';
 const apiKey = process.env.CLOUDINARY_API_KEY;
 const apiSecret = process.env.CLOUDINARY_API_SECRET;
-
-const articleKey = process.argv[2];
-
-if (!articleKey || !ARTICLE_IMAGES[articleKey]) {
-  console.error('Uso: pnpm upload:blog-images <articulo>');
-  console.error(`Artículos disponibles: ${Object.keys(ARTICLE_IMAGES).join(', ')}`);
-  process.exit(1);
-}
 
 if (!apiKey || !apiSecret) {
   console.error('Faltan credenciales de Cloudinary.');
@@ -91,9 +99,24 @@ if (!apiKey || !apiSecret) {
   process.exit(1);
 }
 
-const { articlePath, folder, files } = ARTICLE_IMAGES[articleKey];
-const publicRoot = path.join(ROOT, 'public', 'images', 'blog');
-const articleFullPath = path.join(ROOT, articlePath);
+const articlePath = path.join(BLOG_CONTENT_DIR, `${slug}.md`);
+
+if (!fs.existsSync(articlePath)) {
+  console.error(`No se encontró el artículo: ${articlePath}`);
+  process.exit(1);
+}
+
+const articleContent = fs.readFileSync(articlePath, 'utf8');
+const detectedFiles = [...articleContent.matchAll(LOCAL_IMAGE_REGEX)].map((match) => match[1]);
+const uniqueFiles = [...new Set(detectedFiles)];
+
+if (uniqueFiles.length === 0) {
+  console.log(`No hay rutas /images/blog/ en ${slug}.md`);
+  console.log('Si ya usas cloudinary:..., no hace falta volver a ejecutar el script.');
+  process.exit(0);
+}
+
+const folder = `divermataro/blog/${slug}`;
 
 const signParams = (params) => {
   const sorted = Object.keys(params)
@@ -105,10 +128,10 @@ const signParams = (params) => {
 };
 
 const uploadImage = async (fileName) => {
-  const localPath = path.join(publicRoot, fileName);
+  const localPath = path.join(PUBLIC_BLOG_IMAGES, fileName);
 
   if (!fs.existsSync(localPath)) {
-    throw new Error(`No se encontró el archivo local: ${localPath}`);
+    throw new Error(`No se encontró el archivo local: public/images/blog/${fileName}`);
   }
 
   const publicId = fileName.replace(/\.[^.]+$/, '');
@@ -149,7 +172,7 @@ const uploadImage = async (fileName) => {
 };
 
 const updateArticleMarkdown = (uploads) => {
-  let content = fs.readFileSync(articleFullPath, 'utf8');
+  let content = fs.readFileSync(articlePath, 'utf8');
 
   for (const upload of uploads) {
     const localPath = `/images/blog/${upload.fileName}`;
@@ -158,23 +181,37 @@ const updateArticleMarkdown = (uploads) => {
     content = content.split(localPath).join(cloudinaryRef);
   }
 
-  fs.writeFileSync(articleFullPath, content, 'utf8');
+  fs.writeFileSync(articlePath, content, 'utf8');
 };
 
 const main = async () => {
-  console.log(`Subiendo ${files.length} imágenes a Cloudinary (${folder})...`);
+  console.log(`Artículo: ${slug}.md`);
+  console.log(`Carpeta Cloudinary: ${folder}`);
+  console.log(`Imágenes detectadas: ${uniqueFiles.length}`);
+
+  for (const file of uniqueFiles) {
+    console.log(`  - ${file}`);
+  }
+
+  if (isDryRun) {
+    console.log('\nModo --dry-run: no se subió nada ni se modificó el markdown.');
+    return;
+  }
+
+  console.log('\nSubiendo imágenes...');
 
   const uploads = [];
 
-  for (const fileName of files) {
+  for (const fileName of uniqueFiles) {
     const upload = await uploadImage(fileName);
     uploads.push(upload);
     console.log(`✓ ${fileName} → ${upload.publicId}`);
   }
 
   updateArticleMarkdown(uploads);
-  console.log(`\nArtículo actualizado: ${articlePath}`);
-  console.log('Las rutas locales se han sustituido por cloudinary:<public_id>.');
+  console.log(`\nArtículo actualizado: src/content/blog/${slug}.md`);
+  console.log('Rutas locales sustituidas por cloudinary:<public_id>.');
+  console.log('\nSiguiente paso: revisa el artículo en local y haz commit del .md');
 };
 
 main().catch((error) => {

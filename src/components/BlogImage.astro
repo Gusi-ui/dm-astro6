@@ -1,5 +1,10 @@
 ---
-import { getImageSrcSet, isCloudinarySource, resolveImageSrc } from '../lib/cloudinary';
+import {
+  getImageSizes,
+  getImageSrcSet,
+  isCloudinarySource,
+  resolveImageSrc,
+} from '../lib/cloudinary';
 
 interface Props {
   src: string;
@@ -19,9 +24,9 @@ const {
   class: className,
 } = Astro.props;
 
-const resolvedSrc = resolveImageSrc(src, 'f_auto,q_auto,w_1600');
-const srcSet = getImageSrcSet(src);
-const sizes = fullOnMobile ? '(max-width: 768px) 100vw, 896px' : '(max-width: 768px) 100vw, 896px';
+const resolvedSrc = resolveImageSrc(src, 'hero');
+const srcSet = getImageSrcSet(src, 'hero');
+const sizes = getImageSizes('hero');
 ---
 
 <img

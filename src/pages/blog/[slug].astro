@@ -3,7 +3,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import BlogImage from '../../components/BlogImage.astro';
 import Header from '../../components/sections/Header.astro';
 import Footer from '../../components/sections/Footer.astro';
-import { resolveImageSrc } from '../../lib/cloudinary';
+import {
+  getImageSizes,
+  getImageSrcSet,
+  isCloudinarySource,
+  resolveImageSrc,
+} from '../../lib/cloudinary';
 import { transformCloudinaryHtml } from '../../lib/cloudinary-html';
 import { getSocialImageMeta } from '../../lib/getSocialImage';
 import { getCollection, render } from 'astro:content';
@@ -326,9 +331,21 @@ const relatedPosts = allPosts
                       <div class="mb-4 aspect-video overflow-hidden rounded-xl bg-gray-100">
                         {relatedPost.data.heroImage ? (
                           <img
-                            src={resolveImageSrc(relatedPost.data.heroImage, 'f_auto,q_auto,w_800')}
+                            src={resolveImageSrc(relatedPost.data.heroImage, 'thumbnail')}
+                            srcset={
+                              isCloudinarySource(relatedPost.data.heroImage)
+                                ? getImageSrcSet(relatedPost.data.heroImage, 'thumbnail')
+                                : undefined
+                            }
+                            sizes={
+                              isCloudinarySource(relatedPost.data.heroImage)
+                                ? getImageSizes('thumbnail')
+                                : undefined
+                            }
                             alt={relatedPost.data.title}
                             class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            loading="lazy"
+                            decoding="async"
                           />
                         ) : (
                           <div class="flex h-full w-full items-center justify-center text-gray-400">
