@@ -4,6 +4,7 @@ import Header from '../../components/sections/Header.astro';
 import Footer from '../../components/sections/Footer.astro';
 import HeroBackground from '../../components/HeroBackground.astro';
 import { getCollection } from 'astro:content';
+import { resolveImageSrc } from '../../lib/cloudinary';
 import { getRandomHeroImage } from '../../lib/heroImages';
 
 const heroImage = getRandomHeroImage();
@@ -185,7 +186,7 @@ const sortedPosts = [...blogPosts].sort(
                     {post.data.heroImage && (
                       <div class="relative overflow-hidden">
                         <img
-                          src={post.data.heroImage}
+                          src={resolveImageSrc(post.data.heroImage, 'f_auto,q_auto,w_800')}
                           alt={post.data.title}
                           class="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-105"
                           loading="lazy"

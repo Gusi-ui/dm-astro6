@@ -33,6 +33,9 @@ export default defineConfig({
     assets: '_astro',
   },
   vite: {
+    optimizeDeps: {
+      exclude: ['astro/zod'],
+    },
     build: {
       cssCodeSplit: false,
       rollupOptions: {
