@@ -14,6 +14,19 @@ const MIME_BY_EXTENSION: Record<string, string> = {
   '.gif': 'image/gif',
 };
 
+/**
+ * Bajo TypeScript 6 la sobrecarga genérica de `Buffer` en @types/node no expone
+ * los métodos clásicos de lectura ni `toString` con encoding (existen en runtime,
+ * falta el tipado).
+ */
+type BufferWithReaders = Buffer & {
+  toString(encoding: string, start?: number, end?: number): string;
+  readUInt16BE(offset?: number): number;
+  readUInt16LE(offset?: number): number;
+  readUInt32BE(offset?: number): number;
+  readUInt32LE(offset?: number): number;
+};
+
 export type SocialImageMeta = {
   src?: string;
   width: number;
@@ -22,7 +35,7 @@ export type SocialImageMeta = {
 };
 
 const getImageDimensions = (filePath: string): { width: number; height: number } | null => {
-  const buffer = fs.readFileSync(filePath);
+  const buffer = fs.readFileSync(filePath) as BufferWithReaders;
 
   if (buffer.length >= 24 && buffer.toString('ascii', 0, 4) === '\x89PNG') {
     return {

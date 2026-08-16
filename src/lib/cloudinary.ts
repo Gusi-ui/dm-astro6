@@ -121,7 +121,8 @@ export const getImageSrcSet = (
   }
 
   const preset = typeof presetOrWidths === 'string' ? CLOUDINARY_PRESETS[presetOrWidths] : null;
-  const widths = preset?.widths ?? presetOrWidths;
+  const widths: readonly number[] =
+    typeof presetOrWidths === 'string' ? CLOUDINARY_PRESETS[presetOrWidths].widths : presetOrWidths;
   const transforms = preset?.transforms ?? baseTransforms ?? BASE_TRANSFORMS;
 
   const entries = widths.map((w) => {

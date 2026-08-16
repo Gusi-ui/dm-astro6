@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import cloudflare from '@astrojs/cloudflare';
 import tailwind from '@astrojs/tailwind';
+import { unified } from '@astrojs/markdown-remark';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { remarkCloudinaryImages } from './src/lib/remark-cloudinary-images.ts';
@@ -14,9 +15,6 @@ export default defineConfig({
   adapter: cloudflare({
     imageService: 'compile',
     prerenderEnvironment: 'node',
-    platformProxy: {
-      enabled: true,
-    },
   }),
   integrations: [
     tailwind({
@@ -25,8 +23,10 @@ export default defineConfig({
   ],
   site: 'https://divermataro.org',
   markdown: {
-    remarkPlugins: [remarkCloudinaryImages],
-    rehypePlugins: [rehypeCloudinaryImages],
+    processor: unified({
+      remarkPlugins: [remarkCloudinaryImages],
+      rehypePlugins: [rehypeCloudinaryImages],
+    }),
   },
   build: {
     inlineStylesheets: 'auto',
