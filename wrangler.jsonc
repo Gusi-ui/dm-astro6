@@ -1,5 +1,7 @@
 {
   "name": "astro6dm",
+  // Cuenta "Gusi" (jmartinezblanquez@gmail.com). El Account ID no es secreto.
+  "account_id": "1f7c0d40473dbca21d83ed0495b171db",
   "compatibility_date": "2026-06-06",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "routes": [
