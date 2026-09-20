@@ -31,17 +31,13 @@ const sortedPosts = [...blogPosts].sort(
   <Header />
   <main id="main-content">
     <!-- Hero Section -->
-    <section
-      class="relative flex min-h-[70vh] items-center justify-center overflow-hidden pt-16 md:min-h-[80vh] md:pt-20"
-    >
+    <section class="relative flex min-h-[70vh] items-center justify-center overflow-hidden pt-16 md:min-h-[80vh] md:pt-20">
       <!-- Fondo con imagen responsive -->
       <HeroBackground image={heroImage} />
 
       <!-- Iconos flotantes decorativos -->
       <div class="absolute left-10 top-32 z-10 hidden animate-float lg:block">
-        <div
-          class="flex h-16 w-16 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg"
-        >
+        <div class="flex h-16 w-16 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg">
           <svg class="h-8 w-8 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
               stroke-linecap="round"
@@ -54,9 +50,7 @@ const sortedPosts = [...blogPosts].sort(
       </div>
 
       <div class="absolute right-16 top-40 z-10 hidden animate-float-delay lg:block">
-        <div
-          class="flex h-20 w-20 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg"
-        >
+        <div class="flex h-20 w-20 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg">
           <svg
             class="h-10 w-10 text-orange-400"
             fill="none"
@@ -77,9 +71,7 @@ const sortedPosts = [...blogPosts].sort(
       <div class="section-container relative z-20 py-20">
         <div class="mx-auto max-w-4xl text-center">
           <!-- Badge -->
-          <div
-            class="mb-8 inline-flex animate-fade-in items-center rounded-full border border-white/60 bg-white/40 px-4 py-2 shadow-2xl backdrop-blur-xl"
-          >
+          <div class="mb-8 inline-flex animate-fade-in items-center rounded-full border border-white/60 bg-white/40 px-4 py-2 shadow-2xl backdrop-blur-xl">
             <svg
               class="mr-2 h-4 w-4 text-primary-600"
               fill="none"
@@ -97,19 +89,13 @@ const sortedPosts = [...blogPosts].sort(
           </div>
 
           <!-- Título principal -->
-          <h1
-            class="text-shadow-strong mb-6 animate-fade-in text-4xl font-bold text-white delay-200 sm:text-5xl md:text-7xl"
-          >
+          <h1 class="text-shadow-strong mb-6 animate-fade-in text-4xl font-bold text-white delay-200 sm:text-5xl md:text-7xl">
             Nuestro
-            <span class="text-orange-400 drop-shadow-[0_2px_10px_rgba(251,146,60,0.5)]">
-              Blog
-            </span>
+            <span class="text-orange-400 drop-shadow-[0_2px_10px_rgba(251,146,60,0.5)]">Blog</span>
           </h1>
 
           <!-- Descripción -->
-          <p
-            class="text-shadow-soft mx-auto mb-6 max-w-3xl animate-fade-in text-lg leading-relaxed text-white/95 delay-300 sm:text-xl md:text-2xl"
-          >
+          <p class="text-shadow-soft mx-auto mb-6 max-w-3xl animate-fade-in text-lg leading-relaxed text-white/95 delay-300 sm:text-xl md:text-2xl">
             Conoce nuestros logros, reivindicaciones y el trabajo que realizamos día a día por una
             Mataró más accesible.
           </p>
@@ -131,7 +117,8 @@ const sortedPosts = [...blogPosts].sort(
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                ></path>
               </svg>
             </a>
           </div>
@@ -145,9 +132,7 @@ const sortedPosts = [...blogPosts].sort(
           viewBox="0 0 1440 120"
           preserveAspectRatio="none"
         >
-          <path
-            d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"
-          ></path>
+          <path d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"></path>
         </svg>
       </div>
     </section>
@@ -156,16 +141,12 @@ const sortedPosts = [...blogPosts].sort(
     <section id="articulos" class="bg-gray-50 py-16 md:py-24">
       <div class="section-container">
         <div class="mx-auto mb-12 max-w-3xl text-center">
-          <span
-            class="mb-4 inline-block rounded-full bg-gradient-to-r from-primary-100 to-accent-100 px-4 py-2 text-sm font-semibold text-primary-700"
-          >
+          <span class="mb-4 inline-block rounded-full bg-gradient-to-r from-primary-100 to-accent-100 px-4 py-2 text-sm font-semibold text-primary-700">
             Publicaciones
           </span>
           <h2 class="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">
             Últimos
-            <span
-              class="bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent"
-            >
+            <span class="bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent">
               artículos
             </span>
           </h2>
@@ -174,73 +155,71 @@ const sortedPosts = [...blogPosts].sort(
           </p>
         </div>
 
-        {
-          sortedPosts.length === 0 ? (
-            <div class="py-12 text-center">
-              <p class="text-lg text-gray-600">Próximamente publicaremos contenido aquí.</p>
-            </div>
-          ) : (
-            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {sortedPosts.map((post) => {
-                const slug = post.id || post.slug;
-                return (
-                  <a
-                    href={`/blog/${slug}`}
-                    class="group overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
-                  >
-                    {post.data.heroImage && (
-                      <div class="relative overflow-hidden">
-                        <img
-                          src={resolveImageSrc(post.data.heroImage, 'thumbnail')}
-                          srcset={
-                            isCloudinarySource(post.data.heroImage)
-                              ? getImageSrcSet(post.data.heroImage, 'thumbnail')
-                              : undefined
-                          }
-                          sizes={
-                            isCloudinarySource(post.data.heroImage)
-                              ? getImageSizes('thumbnail')
-                              : undefined
-                          }
-                          alt={post.data.title}
-                          class="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                          loading="lazy"
-                          decoding="async"
-                        />
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                      </div>
-                    )}
-                    <div class="p-6">
-                      <div class="mb-3 text-sm text-gray-500">
-                        {post.data.pubDate.toLocaleDateString('es-ES', {
-                          year: 'numeric',
-                          month: 'long',
-                          day: 'numeric',
-                        })}
-                      </div>
-                      <h2 class="mb-2 text-xl font-bold text-gray-900 transition-colors group-hover:text-primary-600">
-                        {post.data.title}
-                      </h2>
-                      <p class="line-clamp-3 text-gray-600">{post.data.description}</p>
-                      {post.data.category && (
-                        <span class="mt-4 inline-block rounded-full bg-gradient-to-r from-primary-100 to-accent-100 px-3 py-1 text-sm font-semibold text-primary-700">
-                          {post.data.category}
-                        </span>
-                      )}
+        {sortedPosts.length === 0 ? (
+          <div class="py-12 text-center">
+            <p class="text-lg text-gray-600">Próximamente publicaremos contenido aquí.</p>
+          </div>
+        ) : (
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {sortedPosts.map((post) => {
+              const slug = post.id || post.slug;
+              return (
+                <a
+                  href={`/blog/${slug}`}
+                  class="group overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                >
+                  {post.data.heroImage && (
+                    <div class="relative overflow-hidden">
+                      <img
+                        src={resolveImageSrc(post.data.heroImage, 'thumbnail')}
+                        srcset={
+                          isCloudinarySource(post.data.heroImage)
+                            ? getImageSrcSet(post.data.heroImage, 'thumbnail')
+                            : undefined
+                        }
+                        sizes={
+                          isCloudinarySource(post.data.heroImage)
+                            ? getImageSizes('thumbnail')
+                            : undefined
+                        }
+                        alt={post.data.title}
+                        class="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                     </div>
-                  </a>
-                );
-              })}
-            </div>
-          )
-        }
+                  )}
+                  <div class="p-6">
+                    <div class="mb-3 text-sm text-gray-500">
+                      {post.data.pubDate.toLocaleDateString('es-ES', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric',
+                      })}
+                    </div>
+                    <h2 class="mb-2 text-xl font-bold text-gray-900 transition-colors group-hover:text-primary-600">
+                      {post.data.title}
+                    </h2>
+                    <p class="line-clamp-3 text-gray-600">{post.data.description}</p>
+                    {post.data.category && (
+                      <span class="mt-4 inline-block rounded-full bg-gradient-to-r from-primary-100 to-accent-100 px-3 py-1 text-sm font-semibold text-primary-700">
+                        {post.data.category}
+                      </span>
+                    )}
+                  </div>
+                </a>
+              );
+            })}
+          </div>
+        )}
 
         <div class="mt-12 text-center">
           <p class="text-sm text-gray-500">
-            ¿Tienes una historia que contar? <a
-              href="/contacto"
-              class="text-primary-600 hover:underline">Contáctanos</a
-            >
+            ¿Tienes una historia que contar?{' '}
+            <a href="/contacto" class="text-primary-600 hover:underline">
+              Contáctanos
+            </a>
           </p>
         </div>
       </div>
