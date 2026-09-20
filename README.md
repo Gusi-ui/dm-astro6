@@ -65,6 +65,18 @@ pnpm build
 - Renovate abre sus PRs contra `develop`, agrupando las actualizaciones menores y
   de parche en un único PR para que los lockfiles no se pisen entre sí.
 
+Ambas ramas están protegidas en GitHub, también para los administradores:
+
+- No se puede hacer push directo ni force-push: todo entra por Pull Request.
+- No se pueden borrar.
+- El check `Verify` del CI tiene que estar en verde, y la rama al día con su base,
+  antes de poder fusionar.
+- No se exigen aprobaciones, para que un único desarrollador pueda fusionar su
+  propio PR una vez el CI ha pasado.
+
+Para un arreglo urgente hay que desactivar la regla a mano en
+_Settings → Branches_ y volver a activarla después.
+
 Cada Pull Request (y cada push a `develop`) ejecuta el workflow de CI, que
 comprueba instalación con lockfile fijo, lint, formato, tipos y build. Lo mismo
 se puede ejecutar en local antes de subir nada:
