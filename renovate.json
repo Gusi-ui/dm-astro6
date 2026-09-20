@@ -1,8 +1,15 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended"],
+  "baseBranches": ["develop"],
   "labels": ["dependencies"],
   "packageRules": [
+    {
+      "matchManagers": ["npm"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "groupName": "dependencias (minor y patch)",
+      "description": "Un solo PR agrupado para evitar lockfiles que se pisan entre sí"
+    },
     {
       "matchPackageNames": ["tailwindcss"],
       "allowedVersions": "<4.0.0",

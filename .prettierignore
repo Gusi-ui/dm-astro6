@@ -1,0 +1,11 @@
+# Generado por el gestor de paquetes
+pnpm-lock.yaml
+
+# Artefactos de compilación y caché
+dist/
+.astro/
+.wrangler/
+node_modules/
+
+# Mock que se copia tal cual al bundle
+src/lib/node-mock.mjs

@@ -84,7 +84,10 @@ const loadEnvFile = () => {
     }
 
     const key = trimmed.slice(0, separatorIndex).trim();
-    const value = trimmed.slice(separatorIndex + 1).trim().replace(/^["']|["']$/g, '');
+    const value = trimmed
+      .slice(separatorIndex + 1)
+      .trim()
+      .replace(/^["']|["']$/g, '');
 
     if (!process.env[key]) {
       process.env[key] = value;
@@ -139,7 +142,9 @@ if (!fs.existsSync(articlePath)) {
 
 const articleContent = fs.readFileSync(articlePath, 'utf8');
 const localPaths = [...articleContent.matchAll(LOCAL_IMAGE_REGEX)].map((match) => match[1]);
-const cloudinaryIds = [...new Set([...articleContent.matchAll(CLOUDINARY_ID_REGEX)].map((match) => match[1]))];
+const cloudinaryIds = [
+  ...new Set([...articleContent.matchAll(CLOUDINARY_ID_REGEX)].map((match) => match[1])),
+];
 const pendingCloudinaryUploads = cloudinaryIds
   .map((publicId) => ({ publicId, fileName: findLocalFile(publicId) }))
   .filter((entry) => entry.fileName);
@@ -309,7 +314,9 @@ const main = async () => {
     console.log('\nEl markdown ya tenía referencias cloudinary:; solo se subieron los archivos.');
   }
 
-  console.log('\nSiguiente paso: revisa el artículo en local y haz commit del .md si hubo cambios.');
+  console.log(
+    '\nSiguiente paso: revisa el artículo en local y haz commit del .md si hubo cambios.'
+  );
 };
 
 main().catch((error) => {

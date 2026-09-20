@@ -53,6 +53,31 @@ El sitio estará disponible en `http://localhost:4321`
 pnpm build
 ```
 
+## 🌿 Flujo de trabajo con ramas
+
+- **`main`** es producción: cada push despliega automáticamente a Cloudflare Workers.
+  No se trabaja directamente sobre ella.
+- **`develop`** es la rama de integración. Todo el trabajo entra aquí primero.
+- Las ramas de trabajo (`feat/…`, `fix/…`, `chore/…`) salen de `develop` y vuelven
+  a `develop` mediante Pull Request.
+- Cuando `develop` está comprobada y estable, se abre un PR de `develop` a `main`
+  para pasar a producción.
+- Renovate abre sus PRs contra `develop`, agrupando las actualizaciones menores y
+  de parche en un único PR para que los lockfiles no se pisen entre sí.
+
+Cada Pull Request (y cada push a `develop`) ejecuta el workflow de CI, que
+comprueba instalación con lockfile fijo, lint, formato, tipos y build. Lo mismo
+se puede ejecutar en local antes de subir nada:
+
+```bash
+pnpm install --frozen-lockfile
+pnpm astro sync
+pnpm exec eslint .
+pnpm exec prettier --check .
+pnpm check
+pnpm build
+```
+
 ## 🚢 Deploy
 
 ### Deploy manual:
@@ -63,7 +88,8 @@ pnpm wrangler deploy
 
 ### Deploy automático:
 
-El proyecto está configurado con GitHub Actions para deploy automático en cada push a la rama `main`.
+El proyecto está configurado con GitHub Actions para deploy automático en cada push a la rama `main`,
+es decir, al fusionar `develop` en `main`.
 
 ## 📁 Estructura del Proyecto
 
