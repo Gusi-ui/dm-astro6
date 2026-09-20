@@ -3,6 +3,7 @@
   "extends": ["config:recommended"],
   "baseBranchPatterns": ["develop"],
   "labels": ["dependencies"],
+  "minimumReleaseAge": "2 days",
   "packageRules": [
     {
       "matchManagers": ["npm"],
