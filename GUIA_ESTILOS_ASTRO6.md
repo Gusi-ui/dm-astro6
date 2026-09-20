@@ -611,7 +611,9 @@ const currentPath = Astro.url.pathname;
           </a>
         </li>
         <li>
-          <a href="/asociate" class="btn-primary">Únete</a>
+          <a href="/asociate" class="btn-primary">
+            Únete
+          </a>
         </li>
       </ul>
 
@@ -627,7 +629,8 @@ const currentPath = Astro.url.pathname;
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"></path>
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
         </svg>
       </button>
     </div>
@@ -635,12 +638,26 @@ const currentPath = Astro.url.pathname;
     <!-- Mobile menu -->
     <div id="mobile-menu" class="mt-4 hidden pb-4 md:hidden">
       <ul class="flex flex-col gap-4">
-        <li><a href="/" class="block text-gray-700 hover:text-primary-600">Inicio</a></li>
-        <li><a href="/blog" class="block text-gray-700 hover:text-primary-600">Blog</a></li>
         <li>
-          <a href="/documentos" class="block text-gray-700 hover:text-primary-600">Documentos</a>
+          <a href="/" class="block text-gray-700 hover:text-primary-600">
+            Inicio
+          </a>
         </li>
-        <li><a href="/asociate" class="btn-primary w-full text-center">Únete</a></li>
+        <li>
+          <a href="/blog" class="block text-gray-700 hover:text-primary-600">
+            Blog
+          </a>
+        </li>
+        <li>
+          <a href="/documentos" class="block text-gray-700 hover:text-primary-600">
+            Documentos
+          </a>
+        </li>
+        <li>
+          <a href="/asociate" class="btn-primary w-full text-center">
+            Únete
+          </a>
+        </li>
       </ul>
     </div>
   </nav>
@@ -673,14 +690,9 @@ const navItems = [
 ];
 ---
 
-<header
-  class="fixed left-0 right-0 top-0 z-50 border-b border-primary-200/20 bg-white/90 shadow-2xl shadow-primary-500/5 backdrop-blur-xl"
->
+<header class="fixed left-0 right-0 top-0 z-50 border-b border-primary-200/20 bg-white/90 shadow-2xl shadow-primary-500/5 backdrop-blur-xl">
   <!-- Gradiente decorativo superior -->
-  <div
-    class="absolute left-0 right-0 top-0 h-1 bg-gradient-to-r from-primary-500 via-accent-500 to-primary-500 opacity-60"
-  >
-  </div>
+  <div class="absolute left-0 right-0 top-0 h-1 bg-gradient-to-r from-primary-500 via-accent-500 to-primary-500 opacity-60"></div>
 
   <nav class="section-container py-4" aria-label="Navegación principal">
     <div class="flex items-center justify-between">
@@ -690,58 +702,54 @@ const navItems = [
         class="group relative text-2xl font-bold text-primary-600 transition-colors duration-300 hover:text-primary-700"
       >
         <span class="relative z-10">Diversidad Funcional Mataró</span>
-        <div
-          class="absolute -inset-2 rounded-lg bg-gradient-to-r from-primary-400/20 to-accent-400/20 opacity-0 blur-lg transition-opacity duration-300 group-hover:opacity-100"
-        >
-        </div>
+        <div class="absolute -inset-2 rounded-lg bg-gradient-to-r from-primary-400/20 to-accent-400/20 opacity-0 blur-lg transition-opacity duration-300 group-hover:opacity-100"></div>
       </a>
 
       <!-- Desktop Navigation -->
       <ul class="hidden items-center gap-2 md:flex">
-        {
-          navItems.map(({ href, label, matchPrefix }) => {
-            const isActive = matchPrefix
-              ? currentPath.startsWith(href) && href !== '/'
-              : currentPath === href;
+        {navItems.map(({ href, label, matchPrefix }) => {
+          const isActive = matchPrefix
+            ? currentPath.startsWith(href) && href !== '/'
+            : currentPath === href;
 
-            return (
-              <li>
-                <a href={href} class="group relative" aria-current={isActive ? 'page' : undefined}>
-                  <div class="relative">
-                    {/* Glow effect */}
-                    <div
-                      class={`absolute -inset-2 rounded-xl bg-gradient-to-r from-primary-400 to-accent-400 blur-lg transition-opacity duration-500 ${
-                        isActive ? 'opacity-40' : 'opacity-0 group-hover:opacity-40'
-                      }`}
-                    />
+          return (
+            <li>
+              <a href={href} class="group relative" aria-current={isActive ? 'page' : undefined}>
+                <div class="relative">
+                  {/* Glow effect */}
+                  <div
+                    class={`absolute -inset-2 rounded-xl bg-gradient-to-r from-primary-400 to-accent-400 blur-lg transition-opacity duration-500 ${
+                      isActive ? 'opacity-40' : 'opacity-0 group-hover:opacity-40'
+                    }`}
+                  />
 
-                    {/* Link container */}
-                    <div
-                      class={`relative rounded-xl border px-4 py-2.5 shadow-md transition-all duration-500 group-hover:shadow-xl ${
-                        isActive
-                          ? 'border-primary-400/70 bg-gradient-to-br from-primary-50 to-accent-50 shadow-lg'
-                          : 'border-white/70 bg-gradient-to-br from-white to-primary-50/30'
+                  {/* Link container */}
+                  <div
+                    class={`relative rounded-xl border px-4 py-2.5 shadow-md transition-all duration-500 group-hover:shadow-xl ${
+                      isActive
+                        ? 'border-primary-400/70 bg-gradient-to-br from-primary-50 to-accent-50 shadow-lg'
+                        : 'border-white/70 bg-gradient-to-br from-white to-primary-50/30'
+                    }`}
+                  >
+                    <span
+                      class={`whitespace-nowrap text-base font-semibold transition-colors duration-300 ${
+                        isActive ? 'text-primary-600' : 'text-gray-800 group-hover:text-primary-600'
                       }`}
                     >
-                      <span
-                        class={`whitespace-nowrap text-base font-semibold transition-colors duration-300 ${
-                          isActive
-                            ? 'text-primary-600'
-                            : 'text-gray-800 group-hover:text-primary-600'
-                        }`}
-                      >
-                        {label}
-                      </span>
-                    </div>
+                      {label}
+                    </span>
                   </div>
-                </a>
-              </li>
-            );
-          })
-        }
+                </div>
+              </a>
+            </li>
+          );
+        })}
 
         <li>
-          <a href="/asociate" class="btn-primary ml-2"> Únete </a>
+          <a href="/asociate" class="btn-primary ml-2">
+            {' '}
+            Únete{' '}
+          </a>
         </li>
       </ul>
 
@@ -757,7 +765,8 @@ const navItems = [
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"></path>
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
         </svg>
       </button>
     </div>
@@ -765,20 +774,21 @@ const navItems = [
     <!-- Mobile menu -->
     <div id="mobile-menu" class="mt-4 hidden pb-4 md:hidden">
       <ul class="flex flex-col gap-3">
-        {
-          navItems.map(({ href, label }) => (
-            <li>
-              <a
-                href={href}
-                class="block rounded-lg px-4 py-2 text-gray-700 transition-all hover:bg-primary-50 hover:text-primary-600"
-              >
-                {label}
-              </a>
-            </li>
-          ))
-        }
+        {navItems.map(({ href, label }) => (
+          <li>
+            <a
+              href={href}
+              class="block rounded-lg px-4 py-2 text-gray-700 transition-all hover:bg-primary-50 hover:text-primary-600"
+            >
+              {label}
+            </a>
+          </li>
+        ))}
         <li>
-          <a href="/asociate" class="btn-primary w-full text-center"> Únete </a>
+          <a href="/asociate" class="btn-primary w-full text-center">
+            {' '}
+            Únete{' '}
+          </a>
         </li>
       </ul>
     </div>
@@ -802,9 +812,7 @@ const navItems = [
 ### 3. Hero (Actual)
 
 ```astro
-<section
-  class="relative bg-gradient-to-br from-primary-600 via-primary-700 to-accent-600 py-20 text-white md:py-32"
->
+<section class="relative bg-gradient-to-br from-primary-600 via-primary-700 to-accent-600 py-20 text-white md:py-32">
   <div class="section-container">
     <div class="mx-auto max-w-3xl text-center">
       <h1 class="mb-6 animate-fade-in text-4xl font-bold md:text-6xl">
@@ -856,14 +864,10 @@ const navItems = [
 // Iconos flotantes decorativos (puedes usar SVG inline)
 ---
 
-<section
-  class="relative flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-br from-primary-600 via-primary-700 to-accent-600"
->
+<section class="relative flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-br from-primary-600 via-primary-700 to-accent-600">
   <!-- Iconos flotantes decorativos -->
   <div class="absolute left-10 top-20 z-10 hidden animate-float lg:block">
-    <div
-      class="flex h-16 w-16 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg"
-    >
+    <div class="flex h-16 w-16 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg">
       <svg
         class="h-8 w-8 animate-pulse text-primary-300"
         fill="none"
@@ -881,9 +885,7 @@ const navItems = [
   </div>
 
   <div class="absolute right-20 top-40 z-10 hidden animate-float-delay lg:block">
-    <div
-      class="flex h-20 w-20 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg"
-    >
+    <div class="flex h-20 w-20 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg">
       <svg
         class="h-10 w-10 animate-pulse text-accent-300"
         fill="none"
@@ -901,9 +903,7 @@ const navItems = [
   </div>
 
   <div class="absolute bottom-32 left-1/4 z-10 hidden animate-float lg:block">
-    <div
-      class="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg"
-    >
+    <div class="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg">
       <svg
         class="h-7 w-7 animate-pulse text-yellow-300"
         fill="none"
@@ -924,13 +924,9 @@ const navItems = [
   <div class="section-container relative z-20 py-20">
     <div class="mx-auto max-w-4xl text-center">
       <!-- Badge -->
-      <div
-        class="mb-8 inline-flex animate-fade-in items-center rounded-full border border-white/60 bg-white/40 px-4 py-2 shadow-2xl backdrop-blur-xl"
-      >
+      <div class="mb-8 inline-flex animate-fade-in items-center rounded-full border border-white/60 bg-white/40 px-4 py-2 shadow-2xl backdrop-blur-xl">
         <svg class="mr-2 h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-          <path
-            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-          ></path>
+          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
         </svg>
         <span class="text-sm font-medium text-white drop-shadow-lg">
           Comprometidos con la diversidad funcional
@@ -938,21 +934,15 @@ const navItems = [
       </div>
 
       <!-- Título principal -->
-      <h1
-        class="text-shadow-strong mb-6 animate-fade-in text-5xl font-bold text-white delay-200 md:text-7xl"
-      >
+      <h1 class="text-shadow-strong mb-6 animate-fade-in text-5xl font-bold text-white delay-200 md:text-7xl">
         Por una Sociedad con
-        <span
-          class="mt-2 block bg-gradient-to-r from-yellow-300 to-amber-200 bg-clip-text text-transparent"
-        >
+        <span class="mt-2 block bg-gradient-to-r from-yellow-300 to-amber-200 bg-clip-text text-transparent">
           Accesibilidad Universal
         </span>
       </h1>
 
       <!-- Descripción -->
-      <p
-        class="text-shadow-soft mx-auto mb-10 max-w-3xl animate-fade-in text-xl leading-relaxed text-white/95 delay-300 md:text-2xl"
-      >
+      <p class="text-shadow-soft mx-auto mb-10 max-w-3xl animate-fade-in text-xl leading-relaxed text-white/95 delay-300 md:text-2xl">
         Trabajamos por los derechos humanos de las personas con diversidad funcional en Mataró
       </p>
 
@@ -973,7 +963,8 @@ const navItems = [
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
-              d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+              d="M13 7l5 5m0 0l-5 5m5-5H6"
+            ></path>
           </svg>
         </a>
         <a
@@ -987,23 +978,23 @@ const navItems = [
             stroke="currentColor"
             viewBox="0 0 24 24"
           >
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
             ></path>
           </svg>
         </a>
       </div>
 
       <!-- Stats o iconos informativos -->
-      <div
-        class="mx-auto mt-16 grid max-w-4xl animate-fade-in grid-cols-2 gap-6 delay-500 md:grid-cols-4"
-      >
+      <div class="mx-auto mt-16 grid max-w-4xl animate-fade-in grid-cols-2 gap-6 delay-500 md:grid-cols-4">
         <a
           href="/blog"
           class="group block cursor-pointer rounded-2xl p-4 text-center transition-all duration-300 hover:bg-black/30"
         >
-          <div
-            class="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-2xl border-2 border-white/50 bg-white/30 shadow-2xl backdrop-blur-xl transition-all duration-300 group-hover:scale-110 group-hover:border-primary-400 group-hover:bg-primary-500"
-          >
+          <div class="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-2xl border-2 border-white/50 bg-white/30 shadow-2xl backdrop-blur-xl transition-all duration-300 group-hover:scale-110 group-hover:border-primary-400 group-hover:bg-primary-500">
             <svg
               class="h-10 w-10 text-white transition-colors"
               fill="none"
@@ -1028,9 +1019,7 @@ const navItems = [
           href="/documentos"
           class="group block cursor-pointer rounded-2xl p-4 text-center transition-all duration-300 hover:bg-black/30"
         >
-          <div
-            class="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-2xl border-2 border-white/50 bg-white/30 shadow-2xl backdrop-blur-xl transition-all duration-300 group-hover:scale-110 group-hover:border-accent-400 group-hover:bg-accent-500"
-          >
+          <div class="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-2xl border-2 border-white/50 bg-white/30 shadow-2xl backdrop-blur-xl transition-all duration-300 group-hover:scale-110 group-hover:border-accent-400 group-hover:bg-accent-500">
             <svg
               class="h-10 w-10 text-white transition-colors"
               fill="none"
@@ -1055,9 +1044,7 @@ const navItems = [
           href="/blog"
           class="group block cursor-pointer rounded-2xl p-4 text-center transition-all duration-300 hover:bg-black/30"
         >
-          <div
-            class="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-2xl border-2 border-white/50 bg-white/30 shadow-2xl backdrop-blur-xl transition-all duration-300 group-hover:scale-110 group-hover:border-yellow-400 group-hover:bg-yellow-500"
-          >
+          <div class="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-2xl border-2 border-white/50 bg-white/30 shadow-2xl backdrop-blur-xl transition-all duration-300 group-hover:scale-110 group-hover:border-yellow-400 group-hover:bg-yellow-500">
             <svg
               class="h-10 w-10 text-white transition-colors"
               fill="none"
@@ -1082,9 +1069,7 @@ const navItems = [
           href="/asociate"
           class="group block cursor-pointer rounded-2xl p-4 text-center transition-all duration-300 hover:bg-black/30"
         >
-          <div
-            class="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-2xl border-2 border-white/50 bg-white/30 shadow-2xl backdrop-blur-xl transition-all duration-300 group-hover:scale-110 group-hover:border-green-400 group-hover:bg-green-500"
-          >
+          <div class="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-2xl border-2 border-white/50 bg-white/30 shadow-2xl backdrop-blur-xl transition-all duration-300 group-hover:scale-110 group-hover:border-green-400 group-hover:bg-green-500">
             <svg
               class="h-10 w-10 text-white transition-colors"
               fill="none"
@@ -1111,9 +1096,7 @@ const navItems = [
   <!-- Wave decoration -->
   <div class="absolute bottom-0 left-0 right-0">
     <svg class="h-20 w-full fill-white md:h-32" viewBox="0 0 1440 120" preserveAspectRatio="none">
-      <path
-        d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"
-      ></path>
+      <path d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"></path>
     </svg>
   </div>
 </section>
@@ -1138,9 +1121,7 @@ const { title, description, icon, href } = Astro.props as FeatureCardProps;
   class="group relative block overflow-hidden rounded-3xl border-2 border-gray-100 bg-white p-8 no-underline shadow-lg transition-all duration-500 hover:-translate-y-2 hover:border-primary-500 hover:shadow-2xl"
 >
   {/* Icon Container */}
-  <div
-    class="relative mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-primary-500 to-accent-500 transition-transform duration-300 group-hover:scale-110"
-  >
+  <div class="relative mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-primary-500 to-accent-500 transition-transform duration-300 group-hover:scale-110">
     <svg class="h-8 w-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={icon}></path>
     </svg>
@@ -1148,20 +1129,14 @@ const { title, description, icon, href } = Astro.props as FeatureCardProps;
 
   {/* Content */}
   <div class="relative">
-    <h3
-      class="mb-4 text-xl font-bold text-gray-900 no-underline transition-colors duration-300 group-hover:text-primary-600"
-    >
+    <h3 class="mb-4 text-xl font-bold text-gray-900 no-underline transition-colors duration-300 group-hover:text-primary-600">
       {title}
     </h3>
-    <p class="leading-relaxed text-gray-600 no-underline">
-      {description}
-    </p>
+    <p class="leading-relaxed text-gray-600 no-underline">{description}</p>
   </div>
 
   {/* Arrow Icon */}
-  <div
-    class="absolute bottom-6 right-6 h-10 w-10 transform text-gray-400 transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-primary-500"
-  >
+  <div class="absolute bottom-6 right-6 h-10 w-10 transform text-gray-400 transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-primary-500">
     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
       <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
     </svg>
