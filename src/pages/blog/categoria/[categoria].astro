@@ -120,9 +120,7 @@ const colors = categoryColors[categoria] || {
   <Header />
   <main class="min-h-screen bg-white">
     <!-- Hero de categoría - Estilo consistente con Home -->
-    <section
-      class="relative flex min-h-[70vh] items-center justify-center overflow-hidden pt-16 md:min-h-[80vh] md:pt-20"
-    >
+    <section class="relative flex min-h-[70vh] items-center justify-center overflow-hidden pt-16 md:min-h-[80vh] md:pt-20">
       <!-- Fondo con imagen responsive -->
       <HeroBackground
         image={heroImage}
@@ -131,9 +129,7 @@ const colors = categoryColors[categoria] || {
 
       <!-- Elementos flotantes decorativos con glassmorphism -->
       <div class="absolute left-10 top-32 z-10 hidden animate-float lg:block">
-        <div
-          class="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg"
-        >
+        <div class="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg">
           <svg class="h-7 w-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
               stroke-linecap="round"
@@ -146,9 +142,7 @@ const colors = categoryColors[categoria] || {
       </div>
 
       <div class="absolute right-16 top-40 z-10 hidden animate-float-delay lg:block">
-        <div
-          class="flex h-16 w-16 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg"
-        >
+        <div class="flex h-16 w-16 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg">
           <svg class="h-8 w-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
               stroke-linecap="round"
@@ -161,9 +155,7 @@ const colors = categoryColors[categoria] || {
       </div>
 
       <div class="absolute bottom-32 left-1/4 z-10 hidden animate-float lg:block">
-        <div
-          class="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg"
-        >
+        <div class="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg">
           <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
               stroke-linecap="round"
@@ -188,15 +180,14 @@ const colors = categoryColors[categoria] || {
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M15 19l-7-7 7-7"></path>
+                d="M15 19l-7-7 7-7"
+              ></path>
             </svg>
             <span class="text-sm font-medium">Volver al blog</span>
           </a>
 
           <!-- Badge con glassmorphism -->
-          <div
-            class="mb-6 inline-flex items-center rounded-full border border-white/60 bg-white/40 px-5 py-2.5 shadow-2xl backdrop-blur-xl"
-          >
+          <div class="mb-6 inline-flex items-center rounded-full border border-white/60 bg-white/40 px-5 py-2.5 shadow-2xl backdrop-blur-xl">
             <svg
               class="mr-2 h-4 w-4 text-white drop-shadow-lg"
               fill="currentColor"
@@ -206,7 +197,8 @@ const colors = categoryColors[categoria] || {
               <path
                 fill-rule="evenodd"
                 d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z"
-                clip-rule="evenodd"></path>
+                clip-rule="evenodd"
+              ></path>
             </svg>
             <span class="text-sm font-semibold text-white drop-shadow-lg">
               {sortedPosts.length}
@@ -220,9 +212,7 @@ const colors = categoryColors[categoria] || {
           </h1>
 
           <!-- Descripción -->
-          <p
-            class="text-shadow-soft mx-auto max-w-2xl text-lg leading-relaxed text-white/95 md:text-xl"
-          >
+          <p class="text-shadow-soft mx-auto max-w-2xl text-lg leading-relaxed text-white/95 md:text-xl">
             Todos nuestros artículos relacionados con {categoriaOriginal.toLowerCase()}
           </p>
 
@@ -230,9 +220,9 @@ const colors = categoryColors[categoria] || {
           <div class="mx-auto mt-10 max-w-md">
             <div class="rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl">
               <p class="text-sm text-white/80">
-                Explora nuestra colección de contenido sobre <strong class="text-white"
-                  >{categoriaOriginal.toLowerCase()}</strong
-                > y descubre las historias que compartimos.
+                Explora nuestra colección de contenido sobre{' '}
+                <strong class="text-white">{categoriaOriginal.toLowerCase()}</strong> y descubre las
+                historias que compartimos.
               </p>
             </div>
           </div>
@@ -246,9 +236,7 @@ const colors = categoryColors[categoria] || {
           viewBox="0 0 1440 120"
           preserveAspectRatio="none"
         >
-          <path
-            d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"
-          ></path>
+          <path d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"></path>
         </svg>
       </div>
     </section>
@@ -256,111 +244,109 @@ const colors = categoryColors[categoria] || {
     <!-- Lista de posts -->
     <section class="py-16 md:py-24">
       <div class="section-container">
-        {
-          sortedPosts.length === 0 ? (
-            <div class="py-12 text-center">
-              <p class="text-lg text-gray-600">No hay artículos en esta categoría todavía.</p>
-              <a
-                href="/blog"
-                class="mt-6 inline-flex items-center gap-2 rounded-xl bg-primary-600 px-6 py-3 font-semibold text-white transition-all hover:bg-primary-700"
-              >
-                <span>Ver todos los artículos</span>
-                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M13 7l5 5m0 0l-5 5m5-5H6"
-                  />
-                </svg>
-              </a>
-            </div>
-          ) : (
-            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {sortedPosts.map((post) => {
-                const slug = post.id || post.slug;
-                return (
-                  <a
-                    href={`/blog/${slug}`}
-                    class="group relative flex flex-col overflow-hidden rounded-3xl border-2 border-gray-100 bg-white shadow-lg transition-all duration-500 hover:-translate-y-2 hover:border-primary-200 hover:shadow-2xl"
-                  >
-                    {/* Imagen del post */}
-                    <div class="relative h-52 overflow-hidden">
-                      {post.data.heroImage ? (
-                        <img
-                          src={resolveImageSrc(post.data.heroImage, 'thumbnail')}
-                          alt={post.data.title}
-                          class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                          loading="lazy"
+        {sortedPosts.length === 0 ? (
+          <div class="py-12 text-center">
+            <p class="text-lg text-gray-600">No hay artículos en esta categoría todavía.</p>
+            <a
+              href="/blog"
+              class="mt-6 inline-flex items-center gap-2 rounded-xl bg-primary-600 px-6 py-3 font-semibold text-white transition-all hover:bg-primary-700"
+            >
+              <span>Ver todos los artículos</span>
+              <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"
+                />
+              </svg>
+            </a>
+          </div>
+        ) : (
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {sortedPosts.map((post) => {
+              const slug = post.id || post.slug;
+              return (
+                <a
+                  href={`/blog/${slug}`}
+                  class="group relative flex flex-col overflow-hidden rounded-3xl border-2 border-gray-100 bg-white shadow-lg transition-all duration-500 hover:-translate-y-2 hover:border-primary-200 hover:shadow-2xl"
+                >
+                  {/* Imagen del post */}
+                  <div class="relative h-52 overflow-hidden">
+                    {post.data.heroImage ? (
+                      <img
+                        src={resolveImageSrc(post.data.heroImage, 'thumbnail')}
+                        alt={post.data.title}
+                        class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <div
+                        class="h-full w-full"
+                        style={`background: linear-gradient(135deg, ${colors.gradientFrom}, ${colors.gradientTo});`}
+                      />
+                    )}
+
+                    {/* Overlay con gradiente */}
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-40" />
+
+                    {/* Fecha flotante */}
+                    <div class="absolute bottom-4 left-4 flex items-center text-white/90">
+                      <svg
+                        class="mr-2 h-4 w-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                         />
-                      ) : (
-                        <div
-                          class="h-full w-full"
-                          style={`background: linear-gradient(135deg, ${colors.gradientFrom}, ${colors.gradientTo});`}
+                      </svg>
+                      <span class="text-sm font-medium">
+                        {post.data.pubDate.toLocaleDateString('es-ES', {
+                          year: 'numeric',
+                          month: 'short',
+                          day: 'numeric',
+                        })}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Contenido */}
+                  <div class="flex flex-1 flex-col p-6">
+                    <h2 class="mb-3 line-clamp-2 text-xl font-bold text-gray-900 transition-colors duration-300 group-hover:text-primary-600">
+                      {post.data.title}
+                    </h2>
+                    <p class="mb-4 line-clamp-3 flex-1 leading-relaxed text-gray-600">
+                      {post.data.description}
+                    </p>
+
+                    {/* Link para leer más */}
+                    <div class="flex items-center font-semibold text-primary-600">
+                      <span class="text-sm">Leer artículo</span>
+                      <svg
+                        class="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-2"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M13 7l5 5m0 0l-5 5m5-5H6"
                         />
-                      )}
-
-                      {/* Overlay con gradiente */}
-                      <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-40" />
-
-                      {/* Fecha flotante */}
-                      <div class="absolute bottom-4 left-4 flex items-center text-white/90">
-                        <svg
-                          class="mr-2 h-4 w-4"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                          />
-                        </svg>
-                        <span class="text-sm font-medium">
-                          {post.data.pubDate.toLocaleDateString('es-ES', {
-                            year: 'numeric',
-                            month: 'short',
-                            day: 'numeric',
-                          })}
-                        </span>
-                      </div>
+                      </svg>
                     </div>
-
-                    {/* Contenido */}
-                    <div class="flex flex-1 flex-col p-6">
-                      <h2 class="mb-3 line-clamp-2 text-xl font-bold text-gray-900 transition-colors duration-300 group-hover:text-primary-600">
-                        {post.data.title}
-                      </h2>
-                      <p class="mb-4 line-clamp-3 flex-1 leading-relaxed text-gray-600">
-                        {post.data.description}
-                      </p>
-
-                      {/* Link para leer más */}
-                      <div class="flex items-center font-semibold text-primary-600">
-                        <span class="text-sm">Leer artículo</span>
-                        <svg
-                          class="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-2"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M13 7l5 5m0 0l-5 5m5-5H6"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </a>
-                );
-              })}
-            </div>
-          )
-        }
+                  </div>
+                </a>
+              );
+            })}
+          </div>
+        )}
       </div>
     </section>
 
@@ -382,7 +368,8 @@ const colors = categoryColors[categoria] || {
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                d="M13 7l5 5m0 0l-5 5m5-5H6"
+              ></path>
             </svg>
           </a>
         </div>

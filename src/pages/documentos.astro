@@ -136,17 +136,13 @@ const categorias = ['Todos', ...new Set(documentos.map((doc) => doc.category))];
   <Header />
   <main id="main-content">
     <!-- Hero Section -->
-    <section
-      class="relative flex min-h-[70vh] items-center justify-center overflow-hidden pt-16 md:min-h-[80vh] md:pt-20"
-    >
+    <section class="relative flex min-h-[70vh] items-center justify-center overflow-hidden pt-16 md:min-h-[80vh] md:pt-20">
       <!-- Fondo con imagen responsive -->
       <HeroBackground image={heroImage} />
 
       <!-- Iconos flotantes decorativos -->
       <div class="absolute left-10 top-32 z-10 hidden animate-float lg:block">
-        <div
-          class="flex h-16 w-16 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg"
-        >
+        <div class="flex h-16 w-16 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg">
           <svg class="h-8 w-8 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
               stroke-linecap="round"
@@ -159,9 +155,7 @@ const categorias = ['Todos', ...new Set(documentos.map((doc) => doc.category))];
       </div>
 
       <div class="absolute right-16 top-40 z-10 hidden animate-float-delay lg:block">
-        <div
-          class="flex h-20 w-20 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg"
-        >
+        <div class="flex h-20 w-20 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg">
           <svg
             class="h-10 w-10 text-orange-400"
             fill="none"
@@ -182,9 +176,7 @@ const categorias = ['Todos', ...new Set(documentos.map((doc) => doc.category))];
       <div class="section-container relative z-20 py-20">
         <div class="mx-auto max-w-4xl text-center">
           <!-- Badge -->
-          <div
-            class="mb-8 inline-flex animate-fade-in items-center rounded-full border border-white/60 bg-white/40 px-4 py-2 shadow-2xl backdrop-blur-xl"
-          >
+          <div class="mb-8 inline-flex animate-fade-in items-center rounded-full border border-white/60 bg-white/40 px-4 py-2 shadow-2xl backdrop-blur-xl">
             <svg
               class="mr-2 h-4 w-4 text-primary-600"
               fill="none"
@@ -202,9 +194,7 @@ const categorias = ['Todos', ...new Set(documentos.map((doc) => doc.category))];
           </div>
 
           <!-- Título principal -->
-          <h1
-            class="text-shadow-strong mb-6 animate-fade-in text-4xl font-bold text-white delay-200 sm:text-5xl md:text-7xl"
-          >
+          <h1 class="text-shadow-strong mb-6 animate-fade-in text-4xl font-bold text-white delay-200 sm:text-5xl md:text-7xl">
             <span class="text-orange-400 drop-shadow-[0_2px_10px_rgba(251,146,60,0.5)]">
               Documentos
             </span>
@@ -212,9 +202,7 @@ const categorias = ['Todos', ...new Set(documentos.map((doc) => doc.category))];
           </h1>
 
           <!-- Descripción -->
-          <p
-            class="text-shadow-soft mx-auto mb-6 max-w-3xl animate-fade-in text-lg leading-relaxed text-white/95 delay-300 sm:text-xl md:text-2xl"
-          >
+          <p class="text-shadow-soft mx-auto mb-6 max-w-3xl animate-fade-in text-lg leading-relaxed text-white/95 delay-300 sm:text-xl md:text-2xl">
             Descarga documentos, informes y guías sobre accesibilidad, derechos y nuestras
             actividades.
           </p>
@@ -236,7 +224,8 @@ const categorias = ['Todos', ...new Set(documentos.map((doc) => doc.category))];
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                ></path>
               </svg>
             </a>
           </div>
@@ -250,9 +239,7 @@ const categorias = ['Todos', ...new Set(documentos.map((doc) => doc.category))];
           viewBox="0 0 1440 120"
           preserveAspectRatio="none"
         >
-          <path
-            d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"
-          ></path>
+          <path d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"></path>
         </svg>
       </div>
     </section>
@@ -261,16 +248,12 @@ const categorias = ['Todos', ...new Set(documentos.map((doc) => doc.category))];
     <section id="documentos" class="bg-gray-50 py-16 md:py-24">
       <div class="section-container">
         <div class="mx-auto mb-10 max-w-3xl text-center">
-          <span
-            class="mb-4 inline-block rounded-full bg-gradient-to-r from-primary-100 to-accent-100 px-4 py-2 text-sm font-semibold text-primary-700"
-          >
+          <span class="mb-4 inline-block rounded-full bg-gradient-to-r from-primary-100 to-accent-100 px-4 py-2 text-sm font-semibold text-primary-700">
             Biblioteca
           </span>
           <h2 class="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">
             Recursos
-            <span
-              class="bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent"
-            >
+            <span class="bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent">
               disponibles
             </span>
           </h2>
@@ -279,149 +262,121 @@ const categorias = ['Todos', ...new Set(documentos.map((doc) => doc.category))];
           </p>
         </div>
 
-        {
-          documentos.length === 0 ? (
-            <div class="py-12 text-center">
-              <p class="text-lg text-gray-600">Próximamente añadiremos documentos aquí.</p>
+        {documentos.length === 0 ? (
+          <div class="py-12 text-center">
+            <p class="text-lg text-gray-600">Próximamente añadiremos documentos aquí.</p>
+          </div>
+        ) : (
+          <div class="mx-auto max-w-5xl">
+            {/* Buscador */}
+            <div class="mx-auto mb-6 max-w-xl">
+              <label for="document-search" class="sr-only">
+                Buscar documentos
+              </label>
+              <div class="relative">
+                <span class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4 text-gray-400">
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    />
+                  </svg>
+                </span>
+                <input
+                  type="search"
+                  id="document-search"
+                  placeholder="Buscar por título o descripción..."
+                  aria-label="Buscar documentos por título o descripción"
+                  class="w-full rounded-2xl border border-gray-200 bg-white py-3 pl-12 pr-4 text-gray-900 shadow-sm transition-colors focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-200"
+                />
+              </div>
             </div>
-          ) : (
-            <div class="mx-auto max-w-5xl">
-              {/* Buscador */}
-              <div class="mx-auto mb-6 max-w-xl">
-                <label for="document-search" class="sr-only">
-                  Buscar documentos
-                </label>
-                <div class="relative">
-                  <span class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4 text-gray-400">
-                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                      />
-                    </svg>
-                  </span>
-                  <input
-                    type="search"
-                    id="document-search"
-                    placeholder="Buscar por título o descripción..."
-                    aria-label="Buscar documentos por título o descripción"
-                    class="w-full rounded-2xl border border-gray-200 bg-white py-3 pl-12 pr-4 text-gray-900 shadow-sm transition-colors focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-200"
-                  />
-                </div>
-              </div>
 
-              {/* Filtros por categoría */}
-              <div
-                class="mb-8 flex flex-wrap justify-center gap-2"
-                role="group"
-                aria-label="Filtrar documentos por categoría"
-              >
-                {categorias.map((categoria, index) => (
-                  <button
-                    type="button"
-                    class="document-filter rounded-full border px-4 py-2 text-sm font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary-300"
-                    class:list={[
-                      index === 0
-                        ? 'border-primary-600 bg-primary-600 text-white shadow-md'
-                        : 'border-gray-200 bg-white text-gray-600 hover:border-primary-300 hover:text-primary-700',
-                    ]}
-                    data-category={categoria}
-                    aria-pressed={index === 0 ? 'true' : 'false'}
-                  >
-                    {categoria}
-                  </button>
-                ))}
-              </div>
+            {/* Filtros por categoría */}
+            <div
+              class="mb-8 flex flex-wrap justify-center gap-2"
+              role="group"
+              aria-label="Filtrar documentos por categoría"
+            >
+              {categorias.map((categoria, index) => (
+                <button
+                  type="button"
+                  class="document-filter rounded-full border px-4 py-2 text-sm font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary-300"
+                  class:list={[
+                    index === 0
+                      ? 'border-primary-600 bg-primary-600 text-white shadow-md'
+                      : 'border-gray-200 bg-white text-gray-600 hover:border-primary-300 hover:text-primary-700',
+                  ]}
+                  data-category={categoria}
+                  aria-pressed={index === 0 ? 'true' : 'false'}
+                >
+                  {categoria}
+                </button>
+              ))}
+            </div>
 
-              {/* Contador de resultados */}
-              <p class="mb-6 text-center text-sm text-gray-500" aria-live="polite">
-                <span id="document-count">{documentosOrdenados.length}</span> documentos
+            {/* Contador de resultados */}
+            <p class="mb-6 text-center text-sm text-gray-500" aria-live="polite">
+              <span id="document-count">{documentosOrdenados.length}</span> documentos
+            </p>
+
+            {/* Mensaje sin resultados */}
+            <div id="no-results" class="hidden py-12 text-center">
+              <p class="text-lg text-gray-600">
+                No se han encontrado documentos con esos criterios.
               </p>
+            </div>
 
-              {/* Mensaje sin resultados */}
-              <div id="no-results" class="hidden py-12 text-center">
-                <p class="text-lg text-gray-600">
-                  No se han encontrado documentos con esos criterios.
-                </p>
-              </div>
-
-              <div id="documents-grid" class="grid grid-cols-1 gap-6 md:grid-cols-2">
-                {documentosOrdenados.map((doc) => (
-                  <div
-                    class="document-card group overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
-                    data-category={doc.category}
-                    data-title={doc.title.toLowerCase()}
-                    data-description={doc.description.toLowerCase()}
-                  >
-                    <div class="p-6">
-                      <div class="mb-4 flex items-start justify-between">
-                        <div class="flex-1">
-                          <div class="mb-2 flex items-center gap-2">
-                            <span class="rounded-full bg-gradient-to-r from-primary-100 to-accent-100 px-3 py-1 text-xs font-semibold text-primary-700">
-                              {doc.category}
-                            </span>
-                            <span class="text-xs text-gray-500">{doc.size}</span>
-                          </div>
-                          <h3 class="mb-2 text-xl font-bold text-gray-900 transition-colors group-hover:text-primary-600">
-                            {doc.title}
-                          </h3>
-                          <p class="text-sm text-gray-600">{doc.description}</p>
-                        </div>
-                        <div class="ml-4 flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-red-400 to-red-600 shadow-lg shadow-red-500/30">
-                          <svg class="h-7 w-7 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 2l5 5h-5V4zm-3 9v4h2v-4h2l-3-3-3 3h2z" />
-                          </svg>
-                        </div>
-                      </div>
-
-                      <div class="mb-4 text-xs text-gray-500">
-                        Publicado:{' '}
-                        {new Date(doc.date).toLocaleDateString('es-ES', {
-                          year: 'numeric',
-                          month: 'long',
-                          day: 'numeric',
-                        })}
-                      </div>
-
-                      <div class="flex gap-3">
-                        <a
-                          href={doc.file}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          class="flex-1 rounded-xl bg-gradient-to-r from-primary-600 to-accent-600 px-4 py-3 text-center font-semibold text-white shadow-md transition-all duration-300 hover:shadow-lg"
-                        >
-                          <span class="flex items-center justify-center gap-2">
-                            <svg
-                              class="h-4 w-4"
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
-                            >
-                              <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                              />
-                              <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-                              />
-                            </svg>
-                            Ver PDF
+            <div id="documents-grid" class="grid grid-cols-1 gap-6 md:grid-cols-2">
+              {documentosOrdenados.map((doc) => (
+                <div
+                  class="document-card group overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                  data-category={doc.category}
+                  data-title={doc.title.toLowerCase()}
+                  data-description={doc.description.toLowerCase()}
+                >
+                  <div class="p-6">
+                    <div class="mb-4 flex items-start justify-between">
+                      <div class="flex-1">
+                        <div class="mb-2 flex items-center gap-2">
+                          <span class="rounded-full bg-gradient-to-r from-primary-100 to-accent-100 px-3 py-1 text-xs font-semibold text-primary-700">
+                            {doc.category}
                           </span>
-                        </a>
-                        <a
-                          href={doc.file}
-                          download
-                          class="rounded-xl border-2 border-primary-600 px-4 py-3 font-semibold text-primary-600 transition-all duration-300 hover:bg-primary-50"
-                        >
+                          <span class="text-xs text-gray-500">{doc.size}</span>
+                        </div>
+                        <h3 class="mb-2 text-xl font-bold text-gray-900 transition-colors group-hover:text-primary-600">
+                          {doc.title}
+                        </h3>
+                        <p class="text-sm text-gray-600">{doc.description}</p>
+                      </div>
+                      <div class="ml-4 flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-red-400 to-red-600 shadow-lg shadow-red-500/30">
+                        <svg class="h-7 w-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 2l5 5h-5V4zm-3 9v4h2v-4h2l-3-3-3 3h2z" />
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div class="mb-4 text-xs text-gray-500">
+                      Publicado:{' '}
+                      {new Date(doc.date).toLocaleDateString('es-ES', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric',
+                      })}
+                    </div>
+
+                    <div class="flex gap-3">
+                      <a
+                        href={doc.file}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex-1 rounded-xl bg-gradient-to-r from-primary-600 to-accent-600 px-4 py-3 text-center font-semibold text-white shadow-md transition-all duration-300 hover:shadow-lg"
+                      >
+                        <span class="flex items-center justify-center gap-2">
                           <svg
-                            class="h-5 w-5"
+                            class="h-4 w-4"
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -430,25 +385,46 @@ const categorias = ['Todos', ...new Set(documentos.map((doc) => doc.category))];
                               stroke-linecap="round"
                               stroke-linejoin="round"
                               stroke-width="2"
-                              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                              d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                            />
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
                             />
                           </svg>
-                        </a>
-                      </div>
+                          Ver PDF
+                        </span>
+                      </a>
+                      <a
+                        href={doc.file}
+                        download
+                        class="rounded-xl border-2 border-primary-600 px-4 py-3 font-semibold text-primary-600 transition-all duration-300 hover:bg-primary-50"
+                      >
+                        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                          />
+                        </svg>
+                      </a>
                     </div>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
-          )
-        }
+          </div>
+        )}
 
         <div class="mt-12 text-center">
           <p class="text-sm text-gray-500">
-            ¿Echas en falta algún documento? <a
-              href="/contacto"
-              class="text-primary-600 hover:underline">Contáctanos</a
-            >
+            ¿Echas en falta algún documento?{' '}
+            <a href="/contacto" class="text-primary-600 hover:underline">
+              Contáctanos
+            </a>
           </p>
         </div>
       </div>

@@ -16,17 +16,13 @@ const heroImage = getRandomHeroImage();
   <Header />
   <main id="main-content">
     <!-- Hero Section -->
-    <section
-      class="relative flex min-h-[70vh] items-center justify-center overflow-hidden pt-16 md:min-h-[80vh] md:pt-20"
-    >
+    <section class="relative flex min-h-[70vh] items-center justify-center overflow-hidden pt-16 md:min-h-[80vh] md:pt-20">
       <!-- Fondo con imagen responsive -->
       <HeroBackground image={heroImage} />
 
       <!-- Iconos flotantes decorativos -->
       <div class="absolute left-10 top-32 z-10 hidden animate-float lg:block">
-        <div
-          class="flex h-16 w-16 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg"
-        >
+        <div class="flex h-16 w-16 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg">
           <svg class="h-8 w-8 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
               stroke-linecap="round"
@@ -39,9 +35,7 @@ const heroImage = getRandomHeroImage();
       </div>
 
       <div class="absolute right-16 top-40 z-10 hidden animate-float-delay lg:block">
-        <div
-          class="flex h-20 w-20 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg"
-        >
+        <div class="flex h-20 w-20 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg">
           <svg
             class="h-10 w-10 text-orange-400"
             fill="none"
@@ -62,9 +56,7 @@ const heroImage = getRandomHeroImage();
       <div class="section-container relative z-20 py-20">
         <div class="mx-auto max-w-4xl text-center">
           <!-- Badge -->
-          <div
-            class="mb-8 inline-flex animate-fade-in items-center rounded-full border border-white/60 bg-white/40 px-4 py-2 shadow-2xl backdrop-blur-xl"
-          >
+          <div class="mb-8 inline-flex animate-fade-in items-center rounded-full border border-white/60 bg-white/40 px-4 py-2 shadow-2xl backdrop-blur-xl">
             <svg
               class="mr-2 h-4 w-4 text-primary-600"
               fill="none"
@@ -82,19 +74,13 @@ const heroImage = getRandomHeroImage();
           </div>
 
           <!-- Título principal -->
-          <h1
-            class="text-shadow-strong mb-6 animate-fade-in text-4xl font-bold text-white delay-200 sm:text-5xl md:text-7xl"
-          >
-            <span class="text-orange-400 drop-shadow-[0_2px_10px_rgba(251,146,60,0.5)]">
-              Únete
-            </span>
+          <h1 class="text-shadow-strong mb-6 animate-fade-in text-4xl font-bold text-white delay-200 sm:text-5xl md:text-7xl">
+            <span class="text-orange-400 drop-shadow-[0_2px_10px_rgba(251,146,60,0.5)]">Únete</span>
             a nuestra causa
           </h1>
 
           <!-- Descripción -->
-          <p
-            class="text-shadow-soft mx-auto mb-6 max-w-3xl animate-fade-in text-lg leading-relaxed text-white/95 delay-300 sm:text-xl md:text-2xl"
-          >
+          <p class="text-shadow-soft mx-auto mb-6 max-w-3xl animate-fade-in text-lg leading-relaxed text-white/95 delay-300 sm:text-xl md:text-2xl">
             Forma parte de nuestra asociación y ayúdanos a construir una Mataró más accesible e
             inclusiva para todos.
           </p>
@@ -116,7 +102,8 @@ const heroImage = getRandomHeroImage();
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                ></path>
               </svg>
             </a>
           </div>
@@ -130,9 +117,7 @@ const heroImage = getRandomHeroImage();
           viewBox="0 0 1440 120"
           preserveAspectRatio="none"
         >
-          <path
-            d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"
-          ></path>
+          <path d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"></path>
         </svg>
       </div>
     </section>
@@ -142,16 +127,12 @@ const heroImage = getRandomHeroImage();
       <div class="section-container">
         <div class="mx-auto max-w-2xl">
           <div class="mb-12 text-center">
-            <span
-              class="mb-4 inline-block rounded-full bg-gradient-to-r from-primary-100 to-accent-100 px-4 py-2 text-sm font-semibold text-primary-700"
-            >
+            <span class="mb-4 inline-block rounded-full bg-gradient-to-r from-primary-100 to-accent-100 px-4 py-2 text-sm font-semibold text-primary-700">
               Registro gratuito
             </span>
             <h2 class="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">
               Completa el
-              <span
-                class="bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent"
-              >
+              <span class="bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent">
                 formulario
               </span>
             </h2>

@@ -10,14 +10,9 @@ const navItems = [
 ];
 ---
 
-<header
-  class="fixed left-0 right-0 top-0 z-50 border-b border-primary-200/20 bg-white/90 shadow-2xl shadow-primary-500/5 backdrop-blur-xl"
->
+<header class="fixed left-0 right-0 top-0 z-50 border-b border-primary-200/20 bg-white/90 shadow-2xl shadow-primary-500/5 backdrop-blur-xl">
   <!-- Gradiente decorativo superior -->
-  <div
-    class="absolute left-0 right-0 top-0 h-1 bg-gradient-to-r from-primary-500 via-accent-500 to-primary-500 opacity-60"
-  >
-  </div>
+  <div class="absolute left-0 right-0 top-0 h-1 bg-gradient-to-r from-primary-500 via-accent-500 to-primary-500 opacity-60"></div>
 
   <nav class="section-container py-3" aria-label="Navegación principal">
     <div class="flex items-center justify-between">
@@ -30,97 +25,91 @@ const navItems = [
         />
         <!-- Título oculto visualmente pero presente para SEO -->
         <span class="sr-only">Diversidad Funcional Mataró</span>
-        <div
-          class="absolute -inset-2 rounded-lg bg-gradient-to-r from-primary-400/20 to-accent-400/20 opacity-0 blur-lg transition-opacity duration-300 group-hover:opacity-100"
-        >
-        </div>
+        <div class="absolute -inset-2 rounded-lg bg-gradient-to-r from-primary-400/20 to-accent-400/20 opacity-0 blur-lg transition-opacity duration-300 group-hover:opacity-100"></div>
       </a>
 
       <!-- Desktop Navigation -->
       <ul class="hidden items-center gap-2 md:flex">
-        {
-          (() => {
-            // Colores únicos para cada ítem (mismo que móvil)
-            const itemColors = [
-              {
-                glow: 'from-cyan-400 to-blue-400',
-                border: 'border-cyan-400/70',
-                text: 'text-cyan-600',
-                hoverText: 'group-hover:text-cyan-600',
-              },
-              {
-                glow: 'from-orange-400 to-amber-400',
-                border: 'border-orange-400/70',
-                text: 'text-orange-600',
-                hoverText: 'group-hover:text-orange-600',
-              },
-              {
-                glow: 'from-pink-400 to-rose-400',
-                border: 'border-pink-400/70',
-                text: 'text-pink-600',
-                hoverText: 'group-hover:text-pink-600',
-              },
-              {
-                glow: 'from-emerald-400 to-teal-400',
-                border: 'border-emerald-400/70',
-                text: 'text-emerald-600',
-                hoverText: 'group-hover:text-emerald-600',
-              },
-              {
-                glow: 'from-violet-400 to-purple-400',
-                border: 'border-violet-400/70',
-                text: 'text-violet-600',
-                hoverText: 'group-hover:text-violet-600',
-              },
-            ];
+        {(() => {
+          // Colores únicos para cada ítem (mismo que móvil)
+          const itemColors = [
+            {
+              glow: 'from-cyan-400 to-blue-400',
+              border: 'border-cyan-400/70',
+              text: 'text-cyan-600',
+              hoverText: 'group-hover:text-cyan-600',
+            },
+            {
+              glow: 'from-orange-400 to-amber-400',
+              border: 'border-orange-400/70',
+              text: 'text-orange-600',
+              hoverText: 'group-hover:text-orange-600',
+            },
+            {
+              glow: 'from-pink-400 to-rose-400',
+              border: 'border-pink-400/70',
+              text: 'text-pink-600',
+              hoverText: 'group-hover:text-pink-600',
+            },
+            {
+              glow: 'from-emerald-400 to-teal-400',
+              border: 'border-emerald-400/70',
+              text: 'text-emerald-600',
+              hoverText: 'group-hover:text-emerald-600',
+            },
+            {
+              glow: 'from-violet-400 to-purple-400',
+              border: 'border-violet-400/70',
+              text: 'text-violet-600',
+              hoverText: 'group-hover:text-violet-600',
+            },
+          ];
 
-            return navItems.map(({ href, label, matchPrefix }, index) => {
-              const isActive = matchPrefix
-                ? currentPath.startsWith(href) && href !== '/'
-                : currentPath === href;
-              const color = itemColors[index % itemColors.length];
+          return navItems.map(({ href, label, matchPrefix }, index) => {
+            const isActive = matchPrefix
+              ? currentPath.startsWith(href) && href !== '/'
+              : currentPath === href;
+            const color = itemColors[index % itemColors.length];
 
-              return (
-                <li>
-                  <a
-                    href={href}
-                    class="group relative"
-                    aria-current={isActive ? 'page' : undefined}
-                  >
-                    <div class="relative">
-                      {/* Glow effect con color único */}
-                      <div
-                        class={`absolute -inset-2 rounded-xl bg-gradient-to-r ${color.glow} blur-lg transition-opacity duration-500 ${
-                          isActive ? 'opacity-40' : 'opacity-0 group-hover:opacity-40'
-                        }`}
-                      />
+            return (
+              <li>
+                <a href={href} class="group relative" aria-current={isActive ? 'page' : undefined}>
+                  <div class="relative">
+                    {/* Glow effect con color único */}
+                    <div
+                      class={`absolute -inset-2 rounded-xl bg-gradient-to-r ${color.glow} blur-lg transition-opacity duration-500 ${
+                        isActive ? 'opacity-40' : 'opacity-0 group-hover:opacity-40'
+                      }`}
+                    />
 
-                      {/* Link container */}
-                      <div
-                        class={`relative rounded-xl border px-4 py-2.5 shadow-md transition-all duration-500 group-hover:shadow-xl ${
-                          isActive
-                            ? `${color.border} bg-gradient-to-br from-white to-gray-50 shadow-lg`
-                            : 'border-white/70 bg-gradient-to-br from-white to-gray-50/80'
+                    {/* Link container */}
+                    <div
+                      class={`relative rounded-xl border px-4 py-2.5 shadow-md transition-all duration-500 group-hover:shadow-xl ${
+                        isActive
+                          ? `${color.border} bg-gradient-to-br from-white to-gray-50 shadow-lg`
+                          : 'border-white/70 bg-gradient-to-br from-white to-gray-50/80'
+                      }`}
+                    >
+                      <span
+                        class={`whitespace-nowrap text-base font-semibold transition-colors duration-300 ${
+                          isActive ? color.text : `text-gray-800 ${color.hoverText}`
                         }`}
                       >
-                        <span
-                          class={`whitespace-nowrap text-base font-semibold transition-colors duration-300 ${
-                            isActive ? color.text : `text-gray-800 ${color.hoverText}`
-                          }`}
-                        >
-                          {label}
-                        </span>
-                      </div>
+                        {label}
+                      </span>
                     </div>
-                  </a>
-                </li>
-              );
-            });
-          })()
-        }
+                  </div>
+                </a>
+              </li>
+            );
+          });
+        })()}
 
         <li>
-          <a href="/asociate" class="btn-primary ml-2"> Únete </a>
+          <a href="/asociate" class="btn-primary ml-2">
+            {' '}
+            Únete{' '}
+          </a>
         </li>
       </ul>
 
@@ -136,7 +125,8 @@ const navItems = [
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"></path>
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
         </svg>
       </button>
     </div>
@@ -144,79 +134,80 @@ const navItems = [
     <!-- Mobile menu con animación -->
     <div id="mobile-menu" class="mobile-menu-container mt-4 hidden pb-4 md:hidden">
       <ul class="flex flex-col gap-3">
-        {
-          (() => {
-            // Colores únicos para cada ítem
-            const itemColors = [
-              {
-                glow: 'from-cyan-500 to-blue-500',
-                border: 'border-cyan-400',
-                text: 'text-cyan-600',
-                hover: 'hover:border-cyan-300 hover:text-cyan-600',
-              },
-              {
-                glow: 'from-orange-500 to-amber-500',
-                border: 'border-orange-400',
-                text: 'text-orange-600',
-                hover: 'hover:border-orange-300 hover:text-orange-600',
-              },
-              {
-                glow: 'from-pink-500 to-rose-500',
-                border: 'border-pink-400',
-                text: 'text-pink-600',
-                hover: 'hover:border-pink-300 hover:text-pink-600',
-              },
-              {
-                glow: 'from-emerald-500 to-teal-500',
-                border: 'border-emerald-400',
-                text: 'text-emerald-600',
-                hover: 'hover:border-emerald-300 hover:text-emerald-600',
-              },
-              {
-                glow: 'from-violet-500 to-purple-500',
-                border: 'border-violet-400',
-                text: 'text-violet-600',
-                hover: 'hover:border-violet-300 hover:text-violet-600',
-              },
-            ];
+        {(() => {
+          // Colores únicos para cada ítem
+          const itemColors = [
+            {
+              glow: 'from-cyan-500 to-blue-500',
+              border: 'border-cyan-400',
+              text: 'text-cyan-600',
+              hover: 'hover:border-cyan-300 hover:text-cyan-600',
+            },
+            {
+              glow: 'from-orange-500 to-amber-500',
+              border: 'border-orange-400',
+              text: 'text-orange-600',
+              hover: 'hover:border-orange-300 hover:text-orange-600',
+            },
+            {
+              glow: 'from-pink-500 to-rose-500',
+              border: 'border-pink-400',
+              text: 'text-pink-600',
+              hover: 'hover:border-pink-300 hover:text-pink-600',
+            },
+            {
+              glow: 'from-emerald-500 to-teal-500',
+              border: 'border-emerald-400',
+              text: 'text-emerald-600',
+              hover: 'hover:border-emerald-300 hover:text-emerald-600',
+            },
+            {
+              glow: 'from-violet-500 to-purple-500',
+              border: 'border-violet-400',
+              text: 'text-violet-600',
+              hover: 'hover:border-violet-300 hover:text-violet-600',
+            },
+          ];
 
-            return navItems.map(({ href, label, matchPrefix }, index) => {
-              const isActive = matchPrefix
-                ? currentPath.startsWith(href) && href !== '/'
-                : currentPath === href;
-              const color = itemColors[index % itemColors.length];
+          return navItems.map(({ href, label, matchPrefix }, index) => {
+            const isActive = matchPrefix
+              ? currentPath.startsWith(href) && href !== '/'
+              : currentPath === href;
+            const color = itemColors[index % itemColors.length];
 
-              return (
-                <li class="mobile-menu-item" style={`--item-delay: ${index * 0.2}s`}>
-                  <a
-                    href={href}
-                    aria-current={isActive ? 'page' : undefined}
-                    class="group relative block"
+            return (
+              <li class="mobile-menu-item" style={`--item-delay: ${index * 0.2}s`}>
+                <a
+                  href={href}
+                  aria-current={isActive ? 'page' : undefined}
+                  class="group relative block"
+                >
+                  {/* Glow effect */}
+                  <div
+                    class={`absolute -inset-1 rounded-xl bg-gradient-to-r ${color.glow} blur-md transition-opacity duration-300 ${
+                      isActive ? 'opacity-50' : 'opacity-0 group-hover:opacity-30'
+                    }`}
+                  />
+                  {/* Link container */}
+                  <div
+                    class={`relative rounded-xl border px-4 py-3 shadow-sm transition-all duration-300 ${
+                      isActive
+                        ? `${color.border} bg-white font-semibold ${color.text} shadow-lg`
+                        : `border-gray-200 bg-white text-gray-700 ${color.hover} hover:shadow-md`
+                    }`}
                   >
-                    {/* Glow effect */}
-                    <div
-                      class={`absolute -inset-1 rounded-xl bg-gradient-to-r ${color.glow} blur-md transition-opacity duration-300 ${
-                        isActive ? 'opacity-50' : 'opacity-0 group-hover:opacity-30'
-                      }`}
-                    />
-                    {/* Link container */}
-                    <div
-                      class={`relative rounded-xl border px-4 py-3 shadow-sm transition-all duration-300 ${
-                        isActive
-                          ? `${color.border} bg-white font-semibold ${color.text} shadow-lg`
-                          : `border-gray-200 bg-white text-gray-700 ${color.hover} hover:shadow-md`
-                      }`}
-                    >
-                      {label}
-                    </div>
-                  </a>
-                </li>
-              );
-            });
-          })()
-        }
+                    {label}
+                  </div>
+                </a>
+              </li>
+            );
+          });
+        })()}
         <li class="mobile-menu-item" style={`--item-delay: ${navItems.length * 0.2}s`}>
-          <a href="/asociate" class="btn-primary w-full text-center"> Únete </a>
+          <a href="/asociate" class="btn-primary w-full text-center">
+            {' '}
+            Únete{' '}
+          </a>
         </li>
       </ul>
     </div>
