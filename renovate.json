@@ -14,6 +14,11 @@
       "description": "eslint-plugin-react y eslint-plugin-jsx-a11y aún no soportan ESLint 10"
     },
     {
+      "matchPackageNames": ["typescript"],
+      "allowedVersions": "<7.0.0",
+      "description": "typescript-eslint aún no soporta la API de TypeScript 7"
+    },
+    {
       "matchPackageNames": ["@types/node"],
       "allowedVersions": "<23.0.0",
       "description": "El proyecto usa Node.js 22 LTS"

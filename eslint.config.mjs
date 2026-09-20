@@ -3,7 +3,7 @@ import tseslint from 'typescript-eslint';
 import eslintPluginReact from 'eslint-plugin-react';
 import eslintPluginReactHooks from 'eslint-plugin-react-hooks';
 import eslintPluginJsxA11y from 'eslint-plugin-jsx-a11y';
-import astroEslintParser from 'astro-eslint-parser';
+import * as astroEslintParser from 'astro-eslint-parser';
 
 export default [
   // Configuración base de Astro (incluye soporte para .astro y typescript dentro de astro)
@@ -42,7 +42,13 @@ export default [
   },
   {
     // Configuración específica para archivos de configuración
-    files: ['**/*.config.mjs', '**/*.config.js', '**/*.config.cjs', 'eslint.config.mjs'],
+    files: [
+      '**/*.config.mjs',
+      '**/*.config.js',
+      '**/*.config.cjs',
+      'eslint.config.mjs',
+      'scripts/**/*.{js,mjs,cjs}',
+    ],
     languageOptions: {
       parserOptions: {
         project: null,
