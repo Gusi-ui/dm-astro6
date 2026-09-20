@@ -7,22 +7,22 @@
   "routes": [
     {
       "pattern": "divermataro.org",
-      "custom_domain": true
+      "custom_domain": true,
     },
     {
       "pattern": "www.divermataro.org",
-      "custom_domain": true
-    }
+      "custom_domain": true,
+    },
   ],
   "vars": {
     "ENVIRONMENT": "production",
-    "NODE_VERSION": "22.22.3"
+    "NODE_VERSION": "22.22.3",
   },
   "d1_databases": [
     {
       "binding": "DB",
       "database_name": "astro6dm-db",
-      "database_id": "266aa9fa-ce2c-4087-b543-fdea68c66043"
-    }
-  ]
+      "database_id": "266aa9fa-ce2c-4087-b543-fdea68c66043",
+    },
+  ],
 }
