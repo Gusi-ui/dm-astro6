@@ -4,9 +4,17 @@ name: Sincronizar develop
 # La regla de «rama al día con su base» obliga a realinearlas antes del
 # siguiente PR a producción, así que ese back-merge se hace aquí solo.
 #
-# Se dispara cuando el CI termina en main, no en el push: así el commit ya
-# tiene el check «Verify» en verde y el PR de sincronización puede fusionarse
-# sin esperas ni fusión automática.
+# Se dispara cuando el CI termina en main, no en el push, para no abrir el PR
+# antes de que el commit esté validado.
+#
+# Sobre el token: si existe el secreto SYNC_TOKEN, el PR lo abre esa cuenta y
+# GitHub ejecuta su CI con normalidad, así que la fusión se pide en modo
+# automático y GitHub fusiona al pasar. Sin ese secreto se recurre al token
+# del propio workflow, pero entonces el PR lo abre github-actions[bot], que
+# para GitHub es un «contribuidor primerizo»: su ejecución del CI se queda
+# esperando aprobación manual y acaba registrada como fallida. En ese caso el
+# PR se fusiona de inmediato —el commit ya trae el check Verify en verde del
+# CI de main— y se avisa en el registro.
 
 on:
   workflow_run:
@@ -35,7 +43,8 @@ jobs:
 
       - name: Abrir y fusionar el PR de sincronización
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.SYNC_TOKEN || secrets.GITHUB_TOKEN }}
+          TOKEN_PROPIO: ${{ secrets.SYNC_TOKEN != '' }}
         run: |
           set -euo pipefail
 
@@ -59,5 +68,11 @@ jobs:
             echo "Reutilizando el PR de sincronización abierto: #$pr"
           fi
 
-          gh pr merge "$pr" --merge
-          echo "PR #$pr fusionado: develop vuelve a estar al día."
+          if [ "$TOKEN_PROPIO" = "true" ]; then
+            gh pr merge "$pr" --merge --auto
+            echo "PR #$pr en cola de fusión automática: se fusionará al pasar su CI."
+          else
+            gh pr merge "$pr" --merge
+            echo "PR #$pr fusionado: develop vuelve a estar al día."
+            echo "::warning::Sin el secreto SYNC_TOKEN, el PR lo abre github-actions[bot] y su ejecución del CI queda esperando aprobación, registrándose luego como fallida. Configura SYNC_TOKEN para evitarlo."
+          fi
