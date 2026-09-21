@@ -1,0 +1,63 @@
+name: Sincronizar develop
+
+# Tras cada despliegue, main queda un commit de fusión por delante de develop.
+# La regla de «rama al día con su base» obliga a realinearlas antes del
+# siguiente PR a producción, así que ese back-merge se hace aquí solo.
+#
+# Se dispara cuando el CI termina en main, no en el push: así el commit ya
+# tiene el check «Verify» en verde y el PR de sincronización puede fusionarse
+# sin esperas ni fusión automática.
+
+on:
+  workflow_run:
+    workflows: ['CI']
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sync-develop
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    name: Realinear develop con main
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Abrir y fusionar el PR de sincronización
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+
+          pendientes=$(git rev-list --count origin/develop..origin/main)
+          if [ "$pendientes" -eq 0 ]; then
+            echo "develop ya está al día con main: no hay nada que sincronizar."
+            exit 0
+          fi
+          echo "main lleva $pendientes commit(s) que develop no tiene."
+
+          pr=$(gh pr list --base develop --head main --state open --json number --jq '.[0].number // empty')
+          if [ -z "$pr" ]; then
+            url=$(gh pr create \
+              --base develop \
+              --head main \
+              --title "chore: sincronizar develop con main tras el despliegue" \
+              --body "Back-merge automático tras el despliegue. Sin cambios de archivos: realinea \`develop\` con \`main\` para que el próximo PR a producción no se bloquee por la regla de «rama al día con su base».")
+            pr=${url##*/}
+            echo "PR de sincronización creado: #$pr"
+          else
+            echo "Reutilizando el PR de sincronización abierto: #$pr"
+          fi
+
+          gh pr merge "$pr" --merge
+          echo "PR #$pr fusionado: develop vuelve a estar al día."
