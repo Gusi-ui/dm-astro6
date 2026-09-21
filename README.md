@@ -63,6 +63,14 @@ pnpm build
 - Cuando `develop` está comprobada y estable, se abre un PR de `develop` a `main`
   para pasar a producción. Tras el despliegue, `develop` se realinea con `main`
   sola: el workflow «Sincronizar develop» abre y fusiona el back-merge.
+
+El workflow de sincronización usa el secreto `SYNC_TOKEN` (un token de acceso
+personal con permiso de escritura sobre contenido y pull requests). Con él, el
+PR de sincronización lo abre una cuenta de persona y GitHub ejecuta su CI con
+normalidad. Sin ese secreto el workflow sigue funcionando, pero el PR lo abre
+`github-actions[bot]` y GitHub deja su ejecución del CI esperando aprobación
+manual, que acaba registrada como fallida en el panel de Actions.
+
 - Renovate abre sus PRs contra `develop`, agrupando las actualizaciones menores y
   de parche en un único PR para que los lockfiles no se pisen entre sí.
 
