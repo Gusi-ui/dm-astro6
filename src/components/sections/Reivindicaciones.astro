@@ -28,21 +28,13 @@ const aniosLuchando = new Date().getFullYear() - ANIO_FUNDACION;
 
 <section id="reivindicaciones" class="relative overflow-hidden bg-white py-20 md:py-28">
   <!-- Decoración de fondo -->
-  <div
-    class="absolute left-0 top-1/4 h-96 w-96 -translate-x-1/2 rounded-full bg-gradient-to-br from-primary-100/60 to-accent-100/60 blur-3xl"
-  >
-  </div>
-  <div
-    class="absolute bottom-1/4 right-0 h-72 w-72 translate-x-1/2 rounded-full bg-gradient-to-br from-accent-100/60 to-primary-100/60 blur-3xl"
-  >
-  </div>
+  <div class="absolute left-0 top-1/4 h-96 w-96 -translate-x-1/2 rounded-full bg-gradient-to-br from-primary-100/60 to-accent-100/60 blur-3xl"></div>
+  <div class="absolute bottom-1/4 right-0 h-72 w-72 translate-x-1/2 rounded-full bg-gradient-to-br from-accent-100/60 to-primary-100/60 blur-3xl"></div>
 
   <div class="section-container relative">
     <!-- Encabezado -->
     <div class="mx-auto mb-16 max-w-3xl text-center">
-      <span
-        class="mb-4 inline-block rounded-full bg-gradient-to-r from-primary-100 to-accent-100 px-4 py-2 text-sm font-semibold text-primary-700"
-      >
+      <span class="mb-4 inline-block rounded-full bg-gradient-to-r from-primary-100 to-accent-100 px-4 py-2 text-sm font-semibold text-primary-700">
         Por lo que luchamos
       </span>
       <h2 class="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
@@ -59,99 +51,95 @@ const aniosLuchando = new Date().getFullYear() - ANIO_FUNDACION;
 
     <!-- Lista de reivindicaciones -->
     <div class="mx-auto max-w-4xl">
-      <div
-        class="divide-y divide-gray-100 rounded-3xl border border-gray-100 bg-white shadow-xl shadow-gray-200/50"
-      >
-        {
-          reivindicacionesConConteo.map((item, index) => (
-            <div class="reivindicacion-item group" data-index={index}>
-              <button
-                class={`flex w-full items-center gap-4 p-6 text-left transition-all duration-300 ${item.hoverBg} md:p-8`}
-                aria-expanded="false"
-                aria-controls={`content-${index}`}
-              >
-                {/* Barra de color */}
-                <div
-                  class={`hidden h-16 w-1.5 flex-shrink-0 rounded-full ${item.color} transition-all duration-300 group-hover:h-20 sm:block`}
-                />
-
-                {/* Contenido principal */}
-                <div class="min-w-0 flex-1">
-                  <h3 class="text-lg font-bold text-gray-900 transition-colors duration-300 group-hover:text-gray-700 md:text-xl">
-                    {item.title}
-                  </h3>
-                  <p class="mt-1 line-clamp-1 text-sm text-gray-500 md:text-base">
-                    {item.description.substring(0, 80)}...
-                  </p>
-                </div>
-
-                {/* Contador de posts y flecha */}
-                <div class="flex flex-shrink-0 items-center gap-3">
-                  {item.postCount > 0 && (
-                    <span
-                      class={`hidden rounded-full ${item.colorLight} px-3 py-1 text-sm font-semibold ${item.colorText} sm:inline-flex`}
-                    >
-                      {item.postCount} {item.postCount === 1 ? 'artículo' : 'artículos'}
-                    </span>
-                  )}
-                  <div
-                    class={`flex h-10 w-10 items-center justify-center rounded-full ${item.colorLight} transition-all duration-300`}
-                  >
-                    <svg
-                      class={`h-5 w-5 ${item.colorText} expand-icon transition-transform duration-300`}
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </button>
-
-              {/* Contenido expandible */}
+      <div class="divide-y divide-gray-100 rounded-3xl border border-gray-100 bg-white shadow-xl shadow-gray-200/50">
+        {reivindicacionesConConteo.map((item, index) => (
+          <div class="reivindicacion-item group" data-index={index}>
+            <button
+              class={`flex w-full items-center gap-4 p-6 text-left transition-all duration-300 ${item.hoverBg} md:p-8`}
+              aria-expanded="false"
+              aria-controls={`content-${index}`}
+            >
+              {/* Barra de color */}
               <div
-                id={`content-${index}`}
-                class="expandable-content overflow-hidden transition-all duration-500"
-                style="max-height: 0; opacity: 0;"
-              >
-                <div
-                  class={`px-6 pb-6 md:px-8 md:pb-8 ${item.colorLight} mx-4 mb-4 rounded-2xl md:mx-6`}
-                >
-                  <div class="flex flex-col gap-4 pt-4 sm:flex-row sm:items-start sm:gap-6">
-                    {/* Descripción completa */}
-                    <div class="flex-1">
-                      <p class="leading-relaxed text-gray-700">{item.description}</p>
-                    </div>
+                class={`hidden h-16 w-1.5 flex-shrink-0 rounded-full ${item.color} transition-all duration-300 group-hover:h-20 sm:block`}
+              />
 
-                    {/* Botón para ver artículos */}
-                    {item.postCount > 0 && (
-                      <a
-                        href={`/blog/reivindicacion/${item.slug}`}
-                        class={`inline-flex items-center justify-center gap-2 rounded-xl ${item.color} flex-shrink-0 px-5 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl`}
-                      >
-                        <span>Ver artículos</span>
-                        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M13 7l5 5m0 0l-5 5m5-5H6"
-                          />
-                        </svg>
-                      </a>
-                    )}
+              {/* Contenido principal */}
+              <div class="min-w-0 flex-1">
+                <h3 class="text-lg font-bold text-gray-900 transition-colors duration-300 group-hover:text-gray-700 md:text-xl">
+                  {item.title}
+                </h3>
+                <p class="mt-1 line-clamp-1 text-sm text-gray-500 md:text-base">
+                  {item.description.substring(0, 80)}...
+                </p>
+              </div>
+
+              {/* Contador de posts y flecha */}
+              <div class="flex flex-shrink-0 items-center gap-3">
+                {item.postCount > 0 && (
+                  <span
+                    class={`hidden rounded-full ${item.colorLight} px-3 py-1 text-sm font-semibold ${item.colorText} sm:inline-flex`}
+                  >
+                    {item.postCount} {item.postCount === 1 ? 'artículo' : 'artículos'}
+                  </span>
+                )}
+                <div
+                  class={`flex h-10 w-10 items-center justify-center rounded-full ${item.colorLight} transition-all duration-300`}
+                >
+                  <svg
+                    class={`h-5 w-5 ${item.colorText} expand-icon transition-transform duration-300`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+
+            {/* Contenido expandible */}
+            <div
+              id={`content-${index}`}
+              class="expandable-content overflow-hidden transition-all duration-500"
+              style="max-height: 0; opacity: 0;"
+            >
+              <div
+                class={`px-6 pb-6 md:px-8 md:pb-8 ${item.colorLight} mx-4 mb-4 rounded-2xl md:mx-6`}
+              >
+                <div class="flex flex-col gap-4 pt-4 sm:flex-row sm:items-start sm:gap-6">
+                  {/* Descripción completa */}
+                  <div class="flex-1">
+                    <p class="leading-relaxed text-gray-700">{item.description}</p>
                   </div>
+
+                  {/* Botón para ver artículos */}
+                  {item.postCount > 0 && (
+                    <a
+                      href={`/blog/reivindicacion/${item.slug}`}
+                      class={`inline-flex items-center justify-center gap-2 rounded-xl ${item.color} flex-shrink-0 px-5 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl`}
+                    >
+                      <span>Ver artículos</span>
+                      <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M13 7l5 5m0 0l-5 5m5-5H6"
+                        />
+                      </svg>
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
-          ))
-        }
+          </div>
+        ))}
       </div>
     </div>
 

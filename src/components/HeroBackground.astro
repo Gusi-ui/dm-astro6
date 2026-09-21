@@ -27,21 +27,17 @@ const mobileBgSize =
 <div
   class="hero-bg-mobile absolute inset-0 bg-no-repeat md:hidden"
   style={`background-image: url('${styles.mobileUrl}'); background-position: ${styles.mobilePosition}; background-size: ${mobileBgSize};`}
->
-</div>
+></div>
 
 <!-- Fondo para desktop (oculto en móvil) -->
 <div
   class="hero-bg-desktop absolute inset-0 hidden bg-cover bg-no-repeat md:block"
   style={`background-image: url('${styles.desktopUrl}'); background-position: ${styles.desktopPosition};`}
->
-</div>
+></div>
 
 <!-- Overlay con gradiente -->
-{
-  gradientStyle ? (
-    <div class="absolute inset-0" style={gradientStyle} />
-  ) : (
-    <div class={`absolute inset-0 bg-gradient-to-br ${gradientClass}`} />
-  )
-}
+{gradientStyle ? (
+  <div class="absolute inset-0" style={gradientStyle} />
+) : (
+  <div class={`absolute inset-0 bg-gradient-to-br ${gradientClass}`} />
+)}
