@@ -61,7 +61,8 @@ pnpm build
 - Las ramas de trabajo (`feat/…`, `fix/…`, `chore/…`) salen de `develop` y vuelven
   a `develop` mediante Pull Request.
 - Cuando `develop` está comprobada y estable, se abre un PR de `develop` a `main`
-  para pasar a producción.
+  para pasar a producción. Tras el despliegue, `develop` se realinea con `main`
+  sola: el workflow «Sincronizar develop» abre y fusiona el back-merge.
 - Renovate abre sus PRs contra `develop`, agrupando las actualizaciones menores y
   de parche en un único PR para que los lockfiles no se pisen entre sí.
 
