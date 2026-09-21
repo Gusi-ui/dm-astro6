@@ -4,18 +4,17 @@ name: Sincronizar develop
 # La regla de «rama al día con su base» obliga a realinearlas antes del
 # siguiente PR a producción, así que ese back-merge se hace aquí solo.
 #
-# Se dispara cuando el CI termina en main, no en el push: así el commit ya
-# tiene el check «Verify» en verde y el PR de sincronización puede fusionarse
-# en cuanto se abre, sin esperar a nada.
+# Se dispara cuando el CI termina en main, no en el push, para no abrir el PR
+# antes de que el commit esté validado.
 #
-# El PR lo abre github-actions[bot], que para GitHub es un «contribuidor
-# primerizo», de modo que su ejecución del CI queda esperando aprobación
-# manual (política first_time_contributors). Esa ejecución no aporta nada
-# —valida el mismo commit que el CI de main ya validó— pero al fusionar el PR
-# expira y se registra como fallida, así que se cancela al terminar.
-#
-# Por eso no se usa --auto: el check de esa ejecución nunca llegaría a
-# ejecutarse sin aprobación manual y el PR se quedaría abierto para siempre.
+# Sobre el token: si existe el secreto SYNC_TOKEN, el PR lo abre esa cuenta y
+# GitHub ejecuta su CI con normalidad, así que la fusión se pide en modo
+# automático y GitHub fusiona al pasar. Sin ese secreto se recurre al token
+# del propio workflow, pero entonces el PR lo abre github-actions[bot], que
+# para GitHub es un «contribuidor primerizo»: su ejecución del CI se queda
+# esperando aprobación manual y acaba registrada como fallida. En ese caso el
+# PR se fusiona de inmediato —el commit ya trae el check Verify en verde del
+# CI de main— y se avisa en el registro.
 
 on:
   workflow_run:
@@ -25,7 +24,6 @@ on:
   workflow_dispatch:
 
 permissions:
-  actions: write
   contents: write
   pull-requests: write
 
@@ -45,7 +43,8 @@ jobs:
 
       - name: Abrir y fusionar el PR de sincronización
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.SYNC_TOKEN || secrets.GITHUB_TOKEN }}
+          TOKEN_PROPIO: ${{ secrets.SYNC_TOKEN != '' }}
         run: |
           set -euo pipefail
 
@@ -69,28 +68,11 @@ jobs:
             echo "Reutilizando el PR de sincronización abierto: #$pr"
           fi
 
-          gh pr merge "$pr" --merge
-          echo "PR #$pr fusionado: develop vuelve a estar al día."
-
-          # Cancela la ejecución del CI que quedó esperando aprobación para ese
-          # PR, que si no expira y aparece como fallida en el panel.
-          sha=$(git rev-parse origin/main)
-          for _ in 1 2 3 4 5 6; do
-            huerfano=$(gh run list --workflow=ci.yml --event=pull_request --limit 20 \
-              --json databaseId,headSha,status \
-              --jq "[.[] | select(.headSha == \"$sha\" and (.status == \"action_required\" or .status == \"waiting\" or .status == \"queued\"))][0].databaseId // empty")
-            if [ -n "$huerfano" ]; then break; fi
-            sleep 5
-          done
-
-          if [ -z "$huerfano" ]; then
-            echo "No hay ninguna ejecución pendiente que limpiar."
-            exit 0
-          fi
-
-          if gh run cancel "$huerfano" 2>/dev/null; then
-            echo "Cancelada la ejecución $huerfano, que esperaba aprobación."
+          if [ "$TOKEN_PROPIO" = "true" ]; then
+            gh pr merge "$pr" --merge --auto
+            echo "PR #$pr en cola de fusión automática: se fusionará al pasar su CI."
           else
-            gh api -X DELETE "/repos/$GITHUB_REPOSITORY/actions/runs/$huerfano" \
-              && echo "Eliminada la ejecución $huerfano, que no se podía cancelar."
+            gh pr merge "$pr" --merge
+            echo "PR #$pr fusionado: develop vuelve a estar al día."
+            echo "::warning::Sin el secreto SYNC_TOKEN, el PR lo abre github-actions[bot] y su ejecución del CI queda esperando aprobación, registrándose luego como fallida. Configura SYNC_TOKEN para evitarlo."
           fi
