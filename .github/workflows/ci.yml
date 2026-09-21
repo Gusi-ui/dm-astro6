@@ -20,33 +20,57 @@ jobs:
     runs-on: ubuntu-latest
     name: Verify
     steps:
+      # El PR de sincronización lleva de main a develop un commit que el CI ya
+      # validó al entrar en main. Repetir ahí las comprobaciones no aporta nada
+      # y abre una carrera: el PR se fusiona en cuanto se crea, y su ejecución
+      # queda cortada a medias. El job termina aquí, en verde, para que el check
+      # «Verify» siga existiendo sin repetir trabajo.
+      - name: Decidir si hay que comprobar algo
+        id: procede
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ] && [ "${{ github.head_ref }}" = "main" ]; then
+            echo "omitir=true" >> "$GITHUB_OUTPUT"
+            echo "PR de sincronización: este commit ya se comprobó al entrar en main."
+          else
+            echo "omitir=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: actions/checkout@v7
+        if: steps.procede.outputs.omitir != 'true'
 
       - name: Setup pnpm
+        if: steps.procede.outputs.omitir != 'true'
         uses: pnpm/action-setup@v6
         with:
           version: 12
 
       - name: Setup Node.js
+        if: steps.procede.outputs.omitir != 'true'
         uses: actions/setup-node@v7
         with:
           node-version: '24.21.0'
           cache: 'pnpm'
 
       - name: Install dependencies
+        if: steps.procede.outputs.omitir != 'true'
         run: pnpm install --frozen-lockfile
 
       - name: Sync Astro types
+        if: steps.procede.outputs.omitir != 'true'
         run: pnpm astro sync
 
       - name: Lint
+        if: steps.procede.outputs.omitir != 'true'
         run: pnpm exec eslint .
 
       - name: Check formatting
+        if: steps.procede.outputs.omitir != 'true'
         run: pnpm exec prettier --check .
 
       - name: Type check
+        if: steps.procede.outputs.omitir != 'true'
         run: pnpm check
 
       - name: Build
+        if: steps.procede.outputs.omitir != 'true'
         run: pnpm build
