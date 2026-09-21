@@ -33,7 +33,13 @@ concurrency:
 
 jobs:
   sync:
-    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    # Solo cuando el CI viene de un push a main. El CI del propio PR de
+    # sincronización también corre sobre la rama main —es su rama de origen—,
+    # así que sin este filtro cada sincronización dispararía otra.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.event == 'push')
     runs-on: ubuntu-latest
     name: Realinear develop con main
     steps:
@@ -66,6 +72,12 @@ jobs:
             echo "PR de sincronización creado: #$pr"
           else
             echo "Reutilizando el PR de sincronización abierto: #$pr"
+          fi
+
+          estado=$(gh pr view "$pr" --json state --jq .state)
+          if [ "$estado" != "OPEN" ]; then
+            echo "El PR #$pr ya está $estado: no hay nada que fusionar."
+            exit 0
           fi
 
           if [ "$TOKEN_PROPIO" = "true" ]; then
