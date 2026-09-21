@@ -13,7 +13,7 @@ Sitio web de la asociación de diversidad funcional en Mataró, construido con A
 
 ## 📋 Requisitos Previos
 
-- Node.js 22.12.0 o superior
+- Node.js 24.21.0 o superior (la versión exacta está en `.nvmrc`)
 - pnpm instalado globalmente (`npm install -g pnpm`)
 - Cuenta de Cloudflare (gratuita)
 

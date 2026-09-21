@@ -28,14 +28,14 @@
     },
     {
       "matchPackageNames": ["@types/node"],
-      "allowedVersions": "<23.0.0",
-      "description": "El proyecto usa Node.js 22 LTS"
+      "allowedVersions": "<25.0.0",
+      "description": "El proyecto usa Node.js 24 LTS"
     },
     {
       "matchDatasources": ["node-version"],
       "matchManagers": ["nvm", "nodenv"],
-      "allowedVersions": "<23.0.0",
-      "description": "Mantener Node.js 22 LTS en .nvmrc y .node-version"
+      "allowedVersions": "<25.0.0",
+      "description": "Mantener Node.js 24 LTS en .nvmrc y .node-version"
     }
   ]
 }
