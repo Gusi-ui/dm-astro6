@@ -4,13 +4,18 @@ name: Sincronizar develop
 # La regla de «rama al día con su base» obliga a realinearlas antes del
 # siguiente PR a producción, así que ese back-merge se hace aquí solo.
 #
-# Se dispara cuando el CI termina en main, no en el push, para no abrir el PR
-# antes de que el commit esté validado.
+# Se dispara cuando el CI termina en main, no en el push: así el commit ya
+# tiene el check «Verify» en verde y el PR de sincronización puede fusionarse
+# en cuanto se abre, sin esperar a nada.
 #
-# La fusión se pide en modo automático: al crear el PR, GitHub lanza su propia
-# ejecución del CI, y fusionarlo de inmediato la abortaría, dejando un fallo
-# rojo en el panel aunque la sincronización haya ido bien. Con --auto, GitHub
-# espera a que esa ejecución termine y fusiona él.
+# El PR lo abre github-actions[bot], que para GitHub es un «contribuidor
+# primerizo», de modo que su ejecución del CI queda esperando aprobación
+# manual (política first_time_contributors). Esa ejecución no aporta nada
+# —valida el mismo commit que el CI de main ya validó— pero al fusionar el PR
+# expira y se registra como fallida, así que se cancela al terminar.
+#
+# Por eso no se usa --auto: el check de esa ejecución nunca llegaría a
+# ejecutarse sin aprobación manual y el PR se quedaría abierto para siempre.
 
 on:
   workflow_run:
@@ -20,6 +25,7 @@ on:
   workflow_dispatch:
 
 permissions:
+  actions: write
   contents: write
   pull-requests: write
 
@@ -63,5 +69,28 @@ jobs:
             echo "Reutilizando el PR de sincronización abierto: #$pr"
           fi
 
-          gh pr merge "$pr" --merge --auto
-          echo "PR #$pr en cola de fusión automática: develop se realineará al pasar el CI."
+          gh pr merge "$pr" --merge
+          echo "PR #$pr fusionado: develop vuelve a estar al día."
+
+          # Cancela la ejecución del CI que quedó esperando aprobación para ese
+          # PR, que si no expira y aparece como fallida en el panel.
+          sha=$(git rev-parse origin/main)
+          for _ in 1 2 3 4 5 6; do
+            huerfano=$(gh run list --workflow=ci.yml --event=pull_request --limit 20 \
+              --json databaseId,headSha,status \
+              --jq "[.[] | select(.headSha == \"$sha\" and (.status == \"action_required\" or .status == \"waiting\" or .status == \"queued\"))][0].databaseId // empty")
+            if [ -n "$huerfano" ]; then break; fi
+            sleep 5
+          done
+
+          if [ -z "$huerfano" ]; then
+            echo "No hay ninguna ejecución pendiente que limpiar."
+            exit 0
+          fi
+
+          if gh run cancel "$huerfano" 2>/dev/null; then
+            echo "Cancelada la ejecución $huerfano, que esperaba aprobación."
+          else
+            gh api -X DELETE "/repos/$GITHUB_REPOSITORY/actions/runs/$huerfano" \
+              && echo "Eliminada la ejecución $huerfano, que no se podía cancelar."
+          fi
