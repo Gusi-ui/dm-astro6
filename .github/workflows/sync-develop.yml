@@ -75,5 +75,12 @@ jobs:
             exit 0
           fi
 
+          # El check "Verify" se dispara al crear el PR, pero tarda unos
+          # segundos en pasar de "queued" a completado. develop exige ese
+          # check en verde y la rama al día (regla "strict"), así que
+          # fusionar sin esperar pierde la carrera si Actions va cargado:
+          # GitHub responde "Required status check is queued" y el job falla
+          # con el PR abierto y sin fusionar.
+          gh pr checks "$pr" --watch --required --fail-fast
           gh pr merge "$pr" --merge
           echo "PR #$pr fusionado: develop vuelve a estar al día."
