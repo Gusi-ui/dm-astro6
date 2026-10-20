@@ -38,7 +38,7 @@ const juntaDirectiva = [
     color: 'from-accent-400 to-pink-500',
     shadowColor: 'shadow-accent-500/30',
     bgColor: 'bg-accent-500',
-    foto: 'https://res.cloudinary.com/dzs4olh43/image/upload/v1770112114/Secretario_xgcci1.jpg',
+    foto: 'https://res.cloudinary.com/dzs4olh43/image/upload/f_auto,q_auto,w_800/v1770112114/Secretario_xgcci1.jpg',
   },
   {
     nombre: 'Tesorera',
@@ -48,7 +48,7 @@ const juntaDirectiva = [
     color: 'from-emerald-400 to-teal-500',
     shadowColor: 'shadow-emerald-500/30',
     bgColor: 'bg-emerald-500',
-    foto: 'https://res.cloudinary.com/dzs4olh43/image/upload/v1770111317/Tesorera_ls8v27.png',
+    foto: 'https://res.cloudinary.com/dzs4olh43/image/upload/f_auto,q_auto,w_800/v1770111317/Tesorera_ls8v27.png',
   },
   {
     nombre: 'Portavoz',
@@ -68,7 +68,7 @@ const juntaDirectiva = [
     color: 'from-violet-400 to-purple-500',
     shadowColor: 'shadow-violet-500/30',
     bgColor: 'bg-violet-500',
-    foto: 'https://res.cloudinary.com/dzs4olh43/image/upload/v1770111318/Vocal_nttywq.png',
+    foto: 'https://res.cloudinary.com/dzs4olh43/image/upload/f_auto,q_auto,w_800/v1770111318/Vocal_nttywq.png',
   },
 ];
 
@@ -398,6 +398,8 @@ const timeline = [
                     <img
                       src={miembro.foto}
                       alt={miembro.cargo}
+                      loading="lazy"
+                      decoding="async"
                       class="h-full w-full object-cover object-top transition-transform duration-500 ease-out lg:group-hover:scale-[1.85]"
                     />
                   </div>
