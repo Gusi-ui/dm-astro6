@@ -39,8 +39,8 @@ const articleHtml = post.rendered?.html ? transformCloudinaryHtml(post.rendered.
 
 const currentId = post.id || post.slug || 'unknown';
 
-// URL canónica para compartir (coincide con la barra final que usa el servidor)
-const canonicalUrl = new URL(`/blog/${currentId}/`, Astro.site || 'https://divermataro.org').href;
+// URL canónica para compartir: sin barra final, que es la que el servidor sirve sin redirigir
+const canonicalUrl = new URL(`/blog/${currentId}`, Astro.site || 'https://divermataro.org').href;
 
 // Imagen para redes sociales: AVIF no es compatible con la mayoría de crawlers OG
 const socialImageMeta = getSocialImageMeta(post.data.heroImage);

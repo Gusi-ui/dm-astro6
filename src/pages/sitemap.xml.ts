@@ -3,12 +3,13 @@ import { getCollection } from 'astro:content';
 
 export const GET: APIRoute = async ({ site }) => {
   const blogPosts = await getCollection('blog');
-  const baseUrl = site?.href || 'https://tudominio.com';
+  // site.href acaba en '/', y las rutas de abajo ya empiezan por '/'
+  const baseUrl = (site?.href || 'https://divermataro.org').replace(/\/$/, '');
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>${baseUrl}</loc>
+    <loc>${baseUrl}/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
