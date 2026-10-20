@@ -29,7 +29,11 @@ const defaultOgImage =
 const resolvedOgImage = ogImage
   ? new URL(ogImage, Astro.site || Astro.url.origin).href
   : defaultOgImage;
-const canonicalUrl = canonicalUrlProp ?? Astro.url.href;
+// Sin barra final (salvo la portada) ni el .html de las páginas pre-renderizadas
+// (build.format: 'file'), igual que los enlaces internos y el sitemap.
+// Sobre el dominio de `site` para que www.divermataro.org no genere duplicados.
+const canonicalPath = Astro.url.pathname.replace(/\.html$/, '').replace(/(.)\/$/, '$1');
+const canonicalUrl = canonicalUrlProp ?? new URL(canonicalPath, Astro.site || Astro.url).href;
 ---
 
 <!doctype html>
