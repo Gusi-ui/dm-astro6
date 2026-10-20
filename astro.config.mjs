@@ -40,7 +40,6 @@ export default defineConfig({
       exclude: ['astro/zod'],
     },
     build: {
-      cssCodeSplit: false,
       rollupOptions: {
         output: {
           assetFileNames: '_astro/[name].[hash][extname]',

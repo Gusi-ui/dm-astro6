@@ -1,5 +1,12 @@
 # Solución: Estilos no cargan en páginas de blog en producción
 
+> **Actualización (octubre 2026):** `cssCodeSplit: false` y el patrón `prose` del safelist ya no se usan.
+> Con Astro 7, `cssCodeSplit: false` hacía que cada página cargara **dos** hojas casi idénticas
+> (una por cada entorno de compilación). Sin esa opción cada página enlaza una sola hoja global, y los
+> estilos propios de una página van incrustados en ella. Se comprobó en las 46 URLs del sitio que
+> ninguna clase se queda sin su regla. El patrón del safelist generaba unos 330 KB de variantes de
+> typography que no se usaban.
+
 ## Problema identificado
 
 Las páginas de artículos individuales del blog no cargaban los estilos en producción (Cloudflare Pages), aunque funcionaban correctamente en local. Esto se debía a que:
