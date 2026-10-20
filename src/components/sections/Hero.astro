@@ -4,12 +4,16 @@
 <section class="relative flex min-h-[70vh] items-center justify-center overflow-hidden pt-16 md:min-h-[80vh] md:pt-20">
   <!-- Fondo de vídeo para escritorio -->
   <div class="absolute inset-0 hidden lg:block">
-    <video autoplay muted loop playsinline class="hero-video h-full w-full object-cover">
-      <source
-        src="https://res.cloudinary.com/dzs4olh43/video/upload/v1764255480/hero-video_brq5u6.mp4"
-        type="video/mp4"
-      />
-    </video>
+    <!-- Sin src ni póster en el HTML: el script los carga solo en escritorio (en móvil se descargaba aunque estuviera oculto) -->
+    <video
+      muted
+      loop
+      playsinline
+      preload="none"
+      data-poster="https://res.cloudinary.com/dzs4olh43/video/upload/so_0,f_auto,q_auto,w_1280/v1764255480/hero-video_brq5u6.jpg"
+      data-src="https://res.cloudinary.com/dzs4olh43/video/upload/q_auto,w_1280/v1764255480/hero-video_brq5u6.mp4"
+      class="hero-video h-full w-full object-cover"
+    ></video>
     <!-- Overlay con gradiente para legibilidad -->
     <div class="absolute inset-0 bg-gradient-to-br from-primary-600/80 via-primary-700/70 to-accent-600/80"></div>
   </div>
@@ -287,10 +291,22 @@
 </style>
 
 <script>
-  // Efecto parallax en scroll para el vídeo
+  // Vídeo del hero: carga diferida y parallax, solo en escritorio
   const heroVideo = document.querySelector('.hero-video') as HTMLVideoElement | null;
+  const isDesktop = window.matchMedia('(min-width: 1024px)').matches;
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  if (heroVideo && window.matchMedia('(min-width: 1024px)').matches) {
+  if (heroVideo?.dataset.poster && isDesktop) {
+    heroVideo.poster = heroVideo.dataset.poster;
+  }
+
+  // Con movimiento reducido se queda el póster fijo
+  if (heroVideo?.dataset.src && isDesktop && !reducedMotion) {
+    heroVideo.src = heroVideo.dataset.src;
+    heroVideo.play().catch(() => {});
+  }
+
+  if (heroVideo && isDesktop) {
     let ticking = false;
 
     const updateParallax = () => {
