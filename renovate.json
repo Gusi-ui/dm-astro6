@@ -4,6 +4,7 @@
   "baseBranchPatterns": ["develop"],
   "labels": ["dependencies"],
   "minimumReleaseAge": "2 days",
+  "rebaseWhen": "behind-base-branch",
   "packageRules": [
     {
       "matchManagers": ["npm"],
@@ -15,11 +16,6 @@
       "matchPackageNames": ["tailwindcss"],
       "allowedVersions": "<4.0.0",
       "description": "@astrojs/tailwind aún requiere Tailwind CSS v3"
-    },
-    {
-      "matchPackageNames": ["eslint"],
-      "allowedVersions": "<10.0.0",
-      "description": "eslint-plugin-react y eslint-plugin-jsx-a11y aún no soportan ESLint 10"
     },
     {
       "matchPackageNames": ["typescript"],
