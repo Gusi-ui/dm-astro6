@@ -3,7 +3,7 @@ title: 'Transporte público adaptado'
 description: 'La importancia de un transporte público inclusivo: desafíos, soluciones y el compromiso de Mataró Bus.'
 pubDate: 2023-09-20
 category: 'Transporte'
-heroImage: '/images/blog/Transporte-adaptado.webp'
+heroImage: 'cloudinary:divermataro/blog/transporte-publico-adaptado/Transporte-adaptado'
 ---
 
 El transporte público adaptado es un componente fundamental de la infraestructura urbana que permite la movilidad de millones de personas en todo el mundo. Sin embargo, para las personas con [diversidad funcional](/blog/discapacidad-hola-mundo), acceder y utilizar el transporte público puede ser un desafío significativo. Desde dificultades físicas hasta barreras cognitivas, muchas personas enfrentan obstáculos para desplazarse de manera independiente y segura en entornos urbanos.
@@ -35,7 +35,7 @@ Las personas con diversidad funcional enfrentan una serie de desafíos al utiliz
 - **Falta de capacitación del personal:** El personal del transporte público a menudo carece de capacitación adecuada sobre cómo ayudar a las personas con diversidad funcional, lo que puede generar experiencias desafiantes o incluso discriminatorias para los usuarios.
 - **Falta de conciencia pública:** La falta de conciencia sobre las necesidades y los derechos de las personas con diversidad funcional puede llevar a la discriminación y a la falta de empatía por parte de otros pasajeros y del personal del transporte público.
 
-![Persona invidente usando transporte](/images/blog/Persona-invidente.webp)
+![Persona invidente usando transporte](cloudinary:divermataro/blog/transporte-publico-adaptado/Persona-invidente)
 
 Estos desafíos pueden limitar significativamente la capacidad de las personas con diversidad funcional para acceder al transporte público de manera igualitaria y segura.
 

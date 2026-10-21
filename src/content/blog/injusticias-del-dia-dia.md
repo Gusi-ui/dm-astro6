@@ -3,7 +3,7 @@ title: 'Injusticias del día día'
 description: 'Crónica de una discriminación en una sucursal bancaria y la falta de accesibilidad y empatía.'
 pubDate: 2021-10-21
 category: 'Denuncia'
-heroImage: '/images/blog/injusto.webp'
+heroImage: 'cloudinary:divermataro/blog/injusticias-del-dia-dia/injusto'
 ---
 
 Había una vez una poderosa entidad pública llamada BBVA. A lo largo del tiempo fueron adquiriendo cada día más y más poder con el dinero de los ciudadanos; sin embargo con ese dinero de los ciudadanos iban menguando cada vez más y más sus derechos cometiendo diversas injusticias.
@@ -24,7 +24,7 @@ Pero la persona que está solicitando la entrada a la entidad no está haciendo 
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-8 items-center">
   <div class="w-full">
-    <img src="/images/blog/segurido.jpg" alt="Seguridad impidiendo el paso" class="w-full h-auto rounded-xl shadow-lg object-cover" style="max-height: 300px; width: 100%; object-fit: cover;">
+    <img src="cloudinary:divermataro/blog/injusticias-del-dia-dia/segurido" alt="Seguridad impidiendo el paso" class="w-full h-auto rounded-xl shadow-lg object-cover" style="max-height: 300px; width: 100%; object-fit: cover;">
   </div>
   <div class="w-full h-full flex items-center justify-center" style="min-height: 300px;">
     <iframe 

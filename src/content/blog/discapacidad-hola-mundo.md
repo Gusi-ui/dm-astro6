@@ -3,14 +3,14 @@ title: 'Discapacidad. Hola mundo!'
 description: 'DiverMataro llega para promover la igualdad y los derechos de las personas con Diversidad Funcional. Entendiendo conceptos clave.'
 pubDate: 2024-02-10
 category: 'Social'
-heroImage: '/images/blog/holamundo.webp'
+heroImage: 'cloudinary:divermataro/blog/discapacidad-hola-mundo/holamundo'
 ---
 
 DiverMataro acaba de llegar pero venimos dispuestos a recuperar el tiempo perdido… Hola discapacidad. Somos **[DiverMataro](/asociacion)**. Planteamos una iniciativa distinta para promover la igualdad y los derechos de las personas con Diversidad Funcional. Damos a conocer nuestro punto de vista sobre:
 
 ### ¡TODOS SOMOS IGUALES, TODOS SOMOS DIFERENTES!
 
-![Juntos por la diversidad](/images/blog/juntos-por-la-diversidad.webp)
+![Juntos por la diversidad](cloudinary:divermataro/blog/discapacidad-hola-mundo/juntos-por-la-diversidad)
 
 Dando la brasa hasta que consigamos que todas las personas estemos integradas en una sociedad inclusiva y diversa pero "normalizada". Esperamos contar con tod@s para llevarlo a cabo. [Únete a nosotros](/asociate). Juntos por la [accesibilidad](/servicios/accesibilidad-universal), inclusión e integración.
 

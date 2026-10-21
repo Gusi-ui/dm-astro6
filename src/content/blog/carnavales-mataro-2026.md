@@ -3,7 +3,7 @@ title: 'Rua de Carnestoltes 2026 en Mataró: cuando la inclusión ocupa la prime
 description: 'Crónica inclusiva de la Rua de Carnestoltes 2026 en Mataró desde la mirada de DiverMataró.'
 pubDate: 2026-02-14
 category: 'Activitats'
-heroImage: '/images/blog/carnavales2026.avif'
+heroImage: 'cloudinary:divermataro/blog/carnavales-mataro-2026/carnavales2026'
 ---
 
 La tarde del 14 de febrero de 2026, Mataró volvió a llenarse de música, color y creatividad. Las comparsas avanzaban entre aplausos, las carrozas desfilaban con meses de trabajo detrás y las familias ocupaban cada rincón del recorrido.
@@ -21,14 +21,14 @@ Las coreografías, los disfraces satíricos y la energía colectiva hicieron vib
 <div class="not-prose my-8 grid grid-cols-1 gap-4 md:grid-cols-[3fr_4fr]">
   <div class="overflow-hidden rounded-xl" style="height: 420px;">
     <img
-      src="/images/blog/Carnaval1.avif"
+      src="cloudinary:divermataro/blog/carnavales-mataro-2026/Carnaval1"
       alt="Persona disfrutando de la Rua desde la zona accesible en primera línea"
       style="width: 100%; height: 100%; object-fit: cover; object-position: top; border-radius: 0.75rem;"
     />
   </div>
   <div class="overflow-hidden rounded-xl" style="height: 420px;">
     <img
-      src="/images/blog/Carnaval2.avif"
+      src="cloudinary:divermataro/blog/carnavales-mataro-2026/Carnaval2"
       alt="La rúa de carnavales en Mataró, 2026"
       style="width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 0.75rem;"
     />
@@ -44,14 +44,14 @@ En el tramo final del recorrido se habilitó una **zona exclusiva para personas 
 <div class="not-prose my-8 grid grid-cols-1 gap-4 md:grid-cols-[4fr_4fr]">
   <div class="overflow-hidden rounded-xl" style="height: 420px;">
     <img
-      src="/images/blog/Celia.avif"
+      src="cloudinary:divermataro/blog/carnavales-mataro-2026/Celia"
       alt="Persona disfrutando de la Rua desde la zona accesible en primera línea"
       style="width: 100%; height: 100%; object-fit: cover; object-position: top; border-radius: 0.75rem;"
     />
   </div>
   <div class="overflow-hidden rounded-xl" style="height: 420px;">
     <img
-      src="/images/blog/Espacio1.avif"
+      src="cloudinary:divermataro/blog/carnavales-mataro-2026/Espacio1"
       alt="La rúa de carnavales en Mataró, 2026"
       style="width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 0.75rem;"
     />
@@ -77,14 +77,14 @@ La diferencia entre estar y participar es enorme. Y en esta edición, muchas per
 <div class="not-prose my-8 grid grid-cols-1 gap-4 md:grid-cols-[3fr_4fr]">
   <div class="overflow-hidden rounded-xl" style="height: 420px;">
     <img
-      src="/images/blog/teresa.avif"
+      src="cloudinary:divermataro/blog/carnavales-mataro-2026/teresa"
       alt="Persona disfrutando de la Rua desde la zona accesible en primera línea"
       style="width: 100%; height: 100%; object-fit: cover; object-position: top; border-radius: 0.75rem;"
     />
   </div>
   <div class="overflow-hidden rounded-xl" style="height: 420px;">
     <img
-      src="/images/blog/rua.avif"
+      src="cloudinary:divermataro/blog/carnavales-mataro-2026/rua"
       alt="La rúa de carnavales en Mataró, 2026"
       style="width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 0.75rem;"
     />

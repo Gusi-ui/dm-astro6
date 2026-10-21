@@ -3,7 +3,7 @@ title: 'Trampas'
 description: 'Las rejillas de alcantarillado como trampas peligrosas para sillas de ruedas y el desafío de la accesibilidad urbana.'
 pubDate: 2020-07-15
 category: 'Denuncia'
-heroImage: '/images/blog/alcantarilla.webp'
+heroImage: 'cloudinary:divermataro/blog/trampas/alcantarilla'
 ---
 
 Las rejillas de alcantarillado pueden ser una trampa peligrosa para las sillas de ruedas y otros dispositivos de movilidad. Las aberturas de las rejillas a menudo son lo suficientemente grandes como para que las ruedas de una silla de ruedas se atasquen, lo que puede causar accidentes y lesiones a los usuarios de sillas de ruedas.

@@ -3,7 +3,7 @@ title: 'Paseando con los regidores'
 description: 'Una iniciativa de DiverMataró para que los regidores experimenten en primera persona la accesibilidad de la ciudad.'
 pubDate: 2022-12-16
 category: 'Accesibilidad'
-heroImage: '/images/blog/silla.webp'
+heroImage: 'cloudinary:divermataro/blog/paseo-por-mataro-con-los-regidores/silla'
 ---
 
 El día 16 de diciembre de 2022, por fin se llevó a cabo una de las reivindicaciones de la asociación **[DiverMataró](/asociacion)**. Una idea que teníamos en mente desde que iniciamos nuestra andadura como colectivo de personas con diversidad funcional.
@@ -18,10 +18,10 @@ En una ciudad diseñada y construida sin tener en cuenta a todos los ciudadanos.
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-8 items-center">
   <div class="w-full h-full flex items-center justify-center">
-    <img src="/images/blog/sarai1.webp" alt="Regidores experimentando la accesibilidad" class="w-full h-auto rounded-xl shadow-lg object-cover max-h-[300px]">
+    <img src="cloudinary:divermataro/blog/paseo-por-mataro-con-los-regidores/sarai1" alt="Regidores experimentando la accesibilidad" class="w-full h-auto rounded-xl shadow-lg object-cover max-h-[300px]">
   </div>
   <div class="w-full h-full flex items-center justify-center">
-    <img src="/images/blog/jordi.webp" alt="Jordi de DiverMataró con regidores" class="w-full h-auto rounded-xl shadow-lg object-cover max-h-[300px]">
+    <img src="cloudinary:divermataro/blog/paseo-por-mataro-con-los-regidores/jordi" alt="Jordi de DiverMataró con regidores" class="w-full h-auto rounded-xl shadow-lg object-cover max-h-[300px]">
   </div>
 </div>
 

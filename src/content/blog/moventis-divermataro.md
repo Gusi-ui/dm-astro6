@@ -3,7 +3,7 @@ title: 'Moventis y DiverMataró: Un Compromiso Compartido'
 description: 'Colaboración para mejorar la accesibilidad en el transporte público de Mataró, garantizando la movilidad para todos.'
 pubDate: 2024-05-20
 category: 'Transporte'
-heroImage: '/images/blog/moventis.avif'
+heroImage: 'cloudinary:divermataro/blog/moventis-divermataro/moventis'
 ---
 
 En un mundo cada vez más consciente de la necesidad de inclusión y accesibilidad, el transporte público juega un papel fundamental en garantizar la movilidad de todas las personas, independientemente de sus capacidades. **Moventis**, una de las principales operadoras de transporte en Cataluña, ha demostrado un firme compromiso con la accesibilidad, colaborando estrechamente con entidades como **[DiverMataró](/asociacion)** para mejorar la experiencia de las personas con diversidad funcional.
@@ -22,7 +22,7 @@ Este sistema permite a las personas con discapacidad visual acceder a la informa
 
 Conscientes de que la tecnología por sí sola no es suficiente, Moventis ha implementado programas de formación para su personal. Estos programas están diseñados para sensibilizar a los empleados sobre las necesidades de las personas con diversidad funcional y proporcionarles las herramientas necesarias para ofrecer un servicio más inclusivo y accesible.
 
-![Autobús de la flota](/images/blog/autobus.webp)
+![Autobús de la flota](cloudinary:divermataro/blog/moventis-divermataro/autobus)
 
 Una de las acciones más importantes que ha llevado a cabo Moventis es la formación específica para sus conductores y trabajadores. En estas sesiones, el personal aprende a manejar correctamente rampas y elevadores, y también a ofrecer una atención más cercana y respetuosa a personas con diferentes necesidades.
 
@@ -40,13 +40,13 @@ La accesibilidad no es un lujo, es un derecho. Un transporte público accesible 
 
 Que existan empresas y asociaciones comprometidas con estos temas es una muy buena noticia. Pero también lo es que la ciudadanía participe, opine y se implique, como propone DiverMataró con su mapa.
 
-![Toda nuestra flota de autobuses](/images/blog/Moventis11.avif)
+![Toda nuestra flota de autobuses](cloudinary:divermataro/blog/moventis-divermataro/Moventis11)
 
 ## DiverMataró: Impulsando la Accesibilidad en la Comunidad
 
 ¿Te has preguntado alguna vez cómo es subir a un autobús en silla de ruedas? ¿O qué tan complicado puede ser para una persona mayor acceder al transporte público? En Mataró, dos organizaciones están trabajando juntas para hacer que moverse por la ciudad sea más fácil para todas las personas, especialmente aquellas con movilidad reducida o alguna discapacidad.
 
-![Persona invidente](/images/blog/Persona-invidente.webp)
+![Persona invidente](cloudinary:divermataro/blog/moventis-divermataro/Persona-invidente)
 
 Hablamos de Moventis, la empresa que gestiona gran parte del transporte público en la ciudad, y DiverMataró, una entidad que promueve la inclusión de las personas con diversidad funcional. Ambas han unido fuerzas con un objetivo común: mejorar la accesibilidad en el transporte público. Y lo están haciendo de formas muy concretas y efectivas.
 
