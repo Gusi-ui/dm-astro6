@@ -24,11 +24,20 @@ Pero hay un problema: **la exposición está situada en la primera planta y el a
 
 Para las personas con diversidad funcional física que no podemos subir las escaleras, esto significa algo muy sencillo y muy grave: no podemos entrar.
 
-<div class="not-prose my-8 flex justify-center">
+<div class="not-prose my-8 grid grid-cols-1 gap-4 md:grid-cols-2">
   <img
     src="cloudinary:divermataro/blog/ascensor-can-serra-museu-mataro/can-serra-cartel"
     alt="Cartel de la exposición «Pioneres del feminisme a Mataró en la Transició» visto tras la reja de una ventana de Can Serra"
-    style="max-width: 100%; max-height: 640px; height: auto; border-radius: 0.75rem;"
+    width="1152"
+    height="1536"
+    style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; object-position: center 45%; border-radius: 0.75rem;"
+  />
+  <img
+    src="cloudinary:divermataro/blog/ascensor-can-serra-museu-mataro/can-serra-entrada"
+    alt="Una mujer en silla de ruedas eléctrica ante la puerta de piedra de Can Serra, Museu de Mataró"
+    width="1200"
+    height="1600"
+    style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;"
   />
 </div>
 
