@@ -10,6 +10,7 @@ import {
   resolveImageSrc,
 } from '../../lib/cloudinary';
 import { transformCloudinaryHtml } from '../../lib/cloudinary-html';
+import { transformYouTubeHtml } from '../../lib/youtube-html';
 import { getSocialImageMeta } from '../../lib/getSocialImage';
 import { getCollection, render } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
@@ -35,7 +36,9 @@ interface Props {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
-const articleHtml = post.rendered?.html ? transformCloudinaryHtml(post.rendered.html) : null;
+const articleHtml = post.rendered?.html
+  ? transformYouTubeHtml(transformCloudinaryHtml(post.rendered.html))
+  : null;
 
 const currentId = post.id || post.slug || 'unknown';
 
@@ -293,6 +296,28 @@ const relatedPosts = allPosts
                 }, 2000);
               });
             }
+          </script>
+          <script>
+            // Las miniaturas de YouTube (src/lib/youtube-html.ts) se cambian por el
+            // vídeo real al pulsarlas, con youtube-nocookie para no dejar cookies antes.
+            document.addEventListener('click', (event) => {
+              const facade = (event.target as Element).closest<HTMLButtonElement>('.yt-facade');
+              if (!facade?.dataset.ytId) return;
+
+              const iframe = document.createElement('iframe');
+              iframe.src = `https://www.youtube-nocookie.com/embed/${facade.dataset.ytId}?autoplay=1`;
+              iframe.title = facade.dataset.ytTitle ?? 'Vídeo de YouTube';
+              iframe.allow =
+                'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+              iframe.allowFullscreen = true;
+              iframe.className = facade.className.replace('yt-facade', '').trim();
+              iframe.setAttribute('style', facade.getAttribute('style') ?? '');
+              iframe.style.border = 'none';
+              iframe.style.width ||= '100%';
+
+              facade.replaceWith(iframe);
+              iframe.focus();
+            });
           </script>
           {/* Artículos relacionados */}
           {relatedPosts.length > 0 && (
