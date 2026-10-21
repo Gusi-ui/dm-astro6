@@ -12,10 +12,6 @@ export default {
     'prose-a:text-primary-600',
     'hover:prose-a:text-primary-700',
     'prose-img:rounded-xl',
-    {
-      pattern: /^prose(-\w+)?$/,
-      variants: ['lg', 'xl', '2xl'],
-    },
   ],
   theme: {
     extend: {

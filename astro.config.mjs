@@ -29,6 +29,9 @@ export default defineConfig({
     }),
   },
   build: {
+    // blog/x.html en lugar de blog/x/index.html: Cloudflare la sirve en /blog/x,
+    // que es la forma de todos los enlaces, sin redirigir a /blog/x/
+    format: 'file',
     inlineStylesheets: 'auto',
     assets: '_astro',
   },
@@ -37,7 +40,6 @@ export default defineConfig({
       exclude: ['astro/zod'],
     },
     build: {
-      cssCodeSplit: false,
       rollupOptions: {
         output: {
           assetFileNames: '_astro/[name].[hash][extname]',

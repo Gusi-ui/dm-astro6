@@ -1,0 +1,11 @@
+# Imágenes de public/: sin hash en el nombre, así que caducan en 7 días en vez
+# de ser inmutables. Si se sustituye una foto conservando el nombre, puede
+# tardar hasta una semana en verse en navegadores que ya la tenían.
+/images/*
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+
+/logoDiverMataro.png
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+
+/favicondivermataro.png
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400

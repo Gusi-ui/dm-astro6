@@ -116,6 +116,20 @@ function applyCloudinaryTransform(url: string, transform: string): string {
 }
 
 /**
+ * Formato, calidad y ancho para no servir los originales (de hasta 1,4 MB).
+ * Los SVG y AVIF se dejan tal cual: f_auto aquí entrega WebP, que pesa más que un AVIF ya optimizado.
+ */
+const DESKTOP_DELIVERY = 'f_auto,q_auto,w_1600';
+const MOBILE_DELIVERY = 'f_auto,q_auto,w_800';
+
+function optimizeUrl(url: string, delivery: string): string {
+  if (url.endsWith('.svg') || url.endsWith('.avif')) {
+    return url;
+  }
+  return applyCloudinaryTransform(url, delivery);
+}
+
+/**
  * Obtiene una imagen de hero aleatoria con todas sus propiedades
  */
 export function getRandomHeroImage(): HeroImage {
@@ -134,10 +148,9 @@ export function getHeroImage(index: number): HeroImage {
  * Genera la URL optimizada para móvil con transformaciones de Cloudinary
  */
 export function getMobileHeroUrl(image: HeroImage): string {
-  if (image.mobileTransform) {
-    return applyCloudinaryTransform(image.url, image.mobileTransform);
-  }
-  return image.url;
+  // El encuadre queda delante para que el ancho se aplique al recorte final
+  const url = optimizeUrl(image.url, MOBILE_DELIVERY);
+  return image.mobileTransform ? applyCloudinaryTransform(url, image.mobileTransform) : url;
 }
 
 /**
@@ -151,7 +164,7 @@ export function getHeroStyles(image: HeroImage): {
   mobilePosition: string;
 } {
   return {
-    desktopUrl: image.url,
+    desktopUrl: optimizeUrl(image.url, DESKTOP_DELIVERY),
     mobileUrl: getMobileHeroUrl(image),
     desktopPosition: image.desktopPosition,
     mobilePosition: image.mobilePosition,
