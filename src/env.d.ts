@@ -6,6 +6,5 @@ declare namespace Cloudflare {
     DB: D1Database;
     RESEND_API_KEY?: string;
     ENVIRONMENT?: string;
-    NODE_VERSION?: string;
   }
 }
