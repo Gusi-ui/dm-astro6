@@ -3,7 +3,7 @@ title: 'La Crispeta'
 description: 'Activitat lúdica que combina moviment i diversió per descobrir el món del circ a través del joc i la inclusió.'
 pubDate: 2025-09-03
 category: 'Activitats'
-heroImage: '/images/blog/La-Crispeta.webp'
+heroImage: 'cloudinary:divermataro/blog/la-crispeta/La-Crispeta'
 ---
 
 **COL·LECTIU DE CIRC SOCIAL**

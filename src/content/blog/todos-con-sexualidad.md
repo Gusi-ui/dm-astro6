@@ -3,7 +3,7 @@ title: 'Nosotr@s también! - Todos con sexualidad'
 description: 'Reflexión sobre la sexualidad en personas con diversidad funcional y la importancia de la educación sexual inclusiva.'
 pubDate: 2020-05-20
 category: 'Social'
-heroImage: '/images/blog/discapacidad-sexo.webp'
+heroImage: 'cloudinary:divermataro/blog/todos-con-sexualidad/discapacidad-sexo'
 ---
 
 Mostrando así que no sólo poseen cuerpos deseantes y pueden ser cuerpos deseables, sino que esos cuerpos pueden crear nuevos imaginarios políticos que redefinan. Desde el concepto de masculinidad hasta el de democracia. La sexualidad es innata en todos los seres vivos ¿cómo alguien podría no ser sexual?

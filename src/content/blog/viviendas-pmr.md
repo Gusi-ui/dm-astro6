@@ -3,7 +3,7 @@ title: 'Viviendas para PMR (personas con movilidad reducida)'
 description: 'Análisis crítico sobre la accesibilidad en edificios supuestamente adaptados y la necesidad de invertir en una sociedad más inclusiva.'
 pubDate: 2024-03-15
 category: 'Accesibilidad'
-heroImage: '/images/blog/viviendas-pmr.webp'
+heroImage: 'cloudinary:divermataro/blog/viviendas-pmr/viviendas-pmr'
 ---
 
 Estas viviendas están pensadas para PMR (personas con movilidad reducida), cuyo diseño debería garantizar la [vida independiente](/blog/la-vida-independiente) de sus residentes. Pues bien; la única manera para salir-entrar del edificio es un ascensor que; cuando se avería deja a las personas que viven en el edificio recluidas en nuestras viviendas o en la calle sin poder acceder.
@@ -69,4 +69,4 @@ La inversión en accesibilidad puede abarcar varias áreas, tales como:
 
 Destinar dinero a ayudas para edificios con dificultades de accesibilidad es una inversión en el futuro de nuestra sociedad. Es un paso crucial para garantizar que todos los individuos puedan vivir de manera independiente y participar plenamente en la comunidad. Al priorizar la accesibilidad, estamos construyendo una sociedad más justa, equitativa e inclusiva para todos.
 
-![Edificio accesible](/images/blog/edificiopumsa.webp)
+![Edificio accesible](cloudinary:divermataro/blog/viviendas-pmr/edificiopumsa)

@@ -3,7 +3,7 @@ title: 'Avaries als ascensors de les estacions de Renfe'
 description: 'Denúncia sobre el mal estat dels ascensors a les estacions de Rodalies i la resposta de Renfe.'
 pubDate: 2020-11-18
 category: 'Denuncia'
-heroImage: '/images/blog/renfe.webp'
+heroImage: 'cloudinary:divermataro/blog/estacions-de-renfe/renfe'
 ---
 
 Recollim la denúncia d'en Jordi Porta, usuari de la línia de **Renfe al Maresme**. Va trigar una hora i mitja a fer un trajecte de 20 minuts perquè va trobar diversos ascensors espatllats i no podia sortir de l'estació, una problemàtica que afecta al [transport públic adaptat](/blog/transporte-publico-adaptado) en general.

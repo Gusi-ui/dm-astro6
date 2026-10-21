@@ -3,7 +3,7 @@ title: 'Orígenes y Significado del Día de Sant Jordi'
 description: 'La celebración de la cultura, el amor y la inclusión en Mataró durante una de las festividades más emblemáticas.'
 pubDate: 2024-04-23
 category: 'Eventos'
-heroImage: '/images/blog/sant-jordi.webp'
+heroImage: 'cloudinary:divermataro/blog/sant-jordi-mataro/sant-jordi'
 ---
 
 El Día de Sant Jordi, celebrado el 23 de abril, es una de las festividades más emblemáticas de Cataluña. Su origen se remonta a una antigua leyenda que ha perdurado a lo largo de los siglos y se ha convertido en parte integral del patrimonio cultural catalán.

@@ -3,7 +3,7 @@ title: 'Opiniones gratuitas'
 description: 'La importancia de contrastar la información y formar opiniones propias sobre la accesibilidad y diversidad funcional.'
 pubDate: 2024-04-05
 category: 'Reflexión'
-heroImage: '/images/blog/Microfono.webp'
+heroImage: 'cloudinary:divermataro/blog/opiniones-gratuitas/Microfono'
 ---
 
 Estamos en la era de la información; que algunas veces es desinformación; leemos titulares, pero no los contenidos. Leemos noticias y por la influencia de otras noticias, nos creamos opiniones equivocadas de la verdadera situación. Es necesario contrastar y sobre todo, filtrar todo lo que leemos, para tener una opinión propia y no manipulada.
@@ -12,7 +12,7 @@ Ya hace algún tiempo. **[DiverMataro](/asociacion)** (Diver=Diversidad – Mata
 
 Nos hemos encontrado; y nos seguimos encontrando; que muchos de estos inconvenientes son invisibles para la gran mayoría de ciudadanos; sin embargo; son un problema para una gran minoría de "otros ciudadanos"; que cada día está más dispuesta a participar en la sociedad porque consideran que NO SON personas diferentes ni de segunda categoría; son personas iguales y con los mismos derechos que tod@s los demás.
 
-![Juntos por la diversidad](/images/blog/juntos-por-la-diversidad.webp)
+![Juntos por la diversidad](cloudinary:divermataro/blog/opiniones-gratuitas/juntos-por-la-diversidad)
 
 ## Opiniones con conocimiento
 

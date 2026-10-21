@@ -3,7 +3,7 @@ title: 'Un cambio de miradas'
 description: 'Reflexión sobre el concepto de "cambio de miradas" y la realidad de la accesibilidad en nuevos proyectos arquitectónicos.'
 pubDate: 2022-07-15
 category: 'Accesibilidad'
-heroImage: '/images/blog/Miradas.webp'
+heroImage: 'cloudinary:divermataro/blog/un-cambio-de-miradas/Miradas'
 ---
 
 Últimamente tenemos un término de moda corriendo mucho por todos los organismos e instituciones. **Cambio de miradas**, nos parece una idea excelente, puesto que, tal y cómo se miraban las cosas hasta ahora, excluía más que incluía a individuos en la sociedad. Desde [nuestra asociación](/asociacion) creemos que este cambio es imprescindible. Hasta ahí todo perfecto, sin embargo, vamos observando que este cambio de miradas, ¿Está siendo realmente realizado desde la perspectiva adecuada? ¿se está teniendo en cuenta y se esta siendo asesorando por las personas realmente implicadas y supuestamente beneficiarias de este cambio de miradas?.
