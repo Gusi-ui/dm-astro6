@@ -3,7 +3,7 @@ title: 'La Vida Independiente'
 description: 'Promoviendo la vida independiente a través de la asistencia personal como alternativa a la institucionalización.'
 pubDate: 2023-11-23
 category: 'Derechos'
-heroImage: '/images/blog/Dependiente.avif'
+heroImage: 'cloudinary:divermataro/blog/la-vida-independiente/Dependiente'
 ---
 
 Promoviendo la Vida Independiente a través de la Asistencia Personal: Una Alternativa a la Ayuda Domiciliaria o Residencial.

@@ -3,7 +3,7 @@ title: 'Denuncias anónimas de accesibilidad'
 description: 'Aparecen símbolos de accesibilidad pintados en zonas inaccesibles de Mataró como forma de protesta anónima.'
 pubDate: 2021-10-15
 category: 'Denuncia'
-heroImage: '/images/blog/denunciasanonimas.webp'
+heroImage: 'cloudinary:divermataro/blog/denuncias-anonimas-de-accesibilidad/denunciasanonimas'
 ---
 
 Al parecer alguien esta haciendo pintadas anónimas con el símbolo mas conocido de **[accesibilidad universal](/servicios/accesibilidad-universal)**; (la típica silla de ruedas, con el que [DiverMataro](/asociacion) no esta demasiado en acuerdo; pero que acepta) en diversos lugares de la ciudad de Mataró.
@@ -16,13 +16,13 @@ Son lugares **inaccesibles** para tod@s las personas con **diversidad funcional*
 
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
   <div>
-    <img src="/images/blog/1.webp" alt="Zona inaccesible 1" class="w-full h-64 object-cover rounded-xl shadow-lg transition-transform hover:scale-105" />
+    <img src="cloudinary:divermataro/blog/denuncias-anonimas-de-accesibilidad/1" alt="Zona inaccesible 1" class="w-full h-64 object-cover rounded-xl shadow-lg transition-transform hover:scale-105" />
   </div>
   <div>
-    <img src="/images/blog/2.webp" alt="Zona inaccesible 2" class="w-full h-64 object-cover rounded-xl shadow-lg transition-transform hover:scale-105" />
+    <img src="cloudinary:divermataro/blog/denuncias-anonimas-de-accesibilidad/2" alt="Zona inaccesible 2" class="w-full h-64 object-cover rounded-xl shadow-lg transition-transform hover:scale-105" />
   </div>
   <div>
-    <img src="/images/blog/3.webp" alt="Zona inaccesible 3" class="w-full h-64 object-cover rounded-xl shadow-lg transition-transform hover:scale-105" />
+    <img src="cloudinary:divermataro/blog/denuncias-anonimas-de-accesibilidad/3" alt="Zona inaccesible 3" class="w-full h-64 object-cover rounded-xl shadow-lg transition-transform hover:scale-105" />
   </div>
 </div>
 
@@ -34,4 +34,4 @@ Así que desde **DiverMataro**; aunque sabemos que no es la manera ortodoxa de r
 
 Esta adaptación es peligrosa por no decir suicida. Componentes del grupo **DiverMataró** estuvieron evaluando de cerca e intentando probar a circular por esa esquina en silla de ruedas. Evidentemente es una tarea arriesgada suicida y altamente peligrosa así que creemos que es bastante fácil darse cuenta de que dicha adaptación no cumple ninguna de las normativas de **accesibilidad**, es decir, no ha habido ningún tipo de control al efectuar tal maleficio para personas con **diversidad funcional**, como también ocurre con las [trampas de las rejillas de alcantarillado](/blog/trampas).
 
-![Peligro de accesibilidad](/images/blog/g1.jpg)
+![Peligro de accesibilidad](cloudinary:divermataro/blog/denuncias-anonimas-de-accesibilidad/g1)
