@@ -35,6 +35,7 @@ const sizes = getImageSizes('hero');
   sizes={isCloudinarySource(src) ? sizes : undefined}
   alt={alt}
   loading={loading}
+  fetchpriority={loading === 'eager' ? 'high' : undefined}
   decoding="async"
   class:list={[
     'w-full rounded-xl object-cover',

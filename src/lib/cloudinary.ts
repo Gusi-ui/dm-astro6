@@ -1,7 +1,5 @@
 const DEFAULT_CLOUD_NAME = 'dzs4olh43';
-const DEFAULT_SITE = 'https://divermataro.org';
 const CLOUDINARY_PREFIX = 'cloudinary:';
-const CLOUDINARY_FETCH_PREFIX = 'cloudinary-fetch:';
 
 /** Transformaciones base: formato automático (AVIF/WebP) y calidad adaptativa */
 const BASE_TRANSFORMS = 'f_auto,q_auto:eco,dpr_auto';
@@ -44,38 +42,25 @@ export const getCloudName = (): string =>
   (typeof import.meta !== 'undefined' && import.meta.env?.PUBLIC_CLOUDINARY_CLOUD_NAME) ||
   DEFAULT_CLOUD_NAME;
 
-export const getSiteOrigin = (): string =>
-  (typeof import.meta !== 'undefined' && import.meta.env?.SITE) || DEFAULT_SITE;
-
 export const isCloudinaryUrl = (src: string): boolean => src.includes('res.cloudinary.com');
 
 export const isCloudinaryId = (src: string): boolean => src.startsWith(CLOUDINARY_PREFIX);
 
-export const isCloudinaryFetch = (src: string): boolean => src.startsWith(CLOUDINARY_FETCH_PREFIX);
-
 export const isCloudinarySource = (src: string): boolean =>
-  isCloudinaryUrl(src) || isCloudinaryId(src) || isCloudinaryFetch(src);
+  isCloudinaryUrl(src) || isCloudinaryId(src);
 
 export const parseCloudinaryId = (src: string): string =>
   src.slice(CLOUDINARY_PREFIX.length).replace(/^\//, '');
-
-export const parseCloudinaryFetchPath = (src: string): string => {
-  const path = src.slice(CLOUDINARY_FETCH_PREFIX.length);
-  return path.startsWith('/') ? path : `/${path}`;
-};
 
 export const cloudinaryUrl = (publicId: string, transforms = BASE_TRANSFORMS): string => {
   const cleanId = publicId.replace(/^\//, '');
   return `https://res.cloudinary.com/${getCloudName()}/image/upload/${transforms}/${cleanId}`;
 };
 
-export const cloudinaryFetchUrl = (remoteUrl: string, transforms = BASE_TRANSFORMS): string =>
-  `https://res.cloudinary.com/${getCloudName()}/image/upload/${transforms}/${remoteUrl}`;
-
 const withWidth = (transforms: string, width: number): string => `${transforms},w_${width}`;
 
 /**
- * Resuelve una fuente de imagen local, Cloudinary (public ID) o fetch remoto.
+ * Resuelve una fuente de imagen local o de Cloudinary (public ID).
  */
 export const resolveImageSrc = (
   src: string,
@@ -101,11 +86,6 @@ export const resolveImageSrc = (
 
   if (isCloudinaryId(src)) {
     return cloudinaryUrl(parseCloudinaryId(src), transforms);
-  }
-
-  if (isCloudinaryFetch(src)) {
-    const remoteUrl = `${getSiteOrigin()}${parseCloudinaryFetchPath(src)}`;
-    return cloudinaryFetchUrl(remoteUrl, transforms);
   }
 
   return src;
