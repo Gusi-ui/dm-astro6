@@ -1,0 +1,16 @@
+---
+import { HONEYPOT_FIELD } from '../../lib/honeypot';
+---
+
+<!--
+  Campo trampa contra bots. Queda fuera de la pantalla, fuera del orden de
+  tabulación y oculto a los lectores de pantalla, así que solo lo rellenan los
+  bots que completan todos los campos.
+-->
+<div
+  aria-hidden="true"
+  style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden;"
+>
+  <label for={HONEYPOT_FIELD}>No rellenes este campo</label>
+  <input type="text" id={HONEYPOT_FIELD} name={HONEYPOT_FIELD} tabindex="-1" autocomplete="off" />
+</div>
