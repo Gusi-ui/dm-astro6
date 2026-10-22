@@ -4,6 +4,12 @@
   "account_id": "1f7c0d40473dbca21d83ed0495b171db",
   "compatibility_date": "2026-10-12",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  // Workers Logs: guarda 3 días los console.error del Worker (incluido en el
+  // plan gratuito). Sin esto, el fallo de Resend de 2026 solo se veía con
+  // `wrangler tail` en directo.
+  "observability": {
+    "enabled": true,
+  },
   "routes": [
     {
       "pattern": "divermataro.org",
