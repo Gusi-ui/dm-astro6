@@ -2,6 +2,7 @@
 title: 'Transporte público adaptado'
 description: 'La importancia de un transporte público inclusivo: desafíos, soluciones y el compromiso de Mataró Bus.'
 pubDate: 2023-09-20
+updatedDate: 2026-10-22
 category: 'Transporte'
 heroImage: 'cloudinary:divermataro/blog/transporte-publico-adaptado/Transporte-adaptado'
 ---
@@ -12,7 +13,7 @@ En este artículo, exploraremos la importancia de un transporte público adaptad
 
 Ante todo, nos gustaría destacar la iniciativa de los trabajadores de la empresa **Mataró bus**, cuya colaboración con nuestra entidad hemos detallado en el artículo sobre [Moventis y DiverMataró](/blog/moventis-divermataro), por proponer a la empresa un evento como el que se ha celebrado hoy en el parque central. Hemos visto con agrado la implicación de todo el colectivo de trabajadores, así como la empresa y las diversas autoridades del ayuntamiento, a la hora de entender las necesidades de las personas con diversidad funcional cuando tienen que desplazarse en transporte público.
 
-La disponibilidad de transportes públicos adaptados contribuye a la inclusión social de las personas con discapacidad, ya que les brinda la posibilidad de participar activamente en la vida cotidiana. Al poder desplazarse de forma independiente, estas personas pueden acceder a diferentes espacios y servicios, como centros de trabajo, centros educativos, centros de salud, entre otros, lo que les permite integrarse plenamente en la sociedad.
+La disponibilidad de transportes públicos adaptados contribuye a la inclusión social de las personas con discapacidad, ya que les brinda la posibilidad de participar activamente en la vida cotidiana. Al poder [desplazarse de forma independiente](/blog/la-vida-independiente), estas personas pueden acceder a diferentes espacios y servicios, como centros de trabajo, centros educativos, centros de salud, entre otros, lo que les permite integrarse plenamente en la sociedad.
 
 <div class="aspect-w-16 aspect-h-9 my-8" style="min-height: 400px;">
   <iframe 
@@ -35,7 +36,15 @@ Las personas con diversidad funcional enfrentan una serie de desafíos al utiliz
 - **Falta de capacitación del personal:** El personal del transporte público a menudo carece de capacitación adecuada sobre cómo ayudar a las personas con diversidad funcional, lo que puede generar experiencias desafiantes o incluso discriminatorias para los usuarios.
 - **Falta de conciencia pública:** La falta de conciencia sobre las necesidades y los derechos de las personas con diversidad funcional puede llevar a la discriminación y a la falta de empatía por parte de otros pasajeros y del personal del transporte público.
 
-![Persona invidente usando transporte](cloudinary:divermataro/blog/transporte-publico-adaptado/Persona-invidente)
+<div class="not-prose my-8 flex justify-center">
+  <img
+    src="cloudinary:divermataro/blog/transporte-publico-adaptado/Persona-invidente"
+    alt="Una persona con los ojos vendados, guiada dentro de un autobús durante una actividad de sensibilización"
+    width="600"
+    height="675"
+    style="width: 100%; max-width: 480px; height: auto; border-radius: 0.75rem;"
+  />
+</div>
 
 Estos desafíos pueden limitar significativamente la capacidad de las personas con diversidad funcional para acceder al transporte público de manera igualitaria y segura.
 
@@ -55,3 +64,5 @@ Además de estas soluciones, la colaboración entre los gobiernos, las autoridad
 Un transporte público adaptado es fundamental para garantizar la movilidad y la inclusión de las personas con diversidad funcional en entornos urbanos. Organizaciones como [DiverMataró](/asociacion) trabajamos cada día para que esto sea una realidad. Al abordar los desafíos de accesibilidad y adoptar soluciones inclusivas, podemos crear entornos de transporte público que sean accesibles, seguros y equitativos para todos los usuarios.
 
 Sin embargo, mejorar la accesibilidad y la inclusión en el transporte público no es solo una cuestión de cumplimiento normativo, sino también de justicia social, tal como reconoce la [Convención de las Naciones Unidas sobre los Derechos de las Personas con Discapacidad](https://www.un.org/development/desa/disabilities/convention-on-the-rights-of-persons-with-disabilities.html).
+
+En España, el <a href="https://www.boe.es/eli/es/rd/2007/11/23/1544/con" target="_blank" rel="noopener noreferrer">Real Decreto 1544/2007</a> regula las condiciones básicas de accesibilidad y no discriminación en los modos de transporte para las personas con discapacidad. Seguimos todas estas cuestiones en nuestras [reivindicaciones sobre transporte](/blog/reivindicacion/transporte). Si quieres ayudarnos a mejorar la movilidad en Mataró, [hazte socio o socia de DiverMataró](/asociate).

@@ -2,6 +2,7 @@
 title: 'Trampas'
 description: 'Las rejillas de alcantarillado como trampas peligrosas para sillas de ruedas y el desafío de la accesibilidad urbana.'
 pubDate: 2020-07-15
+updatedDate: 2026-10-22
 category: 'Denuncia'
 heroImage: 'cloudinary:divermataro/blog/trampas/alcantarilla'
 ---
@@ -22,6 +23,8 @@ Las rejillas de alcantarillado están diseñadas para permitir que el agua fluya
 
 Uno de los problemas clave es que las dimensiones estándar de las rejillas de alcantarillado no tienen en cuenta las necesidades de accesibilidad de las personas con discapacidades. Las aberturas suelen ser lo suficientemente anchas para que una silla de ruedas pueda caer en ellas, especialmente si las ruedas delanteras o traseras no se alinean correctamente al pasar sobre la rejilla. Además, las rejillas rotas, sueltas o desalineadas pueden aumentar aún más el riesgo de que las sillas de ruedas se queden atascadas.
 
+Y no es por falta de normativa. La <a href="https://www.boe.es/eli/es/o/2021/07/23/tma851/con" target="_blank" rel="noopener noreferrer">Orden TMA/851/2021</a>, que regula la accesibilidad de los espacios públicos urbanizados, establece en su artículo 12 que las rejillas de las zonas peatonales deben colocarse enrasadas con el pavimento y que sus aberturas no pueden superar el tamaño de un círculo de 1,6 cm de diámetro.
+
 ### Consecuencias para las Personas con Discapacidad
 
 Para las personas que dependen de sillas de ruedas para su movilidad, encontrarse con una rejilla de alcantarillado puede ser una experiencia aterradora. Además del peligro físico de quedar atrapado, existe el riesgo de lesiones graves si la silla de ruedas vuelca como resultado del atasco. Estos incidentes pueden provocar desde lesiones menores hasta fracturas óseas graves, lo que afecta tanto la movilidad como la calidad de vida de la persona afectada.
@@ -33,3 +36,7 @@ Además de los peligros físicos, encontrarse con una rejilla de alcantarillado 
 La [accesibilidad universal](/servicios/accesibilidad-universal) urbana es un desafío importante en la mayoría de las ciudades de todo el mundo. A pesar de los avances en la conciencia sobre la discapacidad y la legislación en materia de accesibilidad, muchas ciudades siguen siendo difíciles de navegar para las personas con discapacidad. Las barreras físicas, como las rejillas de alcantarillado, son solo una de las muchas dificultades a las que se enfrentan diariamente las personas con discapacidad.
 
 La falta de accesibilidad no solo afecta a las personas con discapacidad, como hemos comprobado con las [denuncias anónimas en las calles de Mataró](/blog/denuncias-anonimas-de-accesibilidad), sino que también tiene un impacto en la sociedad en su conjunto. Una ciudad que no es accesible para todos limita la participación y la inclusión de las personas con discapacidad en la vida comunitaria, lo que a su vez reduce la diversidad y la riqueza cultural de la ciudad. Además, la falta de accesibilidad puede obstaculizar el acceso a oportunidades educativas, laborales y recreativas para las personas con discapacidad, lo que perpetúa la desigualdad y la exclusión.
+
+Lo comprobaron también los [regidores que recorrieron la ciudad con nosotros en vehículos para personas con movilidad reducida](/blog/paseo-por-mataro-con-los-regidores). En Cataluña, la <a href="https://www.boe.es/eli/es-ct/l/2014/10/30/13/con" target="_blank" rel="noopener noreferrer">Llei 13/2014 d'accessibilitat</a> obliga a que los espacios de uso público garanticen la autonomía de las personas con discapacidad.
+
+Si encuentras una rejilla peligrosa en Mataró, [cuéntanoslo](/contacto) y la sumaremos a nuestras [reivindicaciones sobre los espacios de la ciudad](/blog/reivindicacion/accesibilidad-espacios). Y si quieres sumarte, [hazte socio o socia de DiverMataró](/asociate).
