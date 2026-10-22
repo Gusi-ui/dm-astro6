@@ -11,6 +11,8 @@ interface Props {
   ogImageWidth?: number;
   ogImageHeight?: number;
   canonicalUrl?: string;
+  /** Pide a los buscadores que no indexen la página (p. ej., confirmaciones) */
+  noindex?: boolean;
 }
 
 const {
@@ -22,6 +24,7 @@ const {
   ogImageWidth = 1200,
   ogImageHeight = 630,
   canonicalUrl: canonicalUrlProp,
+  noindex = false,
 } = Astro.props;
 
 const defaultOgImage =
@@ -47,6 +50,7 @@ const canonicalUrl = canonicalUrlProp ?? new URL(canonicalPath, Astro.site || As
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <link rel="canonical" href={canonicalUrl} />
+    {noindex && <meta name="robots" content="noindex" />}
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content={ogImage ? 'article' : 'website'} />
