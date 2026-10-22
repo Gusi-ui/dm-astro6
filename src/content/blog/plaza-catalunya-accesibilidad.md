@@ -2,6 +2,7 @@
 title: 'Una rampa no es una ciudad: la reforma de la Plaza de Cataluña de Mataró y la accesibilidad que falta'
 description: 'Las obras en la Plaza de Cataluña prometen accesibilidad y seguridad, pero ¿para quién? Análisis de lo que la reforma resuelve, lo que silencia y el plan municipal en revisión.'
 pubDate: 2026-06-06
+updatedDate: 2026-10-22
 category: 'Accesibilidad'
 heroImage: 'cloudinary:divermataro/blog/plaza-catalunya/pcb'
 heroFullMobile: true
@@ -122,7 +123,7 @@ El resto de la intervención completa el cuadro. Las nuevas barandillas tendrán
 
 ### La fecha que lo explica todo
 
-Para entender por qué la reforma de la Plaza de Cataluña tiene los silencios que tiene, hay que mirar el documento que la ampara: el [Plan de Accesibilidad Universal de Mataró](/documentos). Su historia es reveladora. El primer plan de accesibilidad del municipio se encargó en 1996 y se entregó en 1998, en cumplimiento de la <a href="https://portaljuridic.gencat.cat/document.php?id=19910705&action=3" target="_blank" rel="noopener noreferrer">Llei 18/1991, de 5 de julio, de mesures per a la integració social de les persones amb discapacitat</a>, cuyo objetivo declarado era «la eliminación de las barreras arquitectónicas». Casi una década después, en 2005, el Ayuntamiento firmó un convenio con la Diputación de Barcelona para redactar un plan actualizado. Ese documento —el que sigue vigente— se elaboró con datos hasta 2006 y se cerró como publicación en mayo de 2008.
+Para entender por qué la reforma de la Plaza de Cataluña tiene los silencios que tiene, hay que mirar el documento que la ampara: el [Plan de Accesibilidad Universal de Mataró](/documentos). Su historia es reveladora. El primer plan de accesibilidad del municipio se encargó en 1996 y se entregó en 1998, en cumplimiento de la <a href="https://www.boe.es/eli/es-ct/l/1991/11/25/20" target="_blank" rel="noopener noreferrer">Llei 20/1991, de 25 de novembre, de promoció de l'accessibilitat i de supressió de barreres arquitectòniques</a>, cuyo objetivo declarado era «la eliminación de las barreras arquitectónicas». Casi una década después, en 2005, el Ayuntamiento firmó un convenio con la Diputación de Barcelona para redactar un plan actualizado. Ese documento —el que sigue vigente— se elaboró con datos hasta 2006 y se cerró como publicación en mayo de 2008.
 
 Es decir: la obra que se ejecuta en 2026 se rige por un plan cuya foto de la ciudad tiene casi veinte años y cuyo paradigma intelectual es, literalmente, el de «eliminar barreras arquitectónicas». Y eso no es un matiz académico, es la raíz del problema. Un repaso al [documento completo del plan](/documents/Pla_dxAccessibilitat_Universal_de_Mataro.pdf) lo confirma de manera abrumadora: a lo largo de sus casi trescientas páginas, la palabra «rampa» aparece casi un centenar de veces y los términos «acera» y «vado», más de ciento setenta. En cambio, «pavimento podotáctil» no aparece ni una sola vez. Tampoco «pictograma». Tampoco hay rastro de «accesibilidad cognitiva». La única vez que asoma la palabra «sensorial» es de pasada.
 

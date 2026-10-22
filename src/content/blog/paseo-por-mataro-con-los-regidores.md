@@ -2,6 +2,7 @@
 title: 'Paseando con los regidores'
 description: 'Una iniciativa de DiverMataró para que los regidores experimenten en primera persona la accesibilidad de la ciudad.'
 pubDate: 2022-12-16
+updatedDate: 2026-10-22
 category: 'Accesibilidad'
 heroImage: 'cloudinary:divermataro/blog/paseo-por-mataro-con-los-regidores/silla'
 ---
@@ -25,7 +26,7 @@ En una ciudad diseñada y construida sin tener en cuenta a todos los ciudadanos.
   </div>
 </div>
 
-A nuestro entender es un paradigma del pasado que se debería desterrar. Se tendría que pensar en **[accesibilidad universal](/servicios/accesibilidad-universal)**, es decir, hay que cambiar la mirada. Imaginar y realizar el diseños para todos los ciudadanos de una sola vez. A modo de ejemplo. Si se está diseñando la construcción de un edificio para el uso publico. Habría que desechar la idea de poner unas bonitas escaleras que luzcan y ocupen casi todo el espacio. Y en un lateral una pequeña rampa para las personas que usen vehículo de movilidad reducida. Sería mejor diseñar una espectacular rampa que puedan usar todos los ciudadanos a la vez.
+A nuestro entender es un paradigma del pasado que se debería desterrar. Se tendría que pensar en **[accesibilidad universal](/servicios/accesibilidad-universal)**, es decir, hay que [cambiar la mirada](/blog/un-cambio-de-miradas). Imaginar y realizar el diseños para todos los ciudadanos de una sola vez. A modo de ejemplo. Si se está diseñando la construcción de un edificio para el uso publico. Habría que desechar la idea de poner unas bonitas escaleras que luzcan y ocupen casi todo el espacio. Y en un lateral una pequeña rampa para las personas que usen vehículo de movilidad reducida. Sería mejor diseñar una espectacular rampa que puedan usar todos los ciudadanos a la vez.
 
 ## Nuestra vida cotidiana: algunos sitios son intransitables
 
@@ -46,3 +47,7 @@ Por eso nos parece una buena práctica formativa el hecho de que los agentes que
 </div>
 
 Gracias por su colaboración a los regidores.
+
+Desde entonces, esa colaboración ha dado frutos, como la [zona accesible de la Rua de Carnestoltes 2026](/blog/carnavales-mataro-2026). Pero quedan barreras pendientes, como las [rejillas de alcantarillado](/blog/trampas) o el [ascensor averiado de Can Serra](/blog/ascensor-can-serra-museu-mataro).
+
+Para diseñar calles para todas las personas ya existe una referencia clara: la <a href="https://www.boe.es/eli/es/o/2021/07/23/tma851/con" target="_blank" rel="noopener noreferrer">orden estatal sobre accesibilidad en los espacios públicos urbanizados</a>, que en Cataluña se completa con la <a href="https://www.boe.es/eli/es-ct/l/2014/10/30/13/con" target="_blank" rel="noopener noreferrer">Llei 13/2014 d'accessibilitat</a>. Seguiremos impulsando [actos reivindicativos](/servicios/actos-reivindicativos) y paseos como este.
