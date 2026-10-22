@@ -5,9 +5,38 @@ on:
     branches:
       - main
   workflow_dispatch:
+  # Los artículos con pubDate futura no se generan hasta su fecha
+  # (blog/[slug].astro). Cada noche se comprueba si alguno se publica hoy y,
+  # solo entonces, se reconstruye y despliega el sitio. 00:05 UTC: la portada
+  # y /blog, que se generan en cada visita, ya lo muestran desde las 00:00 UTC.
+  schedule:
+    - cron: '5 0 * * *'
 
 jobs:
+  comprobar-programados:
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    name: Comprobar artículos programados
+    outputs:
+      publicar: ${{ steps.hoy.outputs.publicar }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Buscar artículos con fecha de hoy
+        id: hoy
+        run: |
+          hoy=$(date -u +%F)
+          if grep -lE "^pubDate: ['\"]?${hoy}" src/content/blog/*.md; then
+            echo "publicar=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Ningún artículo se publica el ${hoy}: no hace falta desplegar."
+            echo "publicar=false" >> "$GITHUB_OUTPUT"
+          fi
+
   deploy:
+    needs: comprobar-programados
+    # En push y workflow_dispatch el job de comprobación se salta: se despliega igual
+    if: ${{ !cancelled() && (github.event_name != 'schedule' || needs.comprobar-programados.outputs.publicar == 'true') }}
     runs-on: ubuntu-latest
     name: Deploy
     steps:
