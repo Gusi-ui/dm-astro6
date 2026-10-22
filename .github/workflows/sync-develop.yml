@@ -82,5 +82,19 @@ jobs:
           # GitHub responde "Required status check is queued" y el job falla
           # con el PR abierto y sin fusionar.
           gh pr checks "$pr" --watch --required --fail-fast
-          gh pr merge "$pr" --merge
-          echo "PR #$pr fusionado: develop vuelve a estar al día."
+
+          # Aun así puede perder la carrera: el commit de main ya tiene un
+          # "Verify" en verde (el del push), así que `gh pr checks` termina al
+          # instante sin esperar al del PR, y GitHub rechaza la fusión con
+          # "Required status check is queued". Pasó con el #111. Se reintenta
+          # unos minutos hasta que el check del PR termine.
+          for intento in $(seq 1 20); do
+            if gh pr merge "$pr" --merge; then
+              echo "PR #$pr fusionado: develop vuelve a estar al día."
+              exit 0
+            fi
+            echo "Intento $intento: el check requerido aún no ha terminado; reintento en 15 s."
+            sleep 15
+          done
+          echo "No se pudo fusionar el PR #$pr tras 5 minutos."
+          exit 1
