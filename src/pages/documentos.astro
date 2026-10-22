@@ -400,6 +400,7 @@ const categorias = ['Todos', ...new Set(documentos.map((doc) => doc.category))];
                       <a
                         href={doc.file}
                         download
+                        aria-label={`Descargar ${doc.title} (PDF)`}
                         class="rounded-xl border-2 border-primary-600 px-4 py-3 font-semibold text-primary-600 transition-all duration-300 hover:bg-primary-50"
                       >
                         <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -422,7 +423,7 @@ const categorias = ['Todos', ...new Set(documentos.map((doc) => doc.category))];
         <div class="mt-12 text-center">
           <p class="text-sm text-gray-500">
             ¿Echas en falta algún documento?{' '}
-            <a href="/contacto" class="text-primary-600 hover:underline">
+            <a href="/contacto" class="text-primary-600 underline hover:text-primary-700">
               Contáctanos
             </a>
           </p>
