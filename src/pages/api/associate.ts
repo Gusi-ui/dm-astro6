@@ -1,6 +1,7 @@
 import type { APIRoute } from 'astro';
 import { Database } from '../../lib/db/client';
 import { getD1Database, getResendApiKey, waitUntil } from '../../lib/cloudflare';
+import { escapeHtml } from '../../lib/escape-html';
 
 const WHATSAPP_GROUP_URL = 'https://chat.whatsapp.com/DRlG1gYTC596ta62wY3uas';
 
@@ -31,10 +32,10 @@ async function sendAdminNotificationEmail(
               </p>
 
               <div style="background: white; border-radius: 8px; padding: 20px; border-left: 4px solid #22c55e;">
-                <p style="margin: 0 0 10px;"><strong>Nombre:</strong> ${memberData.name}</p>
-                <p style="margin: 0 0 10px;"><strong>Email:</strong> <a href="mailto:${memberData.email}">${memberData.email}</a></p>
-                ${memberData.phone ? `<p style="margin: 0 0 10px;"><strong>Teléfono:</strong> <a href="https://wa.me/${memberData.phone.replace(/\D/g, '')}">${memberData.phone}</a></p>` : ''}
-                ${memberData.message ? `<p style="margin: 15px 0 0;"><strong>Mensaje:</strong></p><p style="margin: 5px 0 0; white-space: pre-wrap; color: #6b7280;">${memberData.message}</p>` : ''}
+                <p style="margin: 0 0 10px;"><strong>Nombre:</strong> ${escapeHtml(memberData.name)}</p>
+                <p style="margin: 0 0 10px;"><strong>Email:</strong> <a href="mailto:${escapeHtml(memberData.email)}">${escapeHtml(memberData.email)}</a></p>
+                ${memberData.phone ? `<p style="margin: 0 0 10px;"><strong>Teléfono:</strong> <a href="https://wa.me/${memberData.phone.replace(/\D/g, '')}">${escapeHtml(memberData.phone)}</a></p>` : ''}
+                ${memberData.message ? `<p style="margin: 15px 0 0;"><strong>Mensaje:</strong></p><p style="margin: 5px 0 0; white-space: pre-wrap; color: #6b7280;">${escapeHtml(memberData.message)}</p>` : ''}
               </div>
 
               <p style="margin-top: 25px; font-size: 14px; color: #6b7280;">
@@ -81,7 +82,7 @@ async function sendWelcomeEmail(apiKey: string, memberData: { name: string; emai
             </div>
             <div style="background: #f9fafb; padding: 30px; border-radius: 0 0 10px 10px;">
               <p style="margin: 0 0 20px; font-size: 16px; color: #374151;">
-                Hola <strong>${memberData.name}</strong>,
+                Hola <strong>${escapeHtml(memberData.name)}</strong>,
               </p>
               <p style="margin: 0 0 20px; font-size: 16px; color: #374151;">
                 ¡Gracias por unirte a nuestra asociación! Tu solicitud ha sido recibida correctamente y nuestro equipo la revisará en breve.
@@ -152,9 +153,9 @@ export const POST: APIRoute = async ({ request, locals }) => {
     const message = formData.get('message')?.toString();
 
     // Validación básica
-    if (!name || name.length < 2) {
+    if (!name || name.length < 2 || name.length > 100) {
       return new Response(
-        JSON.stringify({ success: false, error: 'El nombre debe tener al menos 2 caracteres' }),
+        JSON.stringify({ success: false, error: 'El nombre debe tener entre 2 y 100 caracteres' }),
         { status: 400, headers: { 'Content-Type': 'application/json' } }
       );
     }
