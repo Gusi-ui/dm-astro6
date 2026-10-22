@@ -1,6 +1,7 @@
 import type { APIRoute } from 'astro';
 import { getResendApiKey } from '../../lib/cloudflare';
 import { escapeHtml } from '../../lib/escape-html';
+import { HONEYPOT_FIELD, isHoneypotFilled } from '../../lib/honeypot';
 
 export const POST: APIRoute = async ({ request }) => {
   try {
@@ -9,8 +10,17 @@ export const POST: APIRoute = async ({ request }) => {
       email?: string;
       asunto?: string;
       mensaje?: string;
+      [HONEYPOT_FIELD]?: string;
     };
     const { nombre, email, asunto, mensaje } = data;
+
+    if (isHoneypotFilled(data[HONEYPOT_FIELD])) {
+      console.warn('Formulario de contacto: envío descartado por el campo trampa');
+      return new Response(
+        JSON.stringify({ success: true, message: 'Mensaje enviado correctamente' }),
+        { status: 200, headers: { 'Content-Type': 'application/json' } }
+      );
+    }
 
     // Validación básica
     if (!nombre || !email || !asunto || !mensaje) {

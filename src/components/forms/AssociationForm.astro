@@ -1,7 +1,9 @@
 ---
+import Honeypot from './Honeypot.astro';
 ---
 
-<form method="POST" action="/api/associate" class="space-y-6">
+<form method="POST" action="/api/associate" class="relative space-y-6">
+  <Honeypot />
   <div>
     <label for="name" class="mb-2 block text-sm font-semibold text-gray-700">
       Nombre completo <span class="text-red-500">*</span>

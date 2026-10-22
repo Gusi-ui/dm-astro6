@@ -2,6 +2,7 @@ import type { APIRoute } from 'astro';
 import { Database } from '../../lib/db/client';
 import { getD1Database, getResendApiKey, waitUntil } from '../../lib/cloudflare';
 import { escapeHtml } from '../../lib/escape-html';
+import { HONEYPOT_FIELD, isHoneypotFilled } from '../../lib/honeypot';
 
 const WHATSAPP_GROUP_URL = 'https://chat.whatsapp.com/DRlG1gYTC596ta62wY3uas';
 
@@ -151,6 +152,17 @@ export const POST: APIRoute = async ({ request, locals }) => {
     const email = formData.get('email')?.toString();
     const phone = formData.get('phone')?.toString();
     const message = formData.get('message')?.toString();
+
+    if (isHoneypotFilled(formData.get(HONEYPOT_FIELD))) {
+      console.warn('Formulario de asociarse: envío descartado por el campo trampa');
+      return new Response(
+        JSON.stringify({
+          success: true,
+          message: '¡Gracias por unirte! Te contactaremos pronto por WhatsApp.',
+        }),
+        { status: 200, headers: { 'Content-Type': 'application/json' } }
+      );
+    }
 
     // Validación básica
     if (!name || name.length < 2 || name.length > 100) {
