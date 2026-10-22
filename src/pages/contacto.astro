@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/sections/Header.astro';
 import Footer from '../components/sections/Footer.astro';
 import HeroBackground from '../components/HeroBackground.astro';
+import Honeypot from '../components/forms/Honeypot.astro';
 import { getRandomHeroImage } from '../lib/heroImages';
 
 const heroImage = getRandomHeroImage();
@@ -256,7 +257,8 @@ const heroImage = getRandomHeroImage();
                 <!-- Mensaje de estado -->
                 <div id="form-status" class="mb-6 hidden rounded-xl p-4 text-center"></div>
 
-                <form id="contact-form" class="space-y-5">
+                <form id="contact-form" class="relative space-y-5">
+                  <Honeypot />
                   <div>
                     <label for="nombre" class="mb-2 block text-sm font-medium text-gray-700">
                       Nombre completo
@@ -266,6 +268,7 @@ const heroImage = getRandomHeroImage();
                       id="nombre"
                       name="nombre"
                       required
+                      maxlength="100"
                       class="w-full rounded-xl border border-gray-200 px-4 py-3 text-gray-900 transition-all focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500/20"
                       placeholder="Tu nombre"
                     />
@@ -313,6 +316,7 @@ const heroImage = getRandomHeroImage();
                       name="mensaje"
                       rows="5"
                       required
+                      maxlength="5000"
                       class="w-full resize-none rounded-xl border border-gray-200 px-4 py-3 text-gray-900 transition-all focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500/20"
                       placeholder="¿En qué podemos ayudarte?"
                     ></textarea>
@@ -407,6 +411,7 @@ const heroImage = getRandomHeroImage();
       email: formData.get('email'),
       asunto: formData.get('asunto'),
       mensaje: formData.get('mensaje'),
+      sitio_web: formData.get('sitio_web'),
     };
 
     try {

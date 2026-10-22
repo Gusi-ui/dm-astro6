@@ -1,7 +1,9 @@
 ---
+import Honeypot from './Honeypot.astro';
 ---
 
-<form method="POST" action="/api/associate" class="space-y-6">
+<form method="POST" action="/api/associate" class="relative space-y-6">
+  <Honeypot />
   <div>
     <label for="name" class="mb-2 block text-sm font-semibold text-gray-700">
       Nombre completo <span class="text-red-500">*</span>
@@ -12,6 +14,7 @@
       name="name"
       required
       minlength="2"
+      maxlength="100"
       class="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none transition-colors focus:border-primary-500 focus:ring-2 focus:ring-primary-500"
       placeholder="Tu nombre completo"
       aria-required="true"

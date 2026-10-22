@@ -1,5 +1,7 @@
 import type { APIRoute } from 'astro';
 import { getResendApiKey } from '../../lib/cloudflare';
+import { escapeHtml } from '../../lib/escape-html';
+import { HONEYPOT_FIELD, isHoneypotFilled } from '../../lib/honeypot';
 
 export const POST: APIRoute = async ({ request }) => {
   try {
@@ -8,8 +10,17 @@ export const POST: APIRoute = async ({ request }) => {
       email?: string;
       asunto?: string;
       mensaje?: string;
+      [HONEYPOT_FIELD]?: string;
     };
     const { nombre, email, asunto, mensaje } = data;
+
+    if (isHoneypotFilled(data[HONEYPOT_FIELD])) {
+      console.warn('Formulario de contacto: envío descartado por el campo trampa');
+      return new Response(
+        JSON.stringify({ success: true, message: 'Mensaje enviado correctamente' }),
+        { status: 200, headers: { 'Content-Type': 'application/json' } }
+      );
+    }
 
     // Validación básica
     if (!nombre || !email || !asunto || !mensaje) {
@@ -17,6 +28,16 @@ export const POST: APIRoute = async ({ request }) => {
         status: 400,
         headers: { 'Content-Type': 'application/json' },
       });
+    }
+
+    if (nombre.length > 100 || mensaje.length > 5000) {
+      return new Response(
+        JSON.stringify({ error: 'El nombre o el mensaje son demasiado largos' }),
+        {
+          status: 400,
+          headers: { 'Content-Type': 'application/json' },
+        }
+      );
     }
 
     // Validar formato de email
@@ -48,6 +69,14 @@ export const POST: APIRoute = async ({ request }) => {
       otro: 'Otro',
     };
 
+    // Todo lo que escribe el usuario va escapado dentro del HTML del correo
+    const safe = {
+      nombre: escapeHtml(nombre),
+      email: escapeHtml(email),
+      asunto: escapeHtml(asuntoTexto[asunto] || asunto),
+      mensaje: escapeHtml(mensaje),
+    };
+
     // Enviar email con Resend
     const response = await fetch('https://api.resend.com/emails', {
       method: 'POST',
@@ -66,12 +95,12 @@ export const POST: APIRoute = async ({ request }) => {
               <h1 style="color: white; margin: 0; font-size: 24px;">Nuevo mensaje de contacto</h1>
             </div>
             <div style="background: #f9fafb; padding: 30px; border-radius: 0 0 10px 10px;">
-              <p style="margin: 0 0 15px;"><strong>Nombre:</strong> ${nombre}</p>
-              <p style="margin: 0 0 15px;"><strong>Email:</strong> <a href="mailto:${email}">${email}</a></p>
-              <p style="margin: 0 0 15px;"><strong>Asunto:</strong> ${asuntoTexto[asunto] || asunto}</p>
+              <p style="margin: 0 0 15px;"><strong>Nombre:</strong> ${safe.nombre}</p>
+              <p style="margin: 0 0 15px;"><strong>Email:</strong> <a href="mailto:${safe.email}">${safe.email}</a></p>
+              <p style="margin: 0 0 15px;"><strong>Asunto:</strong> ${safe.asunto}</p>
               <div style="margin-top: 20px; padding: 20px; background: white; border-radius: 8px; border-left: 4px solid #0ea5e9;">
                 <p style="margin: 0 0 10px;"><strong>Mensaje:</strong></p>
-                <p style="margin: 0; white-space: pre-wrap;">${mensaje}</p>
+                <p style="margin: 0; white-space: pre-wrap;">${safe.mensaje}</p>
               </div>
               <p style="margin-top: 30px; font-size: 12px; color: #6b7280;">
                 Este mensaje fue enviado desde el formulario de contacto de la web de DiverMataró.
