@@ -2,6 +2,7 @@
 title: 'Dos exposiciones por los derechos, una misma barrera: el ascensor de Can Serra sigue sin funcionar'
 description: 'El Museu de Mataró acoge una exposición sobre las pioneras del feminismo, pero las personas con diversidad funcional física no pueden acceder a ella por un ascensor averiado desde hace dos años.'
 pubDate: 2026-10-20
+updatedDate: 2026-10-22
 category: 'Denuncia'
 heroImage: 'cloudinary:divermataro/blog/ascensor-can-serra-museu-mataro/can-serra-portada'
 ---
@@ -10,19 +11,32 @@ heroImage: 'cloudinary:divermataro/blog/ascensor-can-serra-museu-mataro/can-serr
 
 ## Los derechos se defienden con palabras, pero también con hechos
 
-En **[DiverMataró](/asociacion)** llevamos tiempo reivindicando algo que debería ser básico: que todas las personas podamos participar en la vida cultural de nuestra ciudad en igualdad de condiciones.
+En **[DiverMataró](/asociacion)** llevamos tiempo reivindicando algo que debería ser básico: que todas las personas podamos participar en la vida cultural de nuestra ciudad en igualdad de condiciones. Es lo que entendemos por [accesibilidad universal](/servicios/accesibilidad-universal), y es también un derecho reconocido: la <a href="https://www.boe.es/eli/es/ai/2006/12/13/(1)/con" target="_blank" rel="noopener noreferrer">Convención de la ONU sobre los derechos de las personas con discapacidad</a> obliga a garantizar el acceso a «lugares en donde se ofrezcan representaciones o servicios culturales tales como teatros, museos, cines, bibliotecas».
 
 Visitar un museo, conocer nuestra historia y disfrutar de una exposición no debería depender de si podemos subir unas escaleras o no.
 
-Sin embargo, en el Museu de Mataró, concretamente en Can Serra, nos encontramos de nuevo con una barrera que impide a algunas personas acceder a la cultura.
+Sin embargo, en el Museu de Mataró, concretamente en <a href="https://www.culturamataro.cat/ambits-1/museu-de-mataro-2/seus-del-museu" target="_blank" rel="noopener noreferrer">Can Serra</a>, nos encontramos de nuevo con una barrera que impide a algunas personas acceder a la cultura.
 
 Desde el pasado 14 de octubre y hasta el 13 de diciembre de 2026, se puede visitar la exposición _Pioneres del feminisme a Mataró en la Transició_, dedicada a las mujeres que impulsaron los primeros movimientos feministas de la ciudad después de la dictadura.
 
 Es una exposición que recupera una parte importante de nuestra historia y reconoce la lucha de mujeres que trabajaron por la igualdad y los derechos sociales.
 
+<div class="not-prose my-8">
+  <img
+    src="cloudinary:divermataro/blog/ascensor-can-serra-museu-mataro/can-serra-muestra-exposicion"
+    alt="Pared de la exposición «Pioneres del feminisme a Mataró en la Transició» con portadas del diario El Maresme, carteles feministas y fotografías de manifestaciones de los años setenta"
+    width="1600"
+    height="1200"
+    sizes="(max-width: 768px) 100vw, 896px"
+    style="width: 100%; height: auto; border-radius: 0.75rem;"
+  />
+</div>
+
 Pero hay un problema: **la exposición está situada en la primera planta y el ascensor que permite acceder a ella lleva dos años sin funcionar.**
 
-Para las personas con diversidad funcional física que no podemos subir las escaleras, esto significa algo muy sencillo y muy grave: no podemos entrar.
+Lo confirma la propia <a href="https://www.mataro.cat/ca/actualitat/agenda/2026-els-primers-passos-cap-a-la-democracia-1976-1978-pioneres-del-feminisme-a-mataro-en-la-transicio" target="_blank" rel="noopener noreferrer">ficha de la exposición del Ajuntament de Mataró</a>: la muestra presencial está en la primera planta de Can Serra y se complementa con una exposición virtual en la web de la Diputació de Barcelona. Valoramos esa versión en línea, pero no sustituye poder recorrer la exposición en persona.
+
+Para las personas con [diversidad funcional](/blog/discapacidad-hola-mundo) física que no podemos subir las escaleras, esto significa algo muy sencillo y muy grave: no podemos entrar.
 
 <div class="not-prose my-8 grid grid-cols-1 gap-4 md:grid-cols-2">
   <img
@@ -49,7 +63,20 @@ Hace aproximadamente un año, en el mismo espacio, se organizó otra exposición
 
 El motivo era exactamente el mismo: el ascensor no funcionaba.
 
+<div class="not-prose my-8">
+  <img
+    src="cloudinary:divermataro/blog/ascensor-can-serra-museu-mataro/can-serra-ascensor-averiado"
+    alt="Puerta del ascensor de Can Serra con el cartel «Fora de servei. Ascensor avariat», junto a la sala dedicada a la ciudad romana de Iluro"
+    width="1600"
+    height="1200"
+    sizes="(max-width: 768px) 100vw, 896px"
+    style="width: 100%; height: auto; border-radius: 0.75rem;"
+  />
+</div>
+
 Ahora volvemos a encontrarnos con otra exposición relacionada con la defensa de los derechos. Y, una vez más, las personas con movilidad reducida nos encontramos con la misma barrera.
+
+Tampoco es un caso aislado en la ciudad: ya hemos denunciado las [averías de los ascensores en las estaciones de Rodalies](/blog/estacions-de-renfe), que dejan a muchas personas sin poder llegar al andén.
 
 Además, hemos observado que la puerta del ascensor en la planta baja está tapada. Este hecho aumenta nuestra preocupación, porque no vemos señales de que se esté resolviendo el problema.
 
@@ -64,6 +91,16 @@ Aquí aparece una contradicción que merece una reflexión.
 Por un lado, tenemos una exposición que recuerda la lucha de las asociaciones vecinales por mejorar las condiciones de vida de los barrios.
 
 Por otro, una exposición que reconoce a las mujeres que lucharon por la igualdad durante la Transición.
+
+<div class="not-prose my-8 flex justify-center">
+  <img
+    src="cloudinary:divermataro/blog/ascensor-can-serra-museu-mataro/can-serra-panel-pioneres"
+    alt="Panel de presentación de la exposición «Pioneres del feminisme a Mataró en la Transició» en el vestíbulo de Can Serra, con los logos de la Diputació de Barcelona, el Ajuntament y el Museu de Mataró"
+    width="1200"
+    height="1600"
+    style="width: 100%; max-width: 480px; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;"
+  />
+</div>
 
 Ambas nos hablan de participación, de justicia social y de la importancia de defender los derechos de las personas.
 
@@ -81,6 +118,8 @@ La igualdad no consiste solamente en hablar de derechos. Consiste en garantizar 
 
 Sabemos que los ascensores pueden averiarse y que algunas reparaciones pueden ser complejas. Pero una avería que se prolonga durante dos años requiere explicaciones y, sobre todo, soluciones.
 
+Catalunya tiene desde 2014 una <a href="https://www.boe.es/eli/es-ct/l/2014/10/30/13/con" target="_blank" rel="noopener noreferrer">ley de accesibilidad</a> para que los espacios y servicios de uso público puedan ser utilizados por todas las personas de forma autónoma. Y Mataró cuenta con su propio [Pla d'Accessibilitat Universal](/documents/Pla_dxAccessibilitat_Universal_de_Mataro.pdf). Un equipamiento cultural municipal debería ser el primero en cumplirlos.
+
 No estamos hablando de un detalle sin importancia. Estamos hablando de una barrera que excluye a personas de una actividad cultural.
 
 Por eso, desde DiverMataró consideramos necesario que los responsables del museo y del Ayuntamiento de Mataró:
@@ -88,7 +127,7 @@ Por eso, desde DiverMataró consideramos necesario que los responsables del muse
 - **Informen sobre el estado del ascensor** y expliquen qué actuaciones están previstas para repararlo.
 - **Establezcan una alternativa accesible**, como trasladar temporalmente las exposiciones a una planta a la que todo el mundo pueda acceder.
 - **Actualicen la información sobre accesibilidad** para que las personas visitantes sepan con claridad qué servicios están realmente disponibles.
-- **Escuchen a las personas con diversidad funcional**, porque somos quienes sufrimos directamente las consecuencias de estas barreras.
+- **Escuchen a las personas con diversidad funcional**, porque somos quienes vivimos directamente las consecuencias de estas barreras, como ya hicieron los regidores cuando [recorrieron con nosotros las calles de Mataró](/blog/paseo-por-mataro-con-los-regidores).
 
 No pedimos privilegios. Pedimos poder acceder a un museo público y disfrutar de la cultura como cualquier otra persona.
 
@@ -109,6 +148,8 @@ Porque la cultura debe ser de todos y todas. Y porque una sociedad que defiende 
 ### ¿Qué opinas de esta situación?
 
 Desde DiverMataró invitamos a la ciudadanía a reflexionar y a compartir esta reivindicación.
+
+Si quieres sumarte, puedes [hacerte socio o socia de DiverMataró](/asociate), sin cuotas, o leer otras [denuncias de barreras en Mataró](/blog/reivindicacion/denuncias-visibilizacion).
 
 ¿Tiene sentido organizar exposiciones sobre derechos si una parte de la población no puede acceder a ellas?
 
