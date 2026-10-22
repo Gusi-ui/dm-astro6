@@ -23,7 +23,7 @@ export default {
           300: '#7dd3fc',
           400: '#38bdf8',
           500: '#0ea5e9',
-          600: '#0284c7',
+          600: '#0274af', // #0284c7 daba 4,1:1 sobre blanco; este cumple AA (5,1:1)
           700: '#0369a1',
           800: '#075985',
           900: '#0c4a6e',
