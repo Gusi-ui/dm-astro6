@@ -2,6 +2,7 @@
 title: 'Un cambio de miradas'
 description: 'Reflexión sobre el concepto de "cambio de miradas" y la realidad de la accesibilidad en nuevos proyectos arquitectónicos.'
 pubDate: 2022-07-15
+updatedDate: 2026-10-22
 category: 'Accesibilidad'
 heroImage: 'cloudinary:divermataro/blog/un-cambio-de-miradas/Miradas'
 ---
@@ -18,7 +19,9 @@ Teniendo ya un gran bagaje en el terreno de la accesibilidad arquitectónica y a
 
 Hoy en día no debe de ejecutarse ningún proyecto arquitectónico donde las escaleras sigan siendo algo a contemplar; sino más bien una opción del pasado, que no debe utilizarse a no ser que no haya ningún otro remedio que se pueda aplicar. Nosotros pensamos que siempre habrá algún remedio mejor y más inclusivo.
 
-Debería haber un cambio de paradigma planteándose los proyectos de construcción desde otra perspectiva de accesibilidad e inclusión.
+La <a href="https://www.boe.es/eli/es-ct/l/2014/10/30/13/con" target="_blank" rel="noopener noreferrer">Llei 13/2014 d'accessibilitat</a> exige que los edificios de uso público sean accesibles para todas las personas, y en nuestra sección de documentos recopilamos la [normativa técnica de accesibilidad](/documents/Normativa_Tecnica_de_Accesibilidad.pdf). Aun así, las escaleras siguen dejándonos fuera incluso de equipamientos culturales, como ocurre con el [ascensor averiado de Can Serra](/blog/ascensor-can-serra-museu-mataro).
+
+Debería haber un cambio de paradigma planteándose los proyectos de construcción desde otra perspectiva de accesibilidad e inclusión. Es lo mismo que pedimos cuando los [regidores recorrieron Mataró con nosotros](/blog/paseo-por-mataro-con-los-regidores).
 
 ## Más ejemplos de cambio de miradas
 
@@ -36,4 +39,4 @@ No podíamos acabar este artículo sin mencionar la mejor forma de hacer las cos
 
 Tomemos siempre el criterio de hacer todos los lavabos accesibles. En **[Mataró Connecta](/blog/mataro-connecta)** todos los lavabos los pueden utilizar todas las personas. Un buen ejemplo de buena mirada.
 
-¿Qué pensáis del cambio de miradas? ¿Quizás deberíamos hablar de [accesibilidad universal](/servicios/accesibilidad-universal) mejor? ¿O quizás incluso ambos términos pueden coexistir? Coméntanos tu opinión.
+¿Qué pensáis del cambio de miradas? ¿Quizás deberíamos hablar de [accesibilidad universal](/servicios/accesibilidad-universal) mejor? ¿O quizás incluso ambos términos pueden coexistir? [Coméntanos tu opinión](/contacto).

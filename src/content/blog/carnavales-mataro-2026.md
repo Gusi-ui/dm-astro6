@@ -2,6 +2,7 @@
 title: 'Rua de Carnestoltes 2026 en Mataró: cuando la inclusión ocupa la primera fila'
 description: 'Crónica inclusiva de la Rua de Carnestoltes 2026 en Mataró desde la mirada de DiverMataró.'
 pubDate: 2026-02-14
+updatedDate: 2026-10-22
 category: 'Activitats'
 heroImage: 'cloudinary:divermataro/blog/carnavales-mataro-2026/carnavales2026'
 ---
@@ -39,7 +40,7 @@ Las coreografías, los disfraces satíricos y la energía colectiva hicieron vib
 
 ## Una zona exclusiva para movilidad reducida: más que un espacio, un mensaje
 
-En el tramo final del recorrido se habilitó una **zona exclusiva para personas con movilidad reducida**, con capacidad para **hasta 50 sillas de ruedas**.
+En el tramo final del recorrido se habilitó una **zona exclusiva para personas con movilidad reducida**, con capacidad para **hasta 50 sillas de ruedas**. La <a href="https://www.culturamataro.cat/agenda-cultura/rua-de-carnestoltes-3" target="_blank" rel="noopener noreferrer">programación oficial de la Rua</a> la situaba en el Espai Firal del Nou Parc Central, justo delante del escenario.
 
 <div class="not-prose my-8 grid grid-cols-1 gap-4 md:grid-cols-[4fr_4fr]">
   <div class="overflow-hidden rounded-xl" style="height: 420px;">
@@ -95,7 +96,7 @@ La diferencia entre estar y participar es enorme. Y en esta edición, muchas per
 
 ## Accesibilidad más allá de lo físico
 
-Además del espacio reservado para movilidad reducida, se habilitó una zona más tranquila durante el recorrido para personas con necesidades sensoriales específicas.
+Además del espacio reservado para movilidad reducida, se habilitó una zona más tranquila durante el recorrido para personas con necesidades sensoriales específicas. Según el <a href="https://www.mataro.cat/ca/actualitat/noticies/2026/mataro-es-prepara-per-rebre-en-pellofa-el-rei-del-carnestoltes" target="_blank" rel="noopener noreferrer">Ajuntament de Mataró</a>, estos espacios accesibles se diseñaron también para personas con trastornos del neurodesarrollo.
 
 Porque la diversidad funcional no es uniforme. No todas las barreras son arquitectónicas. El ruido, la intensidad lumínica o la masificación también pueden convertirse en límites invisibles.
 
@@ -107,7 +108,7 @@ La implicación del Ayuntamiento en la planificación de estos espacios marca un
 
 La zona para 50 sillas de ruedas no es el punto final, sino un paso relevante en el camino hacia unas fiestas verdaderamente inclusivas.
 
-Para DiverMataró, esta experiencia demuestra que cuando las entidades sociales y la administración trabajan en la misma dirección, los resultados son visibles.
+Para DiverMataró, esta experiencia demuestra que cuando las entidades sociales y la administración trabajan en la misma dirección, los resultados son visibles. Lo vivimos también en [Sant Jordi, con nuestra parada de rosas](/blog/sant-jordi-mataro), y lo seguiremos reclamando allí donde todavía no ocurre, como en la [exposición de Can Serra a la que no podemos subir](/blog/ascensor-can-serra-museu-mataro).
 
 ## Vivir la Rua desde la diversidad
 
@@ -155,3 +156,5 @@ El Carnaval es comunidad, creatividad y expresión colectiva.
 Que también sea accesible no le resta magia; la multiplica.
 
 Porque una ciudad verdaderamente festiva es aquella donde nadie tiene que preguntarse si podrá disfrutarla.
+
+Si quieres ayudarnos a que la próxima Rua sea todavía más accesible, [únete a DiverMataró](/asociate) y participa en nuestra [comunidad inclusiva](/servicios/comunidad-inclusiva).

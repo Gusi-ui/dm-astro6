@@ -2,6 +2,7 @@
 title: 'Orígenes y Significado del Día de Sant Jordi'
 description: 'La celebración de la cultura, el amor y la inclusión en Mataró durante una de las festividades más emblemáticas.'
 pubDate: 2024-04-23
+updatedDate: 2026-10-22
 category: 'Eventos'
 heroImage: 'cloudinary:divermataro/blog/sant-jordi-mataro/sant-jordi'
 ---
@@ -18,7 +19,7 @@ La parte más icónica de esta leyenda es el gesto de Sant Jordi al regalarle un
 
 ## El Día del Libro y la Rosa
 
-El 23 de abril también es el Día Internacional del Libro, una celebración promovida por la UNESCO para fomentar la lectura, la industria editorial y la protección de la propiedad intelectual. En Cataluña, esta fecha se ha fusionado con la tradición de Sant Jordi, creando una celebración única en la que se rinde homenaje tanto a la literatura como a la historia del patrón de Cataluña.
+El 23 de abril también es el Día Internacional del Libro, una celebración promovida por la <a href="https://www.unesco.org/es/days/world-book-and-copyright" target="_blank" rel="noopener noreferrer">UNESCO</a> para fomentar la lectura, la industria editorial y la protección de la propiedad intelectual. En Cataluña, esta fecha se ha fusionado con la tradición de Sant Jordi, creando una celebración única en la que se rinde homenaje tanto a la literatura como a la historia del patrón de Cataluña.
 
 Durante el Día de Sant Jordi, las calles de Cataluña, y en particular las de Barcelona y sus alrededores como Mataró, se llenan de puestos de libros y rosas. Es una jornada en la que las librerías, floristerías y comercios locales se visten de fiesta para ofrecer una amplia variedad de obras literarias y flores de todos los colores y formas.
 
@@ -28,7 +29,7 @@ Todos los transeúntes que se acercan por alguno de estos puestos, como así ha 
 
 Más allá de su origen legendario, el Día de Sant Jordi tiene un profundo significado para los catalanes. Es un día de celebración de la cultura, el amor y la identidad nacional. Además, constituye un importante impulso económico para el sector editorial y floricultor, así como una oportunidad para promover el intercambio cultural y social entre la comunidad.
 
-En Mataró, esta festividad cobra vida con una atmósfera vibrante y colorida, donde los habitantes y visitantes se unen para compartir el amor por la literatura, la belleza de las rosas y el espíritu de Sant Jordi.
+En Mataró, esta festividad cobra vida con una atmósfera vibrante y colorida, donde los habitantes y visitantes se unen para compartir el amor por la literatura, la belleza de las rosas y el espíritu de Sant Jordi. El <a href="https://www.mataro.cat/ca/actualitat/noticies/2024/mataro-celebra-sant-jordi-amb-els-actes-de-cultura-popular-les-roses-i-els-llibres-com-a-protagonistes" target="_blank" rel="noopener noreferrer">Ajuntament de Mataró</a> publicó el programa completo de actos de la diada de 2024.
 
 ## La Celebración en Mataró: Preparativos y Ambiente Festivo
 
@@ -39,3 +40,5 @@ El ambiente festivo en Mataró se hace evidente a medida que se acerca el 23 de 
 Uno de los aspectos más característicos de la celebración en Mataró son los numerosos puestos de libros y rosas que se instalan en las plazas y las principales arterias de la ciudad. Librerías locales, asociaciones culturales y floristerías montan coloridos y llamativos stands donde los transeúntes pueden encontrar una amplia selección de libros de todos los géneros y rosas de diversos colores y tamaños.
 
 Además de la venta de libros y rosas, en Mataró se organizan una variedad de eventos culturales y recreativos para celebrar el Día de Sant Jordi. Desde lecturas de poesía y recitales hasta conciertos al aire libre y espectáculos de danza, hay actividades para todos los gustos y edades.
+
+Participar en las fiestas de la ciudad también es inclusión, como en la [Rua de Carnestoltes con zona accesible](/blog/carnavales-mataro-2026) o en el [taller de circo inclusivo de La Crispeta](/blog/la-crispeta). La cultura tiene que ser accesible para todas las personas, algo que todavía no ocurre en todas partes, como en el [Museu de Mataró de Can Serra](/blog/ascensor-can-serra-museu-mataro). Si quieres estar en nuestra próxima parada, [hazte socio o socia](/asociate) y forma parte de nuestra [comunidad inclusiva](/servicios/comunidad-inclusiva).

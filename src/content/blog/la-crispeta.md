@@ -2,6 +2,7 @@
 title: 'La Crispeta'
 description: 'Activitat lúdica que combina moviment i diversió per descobrir el món del circ a través del joc i la inclusió.'
 pubDate: 2025-09-03
+updatedDate: 2026-10-22
 category: 'Activitats'
 heroImage: 'cloudinary:divermataro/blog/la-crispeta/La-Crispeta'
 ---
@@ -9,6 +10,8 @@ heroImage: 'cloudinary:divermataro/blog/la-crispeta/La-Crispeta'
 **COL·LECTIU DE CIRC SOCIAL**
 
 Des de La Crispeta Ens proposen una activitat lúdica que combina moviment i diversió per descobrir el món del circ a través del joc. Creiem fermament en la inclusió i l’[accessibilitat](/servicios/accesibilidad-universal), i per això emprem recerca i desenvolupament de nous materials i metodologies que s’ajusten a diferents realitats, perquè tothom, sigui com sigui, pugui sentir-se part activa del circ i gaudir-ne plenament. Des de [DiverMataró](/asociacion) donem suport a aquest tipus d’iniciatives.
+
+El dret a participar en la vida cultural i en les activitats de lleure en igualtat de condicions el reconeix l'article 30 de la <a href="https://www.boe.es/eli/es/ai/2006/12/13/(1)/con" target="_blank" rel="noopener noreferrer">Convenció de l'ONU sobre els drets de les persones amb discapacitat</a>. A Mataró ho hem viscut en propostes com la [Rua de Carnestoltes amb zona accessible](/blog/carnavales-mataro-2026) o el nostre [Sant Jordi](/blog/sant-jordi-mataro), i ho treballem a la nostra [comunitat inclusiva](/servicios/comunidad-inclusiva).
 
 Aquesta proposta de tallers és una oportunitat per explorar tot allò que el circ pot oferir com a eina de transformació, creixement personal i benestar, per a persones de totes les edats i procedències. A més, des de La Crispeta apostem per la innovació com a motor de canvi: integrem noves tecnologies, idees i enfocaments per fer el circ més viu, creatiu i connectat amb el present.
 

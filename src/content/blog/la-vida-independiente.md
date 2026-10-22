@@ -2,6 +2,7 @@
 title: 'La Vida Independiente'
 description: 'Promoviendo la vida independiente a través de la asistencia personal como alternativa a la institucionalización.'
 pubDate: 2023-11-23
+updatedDate: 2026-10-22
 category: 'Derechos'
 heroImage: 'cloudinary:divermataro/blog/la-vida-independiente/Dependiente'
 ---
@@ -44,9 +45,11 @@ La vida independiente se basa en varios principios fundamentales:
 
 ## Asistencia Personal: Definición y Funciones
 
-La asistencia personal es un servicio humano prestado por un asistente personal que realiza o ayuda a realizar las tareas de la vida diaria que una persona no puede ejecutar por sí misma debido a su [diversidad funcional](/blog/discapacidad-hola-mundo). Es la herramienta clave para la vida independiente.
+La asistencia personal es un servicio humano prestado por un asistente personal que realiza o ayuda a realizar las tareas de la vida diaria que una persona no puede ejecutar por sí misma debido a su [diversidad funcional](/blog/discapacidad-hola-mundo). Es la herramienta clave para la vida independiente. En España, el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2006-21990#a19" target="_blank" rel="noopener noreferrer">artículo 19 de la Ley de Dependencia</a> regula la prestación económica de asistencia personal, «alineada con los principios de vida independiente», y el <a href="https://www.boe.es/eli/es/ai/2006/12/13/(1)/con" target="_blank" rel="noopener noreferrer">artículo 19 de la Convención de la ONU</a> reconoce el derecho a vivir de forma independiente y a ser incluido en la comunidad.
 
 A diferencia de la ayuda a domicilio tradicional, que suele ser rígida y gestionada por la administración, la asistencia personal es flexible y autogestionada por el propio usuario, quien decide quién, cómo, cuándo y qué tareas se realizan.
+
+Comparamos los dos modelos en nuestro documento [asistencia personal frente a ayuda a domicilio](/documents/APvsAD.pdf).
 
 <div class="aspect-w-9 aspect-h-16 my-8 flex justify-center">
   <iframe 
@@ -62,3 +65,5 @@ A diferencia de la ayuda a domicilio tradicional, que suele ser rígida y gestio
 ## Conclusiones
 
 Destinar dinero a ayudas para edificios con dificultades de accesibilidad, como es el caso de las [viviendas para PMR en Mataró](/blog/viviendas-pmr), es una inversión en el futuro de nuestra sociedad. Es un paso crucial para garantizar que todos los individuos puedan vivir de manera independiente y participar plenamente en la comunidad. Al priorizar la accesibilidad, estamos construyendo una sociedad más justa, equitativa e inclusiva para todos.
+
+Moverse por la ciudad también forma parte de esa autonomía, como explicamos en [transporte público adaptado](/blog/transporte-publico-adaptado). Si quieres orientación sobre tu caso, en DiverMataró ofrecemos [apoyo personalizado](/servicios/apoyo-personalizado), y en nuestro documento sobre [la asistencia personal como empleo y como derecho](/documents/asistencia_personal_empleo_derecho.pdf) encontrarás más información.

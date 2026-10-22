@@ -2,6 +2,7 @@
 title: 'Viviendas para PMR (personas con movilidad reducida)'
 description: 'Análisis crítico sobre la accesibilidad en edificios supuestamente adaptados y la necesidad de invertir en una sociedad más inclusiva.'
 pubDate: 2024-03-15
+updatedDate: 2026-10-22
 category: 'Accesibilidad'
 heroImage: 'cloudinary:divermataro/blog/viviendas-pmr/viviendas-pmr'
 ---
@@ -9,6 +10,8 @@ heroImage: 'cloudinary:divermataro/blog/viviendas-pmr/viviendas-pmr'
 Estas viviendas están pensadas para PMR (personas con movilidad reducida), cuyo diseño debería garantizar la [vida independiente](/blog/la-vida-independiente) de sus residentes. Pues bien; la única manera para salir-entrar del edificio es un ascensor que; cuando se avería deja a las personas que viven en el edificio recluidas en nuestras viviendas o en la calle sin poder acceder.
 
 El ascensor, lógicamente al ser maquinaria, se estropea sí o sí; además casi siempre por la ley de Murphy en festivo. Cómo puede ser que un edificio especialmente diseñado para personas con movilidad reducida este pensado he ideado con escaleras y un ascensor?. Buena pregunta verdad.
+
+Lo hemos vuelto a ver en 2026 en el Museu de Mataró, donde el [ascensor de Can Serra lleva dos años averiado](/blog/ascensor-can-serra-museu-mataro) y deja fuera de las exposiciones a quien no puede subir escaleras.
 
 Se ha tenido en cuenta lo que hace ya bastantes años idearon los egipcios para hacer las pirámides por ejemplo? Una sencilla rampa hubiera sido menos costosa y mucho más efectiva. De la misma manera se pensó en la entrada al edificio puesto que la han hecho bastante inaccesible.
 
@@ -39,7 +42,7 @@ Si nos fijamos han puesto una elevación y una máxima inclinación donde las ru
   </div>
 </div>
 
-En repetidas ocasiones se lo hemos comunicado al propietario del edificio PUMSA así mismo como al mismísimo ayuntamiento. Algo similar nos ocurrió con otras [denuncias de accesibilidad en la ciudad](/blog/denuncias-anonimas-de-accesibilidad). Pero todo el mundo se va pasando la pelota y nadie parece tener demasiado interés en este vanagloriado edificio para personas con movilidad reducida especialmente construido y que en realidad no es más que un edificio con una construcción que deja mucho que desear para cualquier persona.
+En repetidas ocasiones se lo hemos comunicado al propietario del edificio, <a href="https://www.pumsa.cat" target="_blank" rel="noopener noreferrer">PUMSA</a>, así mismo como al mismísimo ayuntamiento. Algo similar nos ocurrió con otras [denuncias de accesibilidad en la ciudad](/blog/denuncias-anonimas-de-accesibilidad). Pero todo el mundo se va pasando la pelota y nadie parece tener demasiado interés en este vanagloriado edificio para personas con movilidad reducida especialmente construido y que en realidad no es más que un edificio con una construcción que deja mucho que desear para cualquier persona.
 
 ## Invertir en Accesibilidad: Un Paso Hacia una Sociedad Más Inclusiva
 
@@ -52,7 +55,7 @@ La accesibilidad es un derecho humano fundamental, un pilar de la [accesibilidad
 ### Beneficios de Invertir en Accesibilidad
 
 1. **Inclusión Social:** Mejorar la accesibilidad de los edificios permite que todas las personas, independientemente de sus habilidades físicas, participen activamente en la vida comunitaria. Esto promueve una mayor cohesión social y reduce la discriminación.
-2. **Cumplimiento Normativo:** En España, la [Ley General de derechos de las personas con discapacidad](https://www.boe.es/buscar/act.php?id=BOE-A-2013-12632) exige que los edificios sean accesibles. Invertir en mejoras de accesibilidad asegura que los edificios cumplan con estas normativas, evitando posibles sanciones y litigios.
+2. **Cumplimiento Normativo:** En España, la [Ley General de derechos de las personas con discapacidad](https://www.boe.es/buscar/act.php?id=BOE-A-2013-12632) exige que los edificios sean accesibles. En Cataluña, además, rige la <a href="https://www.boe.es/eli/es-ct/l/2014/10/30/13/con" target="_blank" rel="noopener noreferrer">Llei 13/2014 d'accessibilitat</a>. Invertir en mejoras de accesibilidad asegura que los edificios cumplan con estas normativas, evitando posibles sanciones y litigios.
 3. **Valor Económico:** La accesibilidad puede aumentar el valor de las propiedades y atraer a un mayor número de usuarios y clientes, beneficiando así a los propietarios de edificios y negocios.
 4. **Mejora de la Calidad de Vida:** Adaptar los edificios para que sean accesibles mejora significativamente la calidad de vida de las personas con discapacidades, permitiéndoles vivir de manera más independiente y digna.
 
@@ -69,4 +72,15 @@ La inversión en accesibilidad puede abarcar varias áreas, tales como:
 
 Destinar dinero a ayudas para edificios con dificultades de accesibilidad es una inversión en el futuro de nuestra sociedad. Es un paso crucial para garantizar que todos los individuos puedan vivir de manera independiente y participar plenamente en la comunidad. Al priorizar la accesibilidad, estamos construyendo una sociedad más justa, equitativa e inclusiva para todos.
 
-![Edificio accesible](cloudinary:divermataro/blog/viviendas-pmr/edificiopumsa)
+<div class="not-prose my-8">
+  <img
+    src="cloudinary:divermataro/blog/viviendas-pmr/edificiopumsa"
+    alt="Fachada del edificio de viviendas para personas con movilidad reducida de PUMSA en Mataró"
+    width="1200"
+    height="675"
+    sizes="(max-width: 768px) 100vw, 896px"
+    style="width: 100%; height: auto; border-radius: 0.75rem;"
+  />
+</div>
+
+Hemos explicado más casos como este en [Un cambio de miradas](/blog/un-cambio-de-miradas) y se los mostramos a los [regidores en nuestro paseo por Mataró](/blog/paseo-por-mataro-con-los-regidores). Si vives una situación parecida en tu edificio, en DiverMataró te ofrecemos [apoyo personalizado](/servicios/apoyo-personalizado).
