@@ -1,6 +1,7 @@
 import type { APIRoute } from 'astro';
 import { getCollection, type CollectionEntry } from 'astro:content';
 import { reivindicacionesConfig } from '../lib/reivindicaciones';
+import { getAlternates } from '../i18n';
 
 type SitemapEntry = { path: string; changefreq: string; priority: number; lastmod?: Date };
 
@@ -42,7 +43,11 @@ export const GET: APIRoute = async ({ site }) => {
   const entries: SitemapEntry[] = [
     ...staticPages.map((path) => ({
       path,
-      ...(PAGE_PRIORITY[path] ?? { changefreq: 'monthly', priority: 0.7 }),
+      // Las páginas en catalán toman la prioridad de su versión en castellano
+      ...(PAGE_PRIORITY[getAlternates(path)?.es ?? path] ?? {
+        changefreq: 'monthly',
+        priority: 0.7,
+      }),
     })),
     ...categories.map((category) => ({
       // Codificada como en su canonical («reflexión» → reflexi%C3%B3n)

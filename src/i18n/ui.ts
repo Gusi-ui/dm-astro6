@@ -77,7 +77,7 @@ export const ui = {
     'services.accessibility': 'Accessibilitat Universal',
     'services.innovation': 'Innovació Constant',
 
-    'footer.homeLink': "Ves a l'inici",
+    'footer.homeLink': 'Ves a l’inici',
     'footer.mission':
       'Treballem de manera altruista i sense ànim de lucre per una societat amb accessibilitat universal, inclusió plena i integració real a Mataró.',
     'footer.follow': 'Segueix-nos',
@@ -93,14 +93,14 @@ export const ui = {
     'footer.mapTitle': 'Ubicació de DiverMataró a Mataró, Barcelona',
     'footer.ctaTitle': 'Vols formar part del canvi?',
     'footer.ctaText': 'No cobrem cap mena de quota · Tot és voluntari',
-    'footer.ctaButton': "Associa't gratis",
+    'footer.ctaButton': 'Associa’t Gratis',
     'footer.privacy': 'Privacitat',
     'footer.dataDeletion': 'Eliminació de dades',
     'footer.madeWith': 'Fet amb',
     'footer.madeFor': 'per i per a la diversitat',
 
     'whatsapp.message':
-      "Hola, contacto des de la pàgina web de DiverMataró. Explica'ns què necessites.",
+      'Hola, contacto des de la pàgina web de DiverMataró. Explica’ns què necessites.',
     'whatsapp.tooltip': 'En parlem?',
     'whatsapp.label': 'Contacta per WhatsApp',
   },
