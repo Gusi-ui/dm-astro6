@@ -14,6 +14,9 @@ const blog = defineCollection({
     // automático) sin recortar, manteniendo el encuadre recortado solo en escritorio.
     heroFullMobile: z.boolean().optional(),
     category: z.string().optional(),
+    // Idioma del artículo, solo si no está en castellano: marca con lang el título,
+    // la entradilla y el cuerpo para que los lectores de pantalla lo pronuncien bien.
+    lang: z.enum(['es', 'ca']).optional(),
   }),
 });
 

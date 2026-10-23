@@ -5,6 +5,7 @@ pubDate: 2025-09-03
 updatedDate: 2026-10-22
 category: 'Activitats'
 heroImage: 'cloudinary:divermataro/blog/la-crispeta/La-Crispeta'
+lang: 'ca'
 ---
 
 **COL·LECTIU DE CIRC SOCIAL**
