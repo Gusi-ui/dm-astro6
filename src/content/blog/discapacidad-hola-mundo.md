@@ -2,7 +2,7 @@
 title: 'Discapacidad. Hola mundo!'
 description: 'DiverMataro llega para promover la igualdad y los derechos de las personas con Diversidad Funcional. Entendiendo conceptos clave.'
 pubDate: 2024-02-10
-updatedDate: 2026-10-22
+updatedDate: 2026-10-27
 category: 'Social'
 heroImage: 'cloudinary:divermataro/blog/discapacidad-hola-mundo/holamundo'
 ---
@@ -51,6 +51,8 @@ Existen diversos tipos de deficiencia y cada uno de estos tipos de deficiencia p
 ## ¿Discapacidad o Diversidad Funcional?
 
 Actualmente existe la tendencia a utilizar el término **diversidad funcional** en lugar de discapacidad. Las normas, en cambio, hablan de discapacidad: la <a href="https://www.boe.es/eli/es/ai/2006/12/13/(1)/con" target="_blank" rel="noopener noreferrer">Convención de la ONU sobre los derechos de las personas con discapacidad</a> y, desde su reforma de 2024, el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a49" target="_blank" rel="noopener noreferrer">artículo 49 de la Constitución</a>, que se refiere a «las personas con discapacidad». La Convención también está disponible en [versión de lectura fácil](/documents/Convencion-Lectura-Facil.pdf). Sin embargo, es un término polémico ya que desde diversas entidades representantes de personas con discapacidad instan a no utilizarlo.
+
+El derecho al juego también es accesibilidad: lee por qué pedimos un [columpio para silla de ruedas en Mataró](/blog/parques-infantiles-accesibles-mataro).
 
 Así, aunque reconocen que diversidad funcional puede ser una terminología más justa, el ser un término que la sociedad no reconoce puede aumentar la invisibilidad del colectivo y generar confusión, inseguridad jurídica y, por tanto, rebajar la protección que todavía es necesaria.
 

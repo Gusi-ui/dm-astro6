@@ -2,7 +2,7 @@
 title: 'Una rampa no es una ciudad: la reforma de la Plaza de Cataluña de Mataró y la accesibilidad que falta'
 description: 'Las obras en la Plaza de Cataluña prometen accesibilidad y seguridad, pero ¿para quién? Análisis de lo que la reforma resuelve, lo que silencia y el plan municipal en revisión.'
 pubDate: 2026-06-06
-updatedDate: 2026-10-22
+updatedDate: 2026-10-27
 category: 'Accesibilidad'
 heroImage: 'cloudinary:divermataro/blog/plaza-catalunya/pcb'
 heroFullMobile: true
@@ -195,6 +195,8 @@ Por último, está la diversidad funcional que no se ve: las personas con dolor 
 ### El juego y el cuidado como derecho
 
 El Ayuntamiento ha anunciado, además, la renovación completa de la zona de juegos infantiles de la parte superior de la plaza, con el objetivo de hacerla accesible desde la calle de Lluís Moret. La mitad de la superficie será de pavimento de caucho y la otra mitad de sauló. Es una mejora, pero esconde una distinción crucial: una cosa es que el área de juegos sea accesible —que se pueda llegar a ella— y otra muy distinta es que el juego sea inclusivo —que un niño con discapacidad pueda jugar de verdad en ella—. El caucho permite el paso de una silla de ruedas; el sauló, no. Y si los juegos que se instalan no están adaptados, habremos construido un parque al que se puede llegar pero en el que no todos los niños pueden jugar.
+
+La nueva zona de juegos de la plaza forma parte de un plan mayor: analizamos qué falta en los [parques infantiles accesibles de Mataró](/blog/parques-infantiles-accesibles-mataro).
 
 La plaza es, además, una infraestructura de cuidados, aunque rara vez la pensemos así. Es donde un padre o una madre pasan la tarde con un bebé, donde alguien acompaña a un mayor, donde una abuela y su nieto coinciden en el banco. Diseñar pensando en esos usos cotidianos —dónde sentarse, dónde descansar, dónde hay sombra y agua— beneficia a toda la comunidad, no solo a quien tiene una discapacidad reconocida.
 
