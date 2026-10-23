@@ -1,12 +1,16 @@
 ---
+import { getLangFromUrl, localizePath, useTranslations } from '../../i18n';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 const currentPath = Astro.url.pathname;
 const currentYear = new Date().getFullYear();
 
 // Colores idénticos al header — cada página tiene su identidad cromática
 const navLinks = [
   {
-    href: '/',
-    label: 'Inicio',
+    href: localizePath('/', lang),
+    label: t('nav.home'),
     matchPrefix: false,
     activeColor: 'text-cyan-200',
     border: 'border-cyan-400/50',
@@ -15,8 +19,8 @@ const navLinks = [
     hoverText: 'hover:text-cyan-300',
   },
   {
-    href: '/asociacion',
-    label: 'Asociación',
+    href: localizePath('/asociacion', lang),
+    label: t('nav.association'),
     matchPrefix: false,
     activeColor: 'text-orange-200',
     border: 'border-orange-400/50',
@@ -25,8 +29,8 @@ const navLinks = [
     hoverText: 'hover:text-orange-300',
   },
   {
-    href: '/blog',
-    label: 'Blog',
+    href: localizePath('/blog', lang),
+    label: t('nav.blog'),
     matchPrefix: true,
     activeColor: 'text-pink-200',
     border: 'border-pink-400/50',
@@ -35,8 +39,8 @@ const navLinks = [
     hoverText: 'hover:text-pink-300',
   },
   {
-    href: '/documentos',
-    label: 'Documentos',
+    href: localizePath('/documentos', lang),
+    label: t('nav.documents'),
     matchPrefix: false,
     activeColor: 'text-emerald-200',
     border: 'border-emerald-400/50',
@@ -45,8 +49,8 @@ const navLinks = [
     hoverText: 'hover:text-emerald-300',
   },
   {
-    href: '/contacto',
-    label: 'Contacto',
+    href: localizePath('/contacto', lang),
+    label: t('nav.contact'),
     matchPrefix: false,
     activeColor: 'text-violet-200',
     border: 'border-violet-400/50',
@@ -59,38 +63,38 @@ const navLinks = [
 // Colores consistentes con las tarjetas de Servicios.astro
 const serviceLinks = [
   {
-    href: '/servicios/apoyo-personalizado',
-    label: 'Apoyo Personalizado',
+    href: localizePath('/servicios/apoyo-personalizado', lang),
+    label: t('services.support'),
     hoverBg: 'hover:bg-orange-400/10',
     hoverText: 'hover:text-orange-300',
   },
   {
-    href: '/servicios/comunidad-inclusiva',
-    label: 'Comunidad Inclusiva',
+    href: localizePath('/servicios/comunidad-inclusiva', lang),
+    label: t('services.community'),
     hoverBg: 'hover:bg-cyan-400/10',
     hoverText: 'hover:text-cyan-300',
   },
   {
-    href: '/servicios/actos-reivindicativos',
-    label: 'Actos Reivindicativos',
+    href: localizePath('/servicios/actos-reivindicativos', lang),
+    label: t('services.actions'),
     hoverBg: 'hover:bg-pink-400/10',
     hoverText: 'hover:text-pink-300',
   },
   {
-    href: '/servicios/reconocimiento-social',
-    label: 'Reconocimiento Social',
+    href: localizePath('/servicios/reconocimiento-social', lang),
+    label: t('services.recognition'),
     hoverBg: 'hover:bg-amber-400/10',
     hoverText: 'hover:text-amber-300',
   },
   {
-    href: '/servicios/accesibilidad-universal',
-    label: 'Accesibilidad Universal',
+    href: localizePath('/servicios/accesibilidad-universal', lang),
+    label: t('services.accessibility'),
     hoverBg: 'hover:bg-emerald-400/10',
     hoverText: 'hover:text-emerald-300',
   },
   {
-    href: '/servicios/innovacion-constante',
-    label: 'Innovación Constante',
+    href: localizePath('/servicios/innovacion-constante', lang),
+    label: t('services.innovation'),
     hoverBg: 'hover:bg-violet-400/10',
     hoverText: 'hover:text-violet-300',
   },
@@ -110,24 +114,27 @@ const serviceLinks = [
     <div class="mb-12 flex flex-col items-center gap-8 md:flex-row md:items-start md:justify-between">
       <!-- Logo + Misión -->
       <div class="text-center md:max-w-md md:text-left">
-        <a href="/" class="mb-4 inline-block" aria-label="Ir al inicio">
+        <a
+          href={localizePath('/', lang)}
+          class="mb-4 inline-block"
+          aria-label={t('footer.homeLink')}
+        >
           <img
             src="/logoDiverMataro.png"
             width="326"
             height="82"
-            alt="Diversidad Funcional Mataró"
+            alt={t('site.name')}
             class="h-16 w-auto brightness-0 drop-shadow-[0_2px_12px_rgba(56,189,248,0.4)] hue-rotate-[180deg] invert saturate-[5] sepia-[0.35]"
           />
         </a>
-        <p class="mt-4 text-base leading-relaxed text-white/80">
-          Trabajamos de manera altruista y sin ánimo de lucro por una sociedad con accesibilidad
-          universal, inclusión plena e integración real en Mataró.
-        </p>
+        <p class="mt-4 text-base leading-relaxed text-white/80">{t('footer.mission')}</p>
       </div>
 
       <!-- Redes Sociales — cada icono tiene hover individual con su color de marca -->
       <div class="flex flex-col items-center gap-3 md:items-end">
-        <span class="text-sm font-semibold uppercase tracking-widest text-white/50">Síguenos</span>
+        <span class="text-sm font-semibold uppercase tracking-widest text-white/50">
+          {t('footer.follow')}
+        </span>
         <div class="flex items-center gap-4">
           <!-- Facebook -->
           <a
@@ -199,10 +206,10 @@ const serviceLinks = [
     <!-- ═══ Grid principal: Navega + Servicios + Contacto + Mapa ═══ -->
     <div class="mb-12 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
       <!-- Navegación — colores únicos por enlace como el header -->
-      <nav aria-label="Navegación del footer">
+      <nav aria-label={t('footer.navLabel')}>
         <h2 class="footer-heading">
           <span class="mr-2 inline-block h-2 w-2 rounded-full bg-gradient-to-r from-primary-400 to-cyan-400"></span>
-          Navega
+          {t('footer.navHeading')}
         </h2>
         <ul class="space-y-1">
           {navLinks.map((link) => {
@@ -245,10 +252,10 @@ const serviceLinks = [
       </nav>
 
       <!-- Servicios — colores consistentes con tarjetas de Servicios.astro -->
-      <nav aria-label="Servicios">
+      <nav aria-label={t('footer.services')}>
         <h2 class="footer-heading">
           <span class="mr-2 inline-block h-2 w-2 rounded-full bg-gradient-to-r from-accent-400 to-pink-400"></span>
-          Servicios
+          {t('footer.services')}
         </h2>
         <ul class="space-y-1">
           {serviceLinks.map((link) => (
@@ -269,7 +276,7 @@ const serviceLinks = [
       <div>
         <h2 class="footer-heading">
           <span class="mr-2 inline-block h-2 w-2 rounded-full bg-gradient-to-r from-emerald-400 to-green-400"></span>
-          Contacto
+          {t('footer.contact')}
         </h2>
         <ul class="space-y-3">
           <li>
@@ -293,7 +300,7 @@ const serviceLinks = [
                 </svg>
               </span>
               <div class="min-w-0">
-                <p class="text-sm text-white/50">Email</p>
+                <p class="text-sm text-white/50">{t('footer.email')}</p>
                 <p class="truncate text-base font-medium text-white/90">info@divermataro.org</p>
               </div>
             </a>
@@ -340,7 +347,7 @@ const serviceLinks = [
                 </svg>
               </span>
               <div>
-                <p class="text-sm text-white/50">Ubicación</p>
+                <p class="text-sm text-white/50">{t('footer.location')}</p>
                 <p class="text-base font-medium text-white/90">Mataró, Barcelona</p>
               </div>
             </div>
@@ -352,7 +359,7 @@ const serviceLinks = [
       <div>
         <h2 class="footer-heading">
           <span class="mr-2 inline-block h-2 w-2 rounded-full bg-gradient-to-r from-amber-400 to-orange-400"></span>
-          Encuéntranos
+          {t('footer.findUs')}
         </h2>
         <div class="overflow-hidden rounded-2xl border border-white/20 shadow-lg shadow-black/20 transition-all duration-500 hover:border-primary-400/30 hover:shadow-xl">
           <!-- El mapa (~400 KB de Google Maps) solo se carga al pulsar: en las páginas
@@ -360,7 +367,8 @@ const serviceLinks = [
           <button
             type="button"
             id="map-facade"
-            data-map-src="https://maps.google.com/maps?width=100%25&height=200&hl=es&q=Matar%C3%B3,Barcelona&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+            data-map-src={`https://maps.google.com/maps?width=100%25&height=200&hl=${lang}&q=Matar%C3%B3,Barcelona&t=&z=14&ie=UTF8&iwloc=B&output=embed`}
+            data-map-title={t('footer.mapTitle')}
             class="flex h-48 w-full flex-col items-center justify-center gap-3 bg-white/10 text-white transition-colors duration-300 hover:bg-white/15"
           >
             <svg
@@ -385,9 +393,9 @@ const serviceLinks = [
             </svg>
             <span class="font-semibold">Mataró, Barcelona</span>
             <span class="rounded-full bg-white/20 px-4 py-1.5 text-sm font-semibold">
-              Mostrar mapa
+              {t('footer.showMap')}
             </span>
-            <span class="text-xs text-white/80">Se carga Google Maps</span>
+            <span class="text-xs text-white/80">{t('footer.mapNotice')}</span>
           </button>
         </div>
       </div>
@@ -397,15 +405,13 @@ const serviceLinks = [
     <div class="relative mb-8 overflow-hidden rounded-2xl border border-white/20 bg-white/10 px-6 py-8 text-center backdrop-blur-lg">
       <!-- Glow decorativo estático -->
       <div class="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-gradient-to-br from-accent-400/20 to-primary-400/20 blur-2xl"></div>
-      <p class="relative mb-1 text-lg font-bold text-white">¿Quieres ser parte del cambio?</p>
-      <p class="relative mb-5 text-base text-white/70">
-        No cobramos ningún tipo de cuota &middot; Todo es voluntario
-      </p>
+      <p class="relative mb-1 text-lg font-bold text-white">{t('footer.ctaTitle')}</p>
+      <p class="relative mb-5 text-base text-white/70">{t('footer.ctaText')}</p>
       <a
-        href="/asociate"
+        href={localizePath('/asociate', lang)}
         class="group relative inline-flex transform items-center justify-center rounded-2xl bg-white px-8 py-3 font-bold text-primary-700 shadow-xl transition-all duration-300 hover:scale-105 hover:bg-primary-50 hover:shadow-2xl"
       >
-        Asóciate Gratis
+        {t('footer.ctaButton')}
         <svg
           class="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1"
           fill="none"
@@ -429,19 +435,22 @@ const serviceLinks = [
           &copy; {currentYear} Asociación Diversidad Funcional Mataró
         </p>
         <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
-          <a href="/privacidad" class="text-sm text-white/60 transition-colors hover:text-white/90">
-            Privacidad
+          <a
+            href={localizePath('/privacidad', lang)}
+            class="text-sm text-white/60 transition-colors hover:text-white/90"
+          >
+            {t('footer.privacy')}
           </a>
           <span class="text-white/30">|</span>
           <a
-            href="/eliminacion-datos"
+            href={localizePath('/eliminacion-datos', lang)}
             class="text-sm text-white/60 transition-colors hover:text-white/90"
           >
-            Eliminación de datos
+            {t('footer.dataDeletion')}
           </a>
         </div>
         <p class="text-sm text-white/40">
-          Hecho con <span class="text-red-400">&#9829;</span> por y para la diversidad
+          {t('footer.madeWith')} <span class="text-red-400">&#9829;</span> {t('footer.madeFor')}
         </p>
       </div>
     </div>
@@ -456,7 +465,7 @@ const serviceLinks = [
   mapFacade?.addEventListener('click', () => {
     const iframe = document.createElement('iframe');
     iframe.src = mapFacade.dataset.mapSrc ?? '';
-    iframe.title = 'Ubicación de DiverMataró en Mataró, Barcelona';
+    iframe.title = mapFacade.dataset.mapTitle ?? '';
     iframe.className = 'h-48 w-full';
     iframe.referrerPolicy = 'no-referrer-when-downgrade';
     iframe.style.border = '0';
