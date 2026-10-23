@@ -183,6 +183,7 @@ const sortedPosts = [...blogPosts].sort(
                             : undefined
                         }
                         alt={post.data.title}
+                        lang={post.data.lang}
                         class="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-105"
                         loading="lazy"
                         decoding="async"
@@ -198,10 +199,15 @@ const sortedPosts = [...blogPosts].sort(
                         day: 'numeric',
                       })}
                     </div>
-                    <h2 class="mb-2 text-xl font-bold text-gray-900 transition-colors group-hover:text-primary-600">
+                    <h2
+                      class="mb-2 text-xl font-bold text-gray-900 transition-colors group-hover:text-primary-600"
+                      lang={post.data.lang}
+                    >
                       {post.data.title}
                     </h2>
-                    <p class="line-clamp-3 text-gray-600">{post.data.description}</p>
+                    <p class="line-clamp-3 text-gray-600" lang={post.data.lang}>
+                      {post.data.description}
+                    </p>
                     {post.data.category && (
                       <span class="mt-4 inline-block rounded-full bg-gradient-to-r from-primary-100 to-accent-100 px-3 py-1 text-sm font-semibold text-primary-700">
                         {post.data.category}
