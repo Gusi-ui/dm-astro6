@@ -203,6 +203,7 @@ const colors = {
                       <img
                         src={resolveImageSrc(post.data.heroImage, 'thumbnail')}
                         alt={post.data.title}
+                        lang={post.data.lang}
                         class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                         loading="lazy"
                       />
@@ -250,10 +251,16 @@ const colors = {
 
                   {/* Contenido */}
                   <div class="flex flex-1 flex-col p-6">
-                    <h2 class="mb-3 line-clamp-2 text-xl font-bold text-gray-900 transition-colors duration-300 group-hover:text-primary-600">
+                    <h2
+                      class="mb-3 line-clamp-2 text-xl font-bold text-gray-900 transition-colors duration-300 group-hover:text-primary-600"
+                      lang={post.data.lang}
+                    >
                       {post.data.title}
                     </h2>
-                    <p class="mb-4 line-clamp-3 flex-1 leading-relaxed text-gray-600">
+                    <p
+                      class="mb-4 line-clamp-3 flex-1 leading-relaxed text-gray-600"
+                      lang={post.data.lang}
+                    >
                       {post.data.description}
                     </p>
 

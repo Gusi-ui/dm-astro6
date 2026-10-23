@@ -73,6 +73,7 @@ const jsonLd = [
     '@type': 'BlogPosting',
     headline: post.data.title,
     description: post.data.description,
+    inLanguage: post.data.lang ?? 'es',
     ...(socialImageMeta.src && { image: [new URL(socialImageMeta.src, siteUrl).href] }),
     datePublished: post.data.pubDate.toISOString(),
     dateModified: (post.data.updatedDate ?? post.data.pubDate).toISOString(),
@@ -133,6 +134,7 @@ const relatedPosts = allPosts
   ogImageWidth={socialImageMeta.width}
   ogImageHeight={socialImageMeta.height}
   canonicalUrl={canonicalUrl}
+  ogLocale={post.data.lang === 'ca' ? 'ca_ES' : undefined}
 >
   <script is:inline type="application/ld+json" set:html={jsonLdHtml} />
   <Header />
@@ -174,9 +176,13 @@ const relatedPosts = allPosts
                 </span>
               )}
             </div>
-            <h1 class="mb-4 text-4xl font-bold text-gray-900 md:text-5xl">{post.data.title}</h1>
+            <h1 class="mb-4 text-4xl font-bold text-gray-900 md:text-5xl" lang={post.data.lang}>
+              {post.data.title}
+            </h1>
             {post.data.description && (
-              <p class="mb-4 text-xl text-gray-600">{post.data.description}</p>
+              <p class="mb-4 text-xl text-gray-600" lang={post.data.lang}>
+                {post.data.description}
+              </p>
             )}
             {post.data.category && (
               <a
@@ -192,6 +198,7 @@ const relatedPosts = allPosts
             <BlogImage
               src={post.data.heroImage}
               alt={post.data.title}
+              lang={post.data.lang}
               fullOnMobile={post.data.heroFullMobile}
               transitionName={`hero-${post.id || post.slug}`}
             />
@@ -200,10 +207,14 @@ const relatedPosts = allPosts
           {articleHtml ? (
             <div
               class="prose prose-lg max-w-none prose-headings:font-bold prose-headings:text-gray-900 prose-p:text-gray-600 prose-a:text-primary-600 hover:prose-a:text-primary-700 prose-img:rounded-xl"
+              lang={post.data.lang}
               set:html={articleHtml}
             />
           ) : (
-            <div class="prose prose-lg max-w-none prose-headings:font-bold prose-headings:text-gray-900 prose-p:text-gray-600 prose-a:text-primary-600 hover:prose-a:text-primary-700 prose-img:rounded-xl">
+            <div
+              class="prose prose-lg max-w-none prose-headings:font-bold prose-headings:text-gray-900 prose-p:text-gray-600 prose-a:text-primary-600 hover:prose-a:text-primary-700 prose-img:rounded-xl"
+              lang={post.data.lang}
+            >
               <Content />
             </div>
           )}
@@ -391,6 +402,7 @@ const relatedPosts = allPosts
                               : undefined
                           }
                           alt={relatedPost.data.title}
+                          lang={relatedPost.data.lang}
                           class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                           loading="lazy"
                           decoding="async"
@@ -401,10 +413,13 @@ const relatedPosts = allPosts
                         </div>
                       )}
                     </div>
-                    <h3 class="line-clamp-2 text-lg font-semibold text-gray-900 transition-colors group-hover:text-primary-600">
+                    <h3
+                      class="line-clamp-2 text-lg font-semibold text-gray-900 transition-colors group-hover:text-primary-600"
+                      lang={relatedPost.data.lang}
+                    >
                       {relatedPost.data.title}
                     </h3>
-                    <p class="mt-2 line-clamp-2 text-sm text-gray-500">
+                    <p class="mt-2 line-clamp-2 text-sm text-gray-500" lang={relatedPost.data.lang}>
                       {relatedPost.data.description}
                     </p>
                   </a>
