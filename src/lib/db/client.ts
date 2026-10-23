@@ -55,7 +55,7 @@ export class Database {
 
   async getBlogViews(slug?: string): Promise<number> {
     let query = 'SELECT COUNT(*) as count FROM blog_views';
-    const params: any[] = [];
+    const params: string[] = [];
 
     if (slug) {
       query += ' WHERE slug = ?';
