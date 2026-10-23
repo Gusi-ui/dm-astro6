@@ -1,23 +1,43 @@
 ---
+import {
+  getAlternates,
+  getLangFromUrl,
+  languages,
+  localizePath,
+  normalizePath,
+  useTranslations,
+} from '../../i18n';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 const currentPath = Astro.url.pathname;
 
 const navItems = [
-  { href: '/', label: 'Inicio' },
-  { href: '/asociacion', label: 'Asociación' },
-  { href: '/blog', label: 'Blog', matchPrefix: true },
-  { href: '/documentos', label: 'Documentos' },
-  { href: '/contacto', label: 'Contacto' },
+  { href: localizePath('/', lang), label: t('nav.home') },
+  { href: localizePath('/asociacion', lang), label: t('nav.association') },
+  { href: localizePath('/blog', lang), label: t('nav.blog'), matchPrefix: true },
+  { href: localizePath('/documentos', lang), label: t('nav.documents') },
+  { href: localizePath('/contacto', lang), label: t('nav.contact') },
 ];
+const joinHref = localizePath('/asociate', lang);
+
+// Selector de idioma: solo si la página actual existe en el otro idioma
+const otherLang = lang === 'es' ? 'ca' : 'es';
+const alternates = getAlternates(normalizePath(currentPath));
+const switchHref = alternates?.[otherLang];
 ---
 
 <header class="fixed left-0 right-0 top-0 z-50 border-b border-primary-200/20 bg-white/90 shadow-2xl shadow-primary-500/5 backdrop-blur-xl">
   <!-- Gradiente decorativo superior -->
   <div class="absolute left-0 right-0 top-0 h-1 bg-gradient-to-r from-primary-500 via-accent-500 to-primary-500 opacity-60"></div>
 
-  <nav class="section-container py-3" aria-label="Navegación principal">
+  <nav class="section-container py-3" aria-label={t('nav.main')}>
     <div class="flex items-center justify-between">
       <!-- Logo -->
-      <a href="/" class="group relative flex items-center transition-all duration-300">
+      <a
+        href={localizePath('/', lang)}
+        class="group relative flex items-center transition-all duration-300"
+      >
         <img
           src="/logoDiverMataro.png"
           width="326"
@@ -26,7 +46,7 @@ const navItems = [
           class="h-12 w-auto md:h-14"
         />
         <!-- Título oculto visualmente pero presente para SEO -->
-        <span class="sr-only">Diversidad Funcional Mataró</span>
+        <span class="sr-only">{t('site.name')}</span>
         <div class="absolute -inset-2 rounded-lg bg-gradient-to-r from-primary-400/20 to-accent-400/20 opacity-0 blur-lg transition-opacity duration-300 group-hover:opacity-100"></div>
       </a>
 
@@ -108,18 +128,30 @@ const navItems = [
         })()}
 
         <li>
-          <a href="/asociate" class="btn-primary ml-2">
+          <a href={joinHref} class="btn-primary ml-2">
             {' '}
-            Únete{' '}
+            {t('nav.join')}{' '}
           </a>
         </li>
+        {switchHref && (
+          <li>
+            <a
+              href={switchHref}
+              hreflang={otherLang}
+              lang={otherLang}
+              class="ml-1 rounded-lg px-3 py-2 text-sm font-semibold text-gray-700 underline-offset-4 transition-colors hover:bg-primary-50 hover:text-primary-700 hover:underline"
+            >
+              {languages[otherLang]}
+            </a>
+          </li>
+        )}
       </ul>
 
       <!-- Mobile menu button -->
       <button
         id="mobile-menu-button"
         class="rounded-lg p-2 text-gray-700 transition-colors hover:bg-primary-50 hover:text-primary-600 md:hidden"
-        aria-label="Menú móvil"
+        aria-label={t('nav.mobileMenu')}
         aria-expanded="false"
       >
         <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -206,11 +238,23 @@ const navItems = [
           });
         })()}
         <li class="mobile-menu-item" style={`--item-delay: ${navItems.length * 0.2}s`}>
-          <a href="/asociate" class="btn-primary w-full text-center">
+          <a href={joinHref} class="btn-primary w-full text-center">
             {' '}
-            Únete{' '}
+            {t('nav.join')}{' '}
           </a>
         </li>
+        {switchHref && (
+          <li class="mobile-menu-item" style={`--item-delay: ${(navItems.length + 1) * 0.2}s`}>
+            <a
+              href={switchHref}
+              hreflang={otherLang}
+              lang={otherLang}
+              class="block rounded-xl border border-gray-200 bg-white px-4 py-3 text-center font-semibold text-gray-700 shadow-sm transition-all duration-300 hover:border-primary-300 hover:text-primary-700 hover:shadow-md"
+            >
+              {languages[otherLang]}
+            </a>
+          </li>
+        )}
       </ul>
     </div>
   </nav>
