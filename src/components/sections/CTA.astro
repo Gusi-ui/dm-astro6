@@ -1,23 +1,23 @@
 ---
+import { createTranslator, getLangFromUrl, localizePath } from '../../i18n';
+import { home } from '../../i18n/home';
+
+const lang = getLangFromUrl(Astro.url);
+const t = createTranslator(home, lang);
 ---
 
 <section class="bg-gradient-to-r from-primary-600 to-accent-600 py-16 text-white md:py-24">
   <div class="section-container">
     <div class="mx-auto max-w-3xl text-center">
-      <h2 class="mb-6 text-3xl font-bold md:text-4xl">Únete a Nuestra Causa</h2>
-      <p class="mb-8 text-xl text-primary-100">
-        Juntos podemos conseguir una Mataró más accesible e inclusiva. Tu participación es
-        fundamental para lograr nuestros objetivos.
-      </p>
+      <h2 class="mb-6 text-3xl font-bold md:text-4xl">{t('cta.title')}</h2>
+      <p class="mb-8 text-xl text-primary-100">{t('cta.text')}</p>
       <a
-        href="/asociate"
+        href={localizePath('/asociate', lang)}
         class="btn bg-white px-8 py-4 text-lg text-primary-600 hover:bg-primary-50"
       >
-        Asóciate Gratis
+        {t('cta.button')}
       </a>
-      <p class="mt-4 text-sm text-primary-200">
-        No cobramos ningún tipo de cuota • Todo es voluntario
-      </p>
+      <p class="mt-4 text-sm text-primary-200">{t('cta.note')}</p>
     </div>
   </div>
 </section>

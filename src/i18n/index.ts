@@ -3,7 +3,8 @@
  * en catalán (/ca/serveis/…, /ca/associacio).
  */
 
-import { ui, type UiKey } from './ui';
+import { categoryNamesCa } from './home';
+import { ui } from './ui';
 
 export const languages = { es: 'Castellano', ca: 'Català' } as const;
 export type Lang = keyof typeof languages;
@@ -31,7 +32,22 @@ export const ogLocales: Record<Lang, string> = { es: 'es_ES', ca: 'ca_ES' };
  * /servicios/accesibilidad-universal → /ca/serveis/accessibilitat-universal ·
  * /servicios/innovacion-constante → /ca/serveis/innovacio-constant
  */
-export const caRoutes: Record<string, string> = {};
+export const caRoutes: Record<string, string> = {
+  '/': '/ca',
+  '/asociacion': '/ca/associacio',
+  '/contacto': '/ca/contacte',
+  '/documentos': '/ca/documents',
+  '/asociate': '/ca/associa-te',
+  '/asociate/gracias': '/ca/associa-te/gracies',
+  '/privacidad': '/ca/privacitat',
+  '/eliminacion-datos': '/ca/eliminacio-dades',
+  '/servicios/apoyo-personalizado': '/ca/serveis/suport-personalitzat',
+  '/servicios/comunidad-inclusiva': '/ca/serveis/comunitat-inclusiva',
+  '/servicios/actos-reivindicativos': '/ca/serveis/actes-reivindicatius',
+  '/servicios/reconocimiento-social': '/ca/serveis/reconeixement-social',
+  '/servicios/accesibilidad-universal': '/ca/serveis/accessibilitat-universal',
+  '/servicios/innovacion-constante': '/ca/serveis/innovacio-constant',
+};
 
 const esRoutes: Record<string, string> = Object.fromEntries(
   Object.entries(caRoutes).map(([es, ca]) => [ca, es])
@@ -61,5 +77,27 @@ export function getAlternates(pathname: string): Record<Lang, string> | null {
 }
 
 export function useTranslations(lang: Lang) {
-  return (key: UiKey): string => ui[lang][key] ?? ui[defaultLang][key];
+  return createTranslator(ui, lang);
+}
+
+/** Traductor para un diccionario de página ({ es: {...}, ca: {...} }) */
+export function createTranslator<K extends string>(
+  dict: { es: Record<K, string>; ca: Partial<Record<K, string>> },
+  lang: Lang
+) {
+  return (key: K): string => dict[lang][key] ?? dict.es[key];
+}
+
+/**
+ * Valor del atributo lang para un texto en `contentLang` dentro de una página en
+ * `pageLang`: solo hace falta cuando no coinciden.
+ */
+export function langAttr(contentLang: Lang | undefined, pageLang: Lang): Lang | undefined {
+  const lang = contentLang ?? defaultLang;
+  return lang === pageLang ? undefined : lang;
+}
+
+/** Nombre visible de una categoría del blog */
+export function categoryName(category: string, lang: Lang): string {
+  return lang === 'ca' ? (categoryNamesCa[category] ?? category) : category;
 }
