@@ -2,12 +2,12 @@
 title: 'Injusticias del día día'
 description: 'Crónica de una discriminación en una sucursal bancaria y la falta de accesibilidad y empatía.'
 pubDate: 2021-10-21
-updatedDate: 2026-10-22
+updatedDate: 2026-10-24
 category: 'Denuncia'
 heroImage: 'cloudinary:divermataro/blog/injusticias-del-dia-dia/injusto'
 ---
 
-Había una vez una poderosa entidad pública llamada BBVA. A lo largo del tiempo fueron adquiriendo cada día más y más poder con el dinero de los ciudadanos; sin embargo con ese dinero de los ciudadanos iban menguando cada vez más y más sus derechos cometiendo diversas injusticias.
+Había una vez una poderosa entidad llamada BBVA. A lo largo del tiempo fueron adquiriendo cada día más y más poder con el dinero de los ciudadanos; sin embargo con ese dinero de los ciudadanos iban menguando cada vez más y más sus derechos cometiendo diversas injusticias.
 
 Aconteció un día cualquiera; que personas con pleno derecho en la sociedad acudieron a una sucursal de esta poderosa entidad para hacer uso de su dinero; pero se les negó el acceso.
 
@@ -17,7 +17,7 @@ Ante todo; desde [DiverMataro](/asociacion) mostramos empatía con la situación
 
 ## Desarrollo y trama de la situación injusta
 
-Una persona con [diversidad funcional](/blog/discapacidad-hola-mundo); anónima, quiere acceder a la sucursal pública BBVA de Plaza Granollers; en esta sucursal se está discriminando la entrada a personas con diversidad funcional. A la vez que incumpliendo todas las leyes y normas existentes de accesibilidad.
+Una persona con [diversidad funcional](/blog/discapacidad-hola-mundo); anónima, quiere acceder a la sucursal del BBVA de Plaza Granollers; en esta sucursal se está discriminando la entrada a personas con diversidad funcional. A la vez que incumpliendo todas las leyes y normas existentes de accesibilidad.
 
 En la entrada se encuentra un guardia de seguridad con cara de pocos amigos; la persona con diversidad funcional pide turno en la cola; y solicita que le pongan una rampa provisional para entrar en la sucursal a usar el cajero; todo parece que va bien, sin embargo al ir a colocar la rampa los explotados trabajadores de la sucursal, algo parece que cambia; alguien está haciendo fotos parece ser; con la intención de denunciar esta situación tan injusta; tanto para las personas con diversidad funcional; como para los trabajadores de la entidad BBVA, los trabajadores no quieren aparecer en la foto, están en su derecho de solicitar no aparecer.
 
