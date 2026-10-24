@@ -12,6 +12,10 @@ const t = createTranslator(asociacion, getLangFromUrl(Astro.url));
 
 const heroImage = getRandomHeroImage();
 
+// Calcular años desde la fundación de la asociación
+const ANIO_FUNDACION = 2019;
+const aniosLuchando = new Date().getFullYear() - ANIO_FUNDACION;
+
 // Datos de la junta directiva
 const juntaDirectiva = [
   {
@@ -594,7 +598,7 @@ const timeline = [
         <!-- Grid de estadísticas -->
         <div class="mx-auto grid max-w-4xl grid-cols-2 gap-4 sm:grid-cols-4 md:gap-8">
           <div class="rounded-2xl bg-gradient-to-br from-primary-50 to-primary-100/50 p-6 text-center shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl md:p-8">
-            <div class="text-4xl font-bold text-primary-600 md:text-5xl">+6</div>
+            <div class="text-4xl font-bold text-primary-600 md:text-5xl">+{aniosLuchando}</div>
             <div class="mt-2 text-sm text-gray-600 md:text-base">{t('impact.years')}</div>
           </div>
           <div class="rounded-2xl bg-gradient-to-br from-accent-50 to-accent-100/50 p-6 text-center shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl md:p-8">

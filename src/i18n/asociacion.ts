@@ -15,7 +15,7 @@ export const asociacion = {
     'hero.cta': 'Conoce nuestra historia',
 
     'history.badge': 'Nuestra trayectoria',
-    'history.title': 'Más de una década',
+    'history.title': 'Desde 2019',
     'history.titleHighlight': 'luchando',
     'history.text':
       'Desde nuestra fundación, hemos trabajado incansablemente por construir una sociedad más inclusiva y accesible.',
@@ -93,7 +93,7 @@ export const asociacion = {
     'hero.cta': 'Coneix la nostra història',
 
     'history.badge': 'La nostra trajectòria',
-    'history.title': 'Més d’una dècada',
+    'history.title': 'Des del 2019',
     'history.titleHighlight': 'lluitant',
     'history.text':
       'Des de la nostra fundació, hem treballat incansablement per construir una societat més inclusiva i accessible.',
