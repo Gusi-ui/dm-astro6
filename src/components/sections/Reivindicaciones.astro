@@ -1,17 +1,14 @@
 ---
-import { getCollection } from 'astro:content';
+import { claimPath, getPublishedPosts } from '../../lib/blog';
 import { reivindicacionesConfig } from '../../lib/reivindicaciones';
-import { createTranslator, getLangFromUrl, localizePath } from '../../i18n';
+import { createTranslator, getLangFromUrl } from '../../i18n';
 import { home } from '../../i18n/home';
 
 const lang = getLangFromUrl(Astro.url);
 const t = createTranslator(home, lang);
 
-// Posts ya publicados (sin los programados), para contar por categoría
-const allPosts = await getCollection(
-  'blog',
-  ({ data }: { data: { pubDate: Date } }) => data.pubDate <= new Date()
-);
+// Posts ya publicados del blog de este idioma (sin los programados), para contar por categoría
+const allPosts = await getPublishedPosts(lang);
 
 // Función para contar posts que pertenecen a cualquiera de las categorías indicadas
 function countPostsByCategories(categories: string[]): number {
@@ -26,6 +23,7 @@ const reivindicacionesConConteo = reivindicacionesConfig
   .map((r) => ({
     ...r,
     ...(lang === 'ca' && r.ca),
+    path: claimPath(r.slug, lang),
     postCount: countPostsByCategories(r.categories),
   }))
   .sort((a, b) => b.postCount - a.postCount);
@@ -128,7 +126,7 @@ const aniosLuchando = new Date().getFullYear() - ANIO_FUNDACION;
                   {/* Botón para ver artículos */}
                   {item.postCount > 0 && (
                     <a
-                      href={localizePath(`/blog/reivindicacion/${item.slug}`, lang)}
+                      href={item.path}
                       class={`inline-flex items-center justify-center gap-2 rounded-xl ${item.color} flex-shrink-0 px-5 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl`}
                     >
                       <span>{t('claims.seeArticles')}</span>

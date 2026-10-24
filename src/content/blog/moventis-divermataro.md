@@ -89,4 +89,4 @@ El camino hacia una accesibilidad plena es largo y requiere el compromiso de tod
 
 Un transporte público accesible, como ya exploramos en nuestro artículo sobre [transporte público adaptado](/blog/transporte-publico-adaptado), no es solo una cuestión técnica; es una cuestión de derechos humanos y de dignidad. Y en Mataró, gracias a esta alianza, estamos un paso más cerca de conseguirlo.
 
-Aún queda camino por recorrer, como demuestran las [averías de los ascensores en las estaciones de Rodalies](/blog/estacions-de-renfe). Puedes seguir todas nuestras [reivindicaciones sobre transporte](/blog/reivindicacion/transporte) y, si quieres participar, [hazte socio o socia de DiverMataró](/asociate).
+Aún queda camino por recorrer, como demuestran las [averías de los ascensores en las estaciones de Rodalies](/blog/averias-ascensores-estaciones-renfe). Puedes seguir todas nuestras [reivindicaciones sobre transporte](/blog/reivindicacion/transporte) y, si quieres participar, [hazte socio o socia de DiverMataró](/asociate).

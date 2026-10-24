@@ -5,7 +5,7 @@ pubDate: 2020-11-18
 updatedDate: 2026-10-22
 category: 'Denuncia'
 heroImage: 'cloudinary:divermataro/blog/estacions-de-renfe/renfe'
-lang: 'ca'
+esSlug: 'averias-ascensores-estaciones-renfe'
 ---
 
 Recollim la denúncia d'en Jordi Porta, usuari de la línia de **Renfe al Maresme**. Va trigar una hora i mitja a fer un trajecte de 20 minuts perquè va trobar diversos ascensors espatllats i no podia sortir de l'estació, una problemàtica que afecta al [transport públic adaptat](/blog/transporte-publico-adaptado) en general.

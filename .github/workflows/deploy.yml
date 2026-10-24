@@ -26,7 +26,7 @@ jobs:
         id: hoy
         run: |
           hoy=$(date -u +%F)
-          if grep -lE "^pubDate: ['\"]?${hoy}" src/content/blog/*.md; then
+          if grep -lE "^pubDate: ['\"]?${hoy}" src/content/blog/*.md content-ca/blog/*.md; then
             echo "publicar=true" >> "$GITHUB_OUTPUT"
           else
             echo "Ningún artículo se publica el ${hoy}: no hace falta desplegar."
