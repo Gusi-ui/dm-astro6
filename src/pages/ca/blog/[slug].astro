@@ -1,0 +1,18 @@
+---
+import BlogPostPage from '../../../components/pages/blog/BlogPost.astro';
+import { getPublishedPosts, type BlogPost } from '../../../lib/blog';
+import type { GetStaticPaths } from 'astro';
+
+export const prerender = true;
+
+// Los artículos con fecha futura no se generan hasta su día: el despliegue diario
+// programado (deploy.yml) reconstruye el sitio cuando llega su pubDate
+export const getStaticPaths = (async () => {
+  const posts = await getPublishedPosts('ca');
+  return posts.map((post: BlogPost) => ({ params: { slug: post.id }, props: { post } }));
+}) satisfies GetStaticPaths;
+
+const { post } = Astro.props as { post: BlogPost };
+---
+
+<BlogPostPage post={post} />

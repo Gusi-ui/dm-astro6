@@ -6,7 +6,13 @@ import {
   localizePath,
   normalizePath,
   useTranslations,
+  type Lang,
 } from '../../i18n';
+
+interface Props {
+  /** Versiones de la página en cada idioma, para las que no están en caRoutes (el blog) */
+  alternates?: Record<Lang, string> | null;
+}
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -23,7 +29,7 @@ const joinHref = localizePath('/asociate', lang);
 
 // Selector de idioma: solo si la página actual existe en el otro idioma
 const otherLang = lang === 'es' ? 'ca' : 'es';
-const alternates = getAlternates(normalizePath(currentPath));
+const alternates = Astro.props.alternates ?? getAlternates(normalizePath(currentPath));
 const switchHref = alternates?.[otherLang];
 ---
 

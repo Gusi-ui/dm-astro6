@@ -411,6 +411,8 @@ const heroImage = getRandomHeroImage();
       asunto: formData.get('asunto'),
       mensaje: formData.get('mensaje'),
       sitio_web: formData.get('sitio_web'),
+      // Idioma de la página, para que el servidor responda en el mismo
+      lang: document.documentElement.lang,
     };
 
     try {

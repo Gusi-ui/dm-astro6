@@ -76,7 +76,7 @@ El motivo era exactamente el mismo: el ascensor no funcionaba.
 
 Ahora volvemos a encontrarnos con otra exposición relacionada con la defensa de los derechos. Y, una vez más, las personas con movilidad reducida nos encontramos con la misma barrera.
 
-Tampoco es un caso aislado en la ciudad: ya hemos denunciado las [averías de los ascensores en las estaciones de Rodalies](/blog/estacions-de-renfe), que dejan a muchas personas sin poder llegar al andén.
+Tampoco es un caso aislado en la ciudad: ya hemos denunciado las [averías de los ascensores en las estaciones de Rodalies](/blog/averias-ascensores-estaciones-renfe), que dejan a muchas personas sin poder llegar al andén.
 
 Además, hemos observado que la puerta del ascensor en la planta baja está tapada. Este hecho aumenta nuestra preocupación, porque no vemos señales de que se esté resolviendo el problema.
 

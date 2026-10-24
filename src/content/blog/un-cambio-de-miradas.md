@@ -37,6 +37,6 @@ No queremos ser muy radicales; estamos muy abiertos a los diálogos de todo tipo
 
 No podíamos acabar este artículo sin mencionar la mejor forma de hacer las cosas. Algo muy positivo del edificio de Mataró connecta demostrando la mirada bien dirigida. Cuando se han construido los lavabos del edificio no se ha mirado hacia el pasado y se han construido dos tipos de lavabo; uno accesible y justo al lado, otro inaccesible; éste no es un buen criterio para avanzar. ¿Porque tienen que hacerse dos tipos de lavabo?. Es algo que no comprenderemos jamás. Cambiemos las miradas.
 
-Tomemos siempre el criterio de hacer todos los lavabos accesibles. En **[Mataró Connecta](/blog/mataro-connecta)** todos los lavabos los pueden utilizar todas las personas. Un buen ejemplo de buena mirada.
+Tomemos siempre el criterio de hacer todos los lavabos accesibles. En **[Mataró Connecta](/blog/mataro-connecta-consumo)** todos los lavabos los pueden utilizar todas las personas. Un buen ejemplo de buena mirada.
 
 ¿Qué pensáis del cambio de miradas? ¿Quizás deberíamos hablar de [accesibilidad universal](/servicios/accesibilidad-universal) mejor? ¿O quizás incluso ambos términos pueden coexistir? [Coméntanos tu opinión](/contacto).

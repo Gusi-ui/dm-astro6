@@ -1,0 +1,19 @@
+---
+import BlogCategory from '../../../../components/pages/blog/BlogCategory.astro';
+import { getAllCategories } from '../../../../lib/blog';
+import { categoryName } from '../../../../i18n';
+
+export const prerender = true;
+
+export async function getStaticPaths() {
+  const categories = await getAllCategories();
+  return categories.map((category) => ({
+    params: { categoria: categoryName(category, 'ca').toLowerCase() },
+    props: { category },
+  }));
+}
+
+const { category } = Astro.props as { category: string };
+---
+
+<BlogCategory category={category} />

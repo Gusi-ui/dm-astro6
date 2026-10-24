@@ -1,5 +1,4 @@
 ---
-import { getCollection, type CollectionEntry } from 'astro:content';
 import {
   categoryName,
   createTranslator,
@@ -15,16 +14,13 @@ import {
   isCloudinarySource,
   resolveImageSrc,
 } from '../../lib/cloudinary';
-
-type BlogEntry = CollectionEntry<'blog'>;
+import { getPublishedPosts, postLang, postPath, type BlogPost } from '../../lib/blog';
 
 const lang = getLangFromUrl(Astro.url);
 const t = createTranslator(home, lang);
 
-// Obtener todos los posts publicados
-const allPosts = await getCollection('blog', (entry: BlogEntry) => {
-  return entry.data.pubDate <= new Date();
-});
+// Posts publicados del blog de este idioma
+const allPosts = await getPublishedPosts(lang);
 
 // Función para mezclar aleatoriamente (Fisher-Yates shuffle)
 function shuffleArray<T>(array: T[]): T[] {
@@ -37,7 +33,7 @@ function shuffleArray<T>(array: T[]): T[] {
 }
 
 // Obtener 3 posts aleatorios
-const randomPosts: BlogEntry[] = shuffleArray(allPosts).slice(0, 3);
+const randomPosts: BlogPost[] = shuffleArray(allPosts).slice(0, 3);
 
 // Colores para las tarjetas
 const cardColors = [
@@ -98,11 +94,10 @@ const cardColors = [
     {randomPosts.length > 0 ? (
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
         {randomPosts.map((post, index) => {
-          const slug = post.id || post.slug;
           const colors = cardColors[index];
           return (
             <a
-              href={`/blog/${slug}`}
+              href={postPath(post)}
               class={`group relative flex flex-col overflow-hidden rounded-3xl border-2 border-gray-100 bg-white shadow-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl ${colors.hoverBorder}`}
             >
               {/* Imagen del post */}
@@ -121,7 +116,7 @@ const cardColors = [
                         : undefined
                     }
                     alt={post.data.title}
-                    lang={langAttr(post.data.lang, lang)}
+                    lang={langAttr(postLang(post), lang)}
                     class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                     loading="lazy"
                     decoding="async"
@@ -166,13 +161,13 @@ const cardColors = [
               <div class="flex flex-1 flex-col p-6">
                 <h3
                   class="mb-3 line-clamp-2 text-xl font-bold text-gray-900 transition-colors duration-300 group-hover:text-primary-600"
-                  lang={langAttr(post.data.lang, lang)}
+                  lang={langAttr(postLang(post), lang)}
                 >
                   {post.data.title}
                 </h3>
                 <p
                   class="mb-4 line-clamp-3 flex-1 leading-relaxed text-gray-600"
-                  lang={langAttr(post.data.lang, lang)}
+                  lang={langAttr(postLang(post), lang)}
                 >
                   {post.data.description}
                 </p>
