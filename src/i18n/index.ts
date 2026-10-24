@@ -35,6 +35,7 @@ export const ogLocales: Record<Lang, string> = { es: 'es_ES', ca: 'ca_ES' };
 export const caRoutes: Record<string, string> = {
   '/': '/ca',
   '/asociacion': '/ca/associacio',
+  '/contacto': '/ca/contacte',
 };
 
 const esRoutes: Record<string, string> = Object.fromEntries(

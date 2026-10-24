@@ -54,6 +54,8 @@ export const ui = {
       'Hola, estoy contactando desde la página web de DiverMataró. Cuéntanos qué necesitas.',
     'whatsapp.tooltip': '¿Hablamos?',
     'whatsapp.label': 'Contactar por WhatsApp',
+
+    'form.honeypot': 'No rellenes este campo',
   },
   ca: {
     'site.name': 'Diversitat Funcional Mataró',
@@ -103,6 +105,8 @@ export const ui = {
       'Hola, contacto des de la pàgina web de DiverMataró. Explica’ns què necessites.',
     'whatsapp.tooltip': 'En parlem?',
     'whatsapp.label': 'Contacta per WhatsApp',
+
+    'form.honeypot': 'No omplis aquest camp',
   },
 } as const;
 
