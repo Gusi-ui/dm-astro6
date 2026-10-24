@@ -36,6 +36,7 @@ export const caRoutes: Record<string, string> = {
   '/': '/ca',
   '/asociacion': '/ca/associacio',
   '/contacto': '/ca/contacte',
+  '/documentos': '/ca/documents',
 };
 
 const esRoutes: Record<string, string> = Object.fromEntries(
