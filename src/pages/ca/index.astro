@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/sections/Header.astro';
+import Hero from '../../components/sections/Hero.astro';
+import Servicios from '../../components/sections/Servicios.astro';
+import BlogPosts from '../../components/sections/BlogPosts.astro';
+import Reivindicaciones from '../../components/sections/Reivindicaciones.astro';
+import Objetivos from '../../components/sections/Objetivos.astro';
+import CTA from '../../components/sections/CTA.astro';
+import Footer from '../../components/sections/Footer.astro';
+import { createTranslator } from '../../i18n';
+import { home } from '../../i18n/home';
+
+const t = createTranslator(home, 'ca');
+---
+
+<BaseLayout title={t('page.title')}>
+  <Header />
+  <main id="main-content">
+    <Hero />
+    <Servicios />
+    <BlogPosts />
+    <Reivindicaciones />
+    <Objetivos />
+    <CTA />
+  </main>
+  <Footer />
+</BaseLayout>

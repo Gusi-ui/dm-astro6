@@ -1,0 +1,501 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../sections/Header.astro';
+import Footer from '../sections/Footer.astro';
+import HeroBackground from '../HeroBackground.astro';
+import { getRandomHeroImage } from '../../lib/heroImages';
+import { createTranslator, dateLocales, getLangFromUrl, localizePath, type Lang } from '../../i18n';
+import { documentos as textos } from '../../i18n/documentos';
+
+const lang = getLangFromUrl(Astro.url);
+const t = createTranslator(textos, lang);
+
+const heroImage = getRandomHeroImage();
+
+type Documento = {
+  id: number;
+  title: string;
+  description: string;
+  category: string;
+  file: string;
+  size: string;
+  /** Idioma del PDF, que no siempre coincide con el de la página */
+  fileLang: Lang;
+  date: string;
+};
+
+const documentos: Documento[] = [
+  {
+    id: 1,
+    title: t('doc1.title'),
+    description: t('doc1.description'),
+    category: t('category.association'),
+    file: '/documents/Diver_Mataro.pdf',
+    size: '172 KB',
+    fileLang: 'ca',
+    date: '2024-01-26',
+  },
+  {
+    id: 2,
+    title: t('doc2.title'),
+    description: t('doc2.description'),
+    category: t('category.rights'),
+    file: '/documents/Convencion-Lectura-Facil.pdf',
+    size: '728 KB',
+    fileLang: 'es',
+    date: '2024-01-26',
+  },
+  {
+    id: 3,
+    title: t('doc3.title'),
+    description: t('doc3.description'),
+    category: t('category.guides'),
+    file: '/documents/fem_accessible_el_nostre_comerc.pdf',
+    size: '1,2 MB',
+    fileLang: 'ca',
+    date: '2024-01-24',
+  },
+  {
+    id: 4,
+    title: t('doc4.title'),
+    description: t('doc4.description'),
+    category: t('category.regulations'),
+    file: '/documents/Normativa_Tecnica_de_Accesibilidad.pdf',
+    size: '1,5 MB',
+    fileLang: 'es',
+    date: '2025-01-26',
+  },
+  {
+    id: 5,
+    title: t('doc5.title'),
+    description: t('doc5.description'),
+    category: t('category.services'),
+    file: '/documents/APvsAD.pdf',
+    size: '466 KB',
+    fileLang: 'es',
+    date: '2026-02-15',
+  },
+  {
+    id: 6,
+    title: t('doc6.title'),
+    description: t('doc6.description'),
+    category: t('category.services'),
+    file: '/documents/asistencia_personal_empleo_derecho.pdf',
+    size: '435 KB',
+    fileLang: 'es',
+    date: '2026-02-15',
+  },
+  {
+    id: 7,
+    title: t('doc7.title'),
+    description: t('doc7.description'),
+    category: t('category.plan'),
+    file: '/documents/Pla_dxAccessibilitat_Universal_de_Mataro.pdf',
+    size: '16 MB',
+    fileLang: 'ca',
+    date: '2026-06-06',
+  },
+  {
+    id: 8,
+    title: t('doc8.title'),
+    description: t('doc8.description'),
+    category: t('category.plan'),
+    file: '/documents/Trams_pla_accessibilitat.pdf',
+    size: '20 MB',
+    fileLang: 'ca',
+    date: '2026-06-06',
+  },
+  {
+    id: 9,
+    title: t('doc9.title'),
+    description: t('doc9.description'),
+    category: t('category.plan'),
+    file: '/documents/Annex_1_Criteris_de_prioritzacix_de_les_propostes.pdf',
+    size: '42 KB',
+    fileLang: 'ca',
+    date: '2026-06-06',
+  },
+  {
+    id: 10,
+    title: t('doc10.title'),
+    description: t('doc10.description'),
+    category: t('category.plan'),
+    file: '/documents/Annex_2_Criteris_itineraris_i_guals.pdf',
+    size: '3,5 MB',
+    fileLang: 'ca',
+    date: '2026-06-06',
+  },
+];
+
+// Documentos ordenados por fecha (más recientes primero)
+const documentosOrdenados = [...documentos].sort(
+  (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+);
+
+// Categorías para los filtros, con "Todos" (valor 'all') al inicio
+const categorias = ['all', ...new Set(documentos.map((doc) => doc.category))];
+---
+
+<BaseLayout title={t('page.title')} description={t('page.description')}>
+  <Header />
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="relative flex min-h-[70vh] items-center justify-center overflow-hidden pt-16 md:min-h-[80vh] md:pt-20">
+      <!-- Fondo con imagen responsive -->
+      <HeroBackground image={heroImage} />
+
+      <!-- Iconos flotantes decorativos -->
+      <div class="absolute left-10 top-32 z-10 hidden animate-float lg:block">
+        <div class="flex h-16 w-16 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg">
+          <svg class="h-8 w-8 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+
+      <div class="absolute right-16 top-40 z-10 hidden animate-float-delay lg:block">
+        <div class="flex h-20 w-20 items-center justify-center rounded-2xl border border-white/30 bg-white/20 shadow-2xl backdrop-blur-lg">
+          <svg
+            class="h-10 w-10 text-orange-400"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Contenido principal -->
+      <div class="section-container relative z-20 py-20">
+        <div class="mx-auto max-w-4xl text-center">
+          <!-- Badge -->
+          <div class="mb-8 inline-flex animate-fade-in items-center rounded-full border border-white/60 bg-white/40 px-4 py-2 shadow-2xl backdrop-blur-xl">
+            <svg
+              class="mr-2 h-4 w-4 text-primary-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+              ></path>
+            </svg>
+            <span class="text-sm font-medium text-white drop-shadow-lg">{t('hero.badge')}</span>
+          </div>
+
+          <!-- Título principal -->
+          <h1 class="text-shadow-strong mb-6 animate-fade-in text-4xl font-bold text-white delay-200 sm:text-5xl md:text-7xl">
+            <span class="text-orange-400 drop-shadow-[0_2px_10px_rgba(251,146,60,0.5)]">
+              {t('hero.titleHighlight')}
+            </span>{' '}
+            {t('hero.title')}
+          </h1>
+
+          <!-- Descripción -->
+          <p class="text-shadow-soft mx-auto mb-6 max-w-3xl animate-fade-in text-lg leading-relaxed text-white/95 delay-300 sm:text-xl md:text-2xl">
+            {t('hero.text')}
+          </p>
+
+          <!-- CTA -->
+          <div class="delay-400 flex animate-fade-in justify-center">
+            <a
+              href="#documentos"
+              class="group inline-flex transform items-center justify-center rounded-2xl bg-white px-8 py-4 font-bold text-primary-600 shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-primary-50"
+            >
+              <span>{t('hero.cta')}</span>
+              <svg
+                class="ml-3 h-5 w-5 transition-transform group-hover:translate-y-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wave decoration -->
+      <div class="absolute bottom-0 left-0 right-0">
+        <svg
+          class="h-16 w-full fill-gray-50 sm:h-20 md:h-32"
+          viewBox="0 0 1440 120"
+          preserveAspectRatio="none"
+        >
+          <path d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Sección Documentos -->
+    <section id="documentos" class="bg-gray-50 py-16 md:py-24">
+      <div class="section-container">
+        <div class="mx-auto mb-10 max-w-3xl text-center">
+          <span class="mb-4 inline-block rounded-full bg-gradient-to-r from-primary-100 to-accent-100 px-4 py-2 text-sm font-semibold text-primary-700">
+            {t('library.badge')}
+          </span>
+          <h2 class="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">
+            {t('library.title')}{' '}
+            <span class="bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent">
+              {t('library.titleHighlight')}
+            </span>
+          </h2>
+          <p class="text-lg text-gray-600">{t('library.text')}</p>
+        </div>
+
+        {documentos.length === 0 ? (
+          <div class="py-12 text-center">
+            <p class="text-lg text-gray-600">{t('library.empty')}</p>
+          </div>
+        ) : (
+          <div class="mx-auto max-w-5xl">
+            {/* Buscador */}
+            <div class="mx-auto mb-6 max-w-xl">
+              <label for="document-search" class="sr-only">
+                {t('search.label')}
+              </label>
+              <div class="relative">
+                <span class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4 text-gray-400">
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    />
+                  </svg>
+                </span>
+                <input
+                  type="search"
+                  id="document-search"
+                  placeholder={t('search.placeholder')}
+                  aria-label={t('search.ariaLabel')}
+                  class="w-full rounded-2xl border border-gray-200 bg-white py-3 pl-12 pr-4 text-gray-900 shadow-sm transition-colors focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-200"
+                />
+              </div>
+            </div>
+
+            {/* Filtros por categoría */}
+            <div
+              class="mb-8 flex flex-wrap justify-center gap-2"
+              role="group"
+              aria-label={t('filter.ariaLabel')}
+            >
+              {categorias.map((categoria, index) => (
+                <button
+                  type="button"
+                  class="document-filter rounded-full border px-4 py-2 text-sm font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary-300"
+                  class:list={[
+                    index === 0
+                      ? 'border-primary-600 bg-primary-600 text-white shadow-md'
+                      : 'border-gray-200 bg-white text-gray-600 hover:border-primary-300 hover:text-primary-700',
+                  ]}
+                  data-category={categoria}
+                  aria-pressed={index === 0 ? 'true' : 'false'}
+                >
+                  {categoria === 'all' ? t('filter.all') : categoria}
+                </button>
+              ))}
+            </div>
+
+            {/* Contador de resultados */}
+            <p class="mb-6 text-center text-sm text-gray-500" aria-live="polite">
+              <span id="document-count">{documentosOrdenados.length}</span> {t('count.documents')}
+            </p>
+
+            {/* Mensaje sin resultados */}
+            <div id="no-results" class="hidden py-12 text-center">
+              <p class="text-lg text-gray-600">{t('noResults')}</p>
+            </div>
+
+            <div id="documents-grid" class="grid grid-cols-1 gap-6 md:grid-cols-2">
+              {documentosOrdenados.map((doc) => (
+                <div
+                  class="document-card group overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                  data-category={doc.category}
+                  data-title={doc.title.toLowerCase()}
+                  data-description={doc.description.toLowerCase()}
+                >
+                  <div class="p-6">
+                    <div class="mb-4 flex items-start justify-between">
+                      <div class="flex-1">
+                        <div class="mb-2 flex flex-wrap items-center gap-2">
+                          <span class="rounded-full bg-gradient-to-r from-primary-100 to-accent-100 px-3 py-1 text-xs font-semibold text-primary-700">
+                            {doc.category}
+                          </span>
+                          <span class="whitespace-nowrap text-xs text-gray-500">
+                            {doc.size} · {t(`fileLang.${doc.fileLang}`)}
+                          </span>
+                        </div>
+                        <h3 class="mb-2 text-xl font-bold text-gray-900 transition-colors group-hover:text-primary-600">
+                          {doc.title}
+                        </h3>
+                        <p class="text-sm text-gray-600">{doc.description}</p>
+                      </div>
+                      <div class="ml-4 flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-red-400 to-red-600 shadow-lg shadow-red-500/30">
+                        <svg class="h-7 w-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 2l5 5h-5V4zm-3 9v4h2v-4h2l-3-3-3 3h2z" />
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div class="mb-4 text-xs text-gray-500">
+                      {t('card.published')}{' '}
+                      {new Date(doc.date).toLocaleDateString(dateLocales[lang], {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric',
+                      })}
+                    </div>
+
+                    <div class="flex gap-3">
+                      <a
+                        href={doc.file}
+                        hreflang={doc.fileLang}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex-1 rounded-xl bg-gradient-to-r from-primary-600 to-accent-600 px-4 py-3 text-center font-semibold text-white shadow-md transition-all duration-300 hover:shadow-lg"
+                      >
+                        <span class="flex items-center justify-center gap-2">
+                          <svg
+                            class="h-4 w-4"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                            />
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                            />
+                          </svg>
+                          {t('card.view')}
+                        </span>
+                      </a>
+                      <a
+                        href={doc.file}
+                        hreflang={doc.fileLang}
+                        download
+                        aria-label={`${t('card.download')} ${doc.title} (PDF)`}
+                        class="rounded-xl border-2 border-primary-600 px-4 py-3 font-semibold text-primary-600 transition-all duration-300 hover:bg-primary-50"
+                      >
+                        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <div class="mt-12 text-center">
+          <p class="text-sm text-gray-500">
+            {t('missing.text')}{' '}
+            <a
+              href={localizePath('/contacto', lang)}
+              class="text-primary-600 underline hover:text-primary-700"
+            >
+              {t('missing.link')}
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<script>
+  const searchInput = document.getElementById('document-search') as HTMLInputElement | null;
+  const filterButtons = Array.from(
+    document.querySelectorAll<HTMLButtonElement>('.document-filter')
+  );
+  const cards = Array.from(document.querySelectorAll<HTMLElement>('.document-card'));
+  const countEl = document.getElementById('document-count');
+  const noResults = document.getElementById('no-results');
+  const grid = document.getElementById('documents-grid');
+
+  const activeClasses = ['border-primary-600', 'bg-primary-600', 'text-white', 'shadow-md'];
+  const inactiveClasses = [
+    'border-gray-200',
+    'bg-white',
+    'text-gray-600',
+    'hover:border-primary-300',
+    'hover:text-primary-700',
+  ];
+
+  let activeCategory = 'all';
+
+  const setActiveButton = (selected: HTMLButtonElement) => {
+    filterButtons.forEach((button) => {
+      const isSelected = button === selected;
+      button.setAttribute('aria-pressed', String(isSelected));
+      button.classList.remove(...(isSelected ? inactiveClasses : activeClasses));
+      button.classList.add(...(isSelected ? activeClasses : inactiveClasses));
+    });
+  };
+
+  const applyFilters = () => {
+    const query = (searchInput?.value ?? '').trim().toLowerCase();
+    let visibleCount = 0;
+
+    cards.forEach((card) => {
+      const matchesCategory = activeCategory === 'all' || card.dataset.category === activeCategory;
+      const haystack = `${card.dataset.title ?? ''} ${card.dataset.description ?? ''}`;
+      const matchesQuery = query === '' || haystack.includes(query);
+      const isVisible = matchesCategory && matchesQuery;
+
+      card.classList.toggle('hidden', !isVisible);
+      if (isVisible) visibleCount += 1;
+    });
+
+    if (countEl) countEl.textContent = String(visibleCount);
+    noResults?.classList.toggle('hidden', visibleCount !== 0);
+    grid?.classList.toggle('hidden', visibleCount === 0);
+  };
+
+  filterButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      activeCategory = button.dataset.category ?? 'all';
+      setActiveButton(button);
+      applyFilters();
+    });
+  });
+
+  searchInput?.addEventListener('input', applyFilters);
+</script>

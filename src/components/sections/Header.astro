@@ -51,7 +51,7 @@ const switchHref = alternates?.[otherLang];
       </a>
 
       <!-- Desktop Navigation -->
-      <ul class="hidden items-center gap-2 md:flex">
+      <ul class="hidden items-center gap-2 lg:flex">
         {(() => {
           // Colores únicos para cada ítem (mismo que móvil)
           const itemColors = [
@@ -128,7 +128,7 @@ const switchHref = alternates?.[otherLang];
         })()}
 
         <li>
-          <a href={joinHref} class="btn-primary ml-2">
+          <a href={joinHref} class="btn-primary ml-2 whitespace-nowrap">
             {' '}
             {t('nav.join')}{' '}
           </a>
@@ -139,7 +139,7 @@ const switchHref = alternates?.[otherLang];
               href={switchHref}
               hreflang={otherLang}
               lang={otherLang}
-              class="ml-1 rounded-lg px-3 py-2 text-sm font-semibold text-gray-700 underline-offset-4 transition-colors hover:bg-primary-50 hover:text-primary-700 hover:underline"
+              class="ml-1 whitespace-nowrap rounded-lg px-3 py-2 text-sm font-semibold text-gray-700 underline-offset-4 transition-colors hover:bg-primary-50 hover:text-primary-700 hover:underline"
             >
               {languages[otherLang]}
             </a>
@@ -150,7 +150,7 @@ const switchHref = alternates?.[otherLang];
       <!-- Mobile menu button -->
       <button
         id="mobile-menu-button"
-        class="rounded-lg p-2 text-gray-700 transition-colors hover:bg-primary-50 hover:text-primary-600 md:hidden"
+        class="rounded-lg p-2 text-gray-700 transition-colors hover:bg-primary-50 hover:text-primary-600 lg:hidden"
         aria-label={t('nav.mobileMenu')}
         aria-expanded="false"
       >
@@ -166,7 +166,7 @@ const switchHref = alternates?.[otherLang];
     </div>
 
     <!-- Mobile menu con animación -->
-    <div id="mobile-menu" class="mobile-menu-container mt-4 hidden pb-4 md:hidden">
+    <div id="mobile-menu" class="mobile-menu-container mt-4 hidden pb-4 lg:hidden">
       <ul class="flex flex-col gap-3">
         {(() => {
           // Colores únicos para cada ítem

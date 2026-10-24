@@ -54,6 +54,11 @@ export const ui = {
       'Hola, estoy contactando desde la página web de DiverMataró. Cuéntanos qué necesitas.',
     'whatsapp.tooltip': '¿Hablamos?',
     'whatsapp.label': 'Contactar por WhatsApp',
+
+    'form.honeypot': 'No rellenes este campo',
+
+    'services.badge': 'Nuestros Servicios',
+    'services.back': 'Volver a servicios',
   },
   ca: {
     'site.name': 'Diversitat Funcional Mataró',
@@ -70,14 +75,14 @@ export const ui = {
     'nav.main': 'Navegació principal',
     'nav.mobileMenu': 'Menú mòbil',
 
-    'services.support': 'Suport Personalitzat',
-    'services.community': 'Comunitat Inclusiva',
-    'services.actions': 'Actes Reivindicatius',
-    'services.recognition': 'Reconeixement Social',
-    'services.accessibility': 'Accessibilitat Universal',
-    'services.innovation': 'Innovació Constant',
+    'services.support': 'Suport personalitzat',
+    'services.community': 'Comunitat inclusiva',
+    'services.actions': 'Actes reivindicatius',
+    'services.recognition': 'Reconeixement social',
+    'services.accessibility': 'Accessibilitat universal',
+    'services.innovation': 'Innovació constant',
 
-    'footer.homeLink': "Ves a l'inici",
+    'footer.homeLink': 'Ves a l’inici',
     'footer.mission':
       'Treballem de manera altruista i sense ànim de lucre per una societat amb accessibilitat universal, inclusió plena i integració real a Mataró.',
     'footer.follow': 'Segueix-nos',
@@ -93,16 +98,21 @@ export const ui = {
     'footer.mapTitle': 'Ubicació de DiverMataró a Mataró, Barcelona',
     'footer.ctaTitle': 'Vols formar part del canvi?',
     'footer.ctaText': 'No cobrem cap mena de quota · Tot és voluntari',
-    'footer.ctaButton': "Associa't gratis",
+    'footer.ctaButton': 'Associa’t gratis',
     'footer.privacy': 'Privacitat',
     'footer.dataDeletion': 'Eliminació de dades',
     'footer.madeWith': 'Fet amb',
     'footer.madeFor': 'per i per a la diversitat',
 
     'whatsapp.message':
-      "Hola, contacto des de la pàgina web de DiverMataró. Explica'ns què necessites.",
+      'Hola, contacto des de la pàgina web de DiverMataró. Explica’ns què necessites.',
     'whatsapp.tooltip': 'En parlem?',
     'whatsapp.label': 'Contacta per WhatsApp',
+
+    'form.honeypot': 'No omplis aquest camp',
+
+    'services.badge': 'Els nostres serveis',
+    'services.back': 'Torna als serveis',
   },
 } as const;
 
