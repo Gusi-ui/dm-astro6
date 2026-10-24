@@ -37,6 +37,12 @@ export const caRoutes: Record<string, string> = {
   '/asociacion': '/ca/associacio',
   '/contacto': '/ca/contacte',
   '/documentos': '/ca/documents',
+  '/servicios/apoyo-personalizado': '/ca/serveis/suport-personalitzat',
+  '/servicios/comunidad-inclusiva': '/ca/serveis/comunitat-inclusiva',
+  '/servicios/actos-reivindicativos': '/ca/serveis/actes-reivindicatius',
+  '/servicios/reconocimiento-social': '/ca/serveis/reconeixement-social',
+  '/servicios/accesibilidad-universal': '/ca/serveis/accessibilitat-universal',
+  '/servicios/innovacion-constante': '/ca/serveis/innovacio-constant',
 };
 
 const esRoutes: Record<string, string> = Object.fromEntries(

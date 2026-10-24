@@ -1,0 +1,366 @@
+/**
+ * Textos de las seis páginas de servicios (una entrada por página, con las mismas
+ * claves). El catalán es un borrador pendiente de revisión por un socio.
+ */
+
+export const servicios = {
+  'accesibilidad-universal': {
+    es: {
+      'page.title': 'Accesibilidad Universal - DiverMataró',
+      'hero.title': 'Accesibilidad Universal',
+      'hero.subtitle': 'Eliminando barreras para construir un mundo sin obstáculos',
+      'intro.title': 'Un mundo accesible es un mundo mejor para todos',
+      'intro.text':
+        'La accesibilidad universal no es un lujo, es un derecho. En DiverMataró trabajamos para que todos los espacios, servicios y recursos estén diseñados pensando en la diversidad de las personas, eliminando las barreras que impiden la participación plena en la sociedad.',
+      'cards.title': 'Ámbitos de actuación',
+      'card1.title': 'Accesibilidad arquitectónica',
+      'card1.text': 'Edificios, espacios públicos, comercios y viviendas sin barreras físicas.',
+      'card2.title': 'Transporte accesible',
+      'card2.text': 'Autobuses, trenes, taxis y paradas adaptadas para todas las personas.',
+      'card3.title': 'Accesibilidad digital',
+      'card3.text': 'Webs, apps y servicios digitales utilizables por todas las personas.',
+      'card4.title': 'Comunicación accesible',
+      'card4.text': 'Información en formatos accesibles: lectura fácil, lengua de signos, braille.',
+      'list.title': 'Nuestras acciones',
+      'list.item1': 'Auditorías de accesibilidad en espacios públicos y privados',
+      'list.item2': 'Asesoramiento a comercios y empresas para mejorar su accesibilidad',
+      'list.item3': 'Denuncias de incumplimientos de la normativa de accesibilidad',
+      'list.item4': 'Colaboración con el Ayuntamiento para mejorar la accesibilidad urbana',
+      'list.item5': 'Formación sobre diseño universal y accesibilidad',
+      'cta.title': '¿Conoces barreras que debamos denunciar?',
+      'cta.text':
+        'Ayúdanos a identificar los obstáculos que impiden la plena participación de las personas.',
+      'cta.button': 'Reportar una barrera',
+    },
+    ca: {
+      'page.title': 'Accessibilitat Universal - DiverMataró',
+      'hero.title': 'Accessibilitat Universal',
+      'hero.subtitle': 'Eliminant barreres per construir un món sense obstacles',
+      'intro.title': 'Un món accessible és un món millor per a tothom',
+      'intro.text':
+        'L’accessibilitat universal no és un luxe, és un dret. A DiverMataró treballem perquè tots els espais, serveis i recursos estiguin dissenyats pensant en la diversitat de les persones, eliminant les barreres que impedeixen la participació plena en la societat.',
+      'cards.title': 'Àmbits d’actuació',
+      'card1.title': 'Accessibilitat arquitectònica',
+      'card1.text': 'Edificis, espais públics, comerços i habitatges sense barreres físiques.',
+      'card2.title': 'Transport accessible',
+      'card2.text': 'Autobusos, trens, taxis i parades adaptades per a totes les persones.',
+      'card3.title': 'Accessibilitat digital',
+      'card3.text': 'Webs, aplicacions i serveis digitals que totes les persones poden fer servir.',
+      'card4.title': 'Comunicació accessible',
+      'card4.text': 'Informació en formats accessibles: lectura fàcil, llengua de signes, braille.',
+      'list.title': 'Les nostres accions',
+      'list.item1': 'Auditories d’accessibilitat en espais públics i privats',
+      'list.item2': 'Assessorament a comerços i empreses per millorar-ne l’accessibilitat',
+      'list.item3': 'Denúncies d’incompliments de la normativa d’accessibilitat',
+      'list.item4': 'Col·laboració amb l’Ajuntament per millorar l’accessibilitat urbana',
+      'list.item5': 'Formació sobre disseny universal i accessibilitat',
+      'cta.title': 'Coneixes barreres que hauríem de denunciar?',
+      'cta.text':
+        'Ajuda’ns a identificar els obstacles que impedeixen la plena participació de les persones.',
+      'cta.button': 'Informa d’una barrera',
+    },
+  },
+  'actos-reivindicativos': {
+    es: {
+      'page.title': 'Actos Reivindicativos - DiverMataró',
+      'hero.title': 'Actos Reivindicativos',
+      'hero.subtitle': 'Alzamos la voz para defender nuestros derechos',
+      'intro.title': 'Defendiendo nuestros derechos',
+      'intro.text':
+        'Los actos reivindicativos son una herramienta fundamental para visibilizar las demandas de las personas con diversidad funcional. En DiverMataró organizamos y participamos en eventos que buscan concienciar a la sociedad y exigir cambios reales a las instituciones.',
+      'cards.title': 'Tipos de acciones que realizamos',
+      'card1.title': 'Campañas de sensibilización',
+      'card1.text':
+        'Difundimos información sobre las barreras que enfrentamos y proponemos soluciones concretas.',
+      'card2.title': 'Concentraciones y manifestaciones',
+      'card2.text':
+        'Nos unimos para hacer visible nuestra presencia y nuestras demandas en el espacio público.',
+      'card3.title': 'Denuncias y propuestas',
+      'card3.text':
+        'Presentamos denuncias formales y propuestas de mejora a las administraciones públicas.',
+      'card4.title': 'Presencia en medios',
+      'card4.text':
+        'Llevamos nuestra voz a los medios de comunicación para amplificar nuestro mensaje.',
+      'list.title': 'Nuestras principales demandas',
+      'list.item1': 'Transporte público 100% accesible en Mataró y comarca',
+      'list.item2': 'Eliminación de barreras arquitectónicas en espacios públicos',
+      'list.item3': 'Cumplimiento de la normativa de accesibilidad en comercios y servicios',
+      'list.item4': 'Mayor inversión en políticas de inclusión laboral',
+      'list.item5': 'Accesibilidad digital en webs y aplicaciones de servicios públicos',
+      'cta.title': '¿Quieres sumarte a nuestras acciones?',
+      'cta.text': 'Tu voz cuenta. Juntos somos más fuertes para conseguir cambios reales.',
+      'cta.button': 'Únete a la causa',
+    },
+    ca: {
+      'page.title': 'Actes Reivindicatius - DiverMataró',
+      'hero.title': 'Actes Reivindicatius',
+      'hero.subtitle': 'Alcem la veu per defensar els nostres drets',
+      'intro.title': 'Defensant els nostres drets',
+      'intro.text':
+        'Els actes reivindicatius són una eina fonamental per visibilitzar les demandes de les persones amb diversitat funcional. A DiverMataró organitzem esdeveniments i hi participem per conscienciar la societat i exigir canvis reals a les institucions.',
+      'cards.title': 'Tipus d’accions que fem',
+      'card1.title': 'Campanyes de sensibilització',
+      'card1.text':
+        'Difonem informació sobre les barreres que trobem i proposem solucions concretes.',
+      'card2.title': 'Concentracions i manifestacions',
+      'card2.text':
+        'Ens unim per fer visible la nostra presència i les nostres demandes a l’espai públic.',
+      'card3.title': 'Denúncies i propostes',
+      'card3.text':
+        'Presentem denúncies formals i propostes de millora a les administracions públiques.',
+      'card4.title': 'Presència als mitjans',
+      'card4.text':
+        'Portem la nostra veu als mitjans de comunicació per amplificar el nostre missatge.',
+      'list.title': 'Les nostres principals demandes',
+      'list.item1': 'Transport públic 100% accessible a Mataró i la comarca',
+      'list.item2': 'Eliminació de barreres arquitectòniques en espais públics',
+      'list.item3': 'Compliment de la normativa d’accessibilitat en comerços i serveis',
+      'list.item4': 'Més inversió en polítiques d’inclusió laboral',
+      'list.item5': 'Accessibilitat digital en webs i aplicacions de serveis públics',
+      'cta.title': 'Vols sumar-te a les nostres accions?',
+      'cta.text': 'La teva veu compta. Junts som més forts per aconseguir canvis reals.',
+      'cta.button': 'Uneix-te a la causa',
+    },
+  },
+  'apoyo-personalizado': {
+    es: {
+      'page.title': 'Apoyo Personalizado - DiverMataró',
+      'hero.title': 'Apoyo Personalizado',
+      'hero.subtitle': 'Acompañamiento individualizado adaptado a tus necesidades',
+      'intro.title': '¿Qué es el Apoyo Personalizado?',
+      'intro.text':
+        'En DiverMataró entendemos que cada persona es única, con sus propias necesidades, aspiraciones y circunstancias. Por eso, nuestro servicio de Apoyo Personalizado se centra en ofrecer un acompañamiento individualizado que se adapta completamente a cada situación.',
+      'cards.title': '¿Cómo te ayudamos?',
+      'card1.title': 'Evaluación inicial',
+      'card1.text': 'Analizamos tu situación específica para diseñar un plan de apoyo a medida.',
+      'card2.title': 'Acompañamiento continuo',
+      'card2.text':
+        'Te acompañamos en todo el proceso, ajustando el apoyo según evolucionen tus necesidades.',
+      'card3.title': 'Escucha activa',
+      'card3.text':
+        'Tus opiniones y preferencias son fundamentales en cada decisión que tomamos juntos.',
+      'card4.title': 'Empoderamiento',
+      'card4.text': 'Nuestro objetivo es que ganes autonomía e independencia en tu día a día.',
+      'list.title': 'Áreas de apoyo',
+      'list.item1':
+        'Orientación en trámites administrativos y gestiones con la administración pública',
+      'list.item2': 'Acompañamiento en procesos de búsqueda de empleo y formación',
+      'list.item3': 'Apoyo emocional y social para afrontar situaciones difíciles',
+      'list.item4': 'Asesoramiento sobre recursos y ayudas disponibles',
+      'list.item5': 'Mediación con instituciones y servicios públicos',
+      'cta.title': '¿Necesitas apoyo personalizado?',
+      'cta.text': 'Estamos aquí para ayudarte. Contáctanos y empezaremos a trabajar juntos.',
+      'cta.button': 'Contactar ahora',
+    },
+    ca: {
+      'page.title': 'Suport Personalitzat - DiverMataró',
+      'hero.title': 'Suport Personalitzat',
+      'hero.subtitle': 'Acompanyament individualitzat adaptat a les teves necessitats',
+      'intro.title': 'Què és el Suport Personalitzat?',
+      'intro.text':
+        'A DiverMataró entenem que cada persona és única, amb les seves pròpies necessitats, aspiracions i circumstàncies. Per això, el nostre servei de Suport Personalitzat se centra a oferir un acompanyament individualitzat que s’adapta completament a cada situació.',
+      'cards.title': 'Com t’ajudem?',
+      'card1.title': 'Avaluació inicial',
+      'card1.text': 'Analitzem la teva situació concreta per dissenyar un pla de suport a mida.',
+      'card2.title': 'Acompanyament continu',
+      'card2.text':
+        'T’acompanyem en tot el procés i ajustem el suport a mesura que evolucionen les teves necessitats.',
+      'card3.title': 'Escolta activa',
+      'card3.text':
+        'Les teves opinions i preferències són fonamentals en cada decisió que prenem junts.',
+      'card4.title': 'Apoderament',
+      'card4.text':
+        'El nostre objectiu és que guanyis autonomia i independència en el teu dia a dia.',
+      'list.title': 'Àrees de suport',
+      'list.item1': 'Orientació en tràmits administratius i gestions amb l’administració pública',
+      'list.item2': 'Acompanyament en processos de recerca de feina i formació',
+      'list.item3': 'Suport emocional i social per afrontar situacions difícils',
+      'list.item4': 'Assessorament sobre recursos i ajuts disponibles',
+      'list.item5': 'Mediació amb institucions i serveis públics',
+      'cta.title': 'Necessites suport personalitzat?',
+      'cta.text': 'Som aquí per ajudar-te. Contacta amb nosaltres i començarem a treballar junts.',
+      'cta.button': 'Contacta ara',
+    },
+  },
+  'comunidad-inclusiva': {
+    es: {
+      'page.title': 'Comunidad Inclusiva - DiverMataró',
+      'hero.title': 'Comunidad Inclusiva',
+      'hero.subtitle': 'Espacios de encuentro donde todas las personas son bienvenidas',
+      'intro.title': 'Construyendo una comunidad para todos',
+      'intro.text':
+        'En DiverMataró creemos que la verdadera inclusión se construye desde la comunidad. Por eso, creamos espacios de encuentro donde todas las personas, independientemente de sus capacidades, pueden participar, compartir y crecer juntas.',
+      'cards.title': 'Nuestros espacios de encuentro',
+      'card1.title': 'Grupos de apoyo mutuo',
+      'card1.text':
+        'Reuniones periódicas donde compartir experiencias, dudas y consejos entre personas que viven situaciones similares.',
+      'card2.title': 'Actividades de ocio inclusivo',
+      'card2.text':
+        'Excursiones, talleres culturales y actividades recreativas adaptadas para que todos puedan disfrutar.',
+      'card3.title': 'Formación y talleres',
+      'card3.text': 'Cursos y talleres sobre derechos, habilidades sociales y desarrollo personal.',
+      'card4.title': 'Red de voluntariado',
+      'card4.text': 'Conectamos personas que quieren ayudar con aquellas que necesitan apoyo.',
+      'list.title': 'Beneficios de formar parte de nuestra comunidad',
+      'list.item1': 'Romper el aislamiento social y crear vínculos de amistad',
+      'list.item2': 'Compartir experiencias con personas que entienden tu situación',
+      'list.item3': 'Acceder a información y recursos de primera mano',
+      'list.item4': 'Participar activamente en la defensa de tus derechos',
+      'list.item5': 'Disfrutar de actividades de ocio adaptadas e inclusivas',
+      'cta.title': '¿Quieres formar parte de nuestra comunidad?',
+      'cta.text': 'Únete a nosotros y descubre el poder de la comunidad inclusiva.',
+      'cta.button': 'Únete ahora',
+    },
+    ca: {
+      'page.title': 'Comunitat Inclusiva - DiverMataró',
+      'hero.title': 'Comunitat Inclusiva',
+      'hero.subtitle': 'Espais de trobada on totes les persones són benvingudes',
+      'intro.title': 'Construint una comunitat per a tothom',
+      'intro.text':
+        'A DiverMataró creiem que la veritable inclusió es construeix des de la comunitat. Per això, creem espais de trobada on totes les persones, independentment de les seves capacitats, poden participar, compartir i créixer juntes.',
+      'cards.title': 'Els nostres espais de trobada',
+      'card1.title': 'Grups de suport mutu',
+      'card1.text':
+        'Reunions periòdiques per compartir experiències, dubtes i consells entre persones que viuen situacions semblants.',
+      'card2.title': 'Activitats de lleure inclusiu',
+      'card2.text':
+        'Excursions, tallers culturals i activitats recreatives adaptades perquè tothom en pugui gaudir.',
+      'card3.title': 'Formació i tallers',
+      'card3.text': 'Cursos i tallers sobre drets, habilitats socials i desenvolupament personal.',
+      'card4.title': 'Xarxa de voluntariat',
+      'card4.text': 'Connectem persones que volen ajudar amb les que necessiten suport.',
+      'list.title': 'Beneficis de formar part de la nostra comunitat',
+      'list.item1': 'Trencar l’aïllament social i crear vincles d’amistat',
+      'list.item2': 'Compartir experiències amb persones que entenen la teva situació',
+      'list.item3': 'Accedir a informació i recursos de primera mà',
+      'list.item4': 'Participar activament en la defensa dels teus drets',
+      'list.item5': 'Gaudir d’activitats de lleure adaptades i inclusives',
+      'cta.title': 'Vols formar part de la nostra comunitat?',
+      'cta.text': 'Uneix-te a nosaltres i descobreix el poder de la comunitat inclusiva.',
+      'cta.button': 'Uneix-te ara',
+    },
+  },
+  'innovacion-constante': {
+    es: {
+      'page.title': 'Innovación Constante - DiverMataró',
+      'hero.title': 'Innovación Constante',
+      'hero.subtitle': 'Buscando nuevas formas de mejorar la calidad de vida',
+      'intro.title': 'Innovando para incluir',
+      'intro.text':
+        'La innovación es clave para superar las barreras tradicionales. En DiverMataró exploramos constantemente nuevas tecnologías, metodologías y enfoques que mejoren la calidad de vida de las personas con diversidad funcional y faciliten su plena participación en la sociedad.',
+      'cards.title': 'Áreas de innovación',
+      'card1.title': 'Tecnologías asistivas',
+      'card1.text':
+        'Exploramos nuevas herramientas tecnológicas que facilitan la autonomía y la comunicación.',
+      'card2.title': 'Metodologías inclusivas',
+      'card2.text': 'Desarrollamos nuevos enfoques de trabajo que ponen a la persona en el centro.',
+      'card3.title': 'Inteligencia artificial',
+      'card3.text':
+        'Investigamos cómo la IA puede mejorar la accesibilidad y la autonomía personal.',
+      'card4.title': 'Colaboración internacional',
+      'card4.text':
+        'Aprendemos de experiencias exitosas en otros países y compartimos las nuestras.',
+      'list.title': 'Proyectos en marcha',
+      'list.item1': 'Investigación sobre apps de accesibilidad para dispositivos móviles',
+      'list.item2': 'Piloto de asistentes virtuales para personas con diversidad funcional',
+      'list.item3': 'Desarrollo de materiales en lectura fácil con apoyo de IA',
+      'list.item4': 'Colaboración con universidades para proyectos de investigación',
+      'list.item5': 'Exploración de soluciones de domótica accesible para el hogar',
+      'cta.title': '¿Tienes ideas innovadoras?',
+      'cta.text': 'Queremos escuchar tus propuestas. La innovación nace de la colaboración.',
+      'cta.button': 'Comparte tu idea',
+    },
+    ca: {
+      'page.title': 'Innovació Constant - DiverMataró',
+      'hero.title': 'Innovació Constant',
+      'hero.subtitle': 'Buscant noves maneres de millorar la qualitat de vida',
+      'intro.title': 'Innovant per incloure',
+      'intro.text':
+        'La innovació és clau per superar les barreres tradicionals. A DiverMataró explorem constantment noves tecnologies, metodologies i enfocaments que millorin la qualitat de vida de les persones amb diversitat funcional i en facilitin la plena participació en la societat.',
+      'cards.title': 'Àrees d’innovació',
+      'card1.title': 'Tecnologies de suport',
+      'card1.text':
+        'Explorem noves eines tecnològiques que faciliten l’autonomia i la comunicació.',
+      'card2.title': 'Metodologies inclusives',
+      'card2.text': 'Desenvolupem nous enfocaments de treball que posen la persona al centre.',
+      'card3.title': 'Intel·ligència artificial',
+      'card3.text': 'Investiguem com la IA pot millorar l’accessibilitat i l’autonomia personal.',
+      'card4.title': 'Col·laboració internacional',
+      'card4.text': 'Aprenem d’experiències d’èxit en altres països i compartim les nostres.',
+      'list.title': 'Projectes en marxa',
+      'list.item1': 'Recerca sobre aplicacions d’accessibilitat per a dispositius mòbils',
+      'list.item2': 'Prova pilot d’assistents virtuals per a persones amb diversitat funcional',
+      'list.item3': 'Elaboració de materials en lectura fàcil amb el suport de la IA',
+      'list.item4': 'Col·laboració amb universitats en projectes de recerca',
+      'list.item5': 'Exploració de solucions de domòtica accessible per a la llar',
+      'cta.title': 'Tens idees innovadores?',
+      'cta.text': 'Volem escoltar les teves propostes. La innovació neix de la col·laboració.',
+      'cta.button': 'Comparteix la teva idea',
+    },
+  },
+  'reconocimiento-social': {
+    es: {
+      'page.title': 'Reconocimiento Social - DiverMataró',
+      'hero.title': 'Reconocimiento Social',
+      'hero.subtitle': 'Cambiando la percepción social de la diversidad funcional',
+      'intro.title': 'Transformando miradas, construyendo respeto',
+      'intro.text':
+        'El reconocimiento social es fundamental para lograr una verdadera inclusión. Trabajamos para cambiar la percepción que la sociedad tiene de las personas con diversidad funcional, promoviendo una imagen positiva, realista y alejada de estereotipos.',
+      'cards.title': 'Líneas de actuación',
+      'card1.title': 'Visibilización positiva',
+      'card1.text':
+        'Mostramos las capacidades, talentos y aportaciones de las personas con diversidad funcional.',
+      'card2.title': 'Educación y sensibilización',
+      'card2.text':
+        'Charlas en centros educativos y empresas para fomentar el respeto y la comprensión.',
+      'card3.title': 'Presencia en medios',
+      'card3.text':
+        'Promovemos una representación digna y realista en medios de comunicación y cultura.',
+      'card4.title': 'Diálogo social',
+      'card4.text':
+        'Fomentamos el diálogo entre personas con y sin diversidad funcional para derribar prejuicios.',
+      'list.title': 'Lo que queremos conseguir',
+      'list.item1': 'Eliminar los estereotipos negativos asociados a la diversidad funcional',
+      'list.item2': 'Que se valore a las personas por sus capacidades, no por sus limitaciones',
+      'list.item3':
+        'Normalizar la presencia de personas con diversidad funcional en todos los ámbitos',
+      'list.item4': 'Crear una sociedad más empática y comprensiva',
+      'list.item5': 'Que la diversidad sea vista como riqueza, no como problema',
+      'cta.title': '¿Quieres ayudar a cambiar la percepción social?',
+      'cta.text': 'Cada persona que se suma es una voz más para construir una sociedad más justa.',
+      'cta.button': 'Suma tu voz',
+    },
+    ca: {
+      'page.title': 'Reconeixement Social - DiverMataró',
+      'hero.title': 'Reconeixement Social',
+      'hero.subtitle': 'Canviant la percepció social de la diversitat funcional',
+      'intro.title': 'Transformant mirades, construint respecte',
+      'intro.text':
+        'El reconeixement social és fonamental per aconseguir una inclusió veritable. Treballem per canviar la percepció que la societat té de les persones amb diversitat funcional, promovent una imatge positiva, realista i allunyada dels estereotips.',
+      'cards.title': 'Línies d’actuació',
+      'card1.title': 'Visibilització positiva',
+      'card1.text':
+        'Mostrem les capacitats, els talents i les aportacions de les persones amb diversitat funcional.',
+      'card2.title': 'Educació i sensibilització',
+      'card2.text':
+        'Xerrades en centres educatius i empreses per fomentar el respecte i la comprensió.',
+      'card3.title': 'Presència als mitjans',
+      'card3.text':
+        'Promovem una representació digna i realista als mitjans de comunicació i a la cultura.',
+      'card4.title': 'Diàleg social',
+      'card4.text':
+        'Fomentem el diàleg entre persones amb diversitat funcional i sense per trencar prejudicis.',
+      'list.title': 'El que volem aconseguir',
+      'list.item1': 'Eliminar els estereotips negatius associats a la diversitat funcional',
+      'list.item2':
+        'Que es valori les persones per les seves capacitats, no per les seves limitacions',
+      'list.item3':
+        'Normalitzar la presència de persones amb diversitat funcional en tots els àmbits',
+      'list.item4': 'Crear una societat més empàtica i comprensiva',
+      'list.item5': 'Que la diversitat es vegi com una riquesa, no com un problema',
+      'cta.title': 'Vols ajudar a canviar la percepció social?',
+      'cta.text': 'Cada persona que se suma és una veu més per construir una societat més justa.',
+      'cta.button': 'Suma-hi la teva veu',
+    },
+  },
+} as const;

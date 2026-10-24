@@ -56,6 +56,9 @@ export const ui = {
     'whatsapp.label': 'Contactar por WhatsApp',
 
     'form.honeypot': 'No rellenes este campo',
+
+    'services.badge': 'Nuestros Servicios',
+    'services.back': 'Volver a servicios',
   },
   ca: {
     'site.name': 'Diversitat Funcional Mataró',
@@ -107,6 +110,9 @@ export const ui = {
     'whatsapp.label': 'Contacta per WhatsApp',
 
     'form.honeypot': 'No omplis aquest camp',
+
+    'services.badge': 'Els Nostres Serveis',
+    'services.back': 'Torna als serveis',
   },
 } as const;
 
