@@ -65,7 +65,7 @@ export const contacto = {
     'info.email': 'Correu electrònic',
     'info.location': 'Ubicació',
     'info.locationText': 'Mataró, Barcelona',
-    'info.social': 'Xarxes Socials',
+    'info.social': 'Xarxes socials',
 
     'form.title': 'Envia’ns un missatge',
     'form.name': 'Nom complet',
@@ -90,7 +90,7 @@ export const contacto = {
     'cta.title': 'Vols unir-te a la nostra causa?',
     'cta.text':
       'Junts podem aconseguir un Mataró més accessible i inclusiu per a totes les persones.',
-    'cta.button': 'Associa’t Gratis',
+    'cta.button': 'Associa’t gratis',
     'cta.note': 'No cobrem cap mena de quota • Tot és voluntari',
   },
 } as const;

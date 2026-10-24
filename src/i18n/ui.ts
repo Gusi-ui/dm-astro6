@@ -75,12 +75,12 @@ export const ui = {
     'nav.main': 'Navegació principal',
     'nav.mobileMenu': 'Menú mòbil',
 
-    'services.support': 'Suport Personalitzat',
-    'services.community': 'Comunitat Inclusiva',
-    'services.actions': 'Actes Reivindicatius',
-    'services.recognition': 'Reconeixement Social',
-    'services.accessibility': 'Accessibilitat Universal',
-    'services.innovation': 'Innovació Constant',
+    'services.support': 'Suport personalitzat',
+    'services.community': 'Comunitat inclusiva',
+    'services.actions': 'Actes reivindicatius',
+    'services.recognition': 'Reconeixement social',
+    'services.accessibility': 'Accessibilitat universal',
+    'services.innovation': 'Innovació constant',
 
     'footer.homeLink': 'Ves a l’inici',
     'footer.mission':
@@ -98,7 +98,7 @@ export const ui = {
     'footer.mapTitle': 'Ubicació de DiverMataró a Mataró, Barcelona',
     'footer.ctaTitle': 'Vols formar part del canvi?',
     'footer.ctaText': 'No cobrem cap mena de quota · Tot és voluntari',
-    'footer.ctaButton': 'Associa’t Gratis',
+    'footer.ctaButton': 'Associa’t gratis',
     'footer.privacy': 'Privacitat',
     'footer.dataDeletion': 'Eliminació de dades',
     'footer.madeWith': 'Fet amb',
@@ -111,7 +111,7 @@ export const ui = {
 
     'form.honeypot': 'No omplis aquest camp',
 
-    'services.badge': 'Els Nostres Serveis',
+    'services.badge': 'Els nostres serveis',
     'services.back': 'Torna als serveis',
   },
 } as const;

@@ -6,7 +6,7 @@ export const reivindicacionesConfig = [
       'Reivindicamos un transporte público 100% accesible para todas las personas, con paradas adaptadas, vehículos con rampas y espacios reservados. Cada día miles de personas encuentran barreras para moverse por nuestra ciudad.',
     // Borrador en catalán, pendiente de revisión
     ca: {
-      title: 'Accessibilitat en el Transport',
+      title: 'Accessibilitat al transport',
       description:
         'Reivindiquem un transport públic 100% accessible per a totes les persones, amb parades adaptades, vehicles amb rampes i espais reservats. Cada dia milers de persones es troben barreres per moure’s per la nostra ciutat.',
     },
@@ -25,7 +25,7 @@ export const reivindicacionesConfig = [
       'Trabajamos para que todos los espacios públicos, parques, plazas y edificios municipales sean completamente accesibles. La ciudad debe ser de todos y para todos, sin barreras arquitectónicas que limiten la participación.',
     // Borrador en catalán, pendiente de revisión
     ca: {
-      title: 'Accessibilitat als Espais Públics',
+      title: 'Accessibilitat als espais públics',
       description:
         'Treballem perquè tots els espais públics, parcs, places i edificis municipals siguin completament accessibles. La ciutat ha de ser de tothom i per a tothom, sense barreres arquitectòniques que limitin la participació.',
     },
@@ -44,7 +44,7 @@ export const reivindicacionesConfig = [
       'Defendemos una educación inclusiva que garantice el acceso y la participación de todos los estudiantes. Cada niño y niña merece las mismas oportunidades de aprendizaje y desarrollo.',
     // Borrador en catalán, pendiente de revisión
     ca: {
-      title: 'Educació Inclusiva',
+      title: 'Educació inclusiva',
       description:
         'Defensem una educació inclusiva que garanteixi l’accés i la participació de tot l’alumnat. Cada nen i cada nena mereix les mateixes oportunitats d’aprenentatge i desenvolupament.',
     },
@@ -63,7 +63,7 @@ export const reivindicacionesConfig = [
       'Trabajamos para visibilizar las injusticias y barreras que encontramos cada día. Denunciamos públicamente las situaciones de discriminación y falta de accesibilidad.',
     // Borrador en catalán, pendiente de revisión
     ca: {
-      title: 'Denúncies i Visibilització',
+      title: 'Denúncies i visibilització',
       description:
         'Treballem per visibilitzar les injustícies i les barreres que trobem cada dia. Denunciem públicament les situacions de discriminació i de manca d’accessibilitat.',
     },

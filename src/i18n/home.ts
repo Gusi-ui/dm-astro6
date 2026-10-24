@@ -88,12 +88,12 @@ export const home = {
     'page.title': 'Associació Diversitat Funcional - Mataró',
 
     'hero.badge': 'Compromesos amb la diversitat',
-    'hero.title': 'Construint una Societat amb',
-    'hero.titleHighlight': 'Accessibilitat Universal',
+    'hero.title': 'Construint una societat amb',
+    'hero.titleHighlight': 'accessibilitat universal',
     'hero.text':
       'A DiverMataró treballem per la plena inclusió de les persones amb diversitat funcional, promovent l’accessibilitat universal i una societat sense barreres.',
-    'hero.join': 'Uneix-te a Nosaltres',
-    'hero.work': 'Coneix la Nostra Feina',
+    'hero.join': 'Uneix-te a nosaltres',
+    'hero.work': 'Coneix la nostra feina',
     'hero.accessibility': 'Accessibilitat',
     'hero.accessibilityText':
       'Lluitem per espais, transports i serveis accessibles per a tothom. Sense barreres físiques ni digitals.',
@@ -104,7 +104,7 @@ export const home = {
     'hero.integrationText':
       'Construïm comunitat, teixint xarxes de suport i solidaritat entre totes les persones.',
 
-    'services.badge': 'Els Nostres Serveis',
+    'services.badge': 'Els nostres serveis',
     'services.title': 'Què fem per la',
     'services.titleHighlight': 'inclusió?',
     'services.text':
@@ -124,7 +124,7 @@ export const home = {
     'services.more': 'Més informació',
     'services.join': 'Uneix-te i col·labora amb nosaltres',
 
-    'blog.badge': 'El Nostre Blog',
+    'blog.badge': 'El nostre blog',
     'blog.title': 'Últimes',
     'blog.titleHighlight': 'notícies',
     'blog.text':
@@ -146,22 +146,22 @@ export const home = {
     'claims.years': 'Anys lluitant',
     'claims.volunteers': 'Voluntaris',
 
-    'goals.title': 'Objectius i Valors',
-    'goals.goals': 'Els Nostres Objectius',
+    'goals.title': 'Objectius i valors',
+    'goals.goals': 'Els nostres objectius',
     'goals.goal1': 'Aconseguir l’accessibilitat universal a Mataró',
     'goals.goal2': 'Defensar els drets humans de les persones amb diversitat funcional',
     'goals.goal3': 'Promoure la participació ciutadana activa',
     'goals.goal4': 'Crear una xarxa de suport i solidaritat',
-    'goals.values': 'Els Nostres Valors',
+    'goals.values': 'Els nostres valors',
     'goals.value1': 'Solidaritat i suport mutu',
     'goals.value2': 'Treball voluntari i altruista',
     'goals.value3': 'Transparència en les nostres accions',
     'goals.value4': 'Compromís amb la inclusió',
 
-    'cta.title': 'Uneix-te a la Nostra Causa',
+    'cta.title': 'Uneix-te a la nostra causa',
     'cta.text':
       'Junts podem aconseguir un Mataró més accessible i inclusiu. La teva participació és fonamental per assolir els nostres objectius.',
-    'cta.button': 'Associa’t Gratis',
+    'cta.button': 'Associa’t gratis',
     'cta.note': 'No cobrem cap mena de quota • Tot és voluntari',
   },
 } as const;

@@ -4,7 +4,7 @@ import Header from '../sections/Header.astro';
 import Footer from '../sections/Footer.astro';
 import HeroBackground from '../HeroBackground.astro';
 import { getRandomHeroImage } from '../../lib/heroImages';
-import { createTranslator, dateLocales, getLangFromUrl, localizePath } from '../../i18n';
+import { createTranslator, dateLocales, getLangFromUrl, localizePath, type Lang } from '../../i18n';
 import { documentos as textos } from '../../i18n/documentos';
 
 const lang = getLangFromUrl(Astro.url);
@@ -19,6 +19,8 @@ type Documento = {
   category: string;
   file: string;
   size: string;
+  /** Idioma del PDF, que no siempre coincide con el de la página */
+  fileLang: Lang;
   date: string;
 };
 
@@ -30,6 +32,7 @@ const documentos: Documento[] = [
     category: t('category.association'),
     file: '/documents/Diver_Mataro.pdf',
     size: '172 KB',
+    fileLang: 'ca',
     date: '2024-01-26',
   },
   {
@@ -39,6 +42,7 @@ const documentos: Documento[] = [
     category: t('category.rights'),
     file: '/documents/Convencion-Lectura-Facil.pdf',
     size: '728 KB',
+    fileLang: 'es',
     date: '2024-01-26',
   },
   {
@@ -48,6 +52,7 @@ const documentos: Documento[] = [
     category: t('category.guides'),
     file: '/documents/fem_accessible_el_nostre_comerc.pdf',
     size: '1,2 MB',
+    fileLang: 'ca',
     date: '2024-01-24',
   },
   {
@@ -57,6 +62,7 @@ const documentos: Documento[] = [
     category: t('category.regulations'),
     file: '/documents/Normativa_Tecnica_de_Accesibilidad.pdf',
     size: '1,5 MB',
+    fileLang: 'es',
     date: '2025-01-26',
   },
   {
@@ -66,6 +72,7 @@ const documentos: Documento[] = [
     category: t('category.services'),
     file: '/documents/APvsAD.pdf',
     size: '466 KB',
+    fileLang: 'es',
     date: '2026-02-15',
   },
   {
@@ -75,6 +82,7 @@ const documentos: Documento[] = [
     category: t('category.services'),
     file: '/documents/asistencia_personal_empleo_derecho.pdf',
     size: '435 KB',
+    fileLang: 'es',
     date: '2026-02-15',
   },
   {
@@ -84,6 +92,7 @@ const documentos: Documento[] = [
     category: t('category.plan'),
     file: '/documents/Pla_dxAccessibilitat_Universal_de_Mataro.pdf',
     size: '16 MB',
+    fileLang: 'ca',
     date: '2026-06-06',
   },
   {
@@ -93,6 +102,7 @@ const documentos: Documento[] = [
     category: t('category.plan'),
     file: '/documents/Trams_pla_accessibilitat.pdf',
     size: '20 MB',
+    fileLang: 'ca',
     date: '2026-06-06',
   },
   {
@@ -102,6 +112,7 @@ const documentos: Documento[] = [
     category: t('category.plan'),
     file: '/documents/Annex_1_Criteris_de_prioritzacix_de_les_propostes.pdf',
     size: '42 KB',
+    fileLang: 'ca',
     date: '2026-06-06',
   },
   {
@@ -111,6 +122,7 @@ const documentos: Documento[] = [
     category: t('category.plan'),
     file: '/documents/Annex_2_Criteris_itineraris_i_guals.pdf',
     size: '3,5 MB',
+    fileLang: 'ca',
     date: '2026-06-06',
   },
 ];
@@ -327,11 +339,13 @@ const categorias = ['all', ...new Set(documentos.map((doc) => doc.category))];
                   <div class="p-6">
                     <div class="mb-4 flex items-start justify-between">
                       <div class="flex-1">
-                        <div class="mb-2 flex items-center gap-2">
+                        <div class="mb-2 flex flex-wrap items-center gap-2">
                           <span class="rounded-full bg-gradient-to-r from-primary-100 to-accent-100 px-3 py-1 text-xs font-semibold text-primary-700">
                             {doc.category}
                           </span>
-                          <span class="text-xs text-gray-500">{doc.size}</span>
+                          <span class="whitespace-nowrap text-xs text-gray-500">
+                            {doc.size} · {t(`fileLang.${doc.fileLang}`)}
+                          </span>
                         </div>
                         <h3 class="mb-2 text-xl font-bold text-gray-900 transition-colors group-hover:text-primary-600">
                           {doc.title}
@@ -357,6 +371,7 @@ const categorias = ['all', ...new Set(documentos.map((doc) => doc.category))];
                     <div class="flex gap-3">
                       <a
                         href={doc.file}
+                        hreflang={doc.fileLang}
                         target="_blank"
                         rel="noopener noreferrer"
                         class="flex-1 rounded-xl bg-gradient-to-r from-primary-600 to-accent-600 px-4 py-3 text-center font-semibold text-white shadow-md transition-all duration-300 hover:shadow-lg"
@@ -386,6 +401,7 @@ const categorias = ['all', ...new Set(documentos.map((doc) => doc.category))];
                       </a>
                       <a
                         href={doc.file}
+                        hreflang={doc.fileLang}
                         download
                         aria-label={`${t('card.download')} ${doc.title} (PDF)`}
                         class="rounded-xl border-2 border-primary-600 px-4 py-3 font-semibold text-primary-600 transition-all duration-300 hover:bg-primary-50"

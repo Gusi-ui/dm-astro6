@@ -34,6 +34,8 @@ export const documentos = {
     'card.published': 'Publicado:',
     'card.view': 'Ver PDF',
     'card.download': 'Descargar',
+    'fileLang.es': 'En castellano',
+    'fileLang.ca': 'En catalán',
 
     'missing.text': '¿Echas en falta algún documento?',
     'missing.link': 'Contáctanos',
@@ -104,6 +106,8 @@ export const documentos = {
     'card.published': 'Publicat:',
     'card.view': 'Veure PDF',
     'card.download': 'Descarrega',
+    'fileLang.es': 'En castellà',
+    'fileLang.ca': 'En català',
 
     'missing.text': 'Trobes a faltar algun document?',
     'missing.link': 'Contacta’ns',

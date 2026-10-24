@@ -33,8 +33,8 @@ export const servicios = {
       'cta.button': 'Reportar una barrera',
     },
     ca: {
-      'page.title': 'Accessibilitat Universal - DiverMataró',
-      'hero.title': 'Accessibilitat Universal',
+      'page.title': 'Accessibilitat universal - DiverMataró',
+      'hero.title': 'Accessibilitat universal',
       'hero.subtitle': 'Eliminant barreres per construir un món sense obstacles',
       'intro.title': 'Un món accessible és un món millor per a tothom',
       'intro.text':
@@ -92,8 +92,8 @@ export const servicios = {
       'cta.button': 'Únete a la causa',
     },
     ca: {
-      'page.title': 'Actes Reivindicatius - DiverMataró',
-      'hero.title': 'Actes Reivindicatius',
+      'page.title': 'Actes reivindicatius - DiverMataró',
+      'hero.title': 'Actes reivindicatius',
       'hero.subtitle': 'Alcem la veu per defensar els nostres drets',
       'intro.title': 'Defensant els nostres drets',
       'intro.text':
@@ -153,10 +153,10 @@ export const servicios = {
       'cta.button': 'Contactar ahora',
     },
     ca: {
-      'page.title': 'Suport Personalitzat - DiverMataró',
-      'hero.title': 'Suport Personalitzat',
+      'page.title': 'Suport personalitzat - DiverMataró',
+      'hero.title': 'Suport personalitzat',
       'hero.subtitle': 'Acompanyament individualitzat adaptat a les teves necessitats',
-      'intro.title': 'Què és el Suport Personalitzat?',
+      'intro.title': 'Què és el suport personalitzat?',
       'intro.text':
         'A DiverMataró entenem que cada persona és única, amb les seves pròpies necessitats, aspiracions i circumstàncies. Per això, el nostre servei de Suport Personalitzat se centra a oferir un acompanyament individualitzat que s’adapta completament a cada situació.',
       'cards.title': 'Com t’ajudem?',
@@ -212,8 +212,8 @@ export const servicios = {
       'cta.button': 'Únete ahora',
     },
     ca: {
-      'page.title': 'Comunitat Inclusiva - DiverMataró',
-      'hero.title': 'Comunitat Inclusiva',
+      'page.title': 'Comunitat inclusiva - DiverMataró',
+      'hero.title': 'Comunitat inclusiva',
       'hero.subtitle': 'Espais de trobada on totes les persones són benvingudes',
       'intro.title': 'Construint una comunitat per a tothom',
       'intro.text':
@@ -271,8 +271,8 @@ export const servicios = {
       'cta.button': 'Comparte tu idea',
     },
     ca: {
-      'page.title': 'Innovació Constant - DiverMataró',
-      'hero.title': 'Innovació Constant',
+      'page.title': 'Innovació constant - DiverMataró',
+      'hero.title': 'Innovació constant',
       'hero.subtitle': 'Buscant noves maneres de millorar la qualitat de vida',
       'intro.title': 'Innovant per incloure',
       'intro.text':
@@ -331,8 +331,8 @@ export const servicios = {
       'cta.button': 'Suma tu voz',
     },
     ca: {
-      'page.title': 'Reconeixement Social - DiverMataró',
-      'hero.title': 'Reconeixement Social',
+      'page.title': 'Reconeixement social - DiverMataró',
+      'hero.title': 'Reconeixement social',
       'hero.subtitle': 'Canviant la percepció social de la diversitat funcional',
       'intro.title': 'Transformant mirades, construint respecte',
       'intro.text':

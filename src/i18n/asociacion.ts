@@ -83,11 +83,11 @@ export const asociacion = {
     'impact.projects': 'Proyectos realizados',
   },
   ca: {
-    'page.title': 'La Nostra Associació - Diversitat Funcional Mataró',
+    'page.title': 'La nostra associació - Diversitat Funcional Mataró',
 
     'hero.badge': 'Coneix-nos',
-    'hero.title': 'La Nostra',
-    'hero.titleHighlight': 'Associació',
+    'hero.title': 'La nostra',
+    'hero.titleHighlight': 'associació',
     'hero.text':
       'Som una associació sense ànim de lucre que lluita pels drets de les persones amb diversitat funcional i per un Mataró accessible per a tothom.',
     'hero.cta': 'Coneix la nostra història',
@@ -115,8 +115,8 @@ export const asociacion = {
       'Continuem creixent i lluitant per un Mataró 100% accessible per a totes les persones.',
 
     'team.badge': 'El nostre equip',
-    'team.title': 'La Nostra',
-    'team.titleHighlight': 'Junta Directiva',
+    'team.title': 'La nostra',
+    'team.titleHighlight': 'junta directiva',
     'team.text':
       'Persones compromeses que dediquen el seu temps de manera voluntària a millorar la vida de tothom.',
     'team.note': 'Tots els càrrecs són voluntaris i no remunerats',
@@ -135,15 +135,15 @@ export const asociacion = {
 
     'mission.badge': 'El que ens defineix',
     'mission.title': 'Missió i',
-    'mission.titleHighlight': 'Valors',
-    'mission.mission': 'La Nostra Missió',
+    'mission.titleHighlight': 'valors',
+    'mission.mission': 'La nostra missió',
     'mission.missionText':
       'Treballem per aconseguir una societat plenament inclusiva on totes les persones, independentment de les seves capacitats, puguin participar-hi en igualtat de condicions.',
     'mission.goal1': 'Aconseguir l’accessibilitat universal a Mataró',
     'mission.goal2': 'Defensar els drets de les persones amb diversitat funcional',
     'mission.goal3': 'Promoure la participació ciutadana activa',
     'mission.goal4': 'Crear una xarxa de suport i solidaritat',
-    'mission.values': 'Els Nostres Valors',
+    'mission.values': 'Els nostres valors',
     'mission.valuesText':
       'Ens guiem per principis que ens permeten treballar de manera transparent, solidària i compromesa amb la nostra comunitat.',
     'mission.value1': 'Solidaritat i suport mutu entre totes les persones',

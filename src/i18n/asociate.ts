@@ -60,7 +60,7 @@ export const asociate = {
     'thanks.step3Button': 'Unirse al grupo',
   },
   ca: {
-    'page.title': 'Uneix-te a Nosaltres - Associació Diversitat Funcional Mataró',
+    'page.title': 'Uneix-te a nosaltres - Associació Diversitat Funcional Mataró',
     'page.description':
       'Uneix-te a la nostra associació de manera gratuïta. Treballem per una societat amb accessibilitat universal.',
 
@@ -87,7 +87,7 @@ export const asociate = {
     'field.message': 'Missatge (opcional)',
     'field.messagePlaceholder': 'Explica’ns per què vols unir-te o si tens algun dubte...',
     'field.messageHelp': 'Màxim 500 caràcters',
-    'form.submit': 'Envia la Sol·licitud',
+    'form.submit': 'Envia la sol·licitud',
     'form.sending': 'S’està enviant...',
     'form.consent':
       'En enviar aquest formulari, acceptes que ens posem en contacte amb tu per WhatsApp.',
