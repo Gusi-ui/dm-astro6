@@ -1,0 +1,17 @@
+---
+import BlogClaim from '../../../../components/pages/blog/BlogClaim.astro';
+import { reivindicacionesConfig } from '../../../../lib/reivindicaciones';
+
+export const prerender = true;
+
+export async function getStaticPaths() {
+  return reivindicacionesConfig.map((r) => ({
+    params: { slug: r.ca.slug },
+    props: { reivindicacion: r },
+  }));
+}
+
+const { reivindicacion } = Astro.props;
+---
+
+<BlogClaim reivindicacion={reivindicacion} />

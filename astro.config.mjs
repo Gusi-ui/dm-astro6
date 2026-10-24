@@ -22,6 +22,13 @@ export default defineConfig({
     }),
   ],
   site: 'https://divermataro.org',
+  // Artículos escritos en catalán que estaban en el blog castellano: ahora viven en
+  // /ca/blog, y el blog castellano tiene su traducción con otra dirección
+  redirects: {
+    '/blog/la-crispeta': { status: 301, destination: '/ca/blog/la-crispeta' },
+    '/blog/mataro-connecta': { status: 301, destination: '/ca/blog/mataro-connecta' },
+    '/blog/estacions-de-renfe': { status: 301, destination: '/ca/blog/estacions-de-renfe' },
+  },
   markdown: {
     processor: unified({
       remarkPlugins: [remarkCloudinaryImages],

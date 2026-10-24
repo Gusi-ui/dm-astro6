@@ -5,6 +5,7 @@ pubDate: 2026-10-27
 heroImage: 'cloudinary:divermataro/blog/parques-infantiles-accesibles-mataro/pancarta-parques-accesibles-divermataro'
 heroFullMobile: true
 category: 'Accesibilidad'
+esSlug: 'parques-infantiles-accesibles-mataro'
 ---
 
 _Mataró renovarà 33 àrees de jocs infantils amb una inversió de gairebé un milió d'euros. Ho celebrem. Però avui, a la nostra ciutat, cap nen ni cap nena es pot gronxar sense baixar de la seva cadira de rodes, i res del que s'ha anunciat fins ara ho canvia. A [DiverMataró](/asociacion) hem presentat un escrit al registre de l'Ajuntament per demanar parcs infantils accessibles per a tota la ciutadania. Ara que es canvien tants gronxadors, és el moment de pensar en tothom._
