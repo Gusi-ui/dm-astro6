@@ -1,0 +1,72 @@
+---
+/**
+ * Selector de idioma «ES | CA»: el idioma actual marcado y el otro como enlace a la
+ * misma página en ese idioma. Al pulsarlo se guarda la elección (dm-lang), que
+ * manda sobre el idioma del navegador (ver el script de BaseLayout).
+ */
+import { languages, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+  /** Ruta de la página actual en el otro idioma */
+  href: string;
+  label: string;
+  class?: string;
+}
+
+const { lang, href, label, class: className } = Astro.props;
+const otherLang: Lang = lang === 'es' ? 'ca' : 'es';
+const order: Lang[] = ['es', 'ca'];
+---
+
+<div
+  role="group"
+  aria-label={label}
+  class:list={['flex items-center text-sm font-semibold', className]}
+>
+  {order.map((code, index) => (
+    <>
+      {index > 0 && (
+        <span aria-hidden="true" class="px-0.5 text-gray-300">
+          |
+        </span>
+      )}
+      {code === lang ? (
+        <span
+          aria-current="true"
+          class="rounded-lg bg-primary-50 px-2 py-1.5 text-primary-700 ring-1 ring-primary-200"
+        >
+          <span aria-hidden="true">{code.toUpperCase()}</span>
+          <span class="sr-only" lang={code}>
+            {languages[code]}
+          </span>
+        </span>
+      ) : (
+        <a
+          href={href}
+          hreflang={otherLang}
+          data-lang-switch={otherLang}
+          class="rounded-lg px-2 py-1.5 text-gray-600 underline-offset-4 transition-colors hover:bg-primary-50 hover:text-primary-700 hover:underline"
+        >
+          <span aria-hidden="true">{code.toUpperCase()}</span>
+          <span class="sr-only" lang={code}>
+            {languages[code]}
+          </span>
+        </a>
+      )}
+    </>
+  ))}
+</div>
+
+<script>
+  // La elección hecha con el selector se recuerda y manda sobre el idioma del navegador
+  document.querySelectorAll<HTMLAnchorElement>('[data-lang-switch]').forEach((link) => {
+    link.addEventListener('click', () => {
+      try {
+        localStorage.setItem('dm-lang', link.dataset.langSwitch ?? '');
+      } catch {
+        // Sin almacenamiento (modo privado estricto): solo se pierde el recuerdo
+      }
+    });
+  });
+</script>

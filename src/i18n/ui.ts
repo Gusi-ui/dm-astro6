@@ -19,6 +19,7 @@ export const ui = {
     'nav.contact': 'Contacto',
     'nav.join': 'Únete',
     'nav.main': 'Navegación principal',
+    'nav.language': 'Idioma',
     'nav.mobileMenu': 'Menú móvil',
 
     'services.support': 'Apoyo Personalizado',
@@ -73,6 +74,7 @@ export const ui = {
     'nav.contact': 'Contacte',
     'nav.join': 'Uneix-te',
     'nav.main': 'Navegació principal',
+    'nav.language': 'Idioma',
     'nav.mobileMenu': 'Menú mòbil',
 
     'services.support': 'Suport personalitzat',
