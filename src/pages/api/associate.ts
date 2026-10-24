@@ -3,13 +3,15 @@ import { Database } from '../../lib/db/client';
 import { getD1Database, getResendApiKey, waitUntil } from '../../lib/cloudflare';
 import { escapeHtml } from '../../lib/escape-html';
 import { HONEYPOT_FIELD, isHoneypotFilled } from '../../lib/honeypot';
+import { createTranslator, type Lang } from '../../i18n';
+import { formLangNames, forms, parseFormLang } from '../../i18n/forms';
 
 const WHATSAPP_GROUP_URL = 'https://chat.whatsapp.com/DRlG1gYTC596ta62wY3uas';
 
 // Función para enviar notificación por email al administrador
 async function sendAdminNotificationEmail(
   apiKey: string,
-  memberData: { name: string; email: string; phone?: string; message?: string }
+  memberData: { name: string; email: string; phone?: string; message?: string; lang: Lang }
 ) {
   try {
     const response = await fetch('https://api.resend.com/emails', {
@@ -35,6 +37,7 @@ async function sendAdminNotificationEmail(
               <div style="background: white; border-radius: 8px; padding: 20px; border-left: 4px solid #22c55e;">
                 <p style="margin: 0 0 10px;"><strong>Nombre:</strong> ${escapeHtml(memberData.name)}</p>
                 <p style="margin: 0 0 10px;"><strong>Email:</strong> <a href="mailto:${escapeHtml(memberData.email)}">${escapeHtml(memberData.email)}</a></p>
+                <p style="margin: 0 0 10px;"><strong>Idioma:</strong> ${formLangNames[memberData.lang]}</p>
                 ${memberData.phone ? `<p style="margin: 0 0 10px;"><strong>Teléfono:</strong> <a href="https://wa.me/${memberData.phone.replace(/\D/g, '')}">${escapeHtml(memberData.phone)}</a></p>` : ''}
                 ${memberData.message ? `<p style="margin: 15px 0 0;"><strong>Mensaje:</strong></p><p style="margin: 5px 0 0; white-space: pre-wrap; color: #6b7280;">${escapeHtml(memberData.message)}</p>` : ''}
               </div>
@@ -62,7 +65,11 @@ async function sendAdminNotificationEmail(
 }
 
 // Función para enviar email de bienvenida al nuevo miembro
-async function sendWelcomeEmail(apiKey: string, memberData: { name: string; email: string }) {
+async function sendWelcomeEmail(
+  apiKey: string,
+  memberData: { name: string; email: string; lang: Lang }
+) {
+  const t = createTranslator(forms, memberData.lang);
   try {
     const response = await fetch('https://api.resend.com/emails', {
       method: 'POST',
@@ -74,52 +81,52 @@ async function sendWelcomeEmail(apiKey: string, memberData: { name: string; emai
         from: 'DiverMataró <noreply@divermataro.org>',
         to: [memberData.email],
         reply_to: 'info@divermataro.org',
-        subject: `¡Bienvenid@ a DiverMataró, ${memberData.name}!`,
+        subject: t('welcome.subject').replace('{name}', memberData.name),
         html: `
-          <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+          <div lang="${memberData.lang}" style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
             <div style="background: linear-gradient(135deg, #0ea5e9, #d946ef); padding: 30px; border-radius: 10px 10px 0 0; text-align: center;">
-              <h1 style="color: white; margin: 0; font-size: 26px;">¡Bienvenid@ a DiverMataró!</h1>
-              <p style="color: rgba(255,255,255,0.9); margin: 10px 0 0; font-size: 16px;">Asociación Diversidad Funcional Mataró</p>
+              <h1 style="color: white; margin: 0; font-size: 26px;">${t('welcome.title')}</h1>
+              <p style="color: rgba(255,255,255,0.9); margin: 10px 0 0; font-size: 16px;">${t('welcome.org')}</p>
             </div>
             <div style="background: #f9fafb; padding: 30px; border-radius: 0 0 10px 10px;">
               <p style="margin: 0 0 20px; font-size: 16px; color: #374151;">
-                Hola <strong>${escapeHtml(memberData.name)}</strong>,
+                ${t('welcome.hello')} <strong>${escapeHtml(memberData.name)}</strong>,
               </p>
               <p style="margin: 0 0 20px; font-size: 16px; color: #374151;">
-                ¡Gracias por unirte a nuestra asociación! Tu solicitud ha sido recibida correctamente y nuestro equipo la revisará en breve.
+                ${t('welcome.thanks')}
               </p>
 
               <div style="background: #25D366; border-radius: 12px; padding: 25px; text-align: center; margin: 25px 0;">
                 <p style="color: white; margin: 0 0 15px; font-size: 16px; font-weight: bold;">
-                  Únete a nuestro grupo de WhatsApp
+                  ${t('welcome.groupTitle')}
                 </p>
                 <p style="color: rgba(255,255,255,0.9); margin: 0 0 20px; font-size: 14px;">
-                  Mantente al día de todas las actividades, noticias y novedades de la asociación.
+                  ${t('welcome.groupText')}
                 </p>
                 <a href="${WHATSAPP_GROUP_URL}" target="_blank" style="display: inline-block; background: white; color: #25D366; padding: 14px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px;">
-                  Unirme al grupo
+                  ${t('welcome.groupButton')}
                 </a>
               </div>
 
               <div style="background: white; border-radius: 8px; padding: 20px; border-left: 4px solid #0ea5e9; margin: 20px 0;">
-                <p style="margin: 0 0 8px; font-size: 14px; font-weight: bold; color: #374151;">Próximos pasos:</p>
+                <p style="margin: 0 0 8px; font-size: 14px; font-weight: bold; color: #374151;">${t('welcome.nextSteps')}</p>
                 <ol style="margin: 0; padding-left: 20px; color: #6b7280; font-size: 14px; line-height: 1.8;">
-                  <li>Revisaremos tu solicitud</li>
-                  <li>Te contactaremos por WhatsApp para darte la bienvenida</li>
-                  <li>¡Empieza a participar en nuestras actividades!</li>
+                  <li>${t('welcome.step1')}</li>
+                  <li>${t('welcome.step2')}</li>
+                  <li>${t('welcome.step3')}</li>
                 </ol>
               </div>
 
               <p style="margin: 20px 0 0; font-size: 14px; color: #6b7280;">
-                Si tienes cualquier duda, puedes responder directamente a este email o contactarnos en
+                ${t('welcome.questions')}
                 <a href="mailto:info@divermataro.org" style="color: #0ea5e9;">info@divermataro.org</a>.
               </p>
 
               <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 25px 0;" />
 
               <p style="margin: 0; font-size: 12px; color: #9ca3af; text-align: center;">
-                Asociación Diversidad Funcional Mataró<br />
-                Este email fue enviado porque te registraste en nuestra web.
+                ${t('welcome.org')}<br />
+                ${t('welcome.footer')}
               </p>
             </div>
           </div>
@@ -137,17 +144,13 @@ async function sendWelcomeEmail(apiKey: string, memberData: { name: string; emai
 }
 
 export const POST: APIRoute = async ({ request, locals }) => {
+  // Castellano hasta conocer el idioma del formulario
+  let t = createTranslator(forms, 'es');
   try {
-    const db = getD1Database();
-
-    if (!db) {
-      return new Response(
-        JSON.stringify({ success: false, error: 'Error de configuración del servidor' }),
-        { status: 500, headers: { 'Content-Type': 'application/json' } }
-      );
-    }
-
     const formData = await request.formData();
+    // Idioma de la página desde la que se envió: el de las respuestas y el de la bienvenida
+    const lang = parseFormLang(formData.get('lang'));
+    t = createTranslator(forms, lang);
     const name = formData.get('name')?.toString();
     const email = formData.get('email')?.toString();
     const phone = formData.get('phone')?.toString();
@@ -158,7 +161,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
       return new Response(
         JSON.stringify({
           success: true,
-          message: '¡Gracias por unirte! Te contactaremos pronto por WhatsApp.',
+          message: t('join.success'),
         }),
         { status: 200, headers: { 'Content-Type': 'application/json' } }
       );
@@ -166,24 +169,33 @@ export const POST: APIRoute = async ({ request, locals }) => {
 
     // Validación básica
     if (!name || name.length < 2 || name.length > 100) {
-      return new Response(
-        JSON.stringify({ success: false, error: 'El nombre debe tener entre 2 y 100 caracteres' }),
-        { status: 400, headers: { 'Content-Type': 'application/json' } }
-      );
+      return new Response(JSON.stringify({ success: false, error: t('join.nameLength') }), {
+        status: 400,
+        headers: { 'Content-Type': 'application/json' },
+      });
     }
 
     if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      return new Response(JSON.stringify({ success: false, error: 'Email inválido' }), {
+      return new Response(JSON.stringify({ success: false, error: t('join.invalidEmail') }), {
         status: 400,
         headers: { 'Content-Type': 'application/json' },
       });
     }
 
     if (message && message.length > 500) {
-      return new Response(
-        JSON.stringify({ success: false, error: 'El mensaje no puede exceder 500 caracteres' }),
-        { status: 400, headers: { 'Content-Type': 'application/json' } }
-      );
+      return new Response(JSON.stringify({ success: false, error: t('join.messageTooLong') }), {
+        status: 400,
+        headers: { 'Content-Type': 'application/json' },
+      });
+    }
+
+    const db = getD1Database();
+
+    if (!db) {
+      return new Response(JSON.stringify({ success: false, error: t('serverConfig') }), {
+        status: 500,
+        headers: { 'Content-Type': 'application/json' },
+      });
     }
 
     const database = new Database(db);
@@ -191,10 +203,10 @@ export const POST: APIRoute = async ({ request, locals }) => {
     // Verificar si el email ya existe
     const existing = await database.getMemberByEmail(email);
     if (existing) {
-      return new Response(
-        JSON.stringify({ success: false, error: 'Este email ya está registrado' }),
-        { status: 409, headers: { 'Content-Type': 'application/json' } }
-      );
+      return new Response(JSON.stringify({ success: false, error: t('join.emailExists') }), {
+        status: 409,
+        headers: { 'Content-Type': 'application/json' },
+      });
     }
 
     // Crear nuevo miembro
@@ -215,8 +227,9 @@ export const POST: APIRoute = async ({ request, locals }) => {
           email,
           phone: phone || undefined,
           message: message || undefined,
+          lang,
         }),
-        sendWelcomeEmail(RESEND_API_KEY, { name, email }),
+        sendWelcomeEmail(RESEND_API_KEY, { name, email, lang }),
       ]);
 
       // Usar waitUntil para que Cloudflare no cancele las promesas
@@ -226,7 +239,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
     return new Response(
       JSON.stringify({
         success: true,
-        message: '¡Gracias por unirte! Te contactaremos pronto por WhatsApp.',
+        message: t('join.success'),
       }),
       { status: 200, headers: { 'Content-Type': 'application/json' } }
     );
@@ -235,7 +248,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
     return new Response(
       JSON.stringify({
         success: false,
-        error: 'Error al procesar tu solicitud. Por favor, intenta de nuevo.',
+        error: t('join.processError'),
       }),
       { status: 500, headers: { 'Content-Type': 'application/json' } }
     );

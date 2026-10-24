@@ -2,48 +2,53 @@ import type { APIRoute } from 'astro';
 import { getResendApiKey } from '../../lib/cloudflare';
 import { escapeHtml } from '../../lib/escape-html';
 import { HONEYPOT_FIELD, isHoneypotFilled } from '../../lib/honeypot';
+import { createTranslator } from '../../i18n';
+import { formLangNames, forms, parseFormLang } from '../../i18n/forms';
 
 export const POST: APIRoute = async ({ request }) => {
+  // Castellano hasta conocer el idioma del formulario
+  let t = createTranslator(forms, 'es');
   try {
     const data = (await request.json()) as {
       nombre?: string;
       email?: string;
       asunto?: string;
       mensaje?: string;
+      lang?: string;
       [HONEYPOT_FIELD]?: string;
     };
     const { nombre, email, asunto, mensaje } = data;
+    // Idioma de la página desde la que se envió: el de las respuestas a la persona
+    const lang = parseFormLang(data.lang);
+    t = createTranslator(forms, lang);
 
     if (isHoneypotFilled(data[HONEYPOT_FIELD])) {
       console.warn('Formulario de contacto: envío descartado por el campo trampa');
-      return new Response(
-        JSON.stringify({ success: true, message: 'Mensaje enviado correctamente' }),
-        { status: 200, headers: { 'Content-Type': 'application/json' } }
-      );
+      return new Response(JSON.stringify({ success: true, message: t('contact.success') }), {
+        status: 200,
+        headers: { 'Content-Type': 'application/json' },
+      });
     }
 
     // Validación básica
     if (!nombre || !email || !asunto || !mensaje) {
-      return new Response(JSON.stringify({ error: 'Todos los campos son obligatorios' }), {
+      return new Response(JSON.stringify({ error: t('contact.required') }), {
         status: 400,
         headers: { 'Content-Type': 'application/json' },
       });
     }
 
     if (nombre.length > 100 || mensaje.length > 5000) {
-      return new Response(
-        JSON.stringify({ error: 'El nombre o el mensaje son demasiado largos' }),
-        {
-          status: 400,
-          headers: { 'Content-Type': 'application/json' },
-        }
-      );
+      return new Response(JSON.stringify({ error: t('contact.tooLong') }), {
+        status: 400,
+        headers: { 'Content-Type': 'application/json' },
+      });
     }
 
     // Validar formato de email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-      return new Response(JSON.stringify({ error: 'El formato del email no es válido' }), {
+      return new Response(JSON.stringify({ error: t('contact.invalidEmail') }), {
         status: 400,
         headers: { 'Content-Type': 'application/json' },
       });
@@ -54,7 +59,7 @@ export const POST: APIRoute = async ({ request }) => {
 
     if (!RESEND_API_KEY) {
       console.error('RESEND_API_KEY no configurada');
-      return new Response(JSON.stringify({ error: 'Error de configuración del servidor' }), {
+      return new Response(JSON.stringify({ error: t('serverConfig') }), {
         status: 500,
         headers: { 'Content-Type': 'application/json' },
       });
@@ -98,6 +103,7 @@ export const POST: APIRoute = async ({ request }) => {
               <p style="margin: 0 0 15px;"><strong>Nombre:</strong> ${safe.nombre}</p>
               <p style="margin: 0 0 15px;"><strong>Email:</strong> <a href="mailto:${safe.email}">${safe.email}</a></p>
               <p style="margin: 0 0 15px;"><strong>Asunto:</strong> ${safe.asunto}</p>
+              <p style="margin: 0 0 15px;"><strong>Idioma:</strong> ${formLangNames[lang]}</p>
               <div style="margin-top: 20px; padding: 20px; background: white; border-radius: 8px; border-left: 4px solid #0ea5e9;">
                 <p style="margin: 0 0 10px;"><strong>Mensaje:</strong></p>
                 <p style="margin: 0; white-space: pre-wrap;">${safe.mensaje}</p>
@@ -114,19 +120,19 @@ export const POST: APIRoute = async ({ request }) => {
     if (!response.ok) {
       const errorData = await response.json();
       console.error('Error de Resend:', errorData);
-      return new Response(
-        JSON.stringify({ error: 'Error al enviar el mensaje. Inténtalo de nuevo.' }),
-        { status: 500, headers: { 'Content-Type': 'application/json' } }
-      );
+      return new Response(JSON.stringify({ error: t('contact.sendError') }), {
+        status: 500,
+        headers: { 'Content-Type': 'application/json' },
+      });
     }
 
-    return new Response(
-      JSON.stringify({ success: true, message: 'Mensaje enviado correctamente' }),
-      { status: 200, headers: { 'Content-Type': 'application/json' } }
-    );
+    return new Response(JSON.stringify({ success: true, message: t('contact.success') }), {
+      status: 200,
+      headers: { 'Content-Type': 'application/json' },
+    });
   } catch (error) {
     console.error('Error en el endpoint de contacto:', error);
-    return new Response(JSON.stringify({ error: 'Error interno del servidor' }), {
+    return new Response(JSON.stringify({ error: t('internalError') }), {
       status: 500,
       headers: { 'Content-Type': 'application/json' },
     });

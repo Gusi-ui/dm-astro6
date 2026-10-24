@@ -18,6 +18,8 @@ const t = createTranslator(asociate, lang);
   data-connection-error={t('form.connectionError')}
 >
   <Honeypot />
+  <!-- Idioma de la página: el de las respuestas del servidor y el del correo de bienvenida -->
+  <input type="hidden" name="lang" value={lang} />
   <div>
     <label for="name" class="mb-2 block text-sm font-semibold text-gray-700">
       {t('field.name')} <span class="text-red-500">*</span>
