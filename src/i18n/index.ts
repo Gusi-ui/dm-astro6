@@ -37,6 +37,8 @@ export const caRoutes: Record<string, string> = {
   '/asociacion': '/ca/associacio',
   '/contacto': '/ca/contacte',
   '/documentos': '/ca/documents',
+  '/asociate': '/ca/associa-te',
+  '/asociate/gracias': '/ca/associa-te/gracies',
   '/servicios/apoyo-personalizado': '/ca/serveis/suport-personalitzat',
   '/servicios/comunidad-inclusiva': '/ca/serveis/comunitat-inclusiva',
   '/servicios/actos-reivindicativos': '/ca/serveis/actes-reivindicatius',

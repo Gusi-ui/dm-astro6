@@ -7,7 +7,7 @@ type SitemapEntry = { path: string; changefreq: string; priority: number; lastmo
 
 // Las páginas fijas salen de src/pages, así que una página nueva entra sola en el
 // sitemap. Quedan fuera las dinámicas ([slug]), que se añaden abajo, y estas:
-const EXCLUDED_PAGES = new Set(['/asociate/gracias']);
+const EXCLUDED_PAGES = new Set(['/asociate/gracias', '/ca/associa-te/gracies']);
 
 const PAGE_PRIORITY: Record<string, Pick<SitemapEntry, 'changefreq' | 'priority'>> = {
   '/': { changefreq: 'weekly', priority: 1.0 },
