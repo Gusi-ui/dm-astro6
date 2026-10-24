@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../sections/Header.astro';
+import Footer from '../sections/Footer.astro';
+import EliminacionDatosEs from '../legal/EliminacionDatosEs.astro';
+import EliminacionDatosCa from '../legal/EliminacionDatosCa.astro';
+import { createTranslator, getLangFromUrl, localizePath } from '../../i18n';
+import { legal } from '../../i18n/legal';
+
+const lang = getLangFromUrl(Astro.url);
+const t = createTranslator(legal, lang);
+---
+
+<BaseLayout title={t('deletion.title')} description={t('deletion.description')}>
+  <Header />
+  <main id="main-content" class="min-h-screen bg-white py-16 md:py-24">
+    <div class="section-container">
+      <div class="mx-auto max-w-3xl">
+        <h1 class="mb-8 text-3xl font-bold text-gray-900 md:text-4xl">{t('deletion.heading')}</h1>
+        <p class="mb-8 text-sm text-gray-500">{t('updated')}</p>
+
+        <div class="prose prose-lg max-w-none prose-headings:font-bold prose-headings:text-gray-900 prose-p:text-gray-600 prose-a:text-primary-600 hover:prose-a:text-primary-700 prose-li:text-gray-600">
+          {lang === 'ca' ? <EliminacionDatosCa /> : <EliminacionDatosEs />}
+        </div>
+
+        <div class="mt-12 flex flex-col gap-4 border-t border-gray-200 pt-8 sm:flex-row sm:gap-6">
+          <a
+            href={localizePath('/privacidad', lang)}
+            class="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700"
+          >
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+              ></path>
+            </svg>
+            {t('deletion.seePrivacy')}
+          </a>
+          <a
+            href={localizePath('/', lang)}
+            class="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700"
+          >
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              ></path>
+            </svg>
+            {t('back')}
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>
