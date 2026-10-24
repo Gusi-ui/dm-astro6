@@ -2,12 +2,12 @@
 import {
   getAlternates,
   getLangFromUrl,
-  languages,
   localizePath,
   normalizePath,
   useTranslations,
   type Lang,
 } from '../../i18n';
+import LanguageSwitch from '../LanguageSwitch.astro';
 
 interface Props {
   /** Versiones de la página en cada idioma, para las que no están en caRoutes (el blog) */
@@ -140,35 +140,31 @@ const switchHref = alternates?.[otherLang];
           </a>
         </li>
         {switchHref && (
-          <li>
-            <a
-              href={switchHref}
-              hreflang={otherLang}
-              lang={otherLang}
-              class="ml-1 whitespace-nowrap rounded-lg px-3 py-2 text-sm font-semibold text-gray-700 underline-offset-4 transition-colors hover:bg-primary-50 hover:text-primary-700 hover:underline"
-            >
-              {languages[otherLang]}
-            </a>
+          <li class="ml-1">
+            <LanguageSwitch lang={lang} href={switchHref} label={t('nav.language')} />
           </li>
         )}
       </ul>
 
-      <!-- Mobile menu button -->
-      <button
-        id="mobile-menu-button"
-        class="rounded-lg p-2 text-gray-700 transition-colors hover:bg-primary-50 hover:text-primary-600 lg:hidden"
-        aria-label={t('nav.mobileMenu')}
-        aria-expanded="false"
-      >
-        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          ></path>
-        </svg>
-      </button>
+      <!-- Móvil: selector de idioma a la vista y botón del menú -->
+      <div class="flex items-center gap-1 lg:hidden">
+        {switchHref && <LanguageSwitch lang={lang} href={switchHref} label={t('nav.language')} />}
+        <button
+          id="mobile-menu-button"
+          class="rounded-lg p-2 text-gray-700 transition-colors hover:bg-primary-50 hover:text-primary-600"
+          aria-label={t('nav.mobileMenu')}
+          aria-expanded="false"
+        >
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
     </div>
 
     <!-- Mobile menu con animación -->
@@ -249,18 +245,6 @@ const switchHref = alternates?.[otherLang];
             {t('nav.join')}{' '}
           </a>
         </li>
-        {switchHref && (
-          <li class="mobile-menu-item" style={`--item-delay: ${(navItems.length + 1) * 0.2}s`}>
-            <a
-              href={switchHref}
-              hreflang={otherLang}
-              lang={otherLang}
-              class="block rounded-xl border border-gray-200 bg-white px-4 py-3 text-center font-semibold text-gray-700 shadow-sm transition-all duration-300 hover:border-primary-300 hover:text-primary-700 hover:shadow-md"
-            >
-              {languages[otherLang]}
-            </a>
-          </li>
-        )}
       </ul>
     </div>
   </nav>

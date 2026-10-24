@@ -62,6 +62,48 @@ const alternateLinks = alternates
 <html lang={lang}>
   <head>
     <meta charset="UTF-8" />
+    {
+      /*
+       * Idioma automático, antes de pintar la página. Si la persona ya eligió idioma
+       * con el selector (dm-lang), manda su elección. Si no, solo en la primera página
+       * de la visita (y no si llega navegando desde el propio sitio): se usa el primer
+       * idioma del navegador que sea castellano o catalán. Los robots y Lighthouse no
+       * se redirigen, para que los buscadores vean cada versión con su hreflang.
+       */
+      alternates && <script is:inline define:vars={{ alternates, pageLang: lang }}>
+        try {
+          var target;
+          var chosen = localStorage.getItem('dm-lang');
+          if (chosen === 'es' || chosen === 'ca') {
+            target = chosen;
+          } else if (
+            !sessionStorage.getItem('dm-lang-auto') &&
+            !/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent)
+          ) {
+            sessionStorage.setItem('dm-lang-auto', '1');
+            var fromSite =
+              document.referrer && new URL(document.referrer).origin === location.origin;
+            if (!fromSite) {
+              var langs = navigator.languages || [navigator.language];
+              for (var i = 0; i < langs.length; i++) {
+                var code = String(langs[i] || '')
+                  .toLowerCase()
+                  .slice(0, 2);
+                if (code === 'es' || code === 'ca') {
+                  target = code;
+                  break;
+                }
+              }
+            }
+          }
+          if (target && target !== pageLang && alternates[target]) {
+            location.replace(alternates[target] + location.search + location.hash);
+          }
+        } catch (e) {
+          // Sin almacenamiento o URL rara: se queda en la página pedida
+        }
+      </script>
+    }
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/favicondivermataro.png" />
