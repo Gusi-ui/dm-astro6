@@ -169,7 +169,7 @@ export const home = {
 /** Nombre de cada categoría del blog en catalán (en castellano es el propio valor) */
 export const categoryNamesCa: Record<string, string> = {
   Denuncia: 'Denúncia',
-  Activitats: 'Activitats',
+  Actividades: 'Activitats',
   Eventos: 'Esdeveniments',
   Reflexión: 'Reflexió',
   Accesibilidad: 'Accessibilitat',
