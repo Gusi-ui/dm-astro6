@@ -71,7 +71,7 @@ export const reivindicacionesConfig = [
       description:
         'Treballem per visibilitzar les injustícies i les barreres que trobem cada dia. Denunciem públicament les situacions de discriminació i de manca d’accessibilitat.',
     },
-    categories: ['Denuncia', 'Activitats', 'Eventos', 'Reflexión'],
+    categories: ['Denuncia', 'Actividades', 'Eventos', 'Reflexión'],
     color: 'bg-rose-500',
     colorLight: 'bg-rose-50',
     colorText: 'text-rose-600',
