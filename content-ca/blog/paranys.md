@@ -2,7 +2,7 @@
 title: 'Paranys'
 description: 'Les reixes de clavegueram com a paranys perillosos per a les cadires de rodes i el repte de l’accessibilitat urbana.'
 pubDate: 2020-07-15
-updatedDate: 2026-10-24
+updatedDate: 2026-10-27
 category: 'Denuncia'
 heroImage: 'cloudinary:divermataro/blog/trampas/alcantarilla'
 esSlug: 'trampas'
@@ -25,6 +25,8 @@ Les reixes de clavegueram estan dissenyades perquè l’aigua flueixi cap al sis
 Un dels problemes clau és que les mides estàndard de les reixes de clavegueram no tenen en compte les necessitats d’accessibilitat de les persones amb discapacitat. Les obertures solen ser prou amples perquè una roda de la cadira s’hi pugui ficar, sobretot si les rodes davanteres o del darrere no queden ben alineades en passar per sobre de la reixa. A més, les reixes trencades, soltes o desalineades encara poden augmentar més el risc que les cadires de rodes s’hi quedin encallades.
 
 I no és per falta de normativa. L’<a href="https://www.boe.es/eli/es/o/2021/07/23/tma851/con" target="_blank" rel="noopener noreferrer">Ordre TMA/851/2021</a>, que regula l’accessibilitat dels espais públics urbanitzats, estableix al seu article 12 que les reixes de les zones de vianants s’han de col·locar enrasades amb el paviment i que les seves obertures no poden superar la mida d’un cercle d’1,6 cm de diàmetre.
+
+Als parcs, aquestes reixes arriben a ser a l’única entrada a l’àrea de jocs, com expliquem a [parcs infantils accessibles a Mataró](/blog/parques-infantiles-accesibles-mataro).
 
 ### Conseqüències per a les persones amb discapacitat
 

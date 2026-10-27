@@ -2,7 +2,7 @@
 title: 'Una rampa no és una ciutat: la reforma de la plaça de Catalunya de Mataró i l’accessibilitat que falta'
 description: 'Les obres a la plaça de Catalunya prometen accessibilitat i seguretat, però per a qui? Anàlisi del que la reforma resol, del que silencia i del pla municipal en revisió.'
 pubDate: 2026-06-06
-updatedDate: 2026-10-24
+updatedDate: 2026-10-27
 category: 'Accesibilidad'
 heroImage: 'cloudinary:divermataro/blog/plaza-catalunya/pcb'
 heroFullMobile: true
@@ -196,6 +196,8 @@ Finalment, hi ha la diversitat funcional que no es veu: les persones amb dolor c
 ### El joc i la cura com a dret
 
 L’Ajuntament ha anunciat, a més, la renovació completa de la zona de jocs infantils de la part superior de la plaça, amb l’objectiu de fer-la accessible des del carrer de Lluís Moret. La meitat de la superfície serà de paviment de cautxú i l’altra meitat de sauló. És una millora, però amaga una distinció crucial: una cosa és que l’àrea de jocs sigui accessible —que s’hi pugui arribar— i una altra de molt diferent és que el joc sigui inclusiu —que un infant amb discapacitat hi pugui jugar de debò—. El cautxú permet el pas d’una cadira de rodes; el sauló, no. I si els jocs que s’hi instal·len no estan adaptats, haurem construït un parc on es pot arribar però on no tots els infants poden jugar.
+
+La nova zona de jocs de la plaça forma part d’un pla més gran: analitzem què falta als [parcs infantils accessibles de Mataró](/blog/parques-infantiles-accesibles-mataro).
 
 La plaça és, a més, una infraestructura de cures, encara que rarament la pensem així. És on un pare o una mare passen la tarda amb un nadó, on algú acompanya una persona gran, on una àvia i el seu nét coincideixen al banc. Dissenyar pensant en aquests usos quotidians —on seure, on descansar, on hi ha ombra i aigua— beneficia tota la comunitat, no només qui té una discapacitat reconeguda.
 
