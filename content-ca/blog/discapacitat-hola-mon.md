@@ -2,7 +2,7 @@
 title: 'Discapacitat. Hola, món!'
 description: 'DiverMataró arriba per promoure la igualtat i els drets de les persones amb diversitat funcional. Entenent conceptes clau.'
 pubDate: 2024-02-10
-updatedDate: 2026-10-24
+updatedDate: 2026-10-27
 category: 'Social'
 heroImage: 'cloudinary:divermataro/blog/discapacidad-hola-mundo/holamundo'
 esSlug: 'discapacidad-hola-mundo'
@@ -35,7 +35,7 @@ L’[Organització Mundial de la Salut (OMS)](https://www.who.int/es/health-topi
 
 La discapacitat, igual que la deficiència, pot ser congènita o adquirida, temporal o irreversible i, a més, progressiva o regressiva. Les discapacitats es poden agrupar en tres grans troncs: de mobilitat o desplaçament, de relació o conducta, i de comunicació.
 
-Parlem de com es viu tot això en el dia a dia en articles com [la vida independent i l’assistència personal](/blog/la-vida-independiente) o [la sexualitat de les persones amb diversitat funcional](/blog/todos-con-sexualidad).
+Parlem de com es viu tot això en el dia a dia en articles com [la vida independent i l’assistència personal](/blog/la-vida-independiente) o [la sexualitat de les persones amb diversitat funcional](/blog/todos-con-sexualidad). El dret al joc també és accessibilitat: llegeix per què demanem un [gronxador per a cadira de rodes a Mataró](/blog/parques-infantiles-accesibles-mataro).
 
 ### Què és la deficiència?
 
