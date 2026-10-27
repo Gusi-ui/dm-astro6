@@ -31,7 +31,7 @@ La disponibilidad de transportes públicos adaptados contribuye a la inclusión 
 
 Las personas con diversidad funcional enfrentan una serie de desafíos al utilizar el transporte público. Estos pueden incluir:
 
-- **Acceso físico limitado:** Las personas con discapacidades físicas pueden enfrentar dificultades para ingresar y salir de los vehículos, especialmente si no hay rampas o ascensores disponibles en las estaciones, como hemos [denunciado en el caso de las estaciones de Renfe](/blog/estacions-de-renfe), o en las paradas de autobús.
+- **Acceso físico limitado:** Las personas con discapacidades físicas pueden enfrentar dificultades para ingresar y salir de los vehículos, especialmente si no hay rampas o ascensores disponibles en las estaciones, como hemos [denunciado en el caso de las estaciones de Renfe](/blog/averias-ascensores-estaciones-renfe), o en las paradas de autobús.
 - **Falta de información accesible:** La falta de información en formatos accesibles, como braille, texto grande o audio, puede dificultar que las personas con discapacidades visuales naveguen por el sistema de transporte público de manera independiente.
 - **Falta de capacitación del personal:** El personal del transporte público a menudo carece de capacitación adecuada sobre cómo ayudar a las personas con diversidad funcional, lo que puede generar experiencias desafiantes o incluso discriminatorias para los usuarios.
 - **Falta de conciencia pública:** La falta de conciencia sobre las necesidades y los derechos de las personas con diversidad funcional puede llevar a la discriminación y a la falta de empatía por parte de otros pasajeros y del personal del transporte público.

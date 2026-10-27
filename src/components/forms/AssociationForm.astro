@@ -1,12 +1,28 @@
 ---
 import Honeypot from './Honeypot.astro';
+import { createTranslator, getLangFromUrl, localizePath } from '../../i18n';
+import { asociate } from '../../i18n/asociate';
+
+const lang = getLangFromUrl(Astro.url);
+const t = createTranslator(asociate, lang);
 ---
 
-<form method="POST" action="/api/associate" class="relative space-y-6">
+<form
+  method="POST"
+  action="/api/associate"
+  class="relative space-y-6"
+  data-thanks-url={localizePath('/asociate/gracias', lang)}
+  data-submit={t('form.submit')}
+  data-sending={t('form.sending')}
+  data-error={t('form.error')}
+  data-connection-error={t('form.connectionError')}
+>
   <Honeypot />
+  <!-- Idioma de la página: el de las respuestas del servidor y el del correo de bienvenida -->
+  <input type="hidden" name="lang" value={lang} />
   <div>
     <label for="name" class="mb-2 block text-sm font-semibold text-gray-700">
-      Nombre completo <span class="text-red-500">*</span>
+      {t('field.name')} <span class="text-red-500">*</span>
     </label>
     <input
       type="text"
@@ -16,14 +32,14 @@ import Honeypot from './Honeypot.astro';
       minlength="2"
       maxlength="100"
       class="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none transition-colors focus:border-primary-500 focus:ring-2 focus:ring-primary-500"
-      placeholder="Tu nombre completo"
+      placeholder={t('field.namePlaceholder')}
       aria-required="true"
     />
   </div>
 
   <div>
     <label for="email" class="mb-2 block text-sm font-semibold text-gray-700">
-      Email <span class="text-red-500">*</span>
+      {t('field.email')} <span class="text-red-500">*</span>
     </label>
     <input
       type="email"
@@ -31,14 +47,14 @@ import Honeypot from './Honeypot.astro';
       name="email"
       required
       class="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none transition-colors focus:border-primary-500 focus:ring-2 focus:ring-primary-500"
-      placeholder="tu@email.com"
+      placeholder={t('field.emailPlaceholder')}
       aria-required="true"
     />
   </div>
 
   <div>
     <label for="phone" class="mb-2 block text-sm font-semibold text-gray-700">
-      Teléfono (opcional)
+      {t('field.phone')}
     </label>
     <input
       type="tel"
@@ -47,12 +63,12 @@ import Honeypot from './Honeypot.astro';
       class="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none transition-colors focus:border-primary-500 focus:ring-2 focus:ring-primary-500"
       placeholder="+34 600 000 000"
     />
-    <p class="mt-1 text-sm text-gray-500">Usaremos WhatsApp para comunicarnos contigo</p>
+    <p class="mt-1 text-sm text-gray-500">{t('field.phoneHelp')}</p>
   </div>
 
   <div>
     <label for="message" class="mb-2 block text-sm font-semibold text-gray-700">
-      Mensaje (opcional)
+      {t('field.message')}
     </label>
     <textarea
       id="message"
@@ -60,20 +76,18 @@ import Honeypot from './Honeypot.astro';
       rows="4"
       maxlength="500"
       class="w-full resize-none rounded-lg border border-gray-300 px-4 py-3 outline-none transition-colors focus:border-primary-500 focus:ring-2 focus:ring-primary-500"
-      placeholder="Cuéntanos por qué quieres unirte o si tienes alguna pregunta..."
+      placeholder={t('field.messagePlaceholder')}
     ></textarea>
-    <p class="mt-1 text-sm text-gray-500">Máximo 500 caracteres</p>
+    <p class="mt-1 text-sm text-gray-500">{t('field.messageHelp')}</p>
   </div>
 
   <div id="form-message" class="hidden rounded-lg p-4"></div>
 
   <button type="submit" class="btn-primary w-full py-4 text-lg" id="submit-button">
-    Enviar Solicitud
+    {t('form.submit')}
   </button>
 
-  <p class="text-center text-sm text-gray-600">
-    Al enviar este formulario, aceptas que nos pongamos en contacto contigo vía WhatsApp.
-  </p>
+  <p class="text-center text-sm text-gray-600">{t('form.consent')}</p>
 </form>
 
 <script>
@@ -87,7 +101,7 @@ import Honeypot from './Honeypot.astro';
 
       const formData = new FormData(form);
       submitButton.disabled = true;
-      submitButton.textContent = 'Enviando...';
+      submitButton.textContent = form.dataset.sending ?? '';
       formMessage.classList.add('hidden');
 
       try {
@@ -102,20 +116,20 @@ import Honeypot from './Honeypot.astro';
 
         if (result.success) {
           // Redirigir a la página de gracias
-          window.location.href = '/asociate/gracias';
+          window.location.href = form.dataset.thanksUrl ?? '/asociate/gracias';
           return;
         } else {
           formMessage.className = 'p-4 rounded-lg bg-red-50 text-red-800 border border-red-200';
-          formMessage.textContent = result.error || 'Error al enviar el formulario';
+          formMessage.textContent = result.error || form.dataset.error || '';
         }
       } catch (error) {
         formMessage.classList.remove('hidden');
         formMessage.className = 'p-4 rounded-lg bg-red-50 text-red-800 border border-red-200';
-        formMessage.textContent = 'Error de conexión. Por favor, intenta de nuevo.';
+        formMessage.textContent = form.dataset.connectionError ?? '';
       } finally {
         if (submitButton) {
           submitButton.disabled = false;
-          submitButton.textContent = 'Enviar Solicitud';
+          submitButton.textContent = form.dataset.submit ?? '';
         }
       }
     });

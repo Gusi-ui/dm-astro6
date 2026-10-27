@@ -9,6 +9,8 @@ import {
 interface Props {
   src: string;
   alt: string;
+  /** Idioma del texto alternativo, si no es el de la página */
+  lang?: string;
   fullOnMobile?: boolean;
   loading?: 'lazy' | 'eager';
   transitionName?: string;
@@ -18,6 +20,7 @@ interface Props {
 const {
   src,
   alt,
+  lang,
   fullOnMobile = false,
   loading = 'eager',
   transitionName,
@@ -34,6 +37,7 @@ const sizes = getImageSizes('hero');
   srcset={isCloudinarySource(src) ? srcSet : undefined}
   sizes={isCloudinarySource(src) ? sizes : undefined}
   alt={alt}
+  lang={lang}
   loading={loading}
   fetchpriority={loading === 'eager' ? 'high' : undefined}
   decoding="async"

@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import WhatsAppButton from '../components/WhatsAppButton.astro';
+import { getAlternates, getLangFromUrl, ogLocales, useTranslations, type Lang } from '../i18n';
 
 interface Props {
   title: string;
@@ -13,11 +14,18 @@ interface Props {
   canonicalUrl?: string;
   /** Pide a los buscadores que no indexen la página (p. ej., confirmaciones) */
   noindex?: boolean;
+  /** Idioma del contenido para Open Graph (p. ej., ca_ES en artículos en catalán) */
+  ogLocale?: string;
+  /** Versiones de la página en cada idioma, si no salen del mapa de rutas (p. ej., artículos) */
+  alternates?: Record<Lang, string> | null;
 }
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 const {
   title,
-  description = 'Asociación de Diversidad Funcional en Mataró. Trabajamos por una sociedad con accesibilidad universal.',
+  description = t('site.description'),
   ogImage,
   ogImageAlt,
   ogImageType,
@@ -25,6 +33,8 @@ const {
   ogImageHeight = 630,
   canonicalUrl: canonicalUrlProp,
   noindex = false,
+  ogLocale = ogLocales[lang],
+  alternates: alternatesProp,
 } = Astro.props;
 
 const defaultOgImage =
@@ -35,14 +45,68 @@ const resolvedOgImage = ogImage
 // Sin barra final (salvo la portada) ni el .html de las páginas pre-renderizadas
 // (build.format: 'file'), igual que los enlaces internos y el sitemap.
 // Sobre el dominio de `site` para que www.divermataro.org no genere duplicados.
-const canonicalPath = Astro.url.pathname.replace(/\.html$/, '').replace(/(.)\/$/, '$1');
+const canonicalPath = Astro.url.pathname
+  .replace(/\.html$/, '')
+  .replace(/\/index$/, '/')
+  .replace(/(.)\/$/, '$1');
 const canonicalUrl = canonicalUrlProp ?? new URL(canonicalPath, Astro.site || Astro.url).href;
+
+// hreflang solo cuando existe la otra versión; x-default apunta al castellano
+const alternates = alternatesProp ?? getAlternates(canonicalPath);
+const alternateLinks = alternates
+  ? [
+      ...Object.entries(alternates).map(([hreflang, path]) => ({ hreflang, path })),
+      { hreflang: 'x-default', path: alternates.es },
+    ].map(({ hreflang, path }) => ({ hreflang, href: new URL(path, Astro.site || Astro.url).href }))
+  : [];
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
+    {
+      /*
+       * Idioma automático, antes de pintar la página. Si la persona ya eligió idioma
+       * con el selector (dm-lang), manda su elección. Si no, solo en la primera página
+       * de la visita (y no si llega navegando desde el propio sitio): se usa el primer
+       * idioma del navegador que sea castellano o catalán. Los robots y Lighthouse no
+       * se redirigen, para que los buscadores vean cada versión con su hreflang.
+       */
+      alternates && <script is:inline define:vars={{ alternates, pageLang: lang }}>
+        try {
+          var target;
+          var chosen = localStorage.getItem('dm-lang');
+          if (chosen === 'es' || chosen === 'ca') {
+            target = chosen;
+          } else if (
+            !sessionStorage.getItem('dm-lang-auto') &&
+            !/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent)
+          ) {
+            sessionStorage.setItem('dm-lang-auto', '1');
+            var fromSite =
+              document.referrer && new URL(document.referrer).origin === location.origin;
+            if (!fromSite) {
+              var langs = navigator.languages || [navigator.language];
+              for (var i = 0; i < langs.length; i++) {
+                var code = String(langs[i] || '')
+                  .toLowerCase()
+                  .slice(0, 2);
+                if (code === 'es' || code === 'ca') {
+                  target = code;
+                  break;
+                }
+              }
+            }
+          }
+          if (target && target !== pageLang && alternates[target]) {
+            location.replace(alternates[target] + location.search + location.hash);
+          }
+        } catch (e) {
+          // Sin almacenamiento o URL rara: se queda en la página pedida
+        }
+      </script>
+    }
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/favicondivermataro.png" />
@@ -50,6 +114,9 @@ const canonicalUrl = canonicalUrlProp ?? new URL(canonicalPath, Astro.site || As
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <link rel="canonical" href={canonicalUrl} />
+    {alternateLinks.map(({ hreflang, href }) => (
+      <link rel="alternate" hreflang={hreflang} href={href} />
+    ))}
     {noindex && <meta name="robots" content="noindex" />}
 
     <!-- Open Graph / Facebook -->
@@ -63,7 +130,7 @@ const canonicalUrl = canonicalUrlProp ?? new URL(canonicalPath, Astro.site || As
     <meta property="og:image:width" content={String(ogImageWidth)} />
     <meta property="og:image:height" content={String(ogImageHeight)} />
     <meta property="og:site_name" content="Diversidad Funcional Mataró" />
-    <meta property="og:locale" content="es_ES" />
+    <meta property="og:locale" content={ogLocale} />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -172,7 +239,7 @@ const canonicalUrl = canonicalUrlProp ?? new URL(canonicalPath, Astro.site || As
       href="#main-content"
       class="sr-only z-50 rounded-md bg-primary-600 px-4 py-2 text-white focus:not-sr-only focus:absolute focus:left-4 focus:top-4"
     >
-      Saltar al contenido principal
+      {t('layout.skipLink')}
     </a>
 
     <slot />

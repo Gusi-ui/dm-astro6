@@ -5,6 +5,7 @@ pubDate: 2022-07-05
 updatedDate: 2026-10-22
 category: 'Accesibilidad'
 heroImage: 'cloudinary:divermataro/blog/mataro-connecta/Matarconecta'
+esSlug: 'mataro-connecta-consumo'
 ---
 
 El dia 5 de juliol va tenir lloc una sessió de treball. A l'Espai **Mataró connecta** es va parlar del programa de lluita contra les desigualtats en les relacions de consum. L'Oficina Municipal d'informació al Consumidor de Mataró ha obert així un debat amb les diferents entitats de la ciutat. Sobretot per conèixer les seves percepcions i necessitats. Hi van assistir unes 25 entitats i la participació va ser molt interessant, amb aportacions d'alt valor que ajudaran a avançar en aquest àmbit.

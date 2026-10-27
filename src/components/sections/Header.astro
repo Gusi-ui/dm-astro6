@@ -1,23 +1,49 @@
 ---
+import {
+  getAlternates,
+  getLangFromUrl,
+  localizePath,
+  normalizePath,
+  useTranslations,
+  type Lang,
+} from '../../i18n';
+import LanguageSwitch from '../LanguageSwitch.astro';
+
+interface Props {
+  /** Versiones de la página en cada idioma, para las que no están en caRoutes (el blog) */
+  alternates?: Record<Lang, string> | null;
+}
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 const currentPath = Astro.url.pathname;
 
 const navItems = [
-  { href: '/', label: 'Inicio' },
-  { href: '/asociacion', label: 'Asociación' },
-  { href: '/blog', label: 'Blog', matchPrefix: true },
-  { href: '/documentos', label: 'Documentos' },
-  { href: '/contacto', label: 'Contacto' },
+  { href: localizePath('/', lang), label: t('nav.home') },
+  { href: localizePath('/asociacion', lang), label: t('nav.association') },
+  { href: localizePath('/blog', lang), label: t('nav.blog'), matchPrefix: true },
+  { href: localizePath('/documentos', lang), label: t('nav.documents') },
+  { href: localizePath('/contacto', lang), label: t('nav.contact') },
 ];
+const joinHref = localizePath('/asociate', lang);
+
+// Selector de idioma: solo si la página actual existe en el otro idioma
+const otherLang = lang === 'es' ? 'ca' : 'es';
+const alternates = Astro.props.alternates ?? getAlternates(normalizePath(currentPath));
+const switchHref = alternates?.[otherLang];
 ---
 
 <header class="fixed left-0 right-0 top-0 z-50 border-b border-primary-200/20 bg-white/90 shadow-2xl shadow-primary-500/5 backdrop-blur-xl">
   <!-- Gradiente decorativo superior -->
   <div class="absolute left-0 right-0 top-0 h-1 bg-gradient-to-r from-primary-500 via-accent-500 to-primary-500 opacity-60"></div>
 
-  <nav class="section-container py-3" aria-label="Navegación principal">
+  <nav class="section-container py-3" aria-label={t('nav.main')}>
     <div class="flex items-center justify-between">
       <!-- Logo -->
-      <a href="/" class="group relative flex items-center transition-all duration-300">
+      <a
+        href={localizePath('/', lang)}
+        class="group relative flex items-center transition-all duration-300"
+      >
         <img
           src="/logoDiverMataro.png"
           width="326"
@@ -26,12 +52,12 @@ const navItems = [
           class="h-12 w-auto md:h-14"
         />
         <!-- Título oculto visualmente pero presente para SEO -->
-        <span class="sr-only">Diversidad Funcional Mataró</span>
+        <span class="sr-only">{t('site.name')}</span>
         <div class="absolute -inset-2 rounded-lg bg-gradient-to-r from-primary-400/20 to-accent-400/20 opacity-0 blur-lg transition-opacity duration-300 group-hover:opacity-100"></div>
       </a>
 
       <!-- Desktop Navigation -->
-      <ul class="hidden items-center gap-2 md:flex">
+      <ul class="hidden items-center gap-2 lg:flex">
         {(() => {
           // Colores únicos para cada ítem (mismo que móvil)
           const itemColors = [
@@ -108,33 +134,41 @@ const navItems = [
         })()}
 
         <li>
-          <a href="/asociate" class="btn-primary ml-2">
+          <a href={joinHref} class="btn-primary ml-2 whitespace-nowrap">
             {' '}
-            Únete{' '}
+            {t('nav.join')}{' '}
           </a>
         </li>
+        {switchHref && (
+          <li class="ml-1">
+            <LanguageSwitch lang={lang} href={switchHref} label={t('nav.language')} />
+          </li>
+        )}
       </ul>
 
-      <!-- Mobile menu button -->
-      <button
-        id="mobile-menu-button"
-        class="rounded-lg p-2 text-gray-700 transition-colors hover:bg-primary-50 hover:text-primary-600 md:hidden"
-        aria-label="Menú móvil"
-        aria-expanded="false"
-      >
-        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          ></path>
-        </svg>
-      </button>
+      <!-- Móvil: selector de idioma a la vista y botón del menú -->
+      <div class="flex items-center gap-1 lg:hidden">
+        {switchHref && <LanguageSwitch lang={lang} href={switchHref} label={t('nav.language')} />}
+        <button
+          id="mobile-menu-button"
+          class="rounded-lg p-2 text-gray-700 transition-colors hover:bg-primary-50 hover:text-primary-600"
+          aria-label={t('nav.mobileMenu')}
+          aria-expanded="false"
+        >
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
     </div>
 
     <!-- Mobile menu con animación -->
-    <div id="mobile-menu" class="mobile-menu-container mt-4 hidden pb-4 md:hidden">
+    <div id="mobile-menu" class="mobile-menu-container mt-4 hidden pb-4 lg:hidden">
       <ul class="flex flex-col gap-3">
         {(() => {
           // Colores únicos para cada ítem
@@ -206,9 +240,9 @@ const navItems = [
           });
         })()}
         <li class="mobile-menu-item" style={`--item-delay: ${navItems.length * 0.2}s`}>
-          <a href="/asociate" class="btn-primary w-full text-center">
+          <a href={joinHref} class="btn-primary w-full text-center">
             {' '}
-            Únete{' '}
+            {t('nav.join')}{' '}
           </a>
         </li>
       </ul>

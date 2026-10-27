@@ -1,18 +1,26 @@
 ---
-import { getCollection, type CollectionEntry } from 'astro:content';
+import {
+  categoryName,
+  createTranslator,
+  dateLocales,
+  getLangFromUrl,
+  langAttr,
+  localizePath,
+} from '../../i18n';
+import { home } from '../../i18n/home';
 import {
   getImageSizes,
   getImageSrcSet,
   isCloudinarySource,
   resolveImageSrc,
 } from '../../lib/cloudinary';
+import { getPublishedPosts, postLang, postPath, type BlogPost } from '../../lib/blog';
 
-type BlogEntry = CollectionEntry<'blog'>;
+const lang = getLangFromUrl(Astro.url);
+const t = createTranslator(home, lang);
 
-// Obtener todos los posts publicados
-const allPosts = await getCollection('blog', (entry: BlogEntry) => {
-  return entry.data.pubDate <= new Date();
-});
+// Posts publicados del blog de este idioma
+const allPosts = await getPublishedPosts(lang);
 
 // Función para mezclar aleatoriamente (Fisher-Yates shuffle)
 function shuffleArray<T>(array: T[]): T[] {
@@ -25,7 +33,7 @@ function shuffleArray<T>(array: T[]): T[] {
 }
 
 // Obtener 3 posts aleatorios
-const randomPosts: BlogEntry[] = shuffleArray(allPosts).slice(0, 3);
+const randomPosts: BlogPost[] = shuffleArray(allPosts).slice(0, 3);
 
 // Colores para las tarjetas
 const cardColors = [
@@ -71,28 +79,25 @@ const cardColors = [
     <!-- Encabezado -->
     <div class="mx-auto mb-16 max-w-3xl text-center">
       <span class="mb-4 inline-block rounded-full bg-gradient-to-r from-primary-100 to-accent-100 px-4 py-2 text-sm font-semibold text-primary-700">
-        Nuestro Blog
+        {t('blog.badge')}
       </span>
       <h2 class="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
-        Últimas
+        {t('blog.title')}{' '}
         <span class="bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent">
-          noticias
+          {t('blog.titleHighlight')}
         </span>
       </h2>
-      <p class="text-lg text-gray-600 md:text-xl">
-        Descubre nuestras historias, logros y las reivindicaciones que llevamos adelante cada día.
-      </p>
+      <p class="text-lg text-gray-600 md:text-xl">{t('blog.text')}</p>
     </div>
 
     <!-- Grid de posts -->
     {randomPosts.length > 0 ? (
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
         {randomPosts.map((post, index) => {
-          const slug = post.id || post.slug;
           const colors = cardColors[index];
           return (
             <a
-              href={`/blog/${slug}`}
+              href={postPath(post)}
               class={`group relative flex flex-col overflow-hidden rounded-3xl border-2 border-gray-100 bg-white shadow-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl ${colors.hoverBorder}`}
             >
               {/* Imagen del post */}
@@ -111,6 +116,7 @@ const cardColors = [
                         : undefined
                     }
                     alt={post.data.title}
+                    lang={langAttr(postLang(post), lang)}
                     class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                     loading="lazy"
                     decoding="async"
@@ -127,7 +133,7 @@ const cardColors = [
                   <span
                     class={`absolute left-4 top-4 rounded-full ${colors.categoryBg} px-3 py-1 text-xs font-semibold ${colors.categoryText} shadow-lg backdrop-blur-sm`}
                   >
-                    {post.data.category}
+                    {categoryName(post.data.category, lang)}
                   </span>
                 )}
 
@@ -142,7 +148,7 @@ const cardColors = [
                     />
                   </svg>
                   <span class="text-sm font-medium">
-                    {post.data.pubDate.toLocaleDateString('es-ES', {
+                    {post.data.pubDate.toLocaleDateString(dateLocales[lang], {
                       year: 'numeric',
                       month: 'short',
                       day: 'numeric',
@@ -153,16 +159,22 @@ const cardColors = [
 
               {/* Contenido */}
               <div class="flex flex-1 flex-col p-6">
-                <h3 class="mb-3 line-clamp-2 text-xl font-bold text-gray-900 transition-colors duration-300 group-hover:text-primary-600">
+                <h3
+                  class="mb-3 line-clamp-2 text-xl font-bold text-gray-900 transition-colors duration-300 group-hover:text-primary-600"
+                  lang={langAttr(postLang(post), lang)}
+                >
                   {post.data.title}
                 </h3>
-                <p class="mb-4 line-clamp-3 flex-1 leading-relaxed text-gray-600">
+                <p
+                  class="mb-4 line-clamp-3 flex-1 leading-relaxed text-gray-600"
+                  lang={langAttr(postLang(post), lang)}
+                >
                   {post.data.description}
                 </p>
 
                 {/* Link para leer más */}
                 <div class="flex items-center font-semibold text-primary-600">
-                  <span class="text-sm">Leer artículo</span>
+                  <span class="text-sm">{t('blog.read')}</span>
                   <svg
                     class="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-2"
                     fill="none"
@@ -187,17 +199,17 @@ const cardColors = [
       </div>
     ) : (
       <div class="py-12 text-center">
-        <p class="text-lg text-gray-600">Próximamente publicaremos contenido aquí.</p>
+        <p class="text-lg text-gray-600">{t('blog.empty')}</p>
       </div>
     )}
 
     <!-- Botón para ver más -->
     <div class="mt-16 text-center">
       <a
-        href="/blog"
+        href={localizePath('/blog', lang)}
         class="group inline-flex items-center rounded-2xl border-2 border-gray-200 bg-white px-8 py-4 font-bold text-gray-900 shadow-lg transition-all duration-300 hover:border-primary-400 hover:bg-gradient-to-r hover:from-primary-600 hover:to-accent-600 hover:text-white hover:shadow-xl hover:shadow-primary-500/30"
       >
-        <span>Ver todos los artículos</span>
+        <span>{t('blog.all')}</span>
         <svg
           class="ml-3 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1"
           fill="none"

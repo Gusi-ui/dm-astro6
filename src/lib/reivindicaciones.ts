@@ -4,6 +4,13 @@ export const reivindicacionesConfig = [
     title: 'Accesibilidad en el Transporte',
     description:
       'Reivindicamos un transporte público 100% accesible para todas las personas, con paradas adaptadas, vehículos con rampas y espacios reservados. Cada día miles de personas encuentran barreras para moverse por nuestra ciudad.',
+    // Catalán revisado por un socio
+    ca: {
+      slug: 'transport',
+      title: 'Accessibilitat al transport',
+      description:
+        'Reivindiquem un transport públic 100% accessible per a totes les persones, amb parades adaptades, vehicles amb rampes i espais reservats. Cada dia milers de persones es troben barreres per moure’s per la nostra ciutat.',
+    },
     categories: ['Transporte'],
     color: 'bg-primary-500',
     colorLight: 'bg-primary-50',
@@ -17,6 +24,13 @@ export const reivindicacionesConfig = [
     title: 'Accesibilidad en Espacios Públicos',
     description:
       'Trabajamos para que todos los espacios públicos, parques, plazas y edificios municipales sean completamente accesibles. La ciudad debe ser de todos y para todos, sin barreras arquitectónicas que limiten la participación.',
+    // Catalán revisado por un socio
+    ca: {
+      slug: 'accessibilitat-espais',
+      title: 'Accessibilitat als espais públics',
+      description:
+        'Treballem perquè tots els espais públics, parcs, places i edificis municipals siguin completament accessibles. La ciutat ha de ser de tothom i per a tothom, sense barreres arquitectòniques que limitin la participació.',
+    },
     categories: ['Accesibilidad', 'Opinión'],
     color: 'bg-accent-500',
     colorLight: 'bg-accent-50',
@@ -30,6 +44,13 @@ export const reivindicacionesConfig = [
     title: 'Educación Inclusiva',
     description:
       'Defendemos una educación inclusiva que garantice el acceso y la participación de todos los estudiantes. Cada niño y niña merece las mismas oportunidades de aprendizaje y desarrollo.',
+    // Catalán revisado por un socio
+    ca: {
+      slug: 'educacio-inclusiva',
+      title: 'Educació inclusiva',
+      description:
+        'Defensem una educació inclusiva que garanteixi l’accés i la participació de tot l’alumnat. Cada nen i cada nena mereix les mateixes oportunitats d’aprenentatge i desenvolupament.',
+    },
     categories: ['Social', 'Derechos'],
     color: 'bg-green-500',
     colorLight: 'bg-green-50',
@@ -43,7 +64,14 @@ export const reivindicacionesConfig = [
     title: 'Denuncias y Visibilización',
     description:
       'Trabajamos para visibilizar las injusticias y barreras que encontramos cada día. Denunciamos públicamente las situaciones de discriminación y falta de accesibilidad.',
-    categories: ['Denuncia', 'Activitats', 'Eventos', 'Reflexión'],
+    // Catalán revisado por un socio
+    ca: {
+      slug: 'denuncies-visibilitzacio',
+      title: 'Denúncies i visibilització',
+      description:
+        'Treballem per visibilitzar les injustícies i les barreres que trobem cada dia. Denunciem públicament les situacions de discriminació i de manca d’accessibilitat.',
+    },
+    categories: ['Denuncia', 'Actividades', 'Eventos', 'Reflexión'],
     color: 'bg-rose-500',
     colorLight: 'bg-rose-50',
     colorText: 'text-rose-600',

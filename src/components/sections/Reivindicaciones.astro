@@ -1,9 +1,14 @@
 ---
-import { getCollection } from 'astro:content';
+import { claimPath, getPublishedPosts } from '../../lib/blog';
 import { reivindicacionesConfig } from '../../lib/reivindicaciones';
+import { createTranslator, getLangFromUrl } from '../../i18n';
+import { home } from '../../i18n/home';
 
-// Obtener todos los posts para contar por categoría
-const allPosts = await getCollection('blog');
+const lang = getLangFromUrl(Astro.url);
+const t = createTranslator(home, lang);
+
+// Posts ya publicados del blog de este idioma (sin los programados), para contar por categoría
+const allPosts = await getPublishedPosts(lang);
 
 // Función para contar posts que pertenecen a cualquiera de las categorías indicadas
 function countPostsByCategories(categories: string[]): number {
@@ -17,6 +22,8 @@ function countPostsByCategories(categories: string[]): number {
 const reivindicacionesConConteo = reivindicacionesConfig
   .map((r) => ({
     ...r,
+    ...(lang === 'ca' && r.ca),
+    path: claimPath(r.slug, lang),
     postCount: countPostsByCategories(r.categories),
   }))
   .sort((a, b) => b.postCount - a.postCount);
@@ -35,18 +42,15 @@ const aniosLuchando = new Date().getFullYear() - ANIO_FUNDACION;
     <!-- Encabezado -->
     <div class="mx-auto mb-16 max-w-3xl text-center">
       <span class="mb-4 inline-block rounded-full bg-gradient-to-r from-primary-100 to-accent-100 px-4 py-2 text-sm font-semibold text-primary-700">
-        Por lo que luchamos
+        {t('claims.badge')}
       </span>
       <h2 class="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
-        Nuestras
+        {t('claims.title')}{' '}
         <span class="bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent">
-          reivindicaciones
+          {t('claims.titleHighlight')}
         </span>
       </h2>
-      <p class="text-lg text-gray-600 md:text-xl">
-        Trabajamos en diferentes ámbitos para conseguir una sociedad más accesible e inclusiva. Cada
-        lucha cuenta.
-      </p>
+      <p class="text-lg text-gray-600 md:text-xl">{t('claims.text')}</p>
     </div>
 
     <!-- Lista de reivindicaciones -->
@@ -80,7 +84,8 @@ const aniosLuchando = new Date().getFullYear() - ANIO_FUNDACION;
                   <span
                     class={`hidden rounded-full ${item.colorLight} px-3 py-1 text-sm font-semibold ${item.colorText} sm:inline-flex`}
                   >
-                    {item.postCount} {item.postCount === 1 ? 'artículo' : 'artículos'}
+                    {item.postCount}{' '}
+                    {item.postCount === 1 ? t('claims.article') : t('claims.articles')}
                   </span>
                 )}
                 <div
@@ -121,10 +126,10 @@ const aniosLuchando = new Date().getFullYear() - ANIO_FUNDACION;
                   {/* Botón para ver artículos */}
                   {item.postCount > 0 && (
                     <a
-                      href={`/blog/reivindicacion/${item.slug}`}
+                      href={item.path}
                       class={`inline-flex items-center justify-center gap-2 rounded-xl ${item.color} flex-shrink-0 px-5 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl`}
                     >
-                      <span>Ver artículos</span>
+                      <span>{t('claims.seeArticles')}</span>
                       <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path
                           stroke-linecap="round"
@@ -147,19 +152,19 @@ const aniosLuchando = new Date().getFullYear() - ANIO_FUNDACION;
     <div class="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-4 md:gap-8">
       <div class="rounded-2xl bg-gradient-to-br from-primary-50 to-primary-100/50 p-6 text-center">
         <div class="text-3xl font-bold text-primary-600 md:text-4xl">4</div>
-        <div class="mt-1 text-sm text-gray-600">Áreas de acción</div>
+        <div class="mt-1 text-sm text-gray-600">{t('claims.areas')}</div>
       </div>
       <div class="rounded-2xl bg-gradient-to-br from-accent-50 to-accent-100/50 p-6 text-center">
         <div class="text-3xl font-bold text-accent-600 md:text-4xl">{allPosts.length}</div>
-        <div class="mt-1 text-sm text-gray-600">Artículos publicados</div>
+        <div class="mt-1 text-sm text-gray-600">{t('claims.published')}</div>
       </div>
       <div class="rounded-2xl bg-gradient-to-br from-orange-50 to-orange-100/50 p-6 text-center">
         <div class="text-3xl font-bold text-orange-600 md:text-4xl">+{aniosLuchando}</div>
-        <div class="mt-1 text-sm text-gray-600">Años luchando</div>
+        <div class="mt-1 text-sm text-gray-600">{t('claims.years')}</div>
       </div>
       <div class="rounded-2xl bg-gradient-to-br from-green-50 to-green-100/50 p-6 text-center">
         <div class="text-3xl font-bold text-green-600 md:text-4xl">100%</div>
-        <div class="mt-1 text-sm text-gray-600">Voluntarios</div>
+        <div class="mt-1 text-sm text-gray-600">{t('claims.volunteers')}</div>
       </div>
     </div>
   </div>
