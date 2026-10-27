@@ -34,7 +34,7 @@ Es una limitación funcional, consecuencia de una deficiencia, que se manifiesta
 
 La discapacidad, al igual que la deficiencia, serian congénita o adquirida, temporal o irreversible y, además, progresiva o regresiva. Las discapacidades se pueden aglutinar en tres troncos principales: de movilidad o desplazamiento, de relación o conducta y de comunicación.
 
-Hablamos de cómo se vive todo esto en el día a día en artículos como [la vida independiente y la asistencia personal](/blog/la-vida-independiente) o [la sexualidad de las personas con diversidad funcional](/blog/todos-con-sexualidad).
+Hablamos de cómo se vive todo esto en el día a día en artículos como [la vida independiente y la asistencia personal](/blog/la-vida-independiente) o [la sexualidad de las personas con diversidad funcional](/blog/todos-con-sexualidad). El derecho al juego también es accesibilidad: lee por qué pedimos un [columpio para silla de ruedas en Mataró](/blog/parques-infantiles-accesibles-mataro).
 
 ### ¿Qué es la Deficiencia?
 
@@ -51,8 +51,6 @@ Existen diversos tipos de deficiencia y cada uno de estos tipos de deficiencia p
 ## ¿Discapacidad o Diversidad Funcional?
 
 Actualmente existe la tendencia a utilizar el término **diversidad funcional** en lugar de discapacidad. Las normas, en cambio, hablan de discapacidad: la <a href="https://www.boe.es/eli/es/ai/2006/12/13/(1)/con" target="_blank" rel="noopener noreferrer">Convención de la ONU sobre los derechos de las personas con discapacidad</a> y, desde su reforma de 2024, el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a49" target="_blank" rel="noopener noreferrer">artículo 49 de la Constitución</a>, que se refiere a «las personas con discapacidad». La Convención también está disponible en [versión de lectura fácil](/documents/Convencion-Lectura-Facil.pdf). Sin embargo, es un término polémico ya que desde diversas entidades representantes de personas con discapacidad instan a no utilizarlo.
-
-El derecho al juego también es accesibilidad: lee por qué pedimos un [columpio para silla de ruedas en Mataró](/blog/parques-infantiles-accesibles-mataro).
 
 Así, aunque reconocen que diversidad funcional puede ser una terminología más justa, el ser un término que la sociedad no reconoce puede aumentar la invisibilidad del colectivo y generar confusión, inseguridad jurídica y, por tanto, rebajar la protección que todavía es necesaria.
 
