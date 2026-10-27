@@ -2,7 +2,7 @@
 title: 'Discapacidad. Hola mundo!'
 description: 'DiverMataro llega para promover la igualdad y los derechos de las personas con Diversidad Funcional. Entendiendo conceptos clave.'
 pubDate: 2024-02-10
-updatedDate: 2026-10-22
+updatedDate: 2026-10-27
 category: 'Social'
 heroImage: 'cloudinary:divermataro/blog/discapacidad-hola-mundo/holamundo'
 ---
@@ -34,7 +34,7 @@ Es una limitación funcional, consecuencia de una deficiencia, que se manifiesta
 
 La discapacidad, al igual que la deficiencia, serian congénita o adquirida, temporal o irreversible y, además, progresiva o regresiva. Las discapacidades se pueden aglutinar en tres troncos principales: de movilidad o desplazamiento, de relación o conducta y de comunicación.
 
-Hablamos de cómo se vive todo esto en el día a día en artículos como [la vida independiente y la asistencia personal](/blog/la-vida-independiente) o [la sexualidad de las personas con diversidad funcional](/blog/todos-con-sexualidad).
+Hablamos de cómo se vive todo esto en el día a día en artículos como [la vida independiente y la asistencia personal](/blog/la-vida-independiente) o [la sexualidad de las personas con diversidad funcional](/blog/todos-con-sexualidad). El derecho al juego también es accesibilidad: lee por qué pedimos un [columpio para silla de ruedas en Mataró](/blog/parques-infantiles-accesibles-mataro).
 
 ### ¿Qué es la Deficiencia?
 

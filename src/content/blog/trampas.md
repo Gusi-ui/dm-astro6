@@ -2,7 +2,7 @@
 title: 'Trampas'
 description: 'Las rejillas de alcantarillado como trampas peligrosas para sillas de ruedas y el desafío de la accesibilidad urbana.'
 pubDate: 2020-07-15
-updatedDate: 2026-10-22
+updatedDate: 2026-10-27
 category: 'Denuncia'
 heroImage: 'cloudinary:divermataro/blog/trampas/alcantarilla'
 ---
@@ -24,6 +24,8 @@ Las rejillas de alcantarillado están diseñadas para permitir que el agua fluya
 Uno de los problemas clave es que las dimensiones estándar de las rejillas de alcantarillado no tienen en cuenta las necesidades de accesibilidad de las personas con discapacidades. Las aberturas suelen ser lo suficientemente anchas para que una silla de ruedas pueda caer en ellas, especialmente si las ruedas delanteras o traseras no se alinean correctamente al pasar sobre la rejilla. Además, las rejillas rotas, sueltas o desalineadas pueden aumentar aún más el riesgo de que las sillas de ruedas se queden atascadas.
 
 Y no es por falta de normativa. La <a href="https://www.boe.es/eli/es/o/2021/07/23/tma851/con" target="_blank" rel="noopener noreferrer">Orden TMA/851/2021</a>, que regula la accesibilidad de los espacios públicos urbanizados, establece en su artículo 12 que las rejillas de las zonas peatonales deben colocarse enrasadas con el pavimento y que sus aberturas no pueden superar el tamaño de un círculo de 1,6 cm de diámetro.
+
+En los parques, estas rejillas llegan a estar en la única entrada al área de juegos, como contamos en [parques infantiles accesibles en Mataró](/blog/parques-infantiles-accesibles-mataro).
 
 ### Consecuencias para las Personas con Discapacidad
 
