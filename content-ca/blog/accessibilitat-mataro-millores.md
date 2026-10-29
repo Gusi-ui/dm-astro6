@@ -1,0 +1,171 @@
+---
+title: 'Accessibilitat a Mataró: el que hem aconseguit i el que encara falta'
+description: "Accessibilitat a Mataró: què fem a la Taula d'Accessibilitat, com vam aconseguir la rampa del BBVA i quines barreres encara queden per eliminar."
+pubDate: 2026-11-02
+heroImage: 'cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/rampa-bbva-plaza-granollers'
+category: 'Accesibilidad'
+esSlug: 'accesibilidad-mataro-mejoras'
+---
+
+_L'**accessibilitat a Mataró** no arriba amb una sola obra ni amb una bona intenció. Arriba quan algú detecta la barrera, la documenta, la denuncia i s'asseu a buscar-hi la solució. Això és el que fem a [DiverMataró](/asociacion) des del 2019: proposar a la Taula d'Accessibilitat de l'Ajuntament i als consells territorials dels barris, i assenyalar al carrer tot allò que encara impedeix que la ciutat sigui de totes les persones._
+
+En set anys hem vist voreres rebaixades, vorades que desapareixen a l'entrada de comerços i una oficina bancària que va passar de tancar-nos la porta a construir una rampa. També hem vist guals amb un fanal al mig. Aquest article explica totes dues coses: el que hem aconseguit plegats i el que falta per arribar a l'accessibilitat universal.
+
+---
+
+## 1. Accessibilitat a Mataró: una ciutat que avança a peu de carrer
+
+Les persones amb diversitat funcional i amb mobilitat reduïda coneixem la ciutat d'una manera que no surt als plànols. Sabem quina vorera té un graó de deu centímetres, quin pas de vianants acaba en una vorada i quina botiga té la porta a mig metre de terra. Aquesta informació és valuosa. La nostra feina és convertir-la en canvis.
+
+Vam néixer el 2019 com a associació sense ànim de lucre, 100 % voluntària i sense quotes. El 2022 van arribar les primeres millores que podem atribuir a la nostra feina. El 2024 l'Ajuntament ens va reconèixer com a interlocutors en matèria d'accessibilitat. El 2025 vam reforçar la denúncia a les xarxes socials, perquè una bona foto mou més que deu instàncies.
+
+I el setembre del 2026 vam obrir una etapa nova. En assemblea general extraordinària, i per unanimitat, vam renovar la Junta després de la dimissió d'Iván López com a president, a qui agraïm els anys de feina. **Teresa Fernández** n'assumeix la presidència. L'acompanyen **José Martínez** (secretari), **Fernando Gómez Rúa** (tresorer), **Juan Manuel Álvarez** (portaveu) i **Asunción Durán** i **Juan Romero** (vocals). Canvien les cares, però no l'objectiu.
+
+L'accessibilitat no és un favor a un col·lectiu. Una vorera rebaixada la fa servir una persona usuària de cadira de rodes, però també qui empeny un cotxet, qui arrossega un carro de la compra o una persona gran que ja no aixeca bé el peu. Ho expliquem amb més detall a la nostra pàgina d'[accessibilitat universal](/servicios/accesibilidad-universal).
+
+## 2. On participem: la Taula d'Accessibilitat i els consells territorials
+
+La **Taula d'Accessibilitat de Mataró** és l'espai on l'Ajuntament de Mataró es reuneix amb les entitats de la ciutat per tractar els temes de diversitat funcional i accessibilitat. Depèn del Servei de Benestar Social, dins de l'Agència d'atenció a les persones amb dependència, i té un contacte propi que figura a <a href="https://www.mataro.cat/ca/guia-dactivitats/activitats/f0107" target="_blank" rel="noopener noreferrer">la fitxa municipal de la Taula d'Accessibilitat</a>.
+
+A la Taula exposem problemes concrets, escoltem els projectes municipals i proposem millores abans que les obres estiguin fetes. Corregir un plànol és molt més barat que aixecar una vorera acabada de fer.
+
+### Com hi participem
+
+Portem a cada reunió el que recollim durant setmanes al carrer: fotos, ubicacions i queixes que ens arriben per WhatsApp o per les xarxes. I hi portem una cosa que ningú més pot aportar: l'experiència diària de moure's per Mataró amb una cadira de rodes, un escúter o un caminador.
+
+La Taula no només tracta obres. També treballa la sensibilització. El maig del 2025 vam participar amb l'Ajuntament i altres entitats, entre elles la Fundació El Maresme i l'ONCE, en una jornada en què <a href="https://www.tvmataro.cat/societat/mirar-la-discapacitat-amb-uns-altres-ulls" target="_blank" rel="noopener noreferrer">més de 180 alumnes de 3r de Primària es van posar a la pell de les persones amb discapacitat</a>. Era la tercera edició d'una activitat oberta a totes les escoles de la ciutat. Una nena que avui entén per què un cotxe no pot aparcar sobre un gual serà una veïna que demà no ho farà.
+
+### Als consells territorials dels barris
+
+L'accessibilitat es decideix a la Taula, però també barri a barri. Per això participem als <a href="https://www.mataro.cat/ca/lajuntament/organitzacio/organs-de-govern/consells-territorials" target="_blank" rel="noopener noreferrer">consells territorials de Mataró</a>, que el Reglament de participació ciutadana defineix com el màxim òrgan de participació i de seguiment de l'actuació municipal a cada territori. Hi debaten veïns, entitats i Ajuntament les necessitats del barri, els equipaments i les prioritats pressupostàries. Hi portem les voreres sense rebaixar, els passos de vianants que falten i els equipaments sense accés de cada zona.
+
+La ciutat té sis consells territorials. Les sessions són públiques, i aquestes són les nostres properes cites:
+
+- **Consell Territorial de Pla d'en Boet - Peramàs Esmandies:** 3 de novembre, a les 18.30 h.
+- **Consell Territorial de Rocafonda - El Palau - l'Escorxador:** 12 de novembre (sessió extraordinària) i 26 de novembre (sessió ordinària), a les 19.00 h.
+- **Consell Territorial del Centre - Eixample - Havana:** [DADA DE L'USUARI: propera sessió].
+- **Consell Territorial de Cerdanyola:** [DADA DE L'USUARI: propera sessió].
+- **Consell Territorial de Camí de la Serra - Cirera - Molins i Vista Alegre:** [DADA DE L'USUARI: propera sessió].
+- **Consell Territorial de Via Europa - Nou Parc Central - La Llàntia:** [DADA DE L'USUARI: propera sessió].
+
+Si coneixes una barrera al teu barri, explica-la'ns abans: la portarem a la taula.
+
+---
+
+## 3. El que hem aconseguit
+
+### Voreres rebaixades i passos sense vorada
+
+La millora més visible, i la que més vides canvia, és la més senzilla: rebaixar una vorera. Un pas de vianants sense gual obliga una persona usuària de cadira de rodes a fer la volta a l'illa o a baixar a la calçada entre cotxes. Des del 2022 hem assenyalat i seguit desenes de punts així, i molts ja estan resolts.
+
+[DADA DE L'USUARI: 3–5 exemples concrets de voreres rebaixades o passos corregits, amb carrer i any aproximat]
+
+### Comerços i locals sense graó
+
+Una ciutat accessible no s'acaba a la vorera. Si el bar, la farmàcia o el forn tenen un graó a la porta, el carrer accessible ens porta fins a una paret. Per això també treballem amb comerços i locals per eliminar vorades i graons d'entrada, i difonem la guia [Fem accessible el nostre comerç](/documents/fem_accessible_el_nostre_comerc.pdf).
+
+[DADA DE L'USUARI: 1–3 locals o negocis que hagin eliminat el graó, si es poden esmentar]
+
+### El cas BBVA de la plaça de Granollers: de la porta tancada a la rampa
+
+És la història que millor resumeix com treballem.
+
+L'oficina del BBVA de la plaça de Granollers només tenia accés per graons. L'octubre del 2021, una persona del nostre entorn hi va voler entrar per fer servir el caixer i va demanar la rampa provisional. Li la van negar. Va haver d'intervenir la Policia Local perquè pogués fer la gestió, i el director de la sucursal va acabar demanant disculpes. Ho vam explicar aleshores a [Injusticias del día a día](/blog/injusticias-del-dia-dia).
+
+<div class="not-prose my-8 grid grid-cols-1 gap-4 md:grid-cols-2">
+  <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/bbva-antes-escalones-fachada" alt="Façana de l'oficina del BBVA de la plaça de Granollers, 13, de Mataró, amb graons a l'entrada i sense rampa" width="1200" height="1600" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
+  <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/bbva-antes-silla-de-ruedas" alt="Persona usuària de cadira de rodes elèctrica davant dels tres graons d'accés a l'oficina del BBVA de la plaça de Granollers" width="1200" height="1600" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
+</div>
+
+No ens vam quedar en la queixa. Vam documentar la barrera amb fotos i la vam difondre. Vam recordar que la discriminació per discapacitat està prohibida per la Llei general de drets de les persones amb discapacitat, i que el <a href="https://www.boe.es/eli/es/rd/2023/03/21/193/con" target="_blank" rel="noopener noreferrer">Reial decret 193/2023 de condicions bàsiques d'accessibilitat de béns i serveis</a> inclou de manera expressa els serveis financers i bancaris. I vam sortir al carrer: veïnes i veïns, persones usuàries d'escúter i de caminador, ens vam concentrar davant l'oficina amb un missatge clar, "No más barreras".
+
+![Concentració de DiverMataró davant l'oficina del BBVA de la plaça de Granollers, amb persones en escúter i cartells de "No más barreras"](cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/bbva-concentracion-no-mas-barreras)
+
+El resultat és a la vista. L'oficina va construir una rampa permanent que puja en paral·lel a la façana, amb baranes a banda i banda, al costat dels graons de sempre [VERIFICAR: any en què es va acabar la rampa]. Avui qualsevol persona hi pot entrar pel seu propi peu, o per les seves pròpies rodes, sense demanar permís a ningú.
+
+![Rampa nova amb baranes metàl·liques a banda i banda al costat de l'entrada de l'oficina del BBVA de la plaça de Granollers](cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/bbva-despues-rampa-fachada)
+
+Aquest cas ens va ensenyar dues coses. Que una empresa privada també té obligacions d'accessibilitat. I que quan la ciutadania s'uneix, les coses canvien.
+
+---
+
+## 4. El nostre mètode: detectar, documentar, denunciar, proposar
+
+Darrere de cada millora hi ha un procés que repetim una vegada i una altra:
+
+1. **Detectar.** Recorrem la ciutat i rebem avisos de sòcies, socis i veïns.
+2. **Documentar.** Foto, ubicació exacta, data i quina norma s'incompleix. Sense dades no hi ha cas.
+3. **Comunicar per la via correcta.** Primer al responsable: l'Ajuntament a través de la Taula, o l'empresa titular del local.
+4. **Denunciar si no hi ha resposta.** A les xarxes, a la premsa i, si cal, al carrer. Ho hem fet amb reixes perilloses, amb ascensors avariats i amb símbols d'accessibilitat pintats com a protesta, i ho continuem fent.
+5. **Proposar i fer-ne el seguiment.** No n'hi ha prou d'assenyalar. Oferim solucions i tornem a comprovar que l'obra s'ha fet bé.
+
+Aquest mètode ha funcionat fins i tot amb els responsables polítics. Quan els regidors van recórrer la ciutat amb nosaltres, van veure amb els seus propis ulls el que els explicàvem a les reunions. Ho expliquem a [el nostre passeig per Mataró amb els regidors](/blog/paseo-por-mataro-con-los-regidores).
+
+---
+
+## 5. El que encara falta per a l'accessibilitat universal
+
+Reconèixer el que hem aconseguit no ens fa perdre de vista el que queda. I en queda molt.
+
+### La plaça de Catalunya: una oportunitat que no podem desaprofitar
+
+L'Ajuntament va anunciar el juny del 2026 la <a href="https://www.mataro.cat/ca/actualitat/noticies/2026/la-placa-de-catalunya-es-posa-al-dia-amb-la-renovacio-i-millora-dels-elements-d2019accessibilitat-i-seguretat" target="_blank" rel="noopener noreferrer">renovació dels elements d'accessibilitat i seguretat de la plaça de Catalunya</a>: una rampa amb nou traçat, baranes i mobiliari nous, per 116.039 euros i quatre mesos d'obra. A més, es renovarà la zona de jocs infantils. És una bona notícia, i hi estem col·laborant perquè el resultat sigui accessible de debò i no només sobre el paper.
+
+Les nostres fotos mostren per què cal mirar el detall. A l'entorn de la plaça hi ha un gual amb paviment podotàctil, ben pensat per a les persones cegues… i un fanal plantat al mig. Hi ha passejos pavimentats que acaben en un desnivell sobre zones de sauló, que amb la pluja i l'ús s'erosionen i deixen un graó on abans no n'hi havia.
+
+<div class="not-prose my-8 grid grid-cols-1 gap-4 md:grid-cols-2">
+  <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/plaza-catalunya-farola-en-el-vado" alt="Gual amb paviment podotàctil al costat d'un pas de vianants de la plaça de Catalunya, amb un fanal al mig del pas" width="1200" height="1600" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
+  <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/plaza-catalunya-paseo-saulo" alt="Passeig pavimentat de la plaça de Catalunya que acaba en una zona de sauló, amb tanca de fusta" width="1200" height="1600" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
+</div>
+
+![Vora de paviment elevada sobre el sauló erosionat a la plaça de Catalunya de Mataró, que forma un graó entre les dues superfícies](cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/plaza-catalunya-desnivel-pavimento)
+
+Ja vam detallar les nostres propostes a [l'anàlisi de la reforma de la plaça de Catalunya](/blog/plaza-catalunya-accesibilidad): paviment podotàctil i franges d'avís, contrast de color, bancs amb repenjabraços, ombra, font accessible, jocs inclusius i una auditoria d'accessibilitat quan acabi l'obra.
+
+### Un pla d'accessibilitat del 2008
+
+El [Pla d'Accessibilitat Universal de Mataró](/documents/Pla_dxAccessibilitat_Universal_de_Mataro.pdf) és del 2008 i continua en revisió. És un document valuós, però es va pensar per a una altra ciutat i amb una altra normativa.
+
+Des de l'1 de març de 2024 és vigent el Codi d'accessibilitat de Catalunya (Decret 209/2023), que integra l'accessibilitat física, sensorial i cognitiva. Segons el <a href="https://aplicacions.diba.cat/gestforma/ficherosDIBA/ficheros/materialescursos/14148/EXT2025_0592/31148.pdf" target="_blank" rel="noopener noreferrer">calendari d'aplicació del Codi que recull la Diputació de Barcelona</a>, els ajuntaments que ja tenen pla l'han de revisar abans de l'1 de març de 2027. Els municipis de més de 50.000 habitants, com Mataró, l'han d'executar abans de l'1 de març de 2032.
+
+És a dir: Mataró té poc més de quatre mesos per tenir el pla revisat. Demanem que aquesta revisió es faci amb les entitats, amb calendari, pressupost i prioritats públiques, i que deixi de tractar la ciutat tram a tram per convertir-se en una estratègia de ciutat.
+
+### Les barreres que continuen aquí
+
+Reixes de clavegueram on es claven les rodes, ascensors avariats en equipaments culturals i estacions, voreres estretes envaïdes per terrasses o contenidors, guals que acaben en una vorada. Les continuarem denunciant una per una fins que desapareguin.
+
+---
+
+## 6. Com ens pots ajudar a assenyalar barreres
+
+Cap associació arriba a tots els carrers. Per això et necessitem:
+
+- **Si veus una barrera**, fes-hi una foto, anota l'adreça exacta i envia-la'ns per WhatsApp al **674 50 60 80**, per Instagram (@divermataro) o per correu a info@divermataro.org.
+- **Si una millora ja està feta**, explica-ho també. Volem cartografiar el que hem aconseguit, no només el que falta.
+- **Si t'hi vols implicar**, [associa't a DiverMataró](/asociate). No hi ha quotes: només ganes de canviar la ciutat.
+
+---
+
+## Preguntes freqüents
+
+### Què és la Taula d'Accessibilitat de Mataró?
+
+És un espai de treball de l'Ajuntament de Mataró, impulsat des de Benestar Social, en què serveis municipals i entitats tracten els temes de diversitat funcional i accessibilitat: obres, projectes, sensibilització i incidències. DiverMataró hi participa com a entitat interlocutora en accessibilitat.
+
+### Com puc avisar d'una barrera arquitectònica a Mataró?
+
+Pots comunicar-ho a l'Ajuntament pels seus canals d'atenció ciutadana i enviar-nos la foto amb la ubicació. Nosaltres la documentem, la portem a la Taula d'Accessibilitat i en fem el seguiment fins que es resol.
+
+### Un banc o un comerç està obligat a ser accessible?
+
+Sí. La Llei general de drets de les persones amb discapacitat prohibeix la discriminació, i el Reial decret 193/2023 regula les condicions bàsiques d'accessibilitat dels béns i serveis a disposició del públic, inclosos els serveis financers. A Catalunya, a més, s'aplica el Codi d'accessibilitat (Decret 209/2023).
+
+### Fins quan té Mataró per revisar el pla d'accessibilitat?
+
+Amb el nou Codi d'accessibilitat, els ajuntaments que ja tenen pla l'han de revisar abans de l'1 de març de 2027. Les ciutats de més de 50.000 habitants l'han d'executar abans de l'1 de març de 2032.
+
+---
+
+Hem avançat molt, i ho celebrem. Però una ciutat no és accessible quan ho són gairebé tots els seus carrers: ho és quan cap persona ha de fer mitja volta. Continuarem a la Taula, als consells de barri i al carrer. I continuarem fent fotos.
+
+**No demanem privilegis: demanem una ciutat on hi càpiguem totes les persones.**
