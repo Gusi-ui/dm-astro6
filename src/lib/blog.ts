@@ -12,12 +12,16 @@ export type BlogPost = CollectionEntry<'blog'> | CollectionEntry<'blogCa'>;
 
 const collectionByLang = { es: 'blog', ca: 'blogCa' } as const;
 
-/** Artículos ya publicados de un idioma (los de fecha futura esperan a su día) */
+/**
+ * Artículos ya publicados de un idioma (los de fecha futura esperan a su día).
+ * En desarrollo, PREVIEW_SCHEDULED=1 muestra también los programados.
+ */
 export async function getPublishedPosts(lang: Lang): Promise<BlogPost[]> {
   const now = new Date();
+  const showScheduled = import.meta.env.DEV && process.env.PREVIEW_SCHEDULED === '1';
   return (await getCollection(
     collectionByLang[lang],
-    ({ data }: BlogPost) => data.pubDate <= now
+    ({ data }: BlogPost) => showScheduled || data.pubDate <= now
   )) as BlogPost[];
 }
 
