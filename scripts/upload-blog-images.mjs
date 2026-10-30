@@ -31,7 +31,7 @@ const BLOG_CONTENT_DIR = path.join(ROOT, 'src', 'content', 'blog');
 const PUBLIC_BLOG_IMAGES = path.join(ROOT, 'public', 'images', 'blog');
 const LOCAL_IMAGE_REGEX = /\/images\/blog\/([^\s"'`)]+)/g;
 const CLOUDINARY_FOLDER_REGEX = /cloudinary:divermataro\/blog\/([^/"'\s]+)\//g;
-const CLOUDINARY_ID_REGEX = /cloudinary:divermataro\/blog\/[^/"'\s]+\/([^"'\s]+)/g;
+const CLOUDINARY_ID_REGEX = /cloudinary:divermataro\/blog\/[^/"'\s]+\/([^"'\s)]+)/g;
 const IMAGE_EXTENSIONS = ['.avif', '.webp', '.jpg', '.jpeg', '.png'];
 
 const findLocalFile = (publicId) => {
