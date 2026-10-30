@@ -83,7 +83,7 @@ Si coneixes una barrera al teu barri, explica-la'ns abans: la portarem a la taul
 
 ### Voreres rebaixades i passos sense vorada
 
-La millora més visible, i la que més vides canvia, és la més senzilla: rebaixar una vorera. Un pas de vianants sense gual obliga una persona usuària de cadira de rodes a fer la volta a l'illa o a baixar a la calçada entre cotxes. Des del 2022 hem assenyalat i seguit desenes de punts així, i molts ja estan resolts.
+La millora més visible, i la que més vides canvia, és la més senzilla: rebaixar una vorera. Un pas de vianants sense gual obliga una persona usuària de cadira de rodes a fer la volta a l'illa o a baixar a la calçada entre cotxes. Des del 2022 hem assenyalat i seguit desenes de punts així, i molts ja estan resolts. La imatge que obre aquest article n'és un: la cantonada del carrer de Goya amb Juan Larrea, al costat de la plaça d'Occitània i la biblioteca Pompeu Fabra, abans i després de l'obra.
 
 Un dels canvis que més es noten són els passos de vianants elevats, a la mateixa alçada que la vorera. Amb ells desapareix el desnivell: qui va en cadira de rodes, amb caminador o amb un cotxet travessa sense rampa ni vorada, i els cotxes han de reduir la velocitat. Diversos dels que s'han construït a Mataró en els darrers anys van sortir de propostes que hem treballat amb l'Ajuntament, com els del carrer de Francisco de Goya, la ronda del President Macià i el camí del Mig, a la cantonada amb el carrer Mateu.
 
@@ -93,10 +93,10 @@ Un dels canvis que més es noten són els passos de vianants elevats, a la matei
   <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/paso-elevado-podotactil" alt="Pas de vianants elevat acabat de fer, amb paviment podotàctil a la vorera i cons d'obra" width="1200" height="1600" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
 </div>
 
-No tot són passos nous: també s'arreglen els que ja hi eren. A la cantonada amb la ronda O'Donnell, la vorera arribava al pas de vianants amb una vorada. Avui està rebaixada i s'hi travessa sense desnivell.
+No tot són passos nous: també s'arreglen els que ja hi eren. A la cantonada de la ronda O'Donnell amb el carrer Bialet Masé, la vorera arribava al pas de vianants amb una vorada. Avui està rebaixada i s'hi travessa sense desnivell.
 
 <div class="not-prose my-8 grid grid-cols-1 md:grid-cols-2 gap-4">
-  <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/rebaje-odonnell-antes" alt="Abans: cantonada amb la ronda O'Donnell amb una vorada al costat del pas de vianants i les marques de l'obra pintades de color taronja a la vorera, entre elles el símbol de la cadira de rodes" width="755" height="960" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
+  <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/rebaje-odonnell-antes" alt="Abans: cantonada de la ronda O'Donnell amb el carrer Bialet Masé, amb una vorada al costat del pas de vianants i les marques de l'obra pintades de color taronja a la vorera, entre elles el símbol de la cadira de rodes" width="755" height="960" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
   <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/rebaje-odonnell-despues" alt="Després: la mateixa cantonada amb la vorera rebaixada fins al pas de vianants" width="685" height="960" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
 </div>
 

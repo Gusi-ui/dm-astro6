@@ -82,7 +82,7 @@ Si conoces una barrera en tu barrio, cuéntanosla antes: la llevaremos a la mesa
 
 ### Aceras rebajadas y pasos sin bordillo
 
-La mejora más visible, y la que más vidas cambia, es la más sencilla: rebajar una acera. Un paso de peatones sin rebaje obliga a una persona usuaria de silla de ruedas a dar la vuelta a la manzana o a bajar a la calzada entre coches. Desde 2022 hemos señalado y seguido decenas de puntos así, y muchos ya están resueltos.
+La mejora más visible, y la que más vidas cambia, es la más sencilla: rebajar una acera. Un paso de peatones sin rebaje obliga a una persona usuaria de silla de ruedas a dar la vuelta a la manzana o a bajar a la calzada entre coches. Desde 2022 hemos señalado y seguido decenas de puntos así, y muchos ya están resueltos. La imagen que abre este artículo es uno de ellos: la esquina de la calle Goya con Juan Larrea, junto a la plaza Occitània y la biblioteca Pompeu Fabra, antes y después de la obra.
 
 Uno de los cambios que más se notan son los pasos de peatones elevados, a la misma altura que la acera. Con ellos desaparece el desnivel: quien va en silla de ruedas, con andador o con un cochecito cruza sin rampa ni bordillo, y los coches tienen que reducir la velocidad. Varios de los que se han construido en Mataró en los últimos años salieron de propuestas que trabajamos con el Ayuntamiento, como los de la calle Francisco de Goya, la ronda del President Macià y el Camí del Mig, en la esquina con la calle Mateu.
 
@@ -92,10 +92,10 @@ Uno de los cambios que más se notan son los pasos de peatones elevados, a la mi
   <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/paso-elevado-podotactil" alt="Paso de peatones elevado recién terminado, con pavimento podotáctil en la acera y conos de obra" width="1200" height="1600" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
 </div>
 
-No todo son pasos nuevos: también se arreglan los que ya existían. En la esquina con la ronda O'Donnell, la acera llegaba al paso de peatones con un bordillo. Hoy está rebajada y se cruza sin desnivel.
+No todo son pasos nuevos: también se arreglan los que ya existían. En la esquina de la ronda O'Donnell con la calle Bialet Masé, la acera llegaba al paso de peatones con un bordillo. Hoy está rebajada y se cruza sin desnivel.
 
 <div class="not-prose my-8 grid grid-cols-1 md:grid-cols-2 gap-4">
-  <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/rebaje-odonnell-antes" alt="Antes: esquina con la ronda O'Donnell con un bordillo junto al paso de peatones y las marcas de la obra pintadas en naranja en la acera, entre ellas el símbolo de la silla de ruedas" width="755" height="960" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
+  <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/rebaje-odonnell-antes" alt="Antes: esquina de la ronda O'Donnell con la calle Bialet Masé, con un bordillo junto al paso de peatones y las marcas de la obra pintadas en naranja en la acera, entre ellas el símbolo de la silla de ruedas" width="755" height="960" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
   <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/rebaje-odonnell-despues" alt="Después: la misma esquina con la acera rebajada hasta el paso de peatones" width="685" height="960" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
 </div>
 
