@@ -2,7 +2,8 @@
 title: 'Accessibilitat a Mataró: el que hem aconseguit i el que encara falta'
 description: "Accessibilitat a Mataró: què fem a la Taula d'Accessibilitat, com vam aconseguir la rampa del BBVA i quines barreres encara queden per eliminar."
 pubDate: 2026-11-02
-heroImage: 'cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/rampa-bbva-plaza-granollers'
+heroImage: 'cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/antes-despues-cruce-portada'
+heroFullMobile: true
 category: 'Accesibilidad'
 esSlug: 'accesibilidad-mataro-mejoras'
 ---
@@ -49,7 +50,7 @@ La Taula no només tracta obres. També treballa la sensibilització. El maig de
 <div class="not-prose my-8">
   <img
     src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/sensibilizacion-ninos-carpa"
-    alt="Activitat de sensibilització a l'aire lliure: un grup de nenes i nens asseguts a terra sota una carpa reben fitxes il·lustrades"
+    alt="Jornada de sensibilització del maig del 2025: un grup de nenes i nens asseguts a terra sota una carpa reben fitxes il·lustrades"
     width="1600"
     height="1197"
     sizes="(max-width: 768px) 100vw, 896px"
@@ -84,12 +85,19 @@ Si coneixes una barrera al teu barri, explica-la'ns abans: la portarem a la taul
 
 La millora més visible, i la que més vides canvia, és la més senzilla: rebaixar una vorera. Un pas de vianants sense gual obliga una persona usuària de cadira de rodes a fer la volta a l'illa o a baixar a la calçada entre cotxes. Des del 2022 hem assenyalat i seguit desenes de punts així, i molts ja estan resolts.
 
-Un dels canvis que més es noten són els passos de vianants elevats, a la mateixa alçada que la vorera. Amb ells desapareix el desnivell: qui va en cadira de rodes, amb caminador o amb un cotxet travessa sense rampa ni vorada, i els cotxes han de reduir la velocitat. Diversos dels que s'han construït a Mataró en els darrers anys van sortir de propostes que hem treballat amb l'Ajuntament.
+Un dels canvis que més es noten són els passos de vianants elevats, a la mateixa alçada que la vorera. Amb ells desapareix el desnivell: qui va en cadira de rodes, amb caminador o amb un cotxet travessa sense rampa ni vorada, i els cotxes han de reduir la velocitat. Diversos dels que s'han construït a Mataró en els darrers anys van sortir de propostes que hem treballat amb l'Ajuntament, com els del carrer de Francisco de Goya, la ronda del President Macià i el camí del Mig, a la cantonada amb el carrer Mateu.
 
 <div class="not-prose my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
   <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/paso-elevado-esquina" alt="Pas de vianants elevat acabat de pintar en una cantonada de Mataró, amb cons d'obra encara a la calçada" width="1200" height="1600" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
   <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/paso-elevado-palmeras" alt="Pas de vianants elevat a l'alçada de la vorera en un carrer de Mataró amb palmeres" width="1200" height="1600" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
   <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/paso-elevado-podotactil" alt="Pas de vianants elevat acabat de fer, amb paviment podotàctil a la vorera i cons d'obra" width="1200" height="1600" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
+</div>
+
+No tot són passos nous: també s'arreglen els que ja hi eren. A la cantonada amb la ronda O'Donnell, la vorera arribava al pas de vianants amb una vorada. Avui està rebaixada i s'hi travessa sense desnivell.
+
+<div class="not-prose my-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+  <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/rebaje-odonnell-antes" alt="Abans: cantonada amb la ronda O'Donnell amb una vorada al costat del pas de vianants i les marques de l'obra pintades de color taronja a la vorera, entre elles el símbol de la cadira de rodes" width="755" height="960" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
+  <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/rebaje-odonnell-despues" alt="Després: la mateixa cantonada amb la vorera rebaixada fins al pas de vianants" width="685" height="960" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
 </div>
 
 ### Comerços i locals sense graó
@@ -154,6 +162,17 @@ El resultat és a la vista. El 2022 van començar les obres: l'oficina va constr
 </div>
 
 Avui qualsevol persona hi pot entrar pel seu propi peu, o per les seves pròpies rodes, sense demanar permís a ningú.
+
+<div class="not-prose my-8">
+  <img
+    src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/rampa-bbva-plaza-granollers"
+    alt="Rampa permanent amb baranes metàl·liques que puja en paral·lel a la façana de l'oficina del BBVA de la plaça de Granollers, al costat dels graons"
+    width="1310"
+    height="1200"
+    sizes="(max-width: 768px) 100vw, 896px"
+    style="width: 100%; height: auto; border-radius: 0.75rem;"
+  />
+</div>
 
 <div class="not-prose my-8">
   <img

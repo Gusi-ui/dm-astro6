@@ -2,7 +2,8 @@
 title: 'Accesibilidad en Mataró: lo que hemos conseguido y lo que aún falta'
 description: "Accesibilidad en Mataró: qué hacemos en la Taula d'Accessibilitat, cómo logramos la rampa del BBVA y qué barreras nos quedan aún por eliminar."
 pubDate: 2026-11-02
-heroImage: 'cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/rampa-bbva-plaza-granollers'
+heroImage: 'cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/antes-despues-cruce-portada'
+heroFullMobile: true
 category: 'Accesibilidad'
 ---
 
@@ -48,7 +49,7 @@ La Taula no solo trata obras. También trabaja la sensibilización. En mayo de 2
 <div class="not-prose my-8">
   <img
     src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/sensibilizacion-ninos-carpa"
-    alt="Actividad de sensibilización al aire libre: un grupo de niñas y niños sentados en el suelo bajo una carpa reciben fichas ilustradas"
+    alt="Jornada de sensibilización de mayo de 2025: un grupo de niñas y niños sentados en el suelo bajo una carpa reciben fichas ilustradas"
     width="1600"
     height="1197"
     sizes="(max-width: 768px) 100vw, 896px"
@@ -83,12 +84,19 @@ Si conoces una barrera en tu barrio, cuéntanosla antes: la llevaremos a la mesa
 
 La mejora más visible, y la que más vidas cambia, es la más sencilla: rebajar una acera. Un paso de peatones sin rebaje obliga a una persona usuaria de silla de ruedas a dar la vuelta a la manzana o a bajar a la calzada entre coches. Desde 2022 hemos señalado y seguido decenas de puntos así, y muchos ya están resueltos.
 
-Uno de los cambios que más se notan son los pasos de peatones elevados, a la misma altura que la acera. Con ellos desaparece el desnivel: quien va en silla de ruedas, con andador o con un cochecito cruza sin rampa ni bordillo, y los coches tienen que reducir la velocidad. Varios de los que se han construido en Mataró en los últimos años salieron de propuestas que trabajamos con el Ayuntamiento.
+Uno de los cambios que más se notan son los pasos de peatones elevados, a la misma altura que la acera. Con ellos desaparece el desnivel: quien va en silla de ruedas, con andador o con un cochecito cruza sin rampa ni bordillo, y los coches tienen que reducir la velocidad. Varios de los que se han construido en Mataró en los últimos años salieron de propuestas que trabajamos con el Ayuntamiento, como los de la calle Francisco de Goya, la ronda del President Macià y el Camí del Mig, en la esquina con la calle Mateu.
 
 <div class="not-prose my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
   <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/paso-elevado-esquina" alt="Paso de peatones elevado recién pintado en una esquina de Mataró, con conos de obra todavía en la calzada" width="1200" height="1600" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
   <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/paso-elevado-palmeras" alt="Paso de peatones elevado a la altura de la acera en una calle de Mataró con palmeras" width="1200" height="1600" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
   <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/paso-elevado-podotactil" alt="Paso de peatones elevado recién terminado, con pavimento podotáctil en la acera y conos de obra" width="1200" height="1600" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
+</div>
+
+No todo son pasos nuevos: también se arreglan los que ya existían. En la esquina con la ronda O'Donnell, la acera llegaba al paso de peatones con un bordillo. Hoy está rebajada y se cruza sin desnivel.
+
+<div class="not-prose my-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+  <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/rebaje-odonnell-antes" alt="Antes: esquina con la ronda O'Donnell con un bordillo junto al paso de peatones y las marcas de la obra pintadas en naranja en la acera, entre ellas el símbolo de la silla de ruedas" width="755" height="960" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
+  <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/rebaje-odonnell-despues" alt="Después: la misma esquina con la acera rebajada hasta el paso de peatones" width="685" height="960" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
 </div>
 
 ### Comercios y locales sin escalón
@@ -153,6 +161,17 @@ El resultado está a la vista. En 2022 empezaron las obras: la oficina construy�
 </div>
 
 Hoy cualquier persona puede entrar por su propio pie, o por sus propias ruedas, sin pedir permiso a nadie.
+
+<div class="not-prose my-8">
+  <img
+    src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/rampa-bbva-plaza-granollers"
+    alt="Rampa permanente con barandillas metálicas que sube en paralelo a la fachada de la oficina del BBVA de la plaza Granollers, junto a los escalones"
+    width="1310"
+    height="1200"
+    sizes="(max-width: 768px) 100vw, 896px"
+    style="width: 100%; height: auto; border-radius: 0.75rem;"
+  />
+</div>
 
 <div class="not-prose my-8">
   <img
