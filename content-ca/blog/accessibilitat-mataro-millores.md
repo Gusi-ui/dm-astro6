@@ -33,7 +33,36 @@ A la Taula exposem problemes concrets, escoltem els projectes municipals i propo
 
 Portem a cada reunió el que recollim durant setmanes al carrer: fotos, ubicacions i queixes que ens arriben per WhatsApp o per les xarxes. I hi portem una cosa que ningú més pot aportar: l'experiència diària de moure's per Mataró amb una cadira de rodes, un escúter o un caminador.
 
+<div class="not-prose my-8">
+  <img
+    src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/taula-accessibilitat-reunion"
+    alt="Reunió de la Taula d'Accessibilitat de Mataró: representants de les entitats i de l'Ajuntament posen junts en una sala, entre ells una persona en cadira de rodes elèctrica"
+    width="4160"
+    height="3120"
+    sizes="(max-width: 768px) 100vw, 896px"
+    style="width: 100%; height: auto; border-radius: 0.75rem;"
+  />
+</div>
+
 La Taula no només tracta obres. També treballa la sensibilització. El maig del 2025 vam participar amb l'Ajuntament i altres entitats, entre elles la Fundació El Maresme i l'ONCE, en una jornada en què <a href="https://www.tvmataro.cat/societat/mirar-la-discapacitat-amb-uns-altres-ulls" target="_blank" rel="noopener noreferrer">més de 180 alumnes de 3r de Primària es van posar a la pell de les persones amb discapacitat</a>. Era la tercera edició d'una activitat oberta a totes les escoles de la ciutat. Una nena que avui entén per què un cotxe no pot aparcar sobre un gual serà una veïna que demà no ho farà.
+
+<div class="not-prose my-8">
+  <img
+    src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/sensibilizacion-ninos-carpa"
+    alt="Activitat de sensibilització a l'aire lliure: un grup de nenes i nens asseguts a terra sota una carpa reben fitxes il·lustrades"
+    width="1600"
+    height="1197"
+    sizes="(max-width: 768px) 100vw, 896px"
+    style="width: 100%; height: auto; border-radius: 0.75rem;"
+  />
+</div>
+
+També sortim al carrer a explicar el que fem. Muntem la nostra parada a la Mostra d'Entitats de Mataró i a la diada de [Sant Jordi](/blog/sant-jordi-mataro), on parlem amb veïnes i veïns de les barreres que es troben cada dia.
+
+<div class="not-prose my-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+  <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/mostra-entitats-estand-divermataro" alt="Estand de DiverMataró a la Mostra d'Entitats de Mataró: dues persones de l'associació, una d'elles en cadira de rodes, darrere d'una taula amb fullets" width="1200" height="1600" style="width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 0.75rem;" />
+  <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/sant-jordi-parada-divermataro" alt="Parada de DiverMataró per Sant Jordi, amb la taula coberta amb la senyera, roses i llibres, i dues persones en cadira de rodes elèctrica a banda i banda" width="1200" height="1600" style="width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 0.75rem;" />
+</div>
 
 ### Als consells territorials dels barris
 
@@ -43,10 +72,7 @@ La ciutat té sis consells territorials. Les sessions són públiques, i aqueste
 
 - **Consell Territorial de Pla d'en Boet - Peramàs Esmandies:** 3 de novembre, a les 18.30 h.
 - **Consell Territorial de Rocafonda - El Palau - l'Escorxador:** 12 de novembre (sessió extraordinària) i 26 de novembre (sessió ordinària), a les 19.00 h.
-- **Consell Territorial del Centre - Eixample - Havana:** [DADA DE L'USUARI: propera sessió].
-- **Consell Territorial de Cerdanyola:** [DADA DE L'USUARI: propera sessió].
-- **Consell Territorial de Camí de la Serra - Cirera - Molins i Vista Alegre:** [DADA DE L'USUARI: propera sessió].
-- **Consell Territorial de Via Europa - Nou Parc Central - La Llàntia:** [DADA DE L'USUARI: propera sessió].
+- **Consells territorials del Centre - Eixample - Havana, de Cerdanyola, de Camí de la Serra - Cirera - Molins i Vista Alegre i de Via Europa - Nou Parc Central - La Llàntia:** propera sessió per anunciar.
 
 Si coneixes una barrera al teu barri, explica-la'ns abans: la portarem a la taula.
 
@@ -58,13 +84,37 @@ Si coneixes una barrera al teu barri, explica-la'ns abans: la portarem a la taul
 
 La millora més visible, i la que més vides canvia, és la més senzilla: rebaixar una vorera. Un pas de vianants sense gual obliga una persona usuària de cadira de rodes a fer la volta a l'illa o a baixar a la calçada entre cotxes. Des del 2022 hem assenyalat i seguit desenes de punts així, i molts ja estan resolts.
 
-[DADA DE L'USUARI: 3–5 exemples concrets de voreres rebaixades o passos corregits, amb carrer i any aproximat]
+Un dels canvis que més es noten són els passos de vianants elevats, a la mateixa alçada que la vorera. Amb ells desapareix el desnivell: qui va en cadira de rodes, amb caminador o amb un cotxet travessa sense rampa ni vorada, i els cotxes han de reduir la velocitat. Diversos dels que s'han construït a Mataró en els darrers anys van sortir de propostes que hem treballat amb l'Ajuntament.
+
+<div class="not-prose my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+  <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/paso-elevado-esquina" alt="Pas de vianants elevat acabat de pintar en una cantonada de Mataró, amb cons d'obra encara a la calçada" width="1200" height="1600" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
+  <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/paso-elevado-palmeras" alt="Pas de vianants elevat a l'alçada de la vorera en un carrer de Mataró amb palmeres" width="1200" height="1600" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
+  <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/paso-elevado-podotactil" alt="Pas de vianants elevat acabat de fer, amb paviment podotàctil a la vorera i cons d'obra" width="1200" height="1600" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
+</div>
 
 ### Comerços i locals sense graó
 
 Una ciutat accessible no s'acaba a la vorera. Si el bar, la farmàcia o el forn tenen un graó a la porta, el carrer accessible ens porta fins a una paret. Per això també treballem amb comerços i locals per eliminar vorades i graons d'entrada, i difonem la guia [Fem accessible el nostre comerç](/documents/fem_accessible_el_nostre_comerc.pdf).
 
-[DADA DE L'USUARI: 1–3 locals o negocis que hagin eliminat el graó, si es poden esmentar]
+Cada vegada més comerços de Mataró tenen l'entrada a ran de carrer, sense cap graó: pizzeries, una floristeria, un supermercat o una botiga d'alimentació ecològica on tothom pot entrar sense demanar ajuda. És el model que volem que s'estengui a tota la ciutat.
+
+<div class="not-prose my-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+  <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/comercio-roman-pizza-entrada-a-nivel" alt="Entrada sense graó de la pizzeria Roman Pizza, amb portes de vidre a ran de vorera" width="1200" height="1600" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
+  <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/comercio-fresia-entrada-a-nivel" alt="Entrada a nivell de la floristeria Fresia, amb plantes a banda i banda de la porta" width="1200" height="1600" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
+  <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/comercio-roma-bella-entrada-a-nivel" alt="Entrada sense graó de la pizzeria Roma Bella, amb la porta de vidre oberta a ran de vorera" width="1200" height="1600" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
+  <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/comercio-molsa-entrada-a-nivel" alt="Entrada a nivell de la botiga Molsa, rebost de salut, amb portes de vidre sense graó" width="1200" height="1600" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
+</div>
+
+<div class="not-prose my-8">
+  <img
+    src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/comercio-taste-of-america-entrada-a-nivel"
+    alt="Entrada a nivell de carrer del supermercat Taste of America, amb el terra de la botiga a l'alçada de la vorera"
+    width="1440"
+    height="1080"
+    sizes="(max-width: 768px) 100vw, 896px"
+    style="width: 100%; height: auto; border-radius: 0.75rem;"
+  />
+</div>
 
 ### El cas BBVA de la plaça de Granollers: de la porta tancada a la rampa
 
@@ -77,13 +127,44 @@ L'oficina del BBVA de la plaça de Granollers només tenia accés per graons. L'
   <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/bbva-antes-silla-de-ruedas" alt="Persona usuària de cadira de rodes elèctrica davant dels tres graons d'accés a l'oficina del BBVA de la plaça de Granollers" width="1200" height="1600" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
 </div>
 
-No ens vam quedar en la queixa. Vam documentar la barrera amb fotos i la vam difondre. Vam recordar que la discriminació per discapacitat està prohibida per la Llei general de drets de les persones amb discapacitat, i que el <a href="https://www.boe.es/eli/es/rd/2023/03/21/193/con" target="_blank" rel="noopener noreferrer">Reial decret 193/2023 de condicions bàsiques d'accessibilitat de béns i serveis</a> inclou de manera expressa els serveis financers i bancaris. I vam sortir al carrer: veïnes i veïns, persones usuàries d'escúter i de caminador, ens vam concentrar davant l'oficina amb un missatge clar, "No más barreras".
+No ens vam quedar en la queixa. Vam documentar la barrera amb fotos i la vam difondre. Vam recordar que la discriminació per discapacitat està prohibida per la Llei general de drets de les persones amb discapacitat, i que el <a href="https://www.boe.es/eli/es/rd/2023/03/21/193/con" target="_blank" rel="noopener noreferrer">Reial decret 193/2023 de condicions bàsiques d'accessibilitat de béns i serveis</a> inclou de manera expressa els serveis financers i bancaris. I vam sortir al carrer: el 2021, veïnes i veïns, persones usuàries d'escúter i de caminador, ens vam concentrar davant l'oficina amb un missatge clar, "No más barreras".
 
-![Concentració de DiverMataró davant l'oficina del BBVA de la plaça de Granollers, amb persones en escúter i cartells de "No más barreras"](cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/bbva-concentracion-no-mas-barreras)
+<div class="not-prose my-8">
+  <img
+    src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/bbva-concentracion-no-mas-barreras"
+    alt="Concentració de DiverMataró davant l'oficina del BBVA de la plaça de Granollers, amb persones en escúter i cartells de «No más barreras»"
+    width="1440"
+    height="1080"
+    sizes="(max-width: 768px) 100vw, 896px"
+    style="width: 100%; height: auto; border-radius: 0.75rem;"
+  />
+</div>
 
-El resultat és a la vista. L'oficina va construir una rampa permanent que puja en paral·lel a la façana, amb baranes a banda i banda, al costat dels graons de sempre [VERIFICAR: any en què es va acabar la rampa]. Avui qualsevol persona hi pot entrar pel seu propi peu, o per les seves pròpies rodes, sense demanar permís a ningú.
+El resultat és a la vista. El 2022 van començar les obres: l'oficina va construir una rampa permanent que puja en paral·lel a la façana, amb baranes a banda i banda, al costat dels graons de sempre.
 
-![Rampa nova amb baranes metàl·liques a banda i banda al costat de l'entrada de l'oficina del BBVA de la plaça de Granollers](cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/bbva-despues-rampa-fachada)
+<div class="not-prose my-8">
+  <img
+    src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/bbva-obras-rampa-2022"
+    alt="Obres de la rampa del BBVA de la plaça de Granollers el 2022: la nova rampa al costat dels graons, envoltada de tanques grogues"
+    width="960"
+    height="720"
+    sizes="(max-width: 768px) 100vw, 896px"
+    style="width: 100%; height: auto; border-radius: 0.75rem;"
+  />
+</div>
+
+Avui qualsevol persona hi pot entrar pel seu propi peu, o per les seves pròpies rodes, sense demanar permís a ningú.
+
+<div class="not-prose my-8">
+  <img
+    src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/bbva-despues-rampa-fachada"
+    alt="Rampa nova amb baranes metàl·liques a banda i banda al costat de l'entrada de l'oficina del BBVA de la plaça de Granollers"
+    width="1600"
+    height="683"
+    sizes="(max-width: 768px) 100vw, 896px"
+    style="width: 100%; height: auto; border-radius: 0.75rem;"
+  />
+</div>
 
 Aquest cas ens va ensenyar dues coses. Que una empresa privada també té obligacions d'accessibilitat. I que quan la ciutadania s'uneix, les coses canvien.
 
@@ -118,7 +199,16 @@ Les nostres fotos mostren per què cal mirar el detall. A l'entorn de la plaça 
   <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/plaza-catalunya-paseo-saulo" alt="Passeig pavimentat de la plaça de Catalunya que acaba en una zona de sauló, amb tanca de fusta" width="1200" height="1600" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
 </div>
 
-![Vora de paviment elevada sobre el sauló erosionat a la plaça de Catalunya de Mataró, que forma un graó entre les dues superfícies](cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/plaza-catalunya-desnivel-pavimento)
+<div class="not-prose my-8">
+  <img
+    src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/plaza-catalunya-desnivel-pavimento"
+    alt="Vora de paviment elevada sobre el sauló erosionat a la plaça de Catalunya de Mataró, que forma un graó entre les dues superfícies"
+    width="1600"
+    height="1200"
+    sizes="(max-width: 768px) 100vw, 896px"
+    style="width: 100%; height: auto; border-radius: 0.75rem;"
+  />
+</div>
 
 Ja vam detallar les nostres propostes a [l'anàlisi de la reforma de la plaça de Catalunya](/blog/plaza-catalunya-accesibilidad): paviment podotàctil i franges d'avís, contrast de color, bancs amb repenjabraços, ombra, font accessible, jocs inclusius i una auditoria d'accessibilitat quan acabi l'obra.
 
