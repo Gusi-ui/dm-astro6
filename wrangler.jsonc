@@ -1,7 +1,7 @@
 {
   "name": "astro6dm",
-  // Cuenta "Gusi" (jmartinezblanquez@gmail.com). El Account ID no es secreto.
-  "account_id": "1f7c0d40473dbca21d83ed0495b171db",
+  // Cuenta de pago "Gusideveloper" (la misma que DiverMapa). El Account ID no es secreto.
+  "account_id": "d1f835df40f3c1f57b847482a58ed772",
   "compatibility_date": "2026-10-12",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   // Workers Logs: guarda 3 días los console.error del Worker (incluido en el
@@ -27,7 +27,7 @@
     {
       "binding": "DB",
       "database_name": "astro6dm-db",
-      "database_id": "266aa9fa-ce2c-4087-b543-fdea68c66043",
+      "database_id": "be8b651c-c5e5-47a5-87dd-37fe84287617",
     },
   ],
 }
