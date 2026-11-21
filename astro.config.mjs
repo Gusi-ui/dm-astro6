@@ -103,6 +103,8 @@ export default defineConfig({
     optimizeDeps: {
       exclude: ['astro/zod'],
     },
+    // Sin `cssCodeSplit: false`: con Astro 7 hacía que cada página cargara dos hojas casi
+    // idénticas (una por entorno de compilación). Así cada página enlaza una sola hoja global.
     build: {
       rollupOptions: {
         output: {

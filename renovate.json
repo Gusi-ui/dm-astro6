@@ -28,10 +28,10 @@
       "description": "El proyecto usa Node.js 24 LTS"
     },
     {
-      "matchDatasources": ["node-version"],
-      "matchManagers": ["nvm", "nodenv"],
+      "matchDepNames": ["node"],
+      "matchManagers": ["nvm", "nodenv", "github-actions"],
       "allowedVersions": "<25.0.0",
-      "description": "Mantener Node.js 24 LTS en .nvmrc y .node-version"
+      "description": "Mantener Node.js 24 LTS en .nvmrc, .node-version y los workflows (setup-node)"
     }
   ]
 }
