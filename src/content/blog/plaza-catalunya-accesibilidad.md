@@ -214,6 +214,8 @@ La buena noticia es que la obra está en marcha, con cuatro meses de plazo por d
 
 Pero la corrección de fondo es otra, y aquí vuelve la buena noticia: el plan de accesibilidad ya está en revisión. La oportunidad consiste en que esa actualización deje atrás el paradigma de 2008 y la lógica de «eliminar barreras arquitectónicas» para abrazar la accesibilidad universal del siglo XXI, la que integra lo físico, lo sensorial y lo cognitivo en pie de igualdad. Un plan con calendario, con presupuesto asignado y con prioridades claras, que sustituya la intervención por tramos por una estrategia de ciudad, en línea con lo que exige la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2013-12632" target="_blank" rel="noopener noreferrer">Ley General de derechos de las personas con discapacidad</a>.
 
+Lo que encontramos al volver a recorrer la plaza, lo que mejora y lo que todavía falla, lo contamos en [nuestro balance de la accesibilidad en Mataró](/blog/accesibilidad-mataro-mejoras).
+
 ### Diseñar con, no para
 
 Y esa actualización no debería redactarse solo en un despacho. El principio que ha transformado el urbanismo inclusivo se resume en una frase: diseñar con las personas, no para ellas. Significa sentar en la mesa de diseño, desde el primer boceto, a DiverMataró y al resto del tejido asociativo de la diversidad funcional de Mataró y el Maresme —cada entidad aportando su frente: la movilidad, lo cognitivo, lo sensorial, lo intelectual—. Son quienes conocen las barreras porque las sufren cada día, y quienes ya han hecho buena parte del trabajo de diagnóstico que el Ayuntamiento podría aprovechar, como demostró la iniciativa de [pasear con los regidores por la ciudad](/blog/paseo-por-mataro-con-los-regidores).

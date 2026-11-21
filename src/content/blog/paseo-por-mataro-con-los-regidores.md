@@ -50,4 +50,6 @@ Gracias por su colaboración a los regidores.
 
 Desde entonces, esa colaboración ha dado frutos, como la [zona accesible de la Rua de Carnestoltes 2026](/blog/carnavales-mataro-2026). Pero quedan barreras pendientes, como las [rejillas de alcantarillado](/blog/trampas) o el [ascensor averiado de Can Serra](/blog/ascensor-can-serra-museu-mataro). Y para que cualquier persona pueda saber qué sitios son accesibles antes de salir de casa, hemos creado [DiverMapa, el mapa accesible de Mataró](/blog/divermapa-mapa-accesible-mataro).
 
+Todo lo conseguido desde aquel paseo, y lo que aún falta, lo repasamos en [accesibilidad en Mataró: lo que hemos conseguido y lo que aún falta](/blog/accesibilidad-mataro-mejoras).
+
 Para diseñar calles para todas las personas ya existe una referencia clara: la <a href="https://www.boe.es/eli/es/o/2021/07/23/tma851/con" target="_blank" rel="noopener noreferrer">orden estatal sobre accesibilidad en los espacios públicos urbanizados</a>, que en Cataluña se completa con la <a href="https://www.boe.es/eli/es-ct/l/2014/10/30/13/con" target="_blank" rel="noopener noreferrer">Llei 13/2014 d'accessibilitat</a>. Seguiremos impulsando [actos reivindicativos](/servicios/actos-reivindicativos) y paseos como este.
