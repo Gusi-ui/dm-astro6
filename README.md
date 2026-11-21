@@ -1,21 +1,22 @@
 # Asociación Diversidad Funcional - Mataró
 
-Sitio web de la asociación de diversidad funcional en Mataró, construido con Astro 6 y desplegado en Cloudflare Workers.
+Sitio web de la asociación de diversidad funcional en Mataró, construido con Astro 7 y desplegado en Cloudflare Workers, en castellano y catalán.
 
 ## 🚀 Stack Tecnológico
 
-- **Framework**: Astro 6 (beta)
-- **Package Manager**: pnpm
+- **Framework**: Astro 7 (con `@astrojs/cloudflare`)
+- **Package Manager**: pnpm 12
 - **Hosting**: Cloudflare Workers
 - **Base de Datos**: Cloudflare D1 (SQLite serverless)
-- **Estilos**: Tailwind CSS
-- **Blog**: Astro Content Collections
+- **Estilos**: Tailwind CSS 3
+- **Blog**: Astro Content Collections (`src/content/blog/` en castellano y `content-ca/blog/` en catalán)
+- **Imágenes del blog**: Cloudinary
 
 ## 📋 Requisitos Previos
 
-- Node.js 24.21.0 o superior (la versión exacta está en `.nvmrc`)
-- pnpm instalado globalmente (`npm install -g pnpm`)
-- Cuenta de Cloudflare (gratuita)
+- Node.js 24 LTS (la versión exacta está en `.nvmrc`)
+- pnpm 12 (`npm install -g pnpm@12`)
+- Acceso a la cuenta de Cloudflare de la asociación (para desplegar a mano o usar la base D1 remota)
 
 ## 🛠️ Instalación
 
@@ -25,18 +26,17 @@ Sitio web de la asociación de diversidad funcional en Mataró, construido con A
 pnpm install
 ```
 
-2. Configurar base de datos D1:
+2. Copiar las variables locales (`.env` y `.dev.vars` no se suben al repositorio):
 
 ```bash
-pnpm wrangler d1 create astro6dm-db
+cp .env.example .env
+cp .dev.vars.example .dev.vars
 ```
 
-3. Actualizar `wrangler.jsonc` con el `database_id` obtenido
-
-4. Ejecutar migraciones:
+3. Crear las tablas en la base D1 local (la base remota ya existe y está en `wrangler.jsonc`):
 
 ```bash
-pnpm wrangler d1 migrations apply astro6dm-db
+pnpm db:local
 ```
 
 ## 🏃 Desarrollo
@@ -112,6 +112,14 @@ pnpm wrangler deploy
 El proyecto está configurado con GitHub Actions para deploy automático en cada push a la rama `main`,
 es decir, al fusionar `develop` en `main`.
 
+## 🖼️ Fotos nuevas del blog
+
+1. Guardar el original en `public/images/blog/`.
+2. Usar `/images/blog/x.jpg` en el `.md` (las fotos sueltas, en HTML con
+   `sizes="(max-width: 768px) 100vw, 896px"`, no con la sintaxis `![]()` de Markdown).
+3. Ejecutar `pnpm upload:blog-images <slug>` (necesita la clave de Cloudinary en `.env`).
+4. Borrar el archivo local: la foto se sirve desde Cloudinary.
+
 ## 📁 Estructura del Proyecto
 
 ```
@@ -137,12 +145,6 @@ es decir, al fusionar `develop` en `main`.
 - ✅ Sistema de documentos descargables
 - ✅ Diseño responsive y accesible (WCAG 2.1)
 - ✅ SEO optimizado
-
-## 🌐 Recursos Gratuitos
-
-- Cloudflare Workers: 100,000 requests/día
-- Cloudflare D1: 5M lecturas, 100K escrituras, 5GB storage/día
-- Cloudflare R2: 10GB storage, 1M operaciones/mes
 
 ## 📄 Licencia
 
