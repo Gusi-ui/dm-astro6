@@ -5,3 +5,11 @@ allowBuilds:
   esbuild: true
   workerd: true
   sharp: true
+
+# @astrojs/compiler-binding acepta @emnapi 2.0.0-beta como peer y pnpm puede elegir esa beta
+# para @emnapi/runtime mientras @astrojs/astro2tsx trae @emnapi/core 1.x: las dos no son
+# compatibles y `astro check` falla con «this.bridge.setLastError is not a function» (PR #182).
+# Quitar cuando @emnapi 2 sea estable y lo use toda la cadena de Astro.
+overrides:
+  '@emnapi/core': ^1.11.3
+  '@emnapi/runtime': ^1.11.3
