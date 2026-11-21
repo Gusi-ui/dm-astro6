@@ -1,7 +1,7 @@
 ---
 title: 'Mapa accesible de Mataró: presentamos DiverMapa, para saber si podrás entrar antes de salir de casa'
 description: 'Mapa accesible de Mataró: DiverMapa reúne sitios comprobados en persona por DiverMataró para cada perfil de accesibilidad. Úsalo y aporta lugares.'
-pubDate: 2026-11-24
+pubDate: 2026-11-21
 heroImage: 'cloudinary:divermataro/blog/divermapa-mapa-accesible-mataro/divermapa-portada'
 category: 'Accesibilidad'
 ---
