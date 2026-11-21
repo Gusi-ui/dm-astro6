@@ -2,7 +2,7 @@
 title: 'Discapacitat. Hola, món!'
 description: 'DiverMataró arriba per promoure la igualtat i els drets de les persones amb diversitat funcional. Entenent conceptes clau.'
 pubDate: 2024-02-10
-updatedDate: 2026-10-27
+updatedDate: 2026-11-21
 category: 'Social'
 heroImage: 'cloudinary:divermataro/blog/discapacidad-hola-mundo/holamundo'
 esSlug: 'discapacidad-hola-mundo'
@@ -48,6 +48,8 @@ Hi ha diversos tipus de deficiència, i cadascun pot comportar una discapacitat:
 - **Sensorial:** afecta els òrgans dels sentits i, per tant, pot comportar problemes de comunicació (ceguesa, sordesa).
 
 - **Intel·lectual o mental:** terme que s’utilitza quan una persona no té la capacitat d’aprendre al nivell esperat i de funcionar amb normalitat en la vida quotidiana. Un exemple seria la síndrome de Down.
+
+Aquestes diferències expliquen per què un mateix lloc pot ser accessible per a una persona i no per a una altra. A [DiverMapa, el nostre mapa accessible de Mataró](/blog/divermapa-mapa-accesible-mataro), cada lloc es valora per a quatre perfils: mobilitat, visual, auditiva i cognitiva.
 
 ## Discapacitat o diversitat funcional?
 

@@ -2,6 +2,7 @@
 title: 'Accessibilitat a Mataró: el que hem aconseguit i el que encara falta'
 description: "Accessibilitat a Mataró: què fem a la Taula d'Accessibilitat, com vam aconseguir la rampa del BBVA i quines barreres encara queden per eliminar."
 pubDate: 2026-11-02
+updatedDate: 2026-11-21
 heroImage: 'cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/antes-despues-cruce-portada'
 heroFullMobile: true
 category: 'Accesibilidad'
@@ -104,7 +105,7 @@ No tot són passos nous: també s'arreglen els que ja hi eren. A la cantonada de
 
 Una ciutat accessible no s'acaba a la vorera. Si el bar, la farmàcia o el forn tenen un graó a la porta, el carrer accessible ens porta fins a una paret. Per això també treballem amb comerços i locals per eliminar vorades i graons d'entrada, i difonem la guia [Fem accessible el nostre comerç](/documents/fem_accessible_el_nostre_comerc.pdf).
 
-Cada vegada més comerços de Mataró tenen l'entrada a ran de carrer, sense cap graó: pizzeries, una floristeria, un supermercat o una botiga d'alimentació ecològica on tothom pot entrar sense demanar ajuda. És el model que volem que s'estengui a tota la ciutat.
+Cada vegada més comerços de Mataró tenen l'entrada a ran de carrer, sense cap graó: pizzeries, una floristeria, un supermercat o una botiga d'alimentació ecològica on tothom pot entrar sense demanar ajuda. És el model que volem que s'estengui a tota la ciutat. Aquests i altres llocs sense graó els anem recollint, comprovats en persona, a [DiverMapa, el mapa accessible de Mataró](/blog/divermapa-mapa-accesible-mataro).
 
 <div class="not-prose my-8 grid grid-cols-2 md:grid-cols-4 gap-4">
   <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/comercio-roman-pizza-entrada-a-nivel" alt="Entrada sense graó de la pizzeria Roman Pizza, amb portes de vidre a ran de vorera" width="1200" height="1600" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
