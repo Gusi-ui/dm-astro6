@@ -2,7 +2,7 @@
 title: 'Discapacidad. Hola mundo!'
 description: 'DiverMataro llega para promover la igualdad y los derechos de las personas con Diversidad Funcional. Entendiendo conceptos clave.'
 pubDate: 2024-02-10
-updatedDate: 2026-10-27
+updatedDate: 2026-11-21
 category: 'Social'
 heroImage: 'cloudinary:divermataro/blog/discapacidad-hola-mundo/holamundo'
 ---
@@ -47,6 +47,8 @@ Existen diversos tipos de deficiencia y cada uno de estos tipos de deficiencia p
 - **Sensorial:** afecta a los órganos de los sentidos y por tanto pueden llevar a problemas de comunicación (ceguera, sordera).
 
 - **Intelectual o mental:** término utilizado cuando una persona no tiene la capacidad de aprender a niveles esperados y funcionar normalmente en la vida cotidiana. Un ejemplo sería el Síndrome de Down.
+
+Estas diferencias explican por qué un mismo sitio puede ser accesible para una persona y no para otra. En [DiverMapa, nuestro mapa accesible de Mataró](/blog/divermapa-mapa-accesible-mataro), cada sitio se valora para cuatro perfiles: movilidad, visual, auditiva y cognitiva.
 
 ## ¿Discapacidad o Diversidad Funcional?
 

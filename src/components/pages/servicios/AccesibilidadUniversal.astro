@@ -163,6 +163,20 @@ const heroImage = getRandomHeroImage();
                 <span class="mr-3 text-primary-600">✓</span>
                 <span>{t('list.item5')}</span>
               </li>
+              <li class="flex items-start">
+                <span class="mr-3 text-primary-600">✓</span>
+                {/* DiverMapa: lleva al artículo que lo presenta (y de ahí al mapa) */}
+                <a
+                  href={
+                    lang === 'ca'
+                      ? '/ca/blog/divermapa-mapa-accessible-mataro'
+                      : '/blog/divermapa-mapa-accesible-mataro'
+                  }
+                  class="font-semibold text-primary-700 underline decoration-primary-300 underline-offset-4 hover:text-primary-800 hover:decoration-primary-600"
+                >
+                  {t('list.item6')}
+                </a>
+              </li>
             </ul>
           </div>
 

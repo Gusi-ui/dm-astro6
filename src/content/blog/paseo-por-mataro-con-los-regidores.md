@@ -2,7 +2,7 @@
 title: 'Paseando con los regidores'
 description: 'Una iniciativa de DiverMataró para que los regidores experimenten en primera persona la accesibilidad de la ciudad.'
 pubDate: 2022-12-16
-updatedDate: 2026-10-22
+updatedDate: 2026-11-21
 category: 'Accesibilidad'
 heroImage: 'cloudinary:divermataro/blog/paseo-por-mataro-con-los-regidores/silla'
 ---
@@ -48,6 +48,6 @@ Por eso nos parece una buena práctica formativa el hecho de que los agentes que
 
 Gracias por su colaboración a los regidores.
 
-Desde entonces, esa colaboración ha dado frutos, como la [zona accesible de la Rua de Carnestoltes 2026](/blog/carnavales-mataro-2026). Pero quedan barreras pendientes, como las [rejillas de alcantarillado](/blog/trampas) o el [ascensor averiado de Can Serra](/blog/ascensor-can-serra-museu-mataro).
+Desde entonces, esa colaboración ha dado frutos, como la [zona accesible de la Rua de Carnestoltes 2026](/blog/carnavales-mataro-2026). Pero quedan barreras pendientes, como las [rejillas de alcantarillado](/blog/trampas) o el [ascensor averiado de Can Serra](/blog/ascensor-can-serra-museu-mataro). Y para que cualquier persona pueda saber qué sitios son accesibles antes de salir de casa, hemos creado [DiverMapa, el mapa accesible de Mataró](/blog/divermapa-mapa-accesible-mataro).
 
 Para diseñar calles para todas las personas ya existe una referencia clara: la <a href="https://www.boe.es/eli/es/o/2021/07/23/tma851/con" target="_blank" rel="noopener noreferrer">orden estatal sobre accesibilidad en los espacios públicos urbanizados</a>, que en Cataluña se completa con la <a href="https://www.boe.es/eli/es-ct/l/2014/10/30/13/con" target="_blank" rel="noopener noreferrer">Llei 13/2014 d'accessibilitat</a>. Seguiremos impulsando [actos reivindicativos](/servicios/actos-reivindicativos) y paseos como este.

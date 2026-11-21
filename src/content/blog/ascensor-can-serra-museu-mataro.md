@@ -2,7 +2,7 @@
 title: 'Dos exposiciones por los derechos, una misma barrera: el ascensor de Can Serra sigue sin funcionar'
 description: 'El Museu de Mataró acoge una exposición sobre las pioneras del feminismo, pero las personas con diversidad funcional física no pueden acceder a ella por un ascensor averiado desde hace dos años.'
 pubDate: 2026-10-20
-updatedDate: 2026-10-22
+updatedDate: 2026-11-21
 category: 'Denuncia'
 heroImage: 'cloudinary:divermataro/blog/ascensor-can-serra-museu-mataro/can-serra-portada'
 ---
@@ -149,7 +149,7 @@ Porque la cultura debe ser de todos y todas. Y porque una sociedad que defiende 
 
 Desde DiverMataró invitamos a la ciudadanía a reflexionar y a compartir esta reivindicación.
 
-Si quieres sumarte, puedes [hacerte socio o socia de DiverMataró](/asociate), sin cuotas, o leer otras [denuncias de barreras en Mataró](/blog/reivindicacion/denuncias-visibilizacion).
+Si quieres sumarte, puedes [hacerte socio o socia de DiverMataró](/asociate), sin cuotas, o leer otras [denuncias de barreras en Mataró](/blog/reivindicacion/denuncias-visibilizacion). Y si un sitio de la ciudad cambia, para bien o para mal, puedes avisarnos desde [DiverMapa, el mapa accesible de Mataró](/blog/divermapa-mapa-accesible-mataro).
 
 ¿Tiene sentido organizar exposiciones sobre derechos si una parte de la población no puede acceder a ellas?
 

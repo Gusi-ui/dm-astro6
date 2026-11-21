@@ -2,7 +2,7 @@
 title: 'Una rampa no es una ciudad: la reforma de la Plaza de Cataluña de Mataró y la accesibilidad que falta'
 description: 'Las obras en la Plaza de Cataluña prometen accesibilidad y seguridad, pero ¿para quién? Análisis de lo que la reforma resuelve, lo que silencia y el plan municipal en revisión.'
 pubDate: 2026-06-06
-updatedDate: 2026-10-27
+updatedDate: 2026-11-21
 category: 'Accesibilidad'
 heroImage: 'cloudinary:divermataro/blog/plaza-catalunya/pcb'
 heroFullMobile: true
@@ -163,6 +163,8 @@ Queda una pregunta de fondo. ¿Responde esta obra a una estrategia integral de c
 ---
 
 ## 4. La diversidad olvidada: más allá de la silla de ruedas
+
+Por eso, cuando comprobamos un sitio para [DiverMapa, nuestro mapa accesible de Mataró](/blog/divermapa-mapa-accesible-mataro), lo valoramos para cuatro perfiles (movilidad, visual, auditiva y cognitiva) y no solo pensando en la silla de ruedas.
 
 ### La ciudad para quien no ve
 
