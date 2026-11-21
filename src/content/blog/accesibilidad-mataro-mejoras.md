@@ -69,11 +69,16 @@ También salimos a la calle a explicar lo que hacemos. Montamos nuestra parada e
 
 La accesibilidad se decide en la Taula, pero también barrio a barrio. Por eso participamos en los <a href="https://www.mataro.cat/ca/lajuntament/organitzacio/organs-de-govern/consells-territorials" target="_blank" rel="noopener noreferrer">consejos territoriales de Mataró</a>, que el Reglamento de participación ciudadana define como el máximo órgano de participación y de seguimiento de la actuación municipal en cada territorio. En ellos vecinos, entidades y Ayuntamiento debaten las necesidades del barrio, sus equipamientos y sus prioridades de presupuesto. Ahí llevamos las aceras sin rebajar, los pasos de peatones que faltan y los equipamientos sin acceso de cada zona.
 
-La ciudad tiene seis consejos territoriales. Las sesiones son públicas, y estas son nuestras próximas citas:
+La ciudad tiene seis consejos territoriales:
 
-- **Consell Territorial de Pla d'en Boet - Peramàs Esmandies:** 3 de noviembre, a las 18.30 h.
-- **Consell Territorial de Rocafonda - El Palau - l'Escorxador:** 12 de noviembre (sesión extraordinaria) y 26 de noviembre (sesión ordinaria), a las 19.00 h.
-- **Consells territorials del Centre - Eixample - Havana, de Cerdanyola, de Camí de la Serra - Cirera - Molins i Vista Alegre y de Via Europa - Nou Parc Central - La Llàntia:** próxima sesión por anunciar.
+- Centre - Eixample - Havana
+- Cerdanyola
+- Camí de la Serra - Cirera - Molins i Vista Alegre
+- Pla d'en Boet - Peramàs Esmandies
+- Rocafonda - El Palau - l'Escorxador
+- Via Europa - Nou Parc Central - La Llàntia
+
+Sus sesiones son públicas y el Ayuntamiento publica las convocatorias en la página de los consejos territoriales. Si quieres acompañarnos a la próxima sesión de tu barrio, [escríbenos](/contacto).
 
 Si conoces una barrera en tu barrio, cuéntanosla antes: la llevaremos a la mesa.
 

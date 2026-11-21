@@ -70,11 +70,16 @@ També sortim al carrer a explicar el que fem. Muntem la nostra parada a la Most
 
 L'accessibilitat es decideix a la Taula, però també barri a barri. Per això participem als <a href="https://www.mataro.cat/ca/lajuntament/organitzacio/organs-de-govern/consells-territorials" target="_blank" rel="noopener noreferrer">consells territorials de Mataró</a>, que el Reglament de participació ciutadana defineix com el màxim òrgan de participació i de seguiment de l'actuació municipal a cada territori. Hi debaten veïns, entitats i Ajuntament les necessitats del barri, els equipaments i les prioritats pressupostàries. Hi portem les voreres sense rebaixar, els passos de vianants que falten i els equipaments sense accés de cada zona.
 
-La ciutat té sis consells territorials. Les sessions són públiques, i aquestes són les nostres properes cites:
+La ciutat té sis consells territorials:
 
-- **Consell Territorial de Pla d'en Boet - Peramàs Esmandies:** 3 de novembre, a les 18.30 h.
-- **Consell Territorial de Rocafonda - El Palau - l'Escorxador:** 12 de novembre (sessió extraordinària) i 26 de novembre (sessió ordinària), a les 19.00 h.
-- **Consells territorials del Centre - Eixample - Havana, de Cerdanyola, de Camí de la Serra - Cirera - Molins i Vista Alegre i de Via Europa - Nou Parc Central - La Llàntia:** propera sessió per anunciar.
+- Centre - Eixample - Havana
+- Cerdanyola
+- Camí de la Serra - Cirera - Molins i Vista Alegre
+- Pla d'en Boet - Peramàs Esmandies
+- Rocafonda - El Palau - l'Escorxador
+- Via Europa - Nou Parc Central - La Llàntia
+
+Les sessions són públiques i l’Ajuntament en publica les convocatòries a la pàgina dels consells territorials. Si vols acompanyar-nos a la propera sessió del teu barri, [escriu-nos](/contacto).
 
 Si coneixes una barrera al teu barri, explica-la'ns abans: la portarem a la taula.
 

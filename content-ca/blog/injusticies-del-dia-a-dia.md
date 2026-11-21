@@ -2,7 +2,7 @@
 title: 'Injustícies del dia a dia'
 description: 'Crònica d’una discriminació en una oficina bancària i de la manca d’accessibilitat i d’empatia.'
 pubDate: 2021-10-21
-updatedDate: 2026-10-24
+updatedDate: 2026-11-21
 category: 'Denuncia'
 heroImage: 'cloudinary:divermataro/blog/injusticias-del-dia-dia/injusto'
 esSlug: 'injusticias-del-dia-dia'
@@ -68,5 +68,7 @@ Continuarem la història fins que per fi aconseguim acabar amb aquestes injustí
 ### Què diu avui la normativa
 
 Ja el 2021 la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2013-12632" target="_blank" rel="noopener noreferrer">Llei general de drets de les persones amb discapacitat</a> prohibia qualsevol discriminació per raó de discapacitat. Des del 2023, a més, el <a href="https://www.boe.es/eli/es/rd/2023/03/21/193/con" target="_blank" rel="noopener noreferrer">Reial decret 193/2023</a> estableix que el personal d’atenció al públic de les entitats financeres i bancàries ha d’oferir orientació i suport a les persones amb discapacitat que ho demanin.
+
+Aquesta història va tenir un final feliç: el 2022 l’oficina va construir una rampa permanent. Com ho vam aconseguir ho expliquem en [el cas BBVA de la plaça Granollers, dins del nostre balanç de l’accessibilitat a Mataró](/blog/accesibilidad-mataro-mejoras).
 
 No és un cas aïllat: hem documentat altres barreres a les nostres [denúncies anònimes d’accessibilitat](/blog/denuncias-anonimas-de-accesibilidad) i a totes les nostres [accions de denúncia i visibilització](/blog/reivindicacion/denuncias-visibilizacion). Si t’has trobat en una situació semblant, a DiverMataró t’oferim [suport personalitzat](/servicios/apoyo-personalizado). I si t’hi vols sumar, [fes-te soci o sòcia](/asociate).
