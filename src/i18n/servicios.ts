@@ -27,6 +27,7 @@ export const servicios = {
       'list.item3': 'Denuncias de incumplimientos de la normativa de accesibilidad',
       'list.item4': 'Colaboración con el Ayuntamiento para mejorar la accesibilidad urbana',
       'list.item5': 'Formación sobre diseño universal y accesibilidad',
+      'list.item6': 'DiverMapa, el mapa accesible de Mataró: sitios comprobados en persona',
       'cta.title': '¿Conoces barreras que debamos denunciar?',
       'cta.text':
         'Ayúdanos a identificar los obstáculos que impiden la plena participación de las personas.',
@@ -54,6 +55,7 @@ export const servicios = {
       'list.item3': 'Denúncies d’incompliments de la normativa d’accessibilitat',
       'list.item4': 'Col·laboració amb l’Ajuntament per millorar l’accessibilitat urbana',
       'list.item5': 'Formació sobre disseny universal i accessibilitat',
+      'list.item6': 'DiverMapa, el mapa accessible de Mataró: llocs comprovats en persona',
       'cta.title': 'Coneixes barreres que hauríem de denunciar?',
       'cta.text':
         'Ajuda’ns a identificar els obstacles que impedeixen la plena participació de les persones.',

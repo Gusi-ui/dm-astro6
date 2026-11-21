@@ -2,6 +2,7 @@
 title: 'Accesibilidad en Mataró: lo que hemos conseguido y lo que aún falta'
 description: "Accesibilidad en Mataró: qué hacemos en la Taula d'Accessibilitat, cómo logramos la rampa del BBVA y qué barreras nos quedan aún por eliminar."
 pubDate: 2026-11-02
+updatedDate: 2026-11-21
 heroImage: 'cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/antes-despues-cruce-portada'
 heroFullMobile: true
 category: 'Accesibilidad'
@@ -103,7 +104,7 @@ No todo son pasos nuevos: también se arreglan los que ya existían. En la esqui
 
 Una ciudad accesible no termina en la acera. Si el bar, la farmacia o la panadería tienen un escalón en la puerta, la calle accesible nos lleva hasta un muro. Por eso también trabajamos con comercios y locales para eliminar bordillos y escalones de entrada, y difundimos la guía [Fem accessible el nostre comerç](/documents/fem_accessible_el_nostre_comerc.pdf).
 
-Cada vez más comercios de Mataró tienen la entrada a ras de calle, sin ningún escalón: pizzerías, una floristería, un supermercado o una tienda de alimentación ecológica en los que cualquiera entra sin pedir ayuda. Es el modelo que queremos que se extienda a toda la ciudad.
+Cada vez más comercios de Mataró tienen la entrada a ras de calle, sin ningún escalón: pizzerías, una floristería, un supermercado o una tienda de alimentación ecológica en los que cualquiera entra sin pedir ayuda. Es el modelo que queremos que se extienda a toda la ciudad. Estos y otros sitios sin escalón los vamos recogiendo, comprobados en persona, en [DiverMapa, el mapa accesible de Mataró](/blog/divermapa-mapa-accesible-mataro).
 
 <div class="not-prose my-8 grid grid-cols-2 md:grid-cols-4 gap-4">
   <img src="cloudinary:divermataro/blog/accesibilidad-mataro-mejoras/comercio-roman-pizza-entrada-a-nivel" alt="Entrada sin escalón de la pizzería Roman Pizza, con puertas de cristal a ras de la acera" width="1200" height="1600" style="width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.75rem;" />
