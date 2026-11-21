@@ -13,7 +13,7 @@ export const home = {
     'hero.text':
       'En DiverMataró trabajamos por la plena inclusión de las personas con diversidad funcional, promoviendo la accesibilidad universal y una sociedad sin barreras.',
     'hero.join': 'Únete a Nosotros',
-    'hero.work': 'Conoce Nuestro Trabajo',
+    'hero.work': 'Descubre el Mapa Accesible',
     'hero.accessibility': 'Accesibilidad',
     'hero.accessibilityText':
       'Luchamos por espacios, transportes y servicios accesibles para todos. Sin barreras físicas ni digitales.',
@@ -93,7 +93,7 @@ export const home = {
     'hero.text':
       'A DiverMataró treballem per la plena inclusió de les persones amb diversitat funcional, promovent l’accessibilitat universal i una societat sense barreres.',
     'hero.join': 'Uneix-te a nosaltres',
-    'hero.work': 'Coneix la nostra feina',
+    'hero.work': 'Descobreix el mapa accessible',
     'hero.accessibility': 'Accessibilitat',
     'hero.accessibilityText':
       'Lluitem per espais, transports i serveis accessibles per a tothom. Sense barreres físiques ni digitals.',

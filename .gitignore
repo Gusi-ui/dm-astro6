@@ -38,3 +38,6 @@ pnpm-debug.log*
 # AI tools config
 .agents/
 .claude/
+
+# Espacio de trabajo de las herramientas de Claude Code (planes y registros)
+.superpowers/

@@ -1,6 +1,7 @@
 ---
 import { createTranslator, getLangFromUrl, localizePath } from '../../i18n';
 import { home } from '../../i18n/home';
+import { DIVERMAPA_URL } from '../../lib/divermapa';
 
 const lang = getLangFromUrl(Astro.url);
 const t = createTranslator(home, lang);
@@ -133,7 +134,7 @@ const t = createTranslator(home, lang);
           </svg>
         </a>
         <a
-          href={localizePath('/blog', lang)}
+          href={DIVERMAPA_URL[lang]}
           class="group inline-flex transform items-center justify-center rounded-2xl border-2 border-white bg-white/90 px-8 py-4 font-bold text-primary-700 shadow-2xl backdrop-blur-xl transition-all duration-300 hover:scale-105 hover:bg-white"
         >
           {t('hero.work')}

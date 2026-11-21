@@ -1,5 +1,6 @@
 ---
 import { getLangFromUrl, localizePath, useTranslations } from '../../i18n';
+import { DIVERMAPA_NEW_PLACE_URL, DIVERMAPA_URL } from '../../lib/divermapa';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -355,48 +356,161 @@ const serviceLinks = [
         </ul>
       </div>
 
-      <!-- Mapa -->
+      {/*
+       * Mapa accesible: DiverMapa (mapa.divermataro.org), la app de la asociación. Sustituye al mapa de
+       * Google de Mataró: lleva al mapa y a aportar un lugar. El dibujo es decorativo.
+       */}
       <div>
         <h2 class="footer-heading">
           <span class="mr-2 inline-block h-2 w-2 rounded-full bg-gradient-to-r from-amber-400 to-orange-400"></span>
-          {t('footer.findUs')}
+          {t('footer.mapHeading')}
         </h2>
-        <div class="overflow-hidden rounded-2xl border border-white/20 shadow-lg shadow-black/20 transition-all duration-500 hover:border-primary-400/30 hover:shadow-xl">
-          <!-- El mapa (~400 KB de Google Maps) solo se carga al pulsar: en las páginas
-               cortas el pie queda a la vista y loading="lazy" no bastaba -->
-          <button
-            type="button"
-            id="map-facade"
-            data-map-src={`https://maps.google.com/maps?width=100%25&height=200&hl=${lang}&q=Matar%C3%B3,Barcelona&t=&z=14&ie=UTF8&iwloc=B&output=embed`}
-            data-map-title={t('footer.mapTitle')}
-            class="flex h-48 w-full flex-col items-center justify-center gap-3 bg-white/10 text-white transition-colors duration-300 hover:bg-white/15"
-          >
+        <div class="overflow-hidden rounded-2xl border border-white/20 bg-white/5 shadow-lg shadow-black/20">
+          <div class="relative">
             <svg
-              class="h-8 w-8 text-amber-300"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+              viewBox="0 0 300 150"
+              class="block h-auto w-full"
               aria-hidden="true"
+              focusable="false"
             >
+              <defs>
+                <linearGradient id="divermapa-sea" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#7dd3fc"></stop>
+                  <stop offset="1" stop-color="#38bdf8"></stop>
+                </linearGradient>
+                <linearGradient id="divermapa-pin" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#0ea5e9"></stop>
+                  <stop offset="1" stop-color="#075985"></stop>
+                </linearGradient>
+              </defs>
+              <rect width="300" height="150" fill="#f0f9ff"></rect>
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M17.657 16.657 13.414 20.9a2 2 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z"
+                d="M190 150 C 220 110, 250 80, 300 55 L300 150 Z"
+                fill="url(#divermapa-sea)"
               ></path>
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M15 11a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"
+                d="M180 150 C 215 108, 248 76, 300 48"
+                stroke="#fde68a"
+                stroke-width="6"
+                fill="none"
               ></path>
+              <g stroke="#cbd5e1" stroke-width="5" stroke-linecap="round" fill="none">
+                <path d="M0 40 L210 25"></path>
+                <path d="M0 95 L170 75 L260 30"></path>
+                <path d="M40 0 L70 150"></path>
+                <path d="M120 0 L130 150"></path>
+                <path d="M0 130 L150 118"></path>
+              </g>
+              <g stroke="#e2e8f0" stroke-width="3" fill="none">
+                <path d="M0 68 L190 50"></path>
+                <path d="M85 0 L100 150"></path>
+                <path d="M160 0 L165 120"></path>
+              </g>
+              <rect x="18" y="104" width="34" height="22" rx="6" fill="#bbf7d0"></rect>
+              <g transform="translate(58 28)">
+                <path
+                  d="M14 0C6 0 0 6 0 14c0 10 14 22 14 22s14-12 14-22C28 6 22 0 14 0z"
+                  fill="url(#divermapa-pin)"
+                ></path>
+                <circle cx="14" cy="13.5" r="7" fill="#fff"></circle>
+                <path
+                  d="M10.5 13.5l2.5 2.5 4.5-5"
+                  stroke="#ea580c"
+                  stroke-width="2.4"
+                  fill="none"
+                  stroke-linecap="round"
+                ></path>
+              </g>
+              <g transform="translate(128 58)">
+                <path
+                  d="M14 0C6 0 0 6 0 14c0 10 14 22 14 22s14-12 14-22C28 6 22 0 14 0z"
+                  fill="url(#divermapa-pin)"
+                ></path>
+                <circle cx="14" cy="13.5" r="7" fill="#fff"></circle>
+                <path
+                  d="M10.5 13.5l2.5 2.5 4.5-5"
+                  stroke="#ea580c"
+                  stroke-width="2.4"
+                  fill="none"
+                  stroke-linecap="round"
+                ></path>
+              </g>
+              <g transform="translate(206 20)">
+                <path
+                  d="M14 0C6 0 0 6 0 14c0 10 14 22 14 22s14-12 14-22C28 6 22 0 14 0z"
+                  fill="url(#divermapa-pin)"
+                ></path>
+                <circle cx="14" cy="13.5" r="7" fill="#fff"></circle>
+                <path
+                  d="M10.5 13.5l2.5 2.5 4.5-5"
+                  stroke="#ea580c"
+                  stroke-width="2.4"
+                  fill="none"
+                  stroke-linecap="round"
+                ></path>
+              </g>
+              <g transform="translate(88 96)">
+                <path
+                  d="M12 0C5 0 0 5 0 12c0 9 12 19 12 19s12-10 12-19C24 5 19 0 12 0z"
+                  fill="#c2410c"
+                ></path>
+                <path
+                  d="M12 7v10M7 12h10"
+                  stroke="#fff"
+                  stroke-width="2.6"
+                  stroke-linecap="round"
+                ></path>
+              </g>
             </svg>
-            <span class="font-semibold">Mataró, Barcelona</span>
-            <span class="rounded-full bg-white/20 px-4 py-1.5 text-sm font-semibold">
-              {t('footer.showMap')}
+            <span class="absolute left-2 top-2 rounded-full bg-white px-2.5 py-0.5 text-xs font-extrabold text-primary-800">
+              {t('footer.mapBadge')}
             </span>
-            <span class="text-xs text-white/80">{t('footer.mapNotice')}</span>
-          </button>
+          </div>
+          <div class="p-4">
+            <p class="mb-4 text-sm leading-relaxed text-white/90">{t('footer.mapText')}</p>
+            <div class="flex flex-col gap-2">
+              <a
+                href={DIVERMAPA_URL[lang]}
+                class="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-white/25 bg-gradient-to-br from-primary-600 to-primary-800 px-4 py-2 text-sm font-bold text-white shadow-lg shadow-black/20 transition-colors duration-300 hover:from-primary-700 hover:to-primary-900"
+              >
+                {t('footer.mapOpen')}
+                <svg
+                  class="h-4 w-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href={DIVERMAPA_NEW_PLACE_URL[lang]}
+                class="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-orange-700 px-4 py-2 text-sm font-bold text-white shadow-lg shadow-black/20 transition-colors duration-300 hover:bg-orange-800"
+              >
+                <svg
+                  class="h-4 w-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 5v14M5 12h14"
+                  ></path>
+                </svg>
+                {t('footer.mapContribute')}
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -457,20 +571,6 @@ const serviceLinks = [
   <!-- Línea decorativa inferior — cierre visual -->
   <div class="h-1 bg-gradient-to-r from-primary-400 via-accent-400 to-primary-400 opacity-50"></div>
 </footer>
-
-<script>
-  const mapFacade = document.getElementById('map-facade');
-  mapFacade?.addEventListener('click', () => {
-    const iframe = document.createElement('iframe');
-    iframe.src = mapFacade.dataset.mapSrc ?? '';
-    iframe.title = mapFacade.dataset.mapTitle ?? '';
-    iframe.className = 'h-48 w-full';
-    iframe.referrerPolicy = 'no-referrer-when-downgrade';
-    iframe.style.border = '0';
-    mapFacade.replaceWith(iframe);
-    iframe.focus();
-  });
-</script>
 
 <style>
   /* ═══ Social icons — hover individual con color de marca ═══ */
