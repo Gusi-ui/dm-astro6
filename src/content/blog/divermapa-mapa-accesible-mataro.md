@@ -2,6 +2,7 @@
 title: 'Mapa accesible de Mataró: presentamos DiverMapa, para saber si podrás entrar antes de salir de casa'
 description: 'Mapa accesible de Mataró: DiverMapa reúne sitios comprobados en persona por DiverMataró para cada perfil de accesibilidad. Úsalo y aporta lugares.'
 pubDate: 2026-11-21
+updatedDate: 2026-11-23
 heroImage: 'cloudinary:divermataro/blog/divermapa-mapa-accesible-mataro/divermapa-portada'
 category: 'Accesibilidad'
 ---
@@ -12,11 +13,86 @@ Hoy, para saber si un local tiene un escalón en la entrada o un baño adaptado,
 
 ## Qué es DiverMapa, el mapa accesible de Mataró
 
-DiverMapa es un mapa de sitios accesibles de Mataró que funciona en el navegador del móvil o del ordenador. No hace falta descargar nada ni registrarse, y no tiene publicidad. Si quieres, puedes instalarlo en la pantalla de inicio del móvil como una app más.
+DiverMapa es un mapa de sitios accesibles de Mataró que funciona en el navegador del móvil o del ordenador. No hace falta descargar nada ni registrarse, y no tiene publicidad. Si quieres, puedes [instalarlo en la pantalla de inicio del móvil como una app más](#instalar-app): más abajo te explicamos cómo, paso a paso, en Android y en iPhone.
 
 Cada sitio tiene su ficha. Si DiverMataró ya lo ha verificado, la ficha lo dice con la fecha («Verificado por DiverMataró el…») y explica, perfil por perfil, qué te vas a encontrar: si hay escalón en la entrada, qué anchura tiene la puerta, si el baño está adaptado, si se admiten perros guía, si hay bucle de inducción magnética o si el local es tranquilo.
 
 El mapa sale de nuestro trabajo de siempre por la [accesibilidad universal](/servicios/accesibilidad-universal). En el balance de [lo que hemos conseguido y lo que aún falta en Mataró](/blog/accesibilidad-mataro-mejoras) contábamos que cada vez más comercios abren con la entrada a nivel. Ahora queremos que esa información no se quede en un artículo, sino que se pueda consultar en el momento en que se necesita.
+
+---
+
+<h2 id="instalar-app" class="scroll-mt-24">Cómo instalar DiverMapa en el móvil como una app</h2>
+
+Muchas personas nos habéis preguntado cómo tener DiverMapa a mano, junto al resto de aplicaciones del móvil. Se puede, y en menos de un minuto. DiverMapa es una **aplicación web progresiva** (en inglés, _PWA_): una web que se puede instalar como una app sin pasar por Google Play ni por la App Store. Así tiene ventajas:
+
+- **Tendrás su icono en la pantalla de inicio**, con la chincheta azul de DiverMapa, y lo abrirás con un solo toque.
+- **Se abre a pantalla completa**, sin la barra del navegador, como cualquier otra aplicación.
+- **Ocupa muy poco y se actualiza sola**: siempre verás la última versión del mapa.
+- **No pide ningún permiso al instalarse**. Solo te pedirá tu ubicación si tú lo eliges, por ejemplo para ordenar los sitios por cercanía.
+
+Los pasos cambian según el móvil y el navegador. Elige el tuyo:
+
+<nav aria-label="Instrucciones de instalación según el móvil" class="not-prose my-8 grid grid-cols-1 gap-3 font-semibold text-white sm:grid-cols-3">
+  <a href="#instalar-android-chrome" class="block rounded-xl bg-primary-600 px-4 py-4 text-center font-semibold text-white no-underline shadow-md transition hover:bg-primary-700">Android con Chrome</a>
+  <a href="#instalar-iphone-safari" class="block rounded-xl bg-primary-600 px-4 py-4 text-center font-semibold text-white no-underline shadow-md transition hover:bg-primary-700">iPhone con Safari</a>
+  <a href="#instalar-iphone-chrome" class="block rounded-xl bg-primary-600 px-4 py-4 text-center font-semibold text-white no-underline shadow-md transition hover:bg-primary-700">iPhone con Chrome</a>
+</nav>
+
+Antes de empezar, abre <a href="https://mapa.divermataro.org" target="_blank" rel="noopener noreferrer">mapa.divermataro.org</a> en el navegador del móvil. Si estás leyendo esto en el propio móvil, puedes abrirlo desde este enlace y volver aquí para seguir los pasos.
+
+<h3 id="instalar-android-chrome" class="scroll-mt-24">En un móvil Android con Chrome</h3>
+
+1. Toca el **menú de los tres puntos (⋮)**, arriba a la derecha.
+2. Toca **«Añadir a pantalla de inicio»**. En algunas versiones de Chrome la opción se llama **«Instalar aplicación»**.
+3. Elige **«Instalar»** y confirma. En unos segundos el icono de DiverMapa aparecerá en la pantalla de inicio y en el cajón de aplicaciones.
+
+A veces Chrome se adelanta y muestra abajo un aviso para instalar DiverMapa: si te sale, tócalo y ya está. Si usas **Samsung Internet**, el camino es parecido: menú de las tres rayas (≡), **«Añadir página a»** y **«Pantalla de inicio»**.
+
+<div class="not-prose my-8 grid grid-cols-2 gap-4 md:grid-cols-4">
+  <img src="cloudinary:divermataro/blog/divermapa-mapa-accesible-mataro/instalar-android-chrome-1" alt="Paso 1 en Android: DiverMapa abierto en Chrome, con el botón del menú de tres puntos, arriba a la derecha, señalado" width="780" height="1688" sizes="(max-width: 768px) 45vw, 210px" loading="lazy" style="width: 100%; height: auto; border-radius: 1rem; box-shadow: 0 8px 24px rgba(2, 116, 175, 0.2);" />
+  <img src="cloudinary:divermataro/blog/divermapa-mapa-accesible-mataro/instalar-android-chrome-2" alt="Paso 2 en Android: menú de Chrome desplegado con la opción «Añadir a pantalla de inicio» señalada" width="780" height="1688" sizes="(max-width: 768px) 45vw, 210px" loading="lazy" style="width: 100%; height: auto; border-radius: 1rem; box-shadow: 0 8px 24px rgba(2, 116, 175, 0.2);" />
+  <img src="cloudinary:divermataro/blog/divermapa-mapa-accesible-mataro/instalar-android-chrome-3" alt="Paso 3 en Android: ventana «Añadir a pantalla de inicio» con el icono de DiverMapa y la opción «Instalar» señalada, por encima de «Crear acceso directo»" width="780" height="1688" sizes="(max-width: 768px) 45vw, 210px" loading="lazy" style="width: 100%; height: auto; border-radius: 1rem; box-shadow: 0 8px 24px rgba(2, 116, 175, 0.2);" />
+  <img src="cloudinary:divermataro/blog/divermapa-mapa-accesible-mataro/instalar-android-resultado" alt="Resultado en Android: pantalla de inicio con el icono redondo de DiverMapa, una chincheta azul con una marca de verificación, entre otras aplicaciones" width="780" height="1688" sizes="(max-width: 768px) 45vw, 210px" loading="lazy" style="width: 100%; height: auto; border-radius: 1rem; box-shadow: 0 8px 24px rgba(2, 116, 175, 0.2);" />
+</div>
+
+<h3 id="instalar-iphone-safari" class="scroll-mt-24">En un iPhone con Safari</h3>
+
+Estos son los pasos de iOS 26 y posteriores, con la barra de Safari en su posición habitual, abajo:
+
+1. Toca el **botón de los tres puntos (···)**, a la derecha de la barra de direcciones.
+2. Toca **«Compartir»**.
+3. Desliza la lista hacia arriba y toca **«Añadir a pantalla de inicio»**.
+4. Deja activada la opción **«Abrir como app web»** y toca **«Añadir»**, arriba a la derecha.
+
+Si tienes un iOS anterior, o has configurado Safari con las pestañas **abajo** o **arriba**, verás directamente el **botón Compartir** (un cuadrado con una flecha hacia arriba): tócalo y sigue desde el paso 3. Y si «Añadir a pantalla de inicio» no aparece en la lista, baja hasta el final, toca **«Editar acciones»** y añádela. Lo explica Apple en su <a href="https://support.apple.com/es-es/guide/iphone/iph42ab2f3a7/ios" target="_blank" rel="noopener noreferrer">guía de uso del iPhone sobre cómo añadir un sitio web a la pantalla de inicio</a>.
+
+<div class="not-prose my-8 grid grid-cols-2 gap-4 md:grid-cols-4">
+  <img src="cloudinary:divermataro/blog/divermapa-mapa-accesible-mataro/instalar-iphone-safari-1" alt="Paso 1 en iPhone con Safari: DiverMapa abierto, con el botón de tres puntos de la barra inferior señalado" width="780" height="1688" sizes="(max-width: 768px) 45vw, 210px" loading="lazy" style="width: 100%; height: auto; border-radius: 1rem; box-shadow: 0 8px 24px rgba(2, 116, 175, 0.2);" />
+  <img src="cloudinary:divermataro/blog/divermapa-mapa-accesible-mataro/instalar-iphone-safari-2" alt="Paso 2 en iPhone con Safari: menú desplegado con la opción «Compartir» señalada" width="780" height="1688" sizes="(max-width: 768px) 45vw, 210px" loading="lazy" style="width: 100%; height: auto; border-radius: 1rem; box-shadow: 0 8px 24px rgba(2, 116, 175, 0.2);" />
+  <img src="cloudinary:divermataro/blog/divermapa-mapa-accesible-mataro/instalar-iphone-safari-3" alt="Paso 3 en iPhone con Safari: hoja de compartir con la opción «Añadir a pantalla de inicio» señalada" width="780" height="1688" sizes="(max-width: 768px) 45vw, 210px" loading="lazy" style="width: 100%; height: auto; border-radius: 1rem; box-shadow: 0 8px 24px rgba(2, 116, 175, 0.2);" />
+  <img src="cloudinary:divermataro/blog/divermapa-mapa-accesible-mataro/instalar-iphone-safari-4" alt="Paso 4 en iPhone con Safari: pantalla «Añadir a pantalla de inicio» con el nombre DiverMapa, el interruptor «Abrir como app web» activado y el botón «Añadir» señalado" width="780" height="1688" sizes="(max-width: 768px) 45vw, 210px" loading="lazy" style="width: 100%; height: auto; border-radius: 1rem; box-shadow: 0 8px 24px rgba(2, 116, 175, 0.2);" />
+</div>
+
+<h3 id="instalar-iphone-chrome" class="scroll-mt-24">En un iPhone con Chrome</h3>
+
+Chrome también puede añadir DiverMapa a la pantalla de inicio del iPhone, desde iOS 16.4:
+
+1. Toca el **botón Compartir** (un cuadrado con una flecha hacia arriba), dentro de la barra de direcciones. Si no lo ves, toca los **tres puntos (···)** y después **«Compartir»**.
+2. Toca **«Añadir a pantalla de inicio»**.
+3. Toca **«Añadir»**. Si te aparece la opción «Abrir como app web», déjala activada.
+
+<div class="not-prose my-8 grid grid-cols-2 gap-4 md:grid-cols-4">
+  <img src="cloudinary:divermataro/blog/divermapa-mapa-accesible-mataro/instalar-iphone-chrome-1" alt="Paso 1 en iPhone con Chrome: DiverMapa abierto, con el botón Compartir de la barra de direcciones señalado" width="780" height="1688" sizes="(max-width: 768px) 45vw, 210px" loading="lazy" style="width: 100%; height: auto; border-radius: 1rem; box-shadow: 0 8px 24px rgba(2, 116, 175, 0.2);" />
+  <img src="cloudinary:divermataro/blog/divermapa-mapa-accesible-mataro/instalar-iphone-chrome-2" alt="Paso 2 en iPhone con Chrome: hoja de compartir con la opción «Añadir a pantalla de inicio» señalada" width="780" height="1688" sizes="(max-width: 768px) 45vw, 210px" loading="lazy" style="width: 100%; height: auto; border-radius: 1rem; box-shadow: 0 8px 24px rgba(2, 116, 175, 0.2);" />
+  <img src="cloudinary:divermataro/blog/divermapa-mapa-accesible-mataro/instalar-iphone-chrome-3" alt="Paso 3 en iPhone con Chrome: pantalla «Añadir a pantalla de inicio» con el nombre DiverMapa y el botón «Añadir» señalado" width="780" height="1688" sizes="(max-width: 768px) 45vw, 210px" loading="lazy" style="width: 100%; height: auto; border-radius: 1rem; box-shadow: 0 8px 24px rgba(2, 116, 175, 0.2);" />
+  <img src="cloudinary:divermataro/blog/divermapa-mapa-accesible-mataro/instalar-iphone-resultado" alt="Resultado en iPhone: pantalla de inicio con el icono de DiverMapa, una chincheta azul con una marca de verificación, y su nombre debajo" width="780" height="1688" sizes="(max-width: 768px) 45vw, 210px" loading="lazy" style="width: 100%; height: auto; border-radius: 1rem; box-shadow: 0 8px 24px rgba(2, 116, 175, 0.2);" />
+</div>
+
+### Para encontrarlo enseguida
+
+- **En Android**, DiverMapa aparece en la pantalla de inicio y también en el cajón de aplicaciones, como cualquier otra app. Puedes mantenerlo pulsado y arrastrarlo adonde te vaya mejor.
+- **En el iPhone**, desliza el dedo hacia abajo en la pantalla de inicio y escribe «DiverMapa» en el buscador. Si lo usas a menudo, arrástralo a la barra de abajo (el Dock) para tenerlo siempre a la vista.
+- **Para quitarlo**, mantén pulsado el icono y elige eliminarlo, como harías con cualquier aplicación.
 
 ---
 
@@ -103,7 +179,7 @@ Sí. Es gratuito, no tiene publicidad y no hace falta registrarse para consultar
 
 ### ¿Tengo que instalar una aplicación?
 
-No. Se abre en el navegador, en <a href="https://mapa.divermataro.org" target="_blank" rel="noopener noreferrer">mapa.divermataro.org</a>. Si lo usas a menudo, puedes añadirlo a la pantalla de inicio del móvil y funcionará como una app.
+No. Se abre en el navegador, en <a href="https://mapa.divermataro.org" target="_blank" rel="noopener noreferrer">mapa.divermataro.org</a>. Si lo usas a menudo, puedes [instalarlo en la pantalla de inicio del móvil](#instalar-app) y funcionará como una app: tendrás su icono a mano y se abrirá a pantalla completa.
 
 ### ¿Cómo sé si un sitio es accesible para mí?
 
